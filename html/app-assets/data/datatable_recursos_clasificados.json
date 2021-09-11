@@ -1,0 +1,29 @@
+{
+  "data": [
+    {
+      "responsive_id": "",
+      "id": 1,
+      "nombre": "Programa 1: Aprender a pensar",
+      "proyecto": "Savia",
+      "asignatura": "Ciencias Naturales",
+      "nivel": "1º básico",
+      "tipo_recurso": "Guía",
+      "formato": "PDF",
+      "oa": [{
+        "oa_code": "CN02 OA 07",
+        "priorizacion": "1"
+      },{
+        "oa_code": "CN02 OA 08",
+        "priorizacion": "2"
+      },{
+        "oa_code": "CN02 OA 01",
+        "priorizacion": "0"
+      }
+    ],
+      "eje": "Ciencias de la Tierra y el Universo",
+      "claves": "Universo, Tierra",
+      "descargable": "Sí"
+    }
+    
+  ]
+}
