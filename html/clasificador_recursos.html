@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html class="loading semi-dark-layout" lang="es" data-layout="semi-dark-layout" data-textdirection="ltr">
+<!-- BEGIN: Head-->
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0,minimal-ui">
+    <meta name="description" content="Vuexy admin is super flexible, powerful, clean &amp; modern responsive bootstrap 4 admin template with unlimited possibilities.">
+    <meta name="keywords" content="admin template, Vuexy admin template, dashboard template, flat admin template, responsive admin template, web app">
+    <meta name="author" content="PIXINVENT">
+    <title>Gestor curricular</title>
+    <link rel="apple-touch-icon" href="app-assets/images/ico/apple-icon-120.png">
+    <link rel="shortcut icon" type="image/x-icon" href="app-assets/images/ico/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500;1,600" rel="stylesheet">
+    <!-- BEGIN: Vendor CSS-->
+    <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/vendors.min.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/tables/datatable/dataTables.bootstrap5.min.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/tables/datatable/responsive.bootstrap4.min.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/pickers/flatpickr/flatpickr.min.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/forms/select/select2.min.css">
+    <!-- END: Vendor CSS-->
+
+    <!-- BEGIN: Theme CSS-->
+    <link rel="stylesheet" type="text/css" href="app-assets/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/css/bootstrap-extended.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/css/colors.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/css/components.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/css/themes/dark-layout.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/css/themes/bordered-layout.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/css/themes/semi-dark-layout.css">
+
+    <!-- BEGIN: Page CSS-->
+    <link rel="stylesheet" type="text/css" href="app-assets/css/core/menu/menu-types/vertical-menu.css">
+    <!-- END: Page CSS-->
+
+    <!-- BEGIN: Custom CSS-->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/helpers.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/custom_colors.css">
+    <!-- END: Custom CSS-->
+
+</head>
+<!-- END: Head-->
+
+<!-- BEGIN: Body-->
+
+<body class="vertical-layout vertical-menu-modern  navbar-floating footer-static  " data-open="click" data-menu="vertical-menu-modern" data-col="">
+
+    <!-- BEGIN: Header-->
+    <nav class="header-navbar navbar navbar-expand-lg align-items-center floating-nav navbar-light navbar-shadow container-xxl">
+        <div class="navbar-container d-flex content">
+            <div class="bookmark-wrapper d-flex align-items-center">
+                <ul class="nav navbar-nav d-xl-none">
+                    <li class="nav-item"><a class="nav-link menu-toggle" href="#"><i class="ficon" data-feather="menu"></i></a></li>
+                </ul>
+                <ul class="nav navbar-nav ">
+                    <li class="nav-item">
+                        <div class="d-flex align-items-center">
+                            <div>
+                                <div class="avatar-content">
+                                    <span ><img src="assets/images/logo_sm.png" alt="avatar" height="40"></span>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="d-none d-lg-block msp-20 fsp-20">Backoffice</div>
+                                <!-- <div class="font-small-2 text-muted">meguc@ruj.io</div> -->
+                            </div>
+                        </div>
+                        
+ 
+                    </li>
+                </ul>
+            </div>
+            <ul class="nav navbar-nav align-items-center ms-auto">
+
+                <li class="nav-item d-none d-lg-block"><a class="nav-link nav-link-style"><i class="ficon" data-feather="moon"></i></a></li>
+
+               
+                <li class="nav-item dropdown dropdown-user"><a class="nav-link dropdown-toggle dropdown-user-link" id="dropdown-user" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <div class="user-nav d-sm-flex d-none"><span class="user-name fw-bolder">Lucia Donoso</span><span class="user-status">Docente</span></div><span class="avatar"><img class="round" src="app-assets/images/portrait/small/avatar-s-10.jpg" alt="avatar" height="40" width="40"><span class="avatar-status-online"></span></span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdown-user"><a class="dropdown-item" href="page-profile.html"><i class="me-50" data-feather="user"></i> Perfil</a>
+                        <div class="dropdown-divider"></div><a class="dropdown-item" href="page-faq.html"><i class="me-50" data-feather="help-circle"></i> FAQ</a><a class="dropdown-item" href="page-auth-login-v2.html"><i class="me-50" data-feather="power"></i> Salir</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- END: Header-->
+
+
+    <!-- BEGIN: Main Menu-->
+    <div class="main-menu menu-fixed menu-dark menu-accordion menu-shadow" data-scroll-to-active="true">
+        <div class="navbar-header">
+            <ul class="nav navbar-nav flex-row">
+                <li class="nav-item me-auto">
+                    <a class="navbar-brand" href="html/ltr/vertical-menu-template/index.html">
+                        <h2 class="brand-text p-0">Gestor curricular</h2>
+                    </a></li>
+                <li class="nav-item nav-toggle"><a class="nav-link modern-nav-toggle pe-0" data-bs-toggle="collapse"><i class="d-block d-xl-none text-primary toggle-icon font-medium-4" data-feather="x"></i><i class="d-none d-xl-block collapse-toggle-icon font-medium-4  text-primary" data-feather="disc" data-ticon="disc"></i></a></li>
+            </ul>
+        </div>
+        <div class="shadow-bottom"></div>
+        <div class="main-menu-content">
+            <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
+                <li class=" nav-item active"><a class="d-flex align-items-center" href="index.html"><i data-feather="layers"></i><span class="menu-title text-truncate" data-i18n="Dashboards">Gestor de recursos</span></a>
+                </li>
+                <!-- <li class=" navigation-header"><span data-i18n="Apps &amp; Pages">Opciones</span><i data-feather="more-horizontal"></i> -->
+                </li>
+                <li class=" nav-item"><a class="d-flex align-items-center" href="app-email.html"><i data-feather='clipboard'></i><span class="menu-title text-truncate" data-i18n="Email">Gestor de programas</span></a>
+                </li>
+                <li class=" nav-item"><a class="d-flex align-items-center" href="app-chat.html"><i data-feather='book-open'></i><span class="menu-title text-truncate" data-i18n="Chat">Gestor de guías</span></a>
+                </li>
+                <li class=" nav-item"><a class="d-flex align-items-center" href="app-todo.html"><i data-feather="users"></i><span class="menu-title text-truncate" data-i18n="Todo">Gestor de usuarios</span></a>
+                </li>
+                <li class=" nav-item"><a class="d-flex align-items-center" href="app-calendar.html"><i data-feather='home'></i><span class="menu-title text-truncate" data-i18n="Calendar">Gestor de colegios</span></a>
+                </li>
+                <li class=" nav-item"><a class="d-flex align-items-center" href="app-kanban.html"><i data-feather='mail'></i><span class="menu-title text-truncate" data-i18n="Kanban">Gestor de licencias</span></a>
+                </li>
+                <li class=" nav-item"><a class="d-flex align-items-center" href="#"><i data-feather='settings'></i><span class="menu-title text-truncate" data-i18n="Invoice">Configuraciones</span></a>
+                </li>
+               
+            </ul>
+        </div>
+    </div>
+    <!-- END: Main Menu-->
+
+    <!-- BEGIN: Content-->
+    <div class="app-content content ">
+        <div class="content-overlay"></div>
+        <div class="header-navbar-shadow"></div>
+        <div class="content-wrapper container-xxl p-0">
+            <div class="content-header row">
+                <div class="content-header-left col-md-7 col-12 mb-2">
+                    <div class="row breadcrumbs-top">
+                        <div class="col-12">
+                            <h2 class="content-header-title float-start mb-0">Clasificador de recursos</h2>
+                            <div class="breadcrumb-wrapper">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="index.html"><ion-icon name="home-outline"></ion-icon></a>
+                                    </li>
+                                    <li class="breadcrumb-item"><a href="#">Recursos clasificados</a>
+                                    </li>
+                                    <li class="breadcrumb-item"><a href="#">Clasificador de recursos</a>
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-header-right text-md-end col-md-5 col-12 d-md-block d-none">
+                    <div class="mb-1 breadcrumb-right">
+                        <button type="button" class="btn btn-primary">
+                            <i data-feather='file-plus'></i>
+                            <span>Clasificar recurso</span>
+                        </button>
+                        <button type="button" class="btn btn-outline-primary">
+                            <i data-feather='upload'></i>
+                            <span>Subir recurso</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-body">
+                <!-- Dashboard Ecommerce Starts -->
+                <section id="dashboard-ecommerce">
+                    <div class="row match-height">
+                        
+                            <!-- Revenue Report Card -->
+                            <div class="col-12">
+                                <div class="card card-revenue-budget">
+                                    <div class="row mx-0">
+                                        <div class="col-md-9 col-12 revenue-report-wrapper">
+                                            
+                                                <div class="row">
+                                                    <div class="col-8">
+                                                        <div class="mb-1">
+                                                            <label class="form-label" for="itemcost">Nombre</label>
+                                                            <input type="number" class="form-control" id="itemcost" aria-describedby="itemcost" placeholder="Ingresa un nombre para el recurso" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-2">
+                                                        <div class="mb-1">
+                                                            <label class="form-label" for="itemcost">Tipo de recurso</label>
+                                                            <select class="form-select pep-40 mb-1" id="basicSelect">
+                                                                <option>Seleciona un tipo</option>
+                                                                <option>Video​</option>
+                                                                <option>Canción​</option>
+                                                                <option>Audio – cuento​</option>
+                                                                <option>Cuentos​</option>
+                                                                <option>Actividad interactiva​</option>
+                                                                <option>App educativa​</option>
+                                                                <option>Evaluación</option>
+                                                                <option>Guía​</option>
+                                                                <option>Plantilla PPT</option>​
+                                                                <option>Recortable</option>​
+                                                                <option>Ticket de salida</option>​
+                                                                <option>Imágenes sueltas y galería de imágenes de las APPs.​</option>
+                                                                <option>Infografía​</option>
+                                                                <option>Lámina​</option>
+                                                                <option>Set/maletín/pack de recursos</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-2">
+                                                        <div class="mb-1">
+                                                            <label class="form-label" for="itemcost">Descargable</label>
+                                                            <select class="form-select pep-40 mb-1" id="basicSelect">
+                                                                <option>Selecciona una opción</option>
+                                                                <option>Si</option>
+                                                                <option>No</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-8">
+                                                        <label class="form-label" for="select2-multiple">Ejes temáticos</label>
+                                                        <select class="select2 form-select" id="select1-multiple" multiple>
+                                                            
+                                                            <option value="AK"></option>La idea del progreso indefinido y sus contradicciones: de la industrialización a la guerra total en el cambio de siglo</option>
+                                                            <option value="AK">El desafío de consolidar el orden republicano y la idea de nación: Chile en el siglo X</option>
+                                                            <option value="AK">Configuración del territorio chileno y sus dinámicas geográficas en el siglo X</option>
+                                                            <option value="AK">El orden liberal y las transformaciones políticas y sociales de fin de siglo en Chile</option>
+                                                            <option value="AK">Formación económica: las personas y el funcionamiento del mercado</option>
+                                                            <option value="AK">Formación ciudadana: sociedad contemporánea: diversidad, convivencia y medioambiente.</option>
+                                                            <option value="AK">Crisis, totalitarismo y guerra en la primera mitad del siglo X</option>
+                                                            <option value="AK">El fortalecimiento del estado y la democratización social en Chile de la primera mitad del siglo XX</option>
+                                                            <option value="AK"><option value="AK">De un mundo bipolar a un mundo globalizado: La guerra fría</option>
+                                                            <option value="AK"><option value="AK">Chile en el contexto de la guerra fría: transformaciones estructurales, polarización política y social y quiebre de la democracia</option>
+                                                            <option value="AK">Dictadura militar, transición política y consenso en torno a la democracia en el Chile actual </option>
+                                                            <option value="AK">Formación ciudadana: Los derechos humanos y el estado de derecho como fundamentos de nuestra vida en sociedad</option>
+                                                            
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <label class="form-label" for="select2-multiple">Palabras claves</label>
+                                                        <select class="select2 form-select" id="select2-multiple" multiple>
+                                                            
+                                                                <option value="AK">Tierra</option>
+                                                                <option value="HI">Universo</option>
+                                                        
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-10">
+                                                        <div class="demo-inline-spacing">
+                                                            <div class="d-block w-100"><label class="form-label" for="select2-multiple">Niveles</label></div>
+                                                            <div class="form-check form-check-inline mt-0 mb-1">
+                                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="checked"  />
+                                                                <label class="form-check-label" for="inlineCheckbox1">NT 1</label>
+                                                            </div>
+                                                            <div class="form-check form-check-inline mt-0 mb-1">
+                                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="checked"  />
+                                                                <label class="form-check-label" for="inlineCheckbox1">NT 2</label>
+                                                            </div>
+                                                            <div class="form-check form-check-inline mt-0 mb-1">
+                                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="checked"  />
+                                                                <label class="form-check-label" for="inlineCheckbox1">1B</label>
+                                                            </div>
+                                                            <div class="form-check form-check-inline mt-0 mb-1">
+                                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="checked" checked />
+                                                                <label class="form-check-label" for="inlineCheckbox1">2B</label>
+                                                            </div>
+                                                            <div class="form-check form-check-inline mt-0 mb-1">
+                                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="checked"  />
+                                                                <label class="form-check-label" for="inlineCheckbox1">3B</label>
+                                                            </div>
+                                                            <div class="form-check form-check-inline mt-0 mb-1">
+                                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="checked"  />
+                                                                <label class="form-check-label" for="inlineCheckbox1">4B</label>
+                                                            </div>
+                                                            <div class="form-check form-check-inline mt-0 mb-1">
+                                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="checked"  />
+                                                                <label class="form-check-label" for="inlineCheckbox1">5B</label>
+                                                            </div>
+                                                            <div class="form-check form-check-inline mt-0 mb-1">
+                                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="checked"  />
+                                                                <label class="form-check-label" for="inlineCheckbox1">6B</label>
+                                                            </div>
+                                                            <div class="form-check form-check-inline mt-0 mb-1">
+                                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="checked"  />
+                                                                <label class="form-check-label" for="inlineCheckbox1">7B</label>
+                                                            </div>
+                                                            <div class="form-check form-check-inline mt-0 mb-1">
+                                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="checked"  />
+                                                                <label class="form-check-label" for="inlineCheckbox1">8B</label>
+                                                            </div>
+ 
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-2">
+                                                        <div class="mb-1 mt-1">
+                                                            <label class="form-label" for="itemcost">Descartar</label>
+                                                            <select class="form-select pep-40 mb-1" id="basicSelect">
+                                                                <option>Selecciona una opción</option>
+                                                                <option>Si</option>
+                                                                <option selected>No</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-10">
+                                                        <label class="form-label" for="itemcost">Objetivos de aprendizaje</label>
+                                                        <div class="d-flex w-100 border bordered-1 rounded-1 align-items-center">
+                                                            <div class="btn btn-flat-primary align-items-center h-100">
+                                                                CN02 OA 07<ion-icon name="star" class="text-warning msp-5"></ion-icon>
+                                                            </div>
+                                                            <div class="btn btn-flat-primary align-items-center h-100">
+                                                                CN02 OA 8<ion-icon name="star-outline" class="text-warning msp-5"></ion-icon>
+                                                            </div>
+                                                            <div class="btn btn-flat-primary align-items-center h-100">
+                                                                CN02 OA 01
+                                                            </div>
+                                                            
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-2 p-0 m-0 d-flex align-items-end">
+                                                        <div class="d-flex w-100 justify-content-end">
+
+                                                            <div class="btn btn-primary align-items-center h-100 w-100 px-1 py-1">
+                                                                GUARDAR
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <div class="d-flex w-100 border bordered-1 rounded-1 align-items-center justify-content-center mhp-150 mtp-20 bgc-light"> 
+                                                            No hay ningun recurso seleccionado
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                        </div>
+                                        <div class="col-md-3 col-12 budget-wrapper p-0">
+                                            <div class="d-block px-1 mt-1">
+                                                <div class="p-0 w-100 d-block">
+                                                    <select class="form-select pep-40 mb-1" id="basicSelect">
+                                                        <option>Selecciona un proyecto</option>
+                                                        <option>Gestor curricular (nuevos)</option>
+                                                        <option>Savia</option>
+                                                        <option>Proyecto Sé</option>
+                                                        <option>Hola Jesús</option>
+                                                        <option>Se llama Jesús</option>
+                                                    </select>
+                                                </div>
+                                                <div class="p-0 w-100 d-block">
+
+                                                    <select class="form-select pep-40 mb-1" id="basicSelect">
+                                                        <option>Selecciona una asignatura</option>
+                                                        <option>Ciencias Naturales</option>
+                                                        <option>Ciencias Sociales</option>
+                                                        <option>Lenguaje</option>
+                                                        <option>Matemática</option>
+                                                    </select>
+                                                </div>
+                                                <select class="form-select pep-40 mb-1" id="basicSelect">
+                                                    <option>Selecciona un nivel</option>
+                                                    <option>NT 2</option>
+                                                    <option>1º básico</option>
+                                                    <option>2º básico</option>
+                                                    <option>3º básico</option>
+                                                    <option>4º básico</option>
+                                                    <option>5º básico</option>
+                                                    <option>6º básico</option>
+                                                    <option>7º básico</option>
+                                                    <option>8º básico</option>
+                                                </select>
+                                                <select class="form-select pep-40 mb-1" id="basicSelect">
+                                                    <option>Selecciona el grupo de recursos</option>
+                                                    <option>Recursos</option>
+                                                    <option>Evaluaciones</option>
+                                                    <option>Multimedia</option>
+                                                    <option>Apps Educativos</option>
+                                                </select>
+                                            </div>
+                                            <div class="d-block mt-1">
+                                                <div class="w-100 py-1 border-top bordered-1 align-items-center justify-content-center ">
+                                                    <div class="d-flex w-100 align-items-center">
+                                                        <div class="ps-1 py-0"><img src="assets/images/iconos_recursos/pdf.svg" width="30"></div>
+                                                        <div class="px-1 py-0 text-start fsp-12">Programa 1: Aprender a pensar</div>
+                                                    </div>
+                                                </div>
+                                                <div class="w-100 py-1 border-top bordered-1 align-items-center justify-content-center ">
+                                                    <div class="d-flex w-100 align-items-center">
+                                                        <div class="ps-1 py-0"><img src="assets/images/iconos_recursos/word.svg" width="30"></div>
+                                                        <div class="px-1 py-0 text-start fsp-12">Programa 1: Aprender a pensar</div>
+                                                    </div>
+                                                </div>
+                                                <div class="w-100 py-1 border-top bordered-1 align-items-center justify-content-center ">
+                                                    <div class="d-flex w-100 align-items-center">
+                                                        <div class="ps-1 py-0"><img src="assets/images/iconos_recursos/excel.svg" width="30"></div>
+                                                        <div class="px-1 py-0 text-start fsp-12">Programa 1: Aprender a pensar</div>
+                                                    </div>
+                                                </div>
+                                                <div class="w-100 py-1 border-top bordered-1 align-items-center justify-content-center ">
+                                                    <div class="d-flex w-100 align-items-center">
+                                                        <div class="ps-1 py-0"><img src="assets/images/iconos_recursos/ppt.svg" width="30"></div>
+                                                        <div class="px-1 py-0 text-start fsp-12">Programa 1: Aprender a pensar</div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                   
+                                </div>
+                            </div>
+                            <!--/ Revenue Report Card -->        
+                        
+                    </div>
+                </section>
+
+            </div>
+        </div>
+    </div>
+    <!-- END: Content-->
+
+    <div class="sidenav-overlay"></div>
+    <div class="drag-target"></div>
+
+    <!-- BEGIN: Footer-->
+    <footer class="footer footer-static footer-light">
+        <p class="clearfix mb-0"><span class="float-md-start d-block d-md-inline-block mt-25">COPYRIGHT &copy; 2021<a class="ms-25" href="https://www.grupo-sm.com/cl/" target="_blank">SM Chile</a><span class="d-none d-sm-inline-block">, All rights Reserved</span></span></p>
+    </footer>
+    <button class="btn btn-primary btn-icon scroll-top" type="button"><i data-feather="arrow-up"></i></button>
+    <!-- END: Footer-->
+
+    <!-- Ionic icons -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- / Ionic icons -->
+    <!-- BEGIN: Vendor JS-->
+    <script src="app-assets/vendors/js/vendors.min.js"></script>
+    <!-- BEGIN Vendor JS-->
+
+    <!-- BEGIN: Page Vendor JS-->
+    <script src="app-assets/vendors/js/tables/datatable/jquery.dataTables.min.js"></script>
+    <script src="app-assets/vendors/js/tables/datatable/dataTables.bootstrap5.min.js"></script>
+    <script src="app-assets/vendors/js/tables/datatable/dataTables.responsive.min.js"></script>
+    <script src="app-assets/vendors/js/tables/datatable/responsive.bootstrap4.js"></script>
+    <script src="app-assets/vendors/js/pickers/flatpickr/flatpickr.min.js"></script>
+    <!-- END: Page Vendor JS-->
+    
+    <!-- BEGIN: Page Vendor JS-->
+    <script src="app-assets/vendors/js/forms/select/select2.full.min.js"></script>
+    <!-- END: Page Vendor JS-->
+
+    <!-- BEGIN: Theme JS-->
+    <script src="app-assets/js/core/app-menu.js"></script>
+    <script src="app-assets/js/core/app.js"></script>
+    <!-- END: Theme JS-->
+
+    <!-- BEGIN: Page JS-->
+    <script src="app-assets/js/scripts/tables/table-datatables-advanced.js"></script>
+    <!-- END: Page JS-->
+
+    <!-- BEGIN: Page JS-->
+    <script src="app-assets/js/scripts/forms/form-select2.js"></script>
+    <!-- END: Page JS-->
+    <script>
+        $(window).on('load', function() {
+            if (feather) {
+                feather.replace({
+                    width: 14,
+                    height: 14
+                });
+            }
+        })
+    </script>
+</body>
+<!-- END: Body-->
+
+</html>
