@@ -23,6 +23,27 @@
       "eje": "Ciencias de la Tierra y el Universo",
       "claves": "Universo, Tierra",
       "descargable": "Sí"
+    },
+    {
+      "responsive_id": "",
+      "id": 1,
+      "nombre": "Programa 2: Aprender a pensar",
+      "proyecto": "Savia",
+      "asignatura": "Ciencias Naturales",
+      "nivel": "1º básico",
+      "tipo_recurso": "Guía",
+      "formato": "PDF",
+      "oa": [{
+        "oa_code": "CN02 OA 07",
+        "priorizacion": "1"
+      },{
+        "oa_code": "CN02 OA 01",
+        "priorizacion": "0"
+      }
+    ],
+      "eje": "El sol y la tierra",
+      "claves": "Sol, Tierra",
+      "descargable": "No"
     }
     
   ]

@@ -18,6 +18,7 @@
     <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/tables/datatable/dataTables.bootstrap5.min.css">
     <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/tables/datatable/responsive.bootstrap4.min.css">
     <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/pickers/flatpickr/flatpickr.min.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/forms/select/select2.min.css">
     <!-- END: Vendor CSS-->
 
     <!-- BEGIN: Theme CSS-->
@@ -36,6 +37,7 @@
     <!-- BEGIN: Custom CSS-->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link rel="stylesheet" type="text/css" href="assets/css/helpers.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/custom_colors.css">
     <!-- END: Custom CSS-->
 
 </head>
@@ -159,7 +161,36 @@
                                     <div class="col-12">
                                         <div class="card">
                                             <div class="card-header border-bottom">
+
                                                 <h4 class="card-title">Recursos clasificados</h4>
+                                                <div class="d-flex p-0">
+                                                    <div class="ms-1 pep-20">
+
+                                                        <select class="form-select pep-40" id="basicSelect">
+                                                            <option>Selecciona una asignatura</option>
+                                                            <option>Ciencias Naturales</option>
+                                                            <option>Ciencias Sociales</option>
+                                                            <option>Lenguaje</option>
+                                                            <option>Matemática</option>
+                                                        </select>                      
+                                                    </div>
+                                                    <div class="ms-1">
+
+                                                        <select class="form-select pep-40" id="basicSelect">
+                                                            <option>Selecciona un nivel</option>
+                                                            <option>NT 2</option>
+                                                            <option>1º básico</option>
+                                                            <option>2º básico</option>
+                                                            <option>3º básico</option>
+                                                            <option>4º básico</option>
+                                                            <option>5º básico</option>
+                                                            <option>6º básico</option>
+                                                            <option>7º básico</option>
+                                                            <option>8º básico</option>
+                                                        </select>                      
+                                                    </div>
+                                                </div>
+                                        
                                             </div>
                                             <div class="card-datatable">
                                                 <table class="dt-column-search table table-responsive">
@@ -215,6 +246,10 @@
     <script src="app-assets/vendors/js/tables/datatable/responsive.bootstrap4.js"></script>
     <script src="app-assets/vendors/js/pickers/flatpickr/flatpickr.min.js"></script>
     <!-- END: Page Vendor JS-->
+    
+    <!-- BEGIN: Page Vendor JS-->
+    <script src="app-assets/vendors/js/forms/select/select2.full.min.js"></script>
+    <!-- END: Page Vendor JS-->
 
     <!-- BEGIN: Theme JS-->
     <script src="app-assets/js/core/app-menu.js"></script>
@@ -224,7 +259,9 @@
     <!-- BEGIN: Page JS-->
     <script src="app-assets/js/scripts/tables/table-datatables-advanced.js"></script>
     <!-- END: Page JS-->
-
+    <!-- BEGIN: Page JS-->
+    <script src="app-assets/js/scripts/forms/form-select2.js"></script>
+    <!-- END: Page JS-->
     <script>
         $(window).on('load', function() {
             if (feather) {
