@@ -183,7 +183,7 @@ $(function () {
           // For Checkboxes
           targets: 2,
           orderable: true,
-          responsivePriority: 3,
+          responsivePriority: 0,
           render: function (data, type, full, meta) {
             const objetivos = function () {
               let conca = full["oa"];
