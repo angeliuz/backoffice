@@ -105,11 +105,11 @@
         <div class="shadow-bottom"></div>
         <div class="main-menu-content">
             <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
-                <li class=" nav-item active"><a class="d-flex align-items-center" href="index.html"><i data-feather="layers"></i><span class="menu-title text-truncate" data-i18n="Dashboards">Gestor de recursos</span></a>
+                <li class=" nav-item "><a class="d-flex align-items-center" href="index.html"><i data-feather="layers"></i><span class="menu-title text-truncate" data-i18n="Dashboards">Gestor de recursos</span></a>
                 </li>
                 <!-- <li class=" navigation-header"><span data-i18n="Apps &amp; Pages">Opciones</span><i data-feather="more-horizontal"></i> -->
                 </li>
-                <li class=" nav-item"><a class="d-flex align-items-center" href="gestor_de_programas.html"><i data-feather='clipboard'></i><span class="menu-title text-truncate" data-i18n="Email">Gestor de programas</span></a>
+                <li class=" nav-item active"><a class="d-flex align-items-center" href="gestor_de_programas.html"><i data-feather='clipboard'></i><span class="menu-title text-truncate" data-i18n="Email">Gestor de programas</span></a>
                 </li>
                 <li class=" nav-item"><a class="d-flex align-items-center" href="app-chat.html"><i data-feather='book-open'></i><span class="menu-title text-truncate" data-i18n="Chat">Gestor de guías</span></a>
                 </li>
@@ -136,12 +136,12 @@
                 <div class="content-header-left col-md-7 col-12 mb-2">
                     <div class="row breadcrumbs-top">
                         <div class="col-12">
-                            <h2 class="content-header-title float-start mb-0">Gestor de recursos</h2>
+                            <h2 class="content-header-title float-start mb-0">Gestor de programas</h2>
                             <div class="breadcrumb-wrapper">
                                 <ol class="breadcrumb">
                                     <li class="breadcrumb-item"><a href="index.html">Home</a>
                                     </li>
-                                    <li class="breadcrumb-item"><a href="#">Recursos clasificados</a>
+                                    <li class="breadcrumb-item"><a href="#">Programas</a>
                                     </li>
                                 </ol>
                             </div>
@@ -150,7 +150,7 @@
                 </div>
                 <div class="content-header-right text-md-end col-md-5 col-12 d-md-block d-none">
                     <div class="mb-1 breadcrumb-right">
-                        <a href="clasificador_recursos.html" target="_self">
+                        <!-- <a href="clasificador_recursos.html" target="_self">
                             <button type="button" class="btn btn-primary">
                                 <i data-feather='file-plus'></i>
                                 <span>Clasificar recurso</span>
@@ -159,7 +159,7 @@
                         <button type="button" class="btn btn-outline-primary">
                             <i data-feather='upload'></i>
                             <span>Subir recurso</span>
-                        </button>
+                        </button> -->
                     </div>
                 </div>
             </div>
@@ -170,13 +170,13 @@
                     <div class="row match-height">
                         
                             <!-- Column Search -->
-                            <section id="column-search-datatable">
+                            <section id="column-search2-datatable">
                                 <div class="row">
                                     <div class="col-12">
                                         <div class="card">
                                             <div class="card-header border-bottom">
 
-                                                <h4 class="card-title">Recursos clasificados</h4>
+                                                <h4 class="card-title">Objetvios de aprendizaje</h4>
                                                 <div class="d-flex p-0">
                                                     <div class="ms-1 pep-20">
 
@@ -207,15 +207,15 @@
                                         
                                             </div>
                                             <div class="card-datatable">
-                                                <table class="dt-column-search table table-responsive">
+                                                <table class="dt-column-search2 table table-responsive tabla-align-top">
                                                     <thead>
                                                         <tr>
-                                                            <th>Nombre</th>
-                                                            <th>Tipo recurso</th>
-                                                            <th>Objetivos de aprendizaje</th>
-                                                            <th>Eje temático</th>
-                                                            <th>Palabras claves</th>
-                                                            <th>Descargable</th>
+                                                            <th style="width: 20px; vertical-align: top">id</th>
+                                                            <th style="vertical-align: top">Objetivo</th>
+                                                            <th>Priorización</th>
+                                                            <th>Descripción</th>
+                                                            <th>Eje</th>
+                                                            <th>Indicadores</th>
                                                         </tr>
                                                     </thead>
 
@@ -233,6 +233,56 @@
             </div>
         </div>
     </div>
+
+ <!-- Modal -->
+ <div class="modal fade text-start" id="modalIndicadores" tabindex="-1" aria-labelledby="myModalLabel1" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header p-0 m-0 align-items-start">
+                <div class="modal-header-deco w-100 position-absolute hp-5 color-primary bg-primary mt-0"></div>
+                <div class="p-1">
+                    <h4 class="modal-title " id="myModalLabel1">Indicadores del objetivo de aprendizaje</h4>
+                </div>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                Hola
+                <!-- Basic table -->
+                <!-- <section id="basic-datatable">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <table class="datatables-basic table">
+                                    <thead>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Email</th>
+                                            <th>Date</th>
+                                            <th>Salary</th>
+                                            <th>id</th>
+                                            <th></th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                
+                </section> -->
+                <!--/ Basic table -->
+
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Modal -->
+
+
     <!-- END: Content-->
 
     <div class="sidenav-overlay"></div>
@@ -274,6 +324,11 @@
     <!-- <script src="app-assets/js/scripts/tables/table-datatables-advanced.js"></script> -->
     <script src="app-assets/js/scripts/tables/custom_datatables.js"></script>
     <!-- END: Page JS-->
+
+    <!-- BEGIN: Page JS-->
+    <script src="app-assets/js/scripts/components/components-modals.js"></script>
+    <!-- END: Page JS-->
+
     <!-- BEGIN: Page JS-->
     <script src="app-assets/js/scripts/forms/form-select2.js"></script>
     <!-- END: Page JS-->

@@ -1,24 +1,100 @@
 {
   "data": [
     {
+      "responsive_id": "",
+      "id": 1,
       "codigo": "CN02 OA 01",
       "descripcion": "Demostrar que comprenden la adición y la sustracción de números del 0 al 20 progresivamente, de 0 a 5, de 6 a 2M, de 3M a 20 con dos sumandos: <ul><li>Usando un lenguaje cotidiano para describir acciones desde su propia experiencia. </li><li>Representando adiciones y sustracciones con material concreto y pictórico, de manera manual y/o usando software educativo. </li><li>Representando el proceso en forma simbólica. </li><li>Resolviendo problemas en contextos familiares. </li><li>Creando problemas matemáticos y resolviéndolos.</li></ul>",
       "asignatura": "Ciencias Naturales",
       "nivel": "1º básico",
-      "indicadores": [{
-        "oa_code": "CN02 OA 07",
-        "priorizacion": "1"
-      },{
-        "oa_code": "CN02 OA 08",
-        "priorizacion": "2"
-      },{
-        "oa_code": "CN02 OA 01",
-        "priorizacion": "0"
+      "priorizacion":"1",
+      "indicadores": [
+      {
+        "indicador_code": "1",
+        "descripcion": "Ubican la posición de un objeto, siguiendo dos o más instrucciones usando un punto de referencia."
+      },
+      {
+        "indicador_code": "2",
+        "descripcion": "Ubican la posición de un objeto, siguiendo dos o más instrucciones usando un punto de referencia."
+      },
+      {
+        "indicador_code": "3",
+        "descripcion": "Ubican la posición de un objeto, siguiendo dos o más instrucciones usando un punto de referencia."
+      },
+      {
+        "indicador_code": "4",
+        "descripcion": "Ubican la posición de un objeto, siguiendo dos o más instrucciones usando un punto de referencia."
+      },
+      {
+        "indicador_code": "5",
+        "descripcion": "Ubican la posición de un objeto, siguiendo dos o más instrucciones usando un punto de referencia."
       }
     ],
-      "eje": "Ciencias de la Tierra y el Universo",
-      "claves": "Universo, Tierra",
-      "descargable": "Sí"
+      "eje": "Ciencias de la Tierra y el Universo"
+    },
+    {
+      "responsive_id": "",
+      "id": 2,
+      "codigo": "CN02 OA 02",
+      "descripcion": "Demostrar que comprenden la adición y la sustracción de números del 0 al 20 progresivamente, de 0 a 5, de 6 a 2M, de 3M a 20 con dos sumandos: <ul><li>Usando un lenguaje cotidiano para describir acciones desde su propia experiencia. </li><li>Representando adiciones y sustracciones con material concreto y pictórico, de manera manual y/o usando software educativo. </li><li>Representando el proceso en forma simbólica. </li><li>Resolviendo problemas en contextos familiares. </li><li>Creando problemas matemáticos y resolviéndolos.</li></ul>",
+      "asignatura": "Ciencias Naturales",
+      "nivel": "1º básico",
+      "priorizacion":"2",
+      "indicadores": [
+      {
+        "indicador_code": "1",
+        "descripcion": "Ubican la posición de un objeto, siguiendo dos o más instrucciones usando un punto de referencia."
+      },
+      {
+        "indicador_code": "2",
+        "descripcion": "Ubican la posición de un objeto, siguiendo dos o más instrucciones usando un punto de referencia."
+      },
+      {
+        "indicador_code": "3",
+        "descripcion": "Ubican la posición de un objeto, siguiendo dos o más instrucciones usando un punto de referencia."
+      },
+      {
+        "indicador_code": "4",
+        "descripcion": "Ubican la posición de un objeto, siguiendo dos o más instrucciones usando un punto de referencia."
+      },
+      {
+        "indicador_code": "5",
+        "descripcion": "Ubican la posición de un objeto, siguiendo dos o más instrucciones usando un punto de referencia."
+      }
+    ],
+      "eje": "Ciencias de la Tierra y el Universo"
+    },
+    {
+      "responsive_id": "",
+      "id": 3,
+      "codigo": "CN02 OA 03",
+      "descripcion": "Demostrar que comprenden la adición y la sustracción de números del 0 al 20 progresivamente, de 0 a 5, de 6 a 2M, de 3M a 20 con dos sumandos: <ul><li>Usando un lenguaje cotidiano para describir acciones desde su propia experiencia. </li><li>Representando adiciones y sustracciones con material concreto y pictórico, de manera manual y/o usando software educativo. </li><li>Representando el proceso en forma simbólica. </li><li>Resolviendo problemas en contextos familiares. </li><li>Creando problemas matemáticos y resolviéndolos.</li></ul>",
+      "asignatura": "Ciencias Naturales",
+      "nivel": "1º básico",
+      "priorizacion":"3",
+      "indicadores": [
+      {
+        "indicador_code": "1",
+        "descripcion": "Ubican la posición de un objeto, siguiendo dos o más instrucciones usando un punto de referencia."
+      },
+      {
+        "indicador_code": "2",
+        "descripcion": "Ubican la posición de un objeto, siguiendo dos o más instrucciones usando un punto de referencia."
+      },
+      {
+        "indicador_code": "3",
+        "descripcion": "Ubican la posición de un objeto, siguiendo dos o más instrucciones usando un punto de referencia."
+      },
+      {
+        "indicador_code": "4",
+        "descripcion": "Ubican la posición de un objeto, siguiendo dos o más instrucciones usando un punto de referencia."
+      },
+      {
+        "indicador_code": "5",
+        "descripcion": "Ubican la posición de un objeto, siguiendo dos o más instrucciones usando un punto de referencia."
+      }
+    ],
+      "eje": "Ciencias de la Tierra y el Universo"
     }
     
   ]
