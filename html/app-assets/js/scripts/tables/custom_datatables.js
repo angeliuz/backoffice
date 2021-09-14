@@ -284,7 +284,6 @@ $(function () {
             const objetivos = function () {
               let priorizacion;
               let oas = "";
-              console.log("hola");
               if (full["priorizacion"] == "1") {
                 priorizacion =
                   '<ion-icon name="star" class="text-warning"></ion-icon>';
