@@ -3077,8 +3077,11 @@ font-family: 'Lobster', cursive; */
   border-radius: 0px 0px 20px 20px;
 }
 
-.mhp-150 {
+.min-hp-150 {
   min-height: 150px !important;
+}
+.max-wp-100 {
+  min-height: 100px !important;
 }
 
 /* Z-INDEX */

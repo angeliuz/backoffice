@@ -332,7 +332,7 @@
                                                 </div>
                                                 <div class="row">
                                                     <div class="col-12">
-                                                        <div class="d-flex w-100 border bordered-1 rounded-1 align-items-center justify-content-center mhp-150 mtp-20 bgc-light"> 
+                                                        <div class="d-flex w-100 border bordered-1 rounded-1 align-items-center justify-content-center min-hp-150 mtp-20 bgc-light"> 
                                                             No hay ningun recurso seleccionado
                                                         </div>
                                                     </div>
@@ -444,53 +444,16 @@
                                     <table class="datatables-basic table">
                                         <thead>
                                             <tr>
-                                                <th></th>
-                                                <th></th>
-                                                <th>id</th>
-                                                <th>Name</th>
-                                                <th>Email</th>
-                                                <th>Date</th>
-                                                <th>Salary</th>
-                                                <th>Status</th>
-                                                <th>Action</th>
+                                                <th>Objetivo</th>
+                                                <th>Descripción</th>
+                                                <th class="text-center">Selección</th>
                                             </tr>
                                         </thead>
                                     </table>
                                 </div>
                             </div>
                         </div>
-                        <!-- Modal to add new record -->
-                        <div class="modal modal-slide-in fade" id="modals-slide-in">
-                            <div class="modal-dialog sidebar-sm">
-                                <form class="add-new-record modal-content pt-0">
-                                    <div class="modal-body flex-grow-1">
-                                        <div class="mb-1">
-                                            <label class="form-label" for="basic-icon-default-fullname">Full Name</label>
-                                            <input type="text" class="form-control dt-full-name" id="basic-icon-default-fullname" placeholder="John Doe" aria-label="John Doe" />
-                                        </div>
-                                        <div class="mb-1">
-                                            <label class="form-label" for="basic-icon-default-post">Post</label>
-                                            <input type="text" id="basic-icon-default-post" class="form-control dt-post" placeholder="Web Developer" aria-label="Web Developer" />
-                                        </div>
-                                        <div class="mb-1">
-                                            <label class="form-label" for="basic-icon-default-email">Email</label>
-                                            <input type="text" id="basic-icon-default-email" class="form-control dt-email" placeholder="john.doe@example.com" aria-label="john.doe@example.com" />
-                                            <small class="form-text"> You can use letters, numbers & periods </small>
-                                        </div>
-                                        <div class="mb-1">
-                                            <label class="form-label" for="basic-icon-default-date">Joining Date</label>
-                                            <input type="text" class="form-control dt-date" id="basic-icon-default-date" placeholder="MM/DD/YYYY" aria-label="MM/DD/YYYY" />
-                                        </div>
-                                        <div class="mb-4">
-                                            <label class="form-label" for="basic-icon-default-salary">Salary</label>
-                                            <input type="text" id="basic-icon-default-salary" class="form-control dt-salary" placeholder="$12000" aria-label="$12000" />
-                                        </div>
-                                        <button type="button" class="btn btn-primary data-submit me-1">Submit</button>
-                                        <button type="reset" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cancel</button>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
+                        
                     </section>
                     <!--/ Basic table -->
 

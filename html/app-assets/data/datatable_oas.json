@@ -1,10 +1,8 @@
 {
   "data": [
     {
-      "responsive_id": "",
-      "id": 1,
-      "codigo": "Programa 1: Aprender a pensar",
-      "descripcion": "Savia",
+      "codigo": "CN02 OA 01",
+      "descripcion": "Demostrar que comprenden la adición y la sustracción de números del 0 al 20 progresivamente, de 0 a 5, de 6 a 2M, de 3M a 20 con dos sumandos: <ul><li>Usando un lenguaje cotidiano para describir acciones desde su propia experiencia. </li><li>Representando adiciones y sustracciones con material concreto y pictórico, de manera manual y/o usando software educativo. </li><li>Representando el proceso en forma simbólica. </li><li>Resolviendo problemas en contextos familiares. </li><li>Creando problemas matemáticos y resolviéndolos.</li></ul>",
       "asignatura": "Ciencias Naturales",
       "nivel": "1º básico",
       "indicadores": [{
@@ -21,27 +19,6 @@
       "eje": "Ciencias de la Tierra y el Universo",
       "claves": "Universo, Tierra",
       "descargable": "Sí"
-    },
-    {
-      "responsive_id": "",
-      "id": 1,
-      "nombre": "Programa 2: Aprender a pensar",
-      "proyecto": "Savia",
-      "asignatura": "Ciencias Naturales",
-      "nivel": "1º básico",
-      "tipo_recurso": "Guía",
-      "formato": "PDF",
-      "oa": [{
-        "oa_code": "CN02 OA 07",
-        "priorizacion": "1"
-      },{
-        "oa_code": "CN02 OA 01",
-        "priorizacion": "0"
-      }
-    ],
-      "eje": "El sol y la tierra",
-      "claves": "Sol, Tierra",
-      "descargable": "No"
     }
     
   ]
