@@ -377,6 +377,23 @@ $(function () {
           orderable: false,
           targets: 0,
         },
+        {
+          targets: 0,
+          orderable: true,
+          responsivePriority: 0,
+          render: function (data, type, full, meta) {
+            const objetivos = function () {
+              let oas = "";
+              oas +=
+                '<div class="d-flex align-items-center"><div class="text-primary fw-500 mep-5"><a href="https://gc.desarrollosm.cl/editorguia/pages/page_ficha_editable.html" target="_blank">' +
+                full["nombre"] +
+                "</a></div>";
+
+              return oas;
+            };
+            return objetivos;
+          },
+        },
       ],
 
       dom: '<"d-flex justify-content-between align-items-center mx-0 row"<"col-sm-12 col-md-6"l><"col-sm-12 col-md-6"f>>t<"d-flex justify-content-between mx-0 row"<"col-sm-12 col-md-6"i><"col-sm-12 col-md-6"p>>',
