@@ -117,6 +117,7 @@ $(function () {
 
   var dt_filter_table = $(".dt-column-search"),
     dt_filter_table_oas = $(".dt-column-search2"),
+    dt_filter_guias_de_trabajo = $(".dt-column-guias"),
     assetPath = "app-assets/";
 
   if ($("body").attr("data-framework") === "laravel") {
@@ -335,6 +336,61 @@ $(function () {
       },
     });
   }
+
+  // Advanced Search Functions Starts
+  // --------------------------------------------------------------------
+  // GUIAS DE TRABAJO
+  // --------------------------------------------------------------------
+
+  if (dt_filter_guias_de_trabajo.length) {
+    // Setup - add a text input to each footer cell
+    $(".dt-column-guias thead tr")
+      .clone(true)
+      .appendTo(".dt-column-guias thead");
+    $(".dt-column-guias thead tr:eq(1) th").each(function (i) {
+      var title = $(this).text();
+      $(this).html(
+        '<input type="text" class="form-control form-control-sm" placeholder="Buscar ' +
+          title +
+          '" />'
+      );
+
+      $("input", this).on("keyup change", function () {
+        if (dt_filter.column(i).search() !== this.value) {
+          dt_filter.column(i).search(this.value).draw();
+        }
+      });
+    });
+
+    var dt_filter = dt_filter_guias_de_trabajo.DataTable({
+      ajax: assetPath + "data/datatable_guias.json",
+      columns: [
+        { data: "nombre" },
+        { data: "asignatura" },
+        { data: "nivel" },
+        { data: "creado_por" },
+      ],
+      columnDefs: [
+        {
+          // For Responsive
+          className: "control",
+          orderable: false,
+          targets: 0,
+        },
+      ],
+
+      dom: '<"d-flex justify-content-between align-items-center mx-0 row"<"col-sm-12 col-md-6"l><"col-sm-12 col-md-6"f>>t<"d-flex justify-content-between mx-0 row"<"col-sm-12 col-md-6"i><"col-sm-12 col-md-6"p>>',
+      orderCellsTop: true,
+      language: {
+        paginate: {
+          // remove previous & next text from pagination
+          previous: "&nbsp;",
+          next: "&nbsp;",
+        },
+      },
+    });
+  }
+
   // Filter form control to default size for all tables
   $(".dataTables_filter .form-control").removeClass("form-control-sm");
   $(".dataTables_length .form-select")

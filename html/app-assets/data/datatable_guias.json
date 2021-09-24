@@ -1,0 +1,54 @@
+{
+  "data": [
+    {
+      "responsive_id": "",
+      "id": 1,
+      "nombre": "Programa 1: Aprender a pensar",
+      "proyecto": "Gestor Curricular",
+      "asignatura": "Ciencias Naturales",
+      "nivel": "1º básico",
+      "tipo_recurso": "Guía",
+      "formato": "HTML",
+      "creado_por": "Jorge Espinoza",
+      "idusuario": "68"
+    },
+    {
+      "responsive_id": "",
+      "id": 1,
+      "nombre": "Programa 2: Aprender a pensar",
+      "proyecto": "Gestor Curricular",
+      "asignatura": "Lenguaje",
+      "nivel": "3º básico",
+      "tipo_recurso": "Guía",
+      "formato": "HTML",
+      "creado_por": "Waldo Rojo",
+      "idusuario": "68"
+    },
+    {
+      "responsive_id": "",
+      "id": 1,
+      "nombre": "Programa 3: Aprender a pensar",
+      "proyecto": "Gestor Curricular",
+      "asignatura": "Ciencias Sociales",
+      "nivel": "4º básico",
+      "tipo_recurso": "Guía",
+      "formato": "HTML",
+      "creado_por": "Sergio Soriano",
+      "idusuario": "68"
+    },
+    {
+      "responsive_id": "",
+      "id": 1,
+      "nombre": "Programa 4: Aprender a pensar",
+      "proyecto": "Gestor Curricular",
+      "asignatura": "Matemática",
+      "nivel": "7º básico",
+      "tipo_recurso": "Guía",
+      "formato": "HTML",
+      "creado_por": "Claudia Barba",
+      "idusuario": "68"
+    }
+
+    
+  ]
+}
