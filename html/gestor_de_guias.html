@@ -150,12 +150,12 @@
                 </div>
                 <div class="content-header-right text-md-end col-md-5 col-12 d-md-block d-none">
                     <div class="mb-1 breadcrumb-right">
-                        <a href="clasificador_recursos.html" target="_self">
-                            <button type="button" class="btn btn-primary">
-                                <i data-feather='file-plus'></i>
-                                <span>Crear guía de trabajo</span>
-                            </button>
-                        </a>
+                        
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalContenido">
+                            <i data-feather='file-plus'></i>
+                            <span>Crear guía de trabajo</span>
+                        </button>
+                       
                     </div>
                 </div>
             </div>
@@ -205,46 +205,47 @@
 
  <!-- Modal -->
  <div class="modal fade text-start" id="modalContenido" tabindex="-1" aria-labelledby="myModalLabel1" aria-hidden="true">
-    <div class="modal-dialog modal-xl">
+    <div class="modal-dialog modal-sm">
         <div class="modal-content">
             <div class="modal-header p-0 m-0 align-items-start">
                 <div class="modal-header-deco w-100 position-absolute hp-5 color-primary bg-primary mt-0"></div>
                 <div class="p-1">
-                    <h4 class="modal-title " id="myModalLabel1">Indicadores del objetivo de aprendizaje</h4>
+                    <h4 class="modal-title " id="myModalLabel1">Crear guía de trabajo</h4>
                 </div>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                Hola
-                <!-- Basic table -->
-                <!-- <section id="basic-datatable">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="card">
-                                <table class="datatables-basic table">
-                                    <thead>
-                                        <tr>
-                                            <th>Name</th>
-                                            <th>Email</th>
-                                            <th>Date</th>
-                                            <th>Salary</th>
-                                            <th>id</th>
-                                            <th></th>
-                                            <th></th>
-                                        </tr>
-                                    </thead>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                
-                </section> -->
-                <!--/ Basic table -->
+                <div class="mb-1">
+                    <label class="form-label" for="itemcost">Nombre de la guía</label>
+                    <input type="number" class="form-control" id="itemcost" aria-describedby="itemcost" placeholder="Ingresa un nombre para la guía de trabajo" />
+                </div>
+                <div class="p-0 w-100 d-block">
+                    <select class="form-select pep-40 mb-1" id="basicSelect">
+                        <option>Selecciona una asignatura</option>
+                        <option>Ciencias Naturales</option>
+                        <option>Ciencias Sociales</option>
+                        <option>Lenguaje</option>
+                        <option>Matemática</option>
+                    </select>
+                    <select class="form-select pep-40 mb-1" id="basicSelect">
+                        <option>Selecciona un nivel</option>
+                        <option>NT 2</option>
+                        <option>1º básico</option>
+                        <option>2º básico</option>
+                        <option>3º básico</option>
+                        <option>4º básico</option>
+                        <option>5º básico</option>
+                        <option>6º básico</option>
+                        <option>7º básico</option>
+                        <option>8º básico</option>
+                    </select>
+                </div>
 
 
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">Cancelar</button>
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Crear</button>
             </div>
         </div>
     </div>
