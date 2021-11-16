@@ -1,0 +1,25 @@
+{
+  "data": [
+    {
+      "id": "7",
+      "nombre": "Esc. Pedro Vicente Gutierrez Torres",
+      "rbd": "3",
+      "direccion": "Quebrada De Acha s/n 2036 Ruta 5",
+      "distrito": "Arica"
+    },
+    {
+      "id": "98",
+      "nombre": "Colegio María",
+      "rbd": "666",
+      "direccion": "La Plaza 967 Paine",
+      "distrito": "Metropolitana"
+    },
+    {
+      "id": "50",
+      "nombre": "Colegio Pedro",
+      "rbd": "9999",
+      "direccion": "La Casa 80 Villarrica",
+      "distrito": "Araucania"
+    }
+  ]
+}
