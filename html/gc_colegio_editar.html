@@ -21,6 +21,7 @@
         <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/charts/apexcharts.css">
         <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/extensions/toastr.min.css">
         <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/forms/select/select2.min.css">
+        <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/file-uploaders/dropzone.min.css">
         <!-- END: Vendor CSS-->
 
         <!-- BEGIN: Theme CSS-->
@@ -29,8 +30,11 @@
         <link rel="stylesheet" type="text/css" href="app-assets/css/components.css">
         <link rel="stylesheet" type="text/css" href="app-assets/css/themes/dark-layout.css">
         <link rel="stylesheet" type="text/css" href="app-assets/css/themes/bordered-layout.css">
-        <link
-        rel="stylesheet" type="text/css" href="app-assets/css/themes/semi-dark-layout.css">
+        <link rel="stylesheet" type="text/css" href="app-assets/css/themes/semi-dark-layout.css">
+        <link rel="stylesheet" type="text/css" href="app-assets/css/plugins/forms/form-file-uploader.css">
+        <!--drop-->
+
+        <!-- END: Vendor CSS-->
 
         <!-- BEGIN: Page CSS-->
         <link rel="stylesheet" type="text/css" href="app-assets/css/core/menu/menu-types/vertical-menu.css">
@@ -468,6 +472,18 @@
 
                             </div>
                         </div>
+                        <div class="col-12 p-0">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 class="card-title">Single File Upload</h4>
+                                </div>
+                                <div class="card-body">
+                                    <form action="#" class="dropzone dropzone-area" id="dpz-single-file">
+                                        <div class="dz-message">Drop files here or click to upload.</div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
                 </div>
                 <button type="submit" class="btn btn-primary waves-effect waves-float waves-light" name="submit" value="Submit">Enviar</button>
             </form>
@@ -504,6 +520,7 @@
         <script src="app-assets/vendors/js/forms/select/select2.full.min.js"></script>
         <script src="app-assets/vendors/js/forms/validation/jquery.validate.min.js"></script>
         <script src="app-assets/vendors/js/pickers/flatpickr/flatpickr.min.js"></script>
+        <script src="app-assets/vendors/js/file-uploaders/dropzone.min.js"></script>
         <!-- BEGIN: Page Vendor JS-->
         <!-- <script src="app-assets/vendors/js/charts/apexcharts.min.js"></script>
             <script src="app-assets/vendors/js/extensions/toastr.min.js"></script> -->
@@ -519,6 +536,7 @@
         <!-- END: Page JS-->
         <!-- BEGIN: Page JS-->
         <script src="app-assets/js/scripts/forms/form-validation.js"></script>
+        <script src="app-assets/js/scripts/forms/form-file-uploader.js"></script>
         <!-- END: Page JS-->
 
             <script>
