@@ -22,7 +22,7 @@ $(function () {
   var lang = "Spanish";
   if (dt_multilingual_table.length) {
     var table_language = dt_multilingual_table.DataTable({
-      ajax: assetPath + "data/table-datatable-david.json",
+      ajax: assetPath + "data/gc_colegio_lista.json",
       columns: [
         { data: "id" },
         { data: "id" },
