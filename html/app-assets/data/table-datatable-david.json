@@ -1,6 +1,7 @@
 {
   "data": [
     {
+      "id-colegio": "7",
       "id": "7",
       "nombre": "Esc. Pedro Vicente Gutierrez Torres",
       "rbd": "3",
@@ -8,6 +9,7 @@
       "distrito": "Arica"
     },
     {
+      "id-colegio": "98",
       "id": "98",
       "nombre": "Colegio María",
       "rbd": "666",
@@ -15,6 +17,7 @@
       "distrito": "Metropolitana"
     },
     {
+      "id-colegio": "50",
       "id": "50",
       "nombre": "Colegio Pedro",
       "rbd": "9999",
