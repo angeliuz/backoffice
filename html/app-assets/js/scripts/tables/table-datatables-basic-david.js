@@ -24,7 +24,7 @@ $(function () {
     var table_language = dt_multilingual_table.DataTable({
       ajax: assetPath + "data/table-datatable-david.json",
       columns: [
-        { data: "id-" },
+        { data: "id" },
         { data: "id" },
         { data: "nombre" },
         { data: "rbd" },
