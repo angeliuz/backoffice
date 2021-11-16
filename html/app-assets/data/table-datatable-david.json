@@ -13,6 +13,13 @@
       "rbd": "666",
       "direccion": "La Plaza 967 Paine",
       "distrito": "Metropolitana"
+    },
+    {
+      "id": "50",
+      "nombre": "Colegio Pedro",
+      "rbd": "9999",
+      "direccion": "La Casa 80 Villarrica",
+      "distrito": "Araucania"
     }
   ]
 }
