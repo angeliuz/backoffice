@@ -27,7 +27,7 @@ $(function () {
         { data: "id" },
         { data: "id" },
         { data: "nombre" },
-        { data: "mostrar" },
+        { data: "estado" },
         { data: "carpeta" },
         { data: "" },
       ],
@@ -42,10 +42,10 @@ $(function () {
           // Label
           targets: -3,
           render: function (data, type, full, meta) {
-            var $status_number = full["mostrar"];
+            var $status_number = full["estado"];
             var $status = {
-              0: { title: "No mostrar", class: "badge-light-danger" },
-              1: { title: "Mostrar", class: " badge-light-success" },
+              0: { title: "Oculto", class: " badge-light-danger" },
+              1: { title: "Visible", class: " badge-light-success" },
               2: { title: "Rejected", class: " badge-light-primary" },
               3: { title: "Resigned", class: " badge-light-warning" },
               4: { title: "Applied", class: " badge-light-info" },
