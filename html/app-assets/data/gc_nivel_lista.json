@@ -1,0 +1,52 @@
+{
+  "data": [
+    {
+      "id": "0",
+      "nombre": "Sin Nivel",
+      "mostrar": "0",
+      "carpeta": "null"
+    },
+    {
+      "id": "1",
+      "nombre": "1º Básico",
+      "mostrar": "1",
+      "carpeta": "1b"
+    },
+    {
+      "id": "2",
+      "nombre": "2º Básico",
+      "mostrar": "1",
+      "carpeta": "2b"
+    },
+    {
+      "id": "3",
+      "nombre": "3º Básico",
+      "mostrar": "1",
+      "carpeta": "3b"
+    },
+    {
+      "id": "4",
+      "nombre": "4º Básico",
+      "mostrar": "0",
+      "carpeta": "4b"
+    },
+    {
+      "id": "5",
+      "nombre": "5º Básico",
+      "mostrar": "1",
+      "carpeta": "5b"
+    },
+    {
+      "id": "9",
+      "nombre": "1º Medio",
+      "mostrar": "0",
+      "carpeta": "1m"
+    },
+    {
+      "id": "10",
+      "nombre": "2º Medio",
+      "mostrar": "1",
+      "carpeta": "2m"
+    }
+  ]
+}
