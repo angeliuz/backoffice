@@ -21,7 +21,7 @@ $(function () {
     $this.wrap('<div class="position-relative"></div>');
     $this
       .select2({
-        placeholder: 'Select value',
+        placeholder: 'Selecciona una opción',
         dropdownParent: $this.parent()
       })
       .change(function () {
@@ -69,38 +69,20 @@ $(function () {
   if (jqForm.length) {
     jqForm.validate({
       rules: {
-        'basic-default-name': {
+        'nombre': {
           required: true
         },
-        'basic-default-email': {
-          required: true,
-          email: true
-        },
-        'basic-default-password': {
+        'rdb': {
           required: true
         },
-        'confirm-password': {
-          required: true,
-          equalTo: '#basic-default-password'
-        },
-        'select-country': {
+        'direccion': {
           required: true
         },
-        dob: {
+        'distrito': {
           required: true
         },
-        customFile: {
-          required: true
-        },
-        validationRadiojq: {
-          required: true
-        },
-        validationBiojq: {
-          required: true
-        },
-        validationCheck: {
-          required: true
-        }
+
+
       }
     });
   }
