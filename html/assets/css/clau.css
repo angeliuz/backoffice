@@ -1,0 +1,4 @@
+.demo-inline-spacing> *{
+    margin-right: 1.5rem;
+    margin-top: 10px !important;
+}
