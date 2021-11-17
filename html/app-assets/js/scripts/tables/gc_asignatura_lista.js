@@ -70,7 +70,7 @@ $(function () {
           render: function (data, type, full, meta) {
             return (
               '<div class="d-inline-flex">' +
-              '<a href="gc_asignatura_niveles.html" target="_self" class="item-edit">' +
+              '<a href="#" target="_self" class="item-edit">' +
               feather.icons["edit"].toSvg({ class: "font-small-4" }) +
               "</a>"
             );
