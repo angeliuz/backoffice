@@ -1753,6 +1753,9 @@ font-family: 'Lobster', cursive; */
 }
 
 /* padding-top px */
+.ptp-3 {
+  padding-top: 3px;
+}
 .ptp-5 {
   padding-top: 5px;
 }
