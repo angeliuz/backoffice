@@ -1,0 +1,37 @@
+{
+  "data": [
+    {
+      "id": "1261",
+      "nombre": "Orietta Corrial Rojas",
+      "rut": "14000333-7",
+      "correo": "ctaldo@gmail.com",
+      "rol": "Profesor",
+      "cargo_interno": "Representante comercial",
+      "colegio": "Colegio SM",
+      "creado": "26-06-2018 06:29:42",
+      "estado": "0"
+    },
+    {
+      "id": "22548",
+      "nombre": "Juan Pablo Figueroa Condes",
+      "rut": "11000333-2",
+      "correo": "ctaldo@gmail.com",
+      "rol": "Alumno",
+      "cargo_interno": "",
+      "colegio": "Pedro de Valdivia",
+      "creado": "28-06-2018 03:29:42",
+      "estado": "1"
+    },
+    {
+      "id": "186",
+      "nombre": "Pedro Pablo Gutierrez",
+      "rut": "5739863-2",
+      "correo": "pedro.pablo@gmail.com",
+      "rol": "Administrativo",
+      "cargo_interno": "Asesor pedagógico (AP)",
+      "colegio": "Instituto del Mar",
+      "creado": "05-03-2016 01:08:22",
+      "estado": "1"
+    }
+  ]
+}
