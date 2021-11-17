@@ -71,7 +71,7 @@ $(function () {
           render: function (data, type, full, meta) {
             return (
               '<div class="d-inline-flex">' +
-              '<a href="javascript:;" class="item-edit">' +
+              '<a href="gc_colegio_editar.html" target="_self" class="item-edit">' +
               feather.icons["edit"].toSvg({ class: "font-small-4" }) +
               "</a>"
             );
