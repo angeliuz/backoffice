@@ -1,0 +1,28 @@
+{
+  "data": [
+    {
+      "id": "1",
+      "rol": "Diseño"
+    },
+    {
+      "id": "2",
+      "rol": "TIC"
+    },
+    {
+      "id": "3",
+      "rol": "Editor"
+    },
+    {
+      "id": "4",
+      "rol": "Docente"
+    },
+    {
+      "id": "5",
+      "rol": "Directivo"
+    },
+    {
+      "id": "6",
+      "rol": "Directivo o administrador de red de colegios"
+    }
+  ]
+}
