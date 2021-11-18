@@ -1,13 +1,15 @@
 .circ_verde{
+    display: inline-block;
     background-color: #28c76f !important;
-    width: 12px !important;
-    height: 12px !important;
+    width: 15px !important;
+    height: 15px !important;
     border-radius: 50% !important;
 }
 .circ_rojo{
+    display: inline-block;
     background-color: #ea5455 !important;
-    width: 12px !important;
-    height: 12px !important;
+    width: 15px !important;
+    height: 15px !important;
     border-radius: 50% !important;
 }
 .circ_amarillo{

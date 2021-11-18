@@ -65,22 +65,28 @@
           render: function (data, type, full, meta) {
             var $status_number = full["estado"];
             var $status = {
-              0: { title: "Desactivado", class: " circ_rojo" },
-              1: { title: "Activado", class: " circ_verde" },
-              2: { title: "Rejected", class: " circ_amarillo" },
+              0: { title: "Desactivado", class: "circ_rojo" },
+              1: { title: "Activado", class: "circ_verde" },
+              2: { title: "Rejected", class: "circ_amarillo" },
             };
             if (typeof $status[$status_number] === "undefined") {
               return data;
             }
             return (
               // Jorge tooltips
-              '<span type="button" class="btn badge' +
+              // '<span type="button" class="' +
+              // $status[$status_number].class +
+              // '" data-bs-toggle="tooltip" data-bs-placement="bottom" title="' +
+              // $status[$status_number].title +
+              // '">' +
+              // "</span>"
+
+              '<div data-popup="tooltip-custom" class="avatar pull-up my-0 ' +
               $status[$status_number].class +
               '" data-bs-toggle="tooltip" data-bs-placement="bottom" title="' +
               $status[$status_number].title +
-              '' +
               '">' +
-              "</span>"
+              "</div>"
             );
           },
          },
