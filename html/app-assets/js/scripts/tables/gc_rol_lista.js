@@ -68,7 +68,7 @@ $(function () {
           render: function (data, type, full, meta) {
             return (
               '<div class="d-inline-flex">' +
-              '<a href="gc_rol_editar.html" target="_self" class="item-edit">' +
+              '<a href="gc_colegio_editar.html" target="_self" class="item-edit">' +
               feather.icons["edit"].toSvg({ class: "font-small-4" }) +
               "</a>"
             );
@@ -84,8 +84,8 @@ $(function () {
         },
       },
       dom: '<"d-flex justify-content-between align-items-center mx-0 row"<"col-sm-12 col-md-6"l><"col-sm-12 col-md-6"f>>t<"d-flex justify-content-between mx-0 row"<"col-sm-12 col-md-6"i><"col-sm-12 col-md-6"p>>',
-      displayLength: 7,
-      lengthMenu: [7, 10, 25, 50, 75, 100],
+      displayLength: 8,
+      lengthMenu: [8, 10, 25, 50, 75, 100],
       responsive: {
         details: {
           display: $.fn.dataTable.Responsive.display.modal({

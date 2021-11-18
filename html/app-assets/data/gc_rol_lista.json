@@ -14,15 +14,23 @@
     },
     {
       "id": "4",
-      "rol": "Docente"
+      "rol": "Coordinador"
     },
     {
       "id": "5",
-      "rol": "Directivo"
+      "rol": "Docente"
     },
     {
       "id": "6",
+      "rol": "Directivo de colegio"
+    },
+    {
+      "id": "7",
       "rol": "Directivo o administrador de red de colegios"
+    },
+    {
+      "id": "8",
+      "rol": "Profesional educador"
     }
   ]
 }
