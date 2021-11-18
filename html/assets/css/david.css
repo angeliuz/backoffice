@@ -1,0 +1,18 @@
+.circ_verde{
+    background-color: #28c76f !important;
+    width: 12px !important;
+    height: 12px !important;
+    border-radius: 50% !important;
+}
+.circ_rojo{
+    background-color: #ea5455 !important;
+    width: 12px !important;
+    height: 12px !important;
+    border-radius: 50% !important;
+}
+.circ_amarillo{
+    background-color: #ff9f43 !important;
+}
+.circ_lila{
+    background-color: #7367f0 !important;
+}
