@@ -81,12 +81,13 @@
               // '">' +
               // "</span>"
 
+              '<div class="avatar-group">' +
               '<div data-popup="tooltip-custom" class="avatar pull-up my-0 ' +
               $status[$status_number].class +
               '" data-bs-toggle="tooltip" data-bs-placement="bottom" title="' +
               $status[$status_number].title +
               '">' +
-              "</div>"
+              "</div></div>"
             );
           },
          },
