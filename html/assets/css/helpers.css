@@ -2225,6 +2225,15 @@ font-family: 'Lobster', cursive; */
 }
 
 /* padding-bottom px */
+.pbp-5 {
+  padding-bottom: 5px;
+}
+.pbp-10 {
+  padding-bottom: 10px;
+}
+.pbp-15 {
+  padding-bottom: 15px;
+}
 .pbp-20 {
   padding-bottom: 20px;
 }

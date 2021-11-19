@@ -7,3 +7,14 @@
     background-color: #3faee2 !important;
     color: #fff !important;
 }
+
+.btn_mas{
+    border-color: #645E77 !important;
+    background-color: #645E77 !important;
+    color: #fff !important;
+    width: 30px!important;
+    height: 30px!important;
+    border-radius: 5px ;
+    padding: 0px !important;;
+}
+
