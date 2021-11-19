@@ -27,7 +27,7 @@ $(function () {
         { data: "id" },
         { data: "id" },
         { data: "grupo" },
-        { data: "colegios" },
+        { data: "nº_de_colegios" },
         { data: "" },
       ],
       columnDefs: [

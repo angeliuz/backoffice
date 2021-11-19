@@ -1,0 +1,25 @@
+{
+  "data": [
+    {
+      "id": "7",
+      "area": "Ciencias para la ciudadania",
+      "nivel": "3º y 4º medio",
+      "unidades": "4",
+      "creada": "Lucia Donoso"
+    },
+    {
+      "id": "199",
+      "area": "Matematica",
+      "nivel": "4º basico",
+      "unidades": "7",
+      "creada": "Patricia Lagos"
+    },
+    {
+      "id": "400",
+      "area": "Lenguaje",
+      "nivel": "1º medio",
+      "unidades": "5",
+      "creada": "Pedro Cerpa"
+    }
+  ]
+}

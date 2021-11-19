@@ -41,15 +41,13 @@
      });
  
      var dt_filter = dt_filter_table.DataTable({
-       ajax: assetPath + "data/gc_usuario_lista.json",
+       ajax: assetPath + "data/gc_unidades_lista.json",
        columns: [
         { data: "id" },
-        { data: "nombre" },
-        { data: "rut" },
-        { data: "correo" },
-        { data: "rol" },
-        { data: "colegio" },
-        { data: "estado" },
+        { data: "area" },
+        { data: "nivel" },
+        { data: "unidades" },
+        { data: "creada" },
         { data: "" },
        ],
        columnDefs: [
@@ -73,14 +71,6 @@
               return data;
             }
             return (
-              // Jorge tooltips
-              // '<span type="button" class="' +
-              // $status[$status_number].class +
-              // '" data-bs-toggle="tooltip" data-bs-placement="bottom" title="' +
-              // $status[$status_number].title +
-              // '">' +
-              // "</span>"
-
               '<div class="avatar-group">' +
               '<div data-popup="tooltip-custom" class="avatar pull-up my-0 ' +
               $status[$status_number].class +
@@ -103,20 +93,12 @@
               feather.icons["more-vertical"].toSvg({ class: "font-small-4" }) +
               "</a>" +
               '<div class="dropdown-menu dropdown-menu-end">' +
-              '<a href="gc_usuario_detalle.html" target="_self" class="dropdown-item">' +
-              feather.icons["file-text"].toSvg({
-                class: "me-50 font-small-4",
-              }) +
-              "Detalles</a>" +
               '<a href="javascript:;" class="dropdown-item delete-record">' +
               feather.icons["trash-2"].toSvg({ class: "me-50 font-small-4" }) +
-              "Enviar contraseña</a>" +
-              '<a href="javascript:;" class="dropdown-item delete-record">' +
-              feather.icons["trash-2"].toSvg({ class: "me-50 font-small-4" }) +
-              "Cambiar contraseña</a>" +
+              "Eliminar</a>" +
               "</div>" +
               "</div>" +
-              '<a href="gc_usuario_editar.html" target="_self" class="item-edit">' +
+              '<a href="gc_unidades_editar.html" target="_self" class="item-edit">' +
               feather.icons["edit"].toSvg({ class: "font-small-4" }) +
               "</a>"
             );
