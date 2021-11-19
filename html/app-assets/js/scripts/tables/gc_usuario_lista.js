@@ -114,9 +114,6 @@
               '<a href="javascript:;" class="dropdown-item delete-record">' +
               feather.icons["trash-2"].toSvg({ class: "me-50 font-small-4" }) +
               "Cambiar contraseña</a>" +
-              '<a href="javascript:;" class="dropdown-item delete-record">' +
-              feather.icons["trash-2"].toSvg({ class: "me-50 font-small-4" }) +
-              "Borrar</a>" +
               "</div>" +
               "</div>" +
               '<a href="gc_usuario_editar.html" target="_self" class="item-edit">' +
