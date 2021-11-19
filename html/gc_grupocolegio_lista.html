@@ -18,7 +18,7 @@
     <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/tables/datatable/dataTables.bootstrap5.min.css">
     <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/tables/datatable/responsive.bootstrap4.min.css">
     <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/pickers/flatpickr/flatpickr.min.css">
-    <!-- <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/forms/select/select2.min.css"> -->
+    <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/forms/select/select2.min.css">
     <!-- END: Vendor CSS-->
 
     <!-- BEGIN: Theme CSS-->
@@ -32,14 +32,12 @@
 
     <!-- BEGIN: Page CSS-->
     <link rel="stylesheet" type="text/css" href="app-assets/css/core/menu/menu-types/vertical-menu.css">
-    <link rel="stylesheet" type="text/css" href="app-assets/css/plugins/forms/pickers/form-flat-pickr.css">
     <!-- END: Page CSS-->
 
     <!-- BEGIN: Custom CSS-->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link rel="stylesheet" type="text/css" href="assets/css/helpers.css">
     <link rel="stylesheet" type="text/css" href="assets/css/custom_colors.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/david.css">
     <!-- END: Custom CSS-->
 
 </head>
@@ -124,16 +122,16 @@
                 <div class="content-header-left col-md-7 col-12 mb-2">
                     <div class="row breadcrumbs-top">
                         <div class="col-12">
-                            <h2 class="content-header-title float-start mb-0">Gestor de usuarios</h2>
+                            <h2 class="content-header-title float-start mb-0">Gestor de grupo colegios</h2>
                         </div>
                     </div>
                 </div>
                 <div class="content-header-right text-md-end col-md-5 col-12 d-md-block d-none">
                     <div class="mb-1 breadcrumb-right">
-                        <a href="gc_usuario_agregar.html" target="_self">
+                        <a href="gc_grupocolegio_agregar.html" target="_self">
                             <button type="button" class="btn btn-primary">
                                 <i data-feather='file-plus'></i>
-                                <span>Agregar usuario</span>
+                                <span>Agregar grupo</span>
                             </button>
                         </a>
                     </div>
@@ -150,38 +148,20 @@
                                     <div class="col-12">
                                         <div class="card">
                                             <div class="card-header border-bottom">
-                                                <h4 class="card-title">Lista de usuarios</h4>
+                                                <h4 class="card-title">Lista de grupos</h4>
                                             </div>
                                             <div class="card-datatable">
-
-                                                <table class="dt-column-search table table-responsive">
+                                                <table class="dt-multilingual table">
                                                     <thead>
                                                         <tr>
-                                                            <th style="width: 50px;">id</th>
-                                                            <th style="width: 20%;">nombre</th>
-                                                            <th>rut</th>
-                                                            <th>correo</th>
-                                                            <th>rol</th>
-                                                            <th>colegio</th>
-                                                            <th>estado</th>
+                                                            <th>id</th>
+                                                            <th style="width: 40px;">id</th>
+                                                            <th>grupo</th>
+                                                            <th>colegios</th>
                                                             <th style="width: 40px;">acción</th>
                                                         </tr>
                                                     </thead>
-                                                    <!-- <tfoot>
-                                                        <tr>
-                                                            <th style="width: 40px;">id</th>
-                                                            <th>nombre</th>
-                                                            <th>rut</th>
-                                                            <th>correo</th>
-                                                            <th>rol</th>
-                                                            <th>cargo_interno</th>
-                                                            <th>colegio</th>
-                                                            <th>estado</th>
-                                                            <th style="width: 40px;">acción</th>
-                                                        </tr>
-                                                    </tfoot> -->
                                                 </table>
-
                                             </div>
                                         </div>
                                     </div>
@@ -219,7 +199,15 @@
     <script src="app-assets/vendors/js/tables/datatable/jquery.dataTables.min.js"></script>
     <script src="app-assets/vendors/js/tables/datatable/dataTables.bootstrap5.min.js"></script>
     <script src="app-assets/vendors/js/tables/datatable/dataTables.responsive.min.js"></script>
-    <script src="app-assets/vendors/js/tables/datatable/responsive.bootstrap4.js"></script>
+    <script src="app-assets/vendors/js/tables/datatable/responsive.bootstrap4.min.js"></script>
+    <script src="app-assets/vendors/js/tables/datatable/datatables.checkboxes.min.js"></script>
+    <script src="app-assets/vendors/js/tables/datatable/datatables.buttons.min.js"></script>
+    <script src="app-assets/vendors/js/tables/datatable/jszip.min.js"></script>
+    <script src="app-assets/vendors/js/tables/datatable/pdfmake.min.js"></script>
+    <script src="app-assets/vendors/js/tables/datatable/vfs_fonts.js"></script>
+    <script src="app-assets/vendors/js/tables/datatable/buttons.html5.min.js"></script>
+    <script src="app-assets/vendors/js/tables/datatable/buttons.print.min.js"></script>
+    <script src="app-assets/vendors/js/tables/datatable/dataTables.rowGroup.min.js"></script>
     <script src="app-assets/vendors/js/pickers/flatpickr/flatpickr.min.js"></script>
     <!-- END: Page Vendor JS-->
 
@@ -229,7 +217,7 @@
     <!-- END: Theme JS-->
 
     <!-- BEGIN: Page JS-->
-    <script src="app-assets/js/scripts/tables/gc_usuario_lista.js"></script>
+    <script src="app-assets/js/scripts/tables/gc_grupocolegio_lista.js"></script>
     <!-- END: Page JS-->
     <script>
         $(window).on('load', function() {

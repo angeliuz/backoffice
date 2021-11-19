@@ -1,0 +1,19 @@
+{
+  "data": [
+    {
+      "id": "1",
+      "grupo": "Colegios Pumahue",
+      "colegios": "Colegio Pumahue Valparaíso, Colegio Pumahue Chicureo, Colegio Pumahue Chicauma, Colegio Pumahue Lampa, Colegio Pumahue Huechuraba"
+    },
+    {
+      "id": "2",
+      "grupo": "Colegios Manquequra",
+      "colegios": "Colegio Manquecura Puente Alto, Colegio Manquecura Ciudad de los Valles, Colegio Manquecura Valle lo Campino"
+    },
+    {
+      "id": "3",
+      "grupo": "Boston college",
+      "colegios": "Boston College Indepedencia, Boston College La Florida, Boston CollegeHuechuraba"
+    }
+  ]
+}
