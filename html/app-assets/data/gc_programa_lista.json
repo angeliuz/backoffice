@@ -1,0 +1,31 @@
+{
+  "data": [
+    {
+      "id": "7",
+      "area": "Ciencias para la ciudadania",
+      "nivel": "3º y 4º medio",
+      "oa": "1",
+      "oaa": "1",
+      "oah": "0",
+      "oat": "1"
+    },
+    {
+      "id": "99",
+      "area": "Matemática",
+      "nivel": "2º básico",
+      "oa": "1",
+      "oaa": "0",
+      "oah": "0",
+      "oat": "1"
+    },
+    {
+      "id": "1234",
+      "area": "Lenguaje",
+      "nivel": "7º básico",
+      "oa": "1",
+      "oaa": "0",
+      "oah": "1",
+      "oat": "0"
+    }
+  ]
+}
