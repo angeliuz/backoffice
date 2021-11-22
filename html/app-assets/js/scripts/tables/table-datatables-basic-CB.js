@@ -20,7 +20,7 @@ $(function () {
   // --------------------------------------------------------------------
 
   if (dt_basic_table.length) {
-    dt_basic_table.DataTable({
+    dt_basic_table.dataTable({
       processing: true,
       dom: '<"d-flex justify-content-between align-items-center mx-0 row"<"col-sm-12 col-md-6"l><"col-sm-12 col-md-6"f>>t<"d-flex justify-content-between mx-0 row"<"col-sm-12 col-md-6"i><"col-sm-12 col-md-6"p>>',
       ajax: assetPath + "data/table-datatable-CB.json",
@@ -39,15 +39,16 @@ $(function () {
           targets: 0,
           data: "download_link",
           render: function (data, type, row, meta) {
-            if (row.priorizaciones == "1") {
-              html = '<ion-icon name="star" class="text-warning"></ion-icon>';
-            } else if (row.priorizaciones == "2") {
-              html = '<ion-icon name="star-outline" class="text-warning"></ion-icon>';
-            } else {
-              html = "";
+            for (i in row.priorizaciones) {
+              if (row.priorizaciones[i]["id"] == "1") {
+                html = '<ion-icon name="star" class="text-warning"></ion-icon>';
+              } else if (row.priorizaciones[i]["id"] == "2") {
+                html = '<ion-icon name="star-outline" class="text-warning"></ion-icon>';
+              } else {
+                html = "";
+              }
             }
-
-            html = '<div class="d-flex align-items-center">' + '<div class="text-primary fw-500 mep-5">' + data + "</div></div>";
+            html = '<div class="d-flex align-items-center">' + '<div class="text-primary fw-500 mep-5">' + data + "</div>" + html + "</div>";
             return html;
           },
         },
@@ -57,7 +58,37 @@ $(function () {
           render: function (data, type, row, meta) {
             checked = "";
 
-            html = '<div class="form-check form-check-inline mt-0 mb-1">' + '<input class="form-check-input check-oa" type="checkbox" id="inlineCheckboxOa" value="" ' + 'data-id="" data-nombre="" data-priorizacion="" data-descripcion="">' + "</div>";
+            for (aoa in obj_oa) {
+              if (aoa == data) {
+                checked = "checked";
+              }
+            }
+
+            html =
+              '<div class="form-check form-check-inline mt-0 mb-1">' +
+              "<input " +
+              checked +
+              " " +
+              'class="form-check-input check-oa" ' +
+              'type="checkbox" ' +
+              'id="inlineCheckboxOa" ' +
+              'value="' +
+              data +
+              '" ' +
+              'data-id="' +
+              row.id +
+              '" ' +
+              'data-nombre="' +
+              row.nombre +
+              '" ' +
+              'data-priorizacion="' +
+              row.priorizaciones[0].id +
+              '" ' +
+              'data-descripcion="' +
+              row.descripcion +
+              '"' +
+              ">" +
+              "</div>";
             return html;
           },
         },

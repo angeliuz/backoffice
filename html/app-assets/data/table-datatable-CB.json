@@ -1,16 +1,520 @@
 {
   "data": [
     {
-      "id": 1,
-      "nombre": "CN02 OA 1",
-      "priorizacion": 1,
-      "descripcion": "Observar, describir y clasificar los vertebrados en mamíferos, aves, reptiles, anfibios y peces, a partir de características como cubierta corporal, presencia de mamas y estructuras para la respiración, entre otras."
+      "id": 736,
+      "nombre": "CN01OA01",
+      "descripcion": "Reconocer y observar, por medio de la exploraci\u00f3n, que los seres vivos crecen, responden a est\u00edmulos del medio, se reproducen y necesitan agua, alimento y aire para vivir, compar\u00e1ndolos con las cosas no vivas.",
+      "decreto_id": 2,
+      "eje_id": 15,
+      "usuario_id": 10,
+      "fecha_creacion": "2021-10-15T15:26:44",
+      "modificado_id": 10,
+      "fecha_modificacion": "2021-11-12T18:20:45",
+      "priorizaciones": [
+        {
+          "id": 1,
+          "nombre": "Nivel 1",
+          "_joinData": {
+            "oa_id": 736,
+            "priorizacion_id": 1
+          }
+        }
+      ],
+      "_matchingData": {
+        "Niveles": {
+          "id": 1,
+          "nombre": "1\u00ba B\u00e1sico",
+          "mostrar": 1,
+          "carpeta_guia": "1b"
+        },
+        "Areas": {
+          "id": 1,
+          "nombre": "Ciencias Naturales",
+          "mostrar": 1,
+          "carpeta_guia": "nat"
+        },
+        "OaNiveles": {
+          "oa_id": 736,
+          "nivel_id": 1
+        },
+        "OaAreas": {
+          "oa_id": 736,
+          "area_id": 1
+        }
+      }
     },
     {
-      "id": 2,
-      "nombre": "CN02 OA 3",
-      "priorizacion": 2,
-      "descripcion": "Observar, describir y clasificar los vertebrados en mamíferos, aves, reptiles, anfibios y peces, a partir de características como cubierta corporal, presencia de mamas y estructuras para la respiración, entre otras."
+      "id": 737,
+      "nombre": "CN01OA02",
+      "descripcion": "Observar y comparar animales de acuerdo a caracter\u00edsticas como tama\u00f1o, cubierta corporal, estructuras de desplazamiento y h\u00e1bitat, entre otras.",
+      "decreto_id": 2,
+      "eje_id": 15,
+      "usuario_id": 10,
+      "fecha_creacion": "2021-10-15T15:26:44",
+      "modificado_id": 10,
+      "fecha_modificacion": "2021-11-12T18:20:45",
+      "priorizaciones": [
+        {
+          "id": 3,
+          "nombre": "Nivel 3 (Sin prioridad)",
+          "_joinData": {
+            "oa_id": 737,
+            "priorizacion_id": 3
+          }
+        }
+      ],
+      "_matchingData": {
+        "Niveles": {
+          "id": 1,
+          "nombre": "1\u00ba B\u00e1sico",
+          "mostrar": 1,
+          "carpeta_guia": "1b"
+        },
+        "Areas": {
+          "id": 1,
+          "nombre": "Ciencias Naturales",
+          "mostrar": 1,
+          "carpeta_guia": "nat"
+        },
+        "OaNiveles": {
+          "oa_id": 737,
+          "nivel_id": 1
+        },
+        "OaAreas": {
+          "oa_id": 737,
+          "area_id": 1
+        }
+      }
+    },
+    {
+      "id": 738,
+      "nombre": "CN01OA03",
+      "descripcion": "Observar e identificar, por medio de la exploraci\u00f3n, las estructuras principales de las plantas: hojas, flores, tallos y ra\u00edces.",
+      "decreto_id": 2,
+      "eje_id": 15,
+      "usuario_id": 10,
+      "fecha_creacion": "2021-10-15T15:26:44",
+      "modificado_id": 10,
+      "fecha_modificacion": "2021-11-12T18:20:45",
+      "priorizaciones": [
+        {
+          "id": 3,
+          "nombre": "Nivel 3 (Sin prioridad)",
+          "_joinData": {
+            "oa_id": 738,
+            "priorizacion_id": 3
+          }
+        }
+      ],
+      "_matchingData": {
+        "Niveles": {
+          "id": 1,
+          "nombre": "1\u00ba B\u00e1sico",
+          "mostrar": 1,
+          "carpeta_guia": "1b"
+        },
+        "Areas": {
+          "id": 1,
+          "nombre": "Ciencias Naturales",
+          "mostrar": 1,
+          "carpeta_guia": "nat"
+        },
+        "OaNiveles": {
+          "oa_id": 738,
+          "nivel_id": 1
+        },
+        "OaAreas": {
+          "oa_id": 738,
+          "area_id": 1
+        }
+      }
+    },
+    {
+      "id": 739,
+      "nombre": "CN01OA04",
+      "descripcion": "Observar y clasificar semillas, frutos, flores y tallos a partir de criterios como tama\u00f1o, forma, textura y color, entre otros.",
+      "decreto_id": 2,
+      "eje_id": 15,
+      "usuario_id": 10,
+      "fecha_creacion": "2021-10-15T15:26:44",
+      "modificado_id": 10,
+      "fecha_modificacion": "2021-11-12T18:20:45",
+      "priorizaciones": [
+        {
+          "id": 3,
+          "nombre": "Nivel 3 (Sin prioridad)",
+          "_joinData": {
+            "oa_id": 739,
+            "priorizacion_id": 3
+          }
+        }
+      ],
+      "_matchingData": {
+        "Niveles": {
+          "id": 1,
+          "nombre": "1\u00ba B\u00e1sico",
+          "mostrar": 1,
+          "carpeta_guia": "1b"
+        },
+        "Areas": {
+          "id": 1,
+          "nombre": "Ciencias Naturales",
+          "mostrar": 1,
+          "carpeta_guia": "nat"
+        },
+        "OaNiveles": {
+          "oa_id": 739,
+          "nivel_id": 1
+        },
+        "OaAreas": {
+          "oa_id": 739,
+          "area_id": 1
+        }
+      }
+    },
+    {
+      "id": 740,
+      "nombre": "CN01OA05",
+      "descripcion": "Reconocer y comparar diversas plantas y animales de nuestro pa\u00eds, considerando las caracter\u00edsticas observables, y proponiendo medidas para su cuidado.",
+      "decreto_id": 2,
+      "eje_id": 15,
+      "usuario_id": 10,
+      "fecha_creacion": "2021-10-15T15:26:44",
+      "modificado_id": 10,
+      "fecha_modificacion": "2021-11-12T18:20:45",
+      "priorizaciones": [
+        {
+          "id": 2,
+          "nombre": "Nivel 2",
+          "_joinData": {
+            "oa_id": 740,
+            "priorizacion_id": 2
+          }
+        }
+      ],
+      "_matchingData": {
+        "Niveles": {
+          "id": 1,
+          "nombre": "1\u00ba B\u00e1sico",
+          "mostrar": 1,
+          "carpeta_guia": "1b"
+        },
+        "Areas": {
+          "id": 1,
+          "nombre": "Ciencias Naturales",
+          "mostrar": 1,
+          "carpeta_guia": "nat"
+        },
+        "OaNiveles": {
+          "oa_id": 740,
+          "nivel_id": 1
+        },
+        "OaAreas": {
+          "oa_id": 740,
+          "area_id": 1
+        }
+      }
+    },
+    {
+      "id": 741,
+      "nombre": "CN01OA06",
+      "descripcion": "Identificar y describir la ubicaci\u00f3n y la funci\u00f3n de los sentidos proponiendo medidas para protegerlos y para prevenir situaciones de riesgo.",
+      "decreto_id": 2,
+      "eje_id": 15,
+      "usuario_id": 10,
+      "fecha_creacion": "2021-10-15T15:26:44",
+      "modificado_id": 10,
+      "fecha_modificacion": "2021-11-12T18:20:45",
+      "priorizaciones": [
+        {
+          "id": 1,
+          "nombre": "Nivel 1",
+          "_joinData": {
+            "oa_id": 741,
+            "priorizacion_id": 1
+          }
+        }
+      ],
+      "_matchingData": {
+        "Niveles": {
+          "id": 1,
+          "nombre": "1\u00ba B\u00e1sico",
+          "mostrar": 1,
+          "carpeta_guia": "1b"
+        },
+        "Areas": {
+          "id": 1,
+          "nombre": "Ciencias Naturales",
+          "mostrar": 1,
+          "carpeta_guia": "nat"
+        },
+        "OaNiveles": {
+          "oa_id": 741,
+          "nivel_id": 1
+        },
+        "OaAreas": {
+          "oa_id": 741,
+          "area_id": 1
+        }
+      }
+    },
+    {
+      "id": 742,
+      "nombre": "CN01OA07",
+      "descripcion": "Describir, dar ejemplos y practicar h\u00e1bitos de vida saludable para mantener el cuerpo sano y prevenir enfermedades (actividad f\u00edsica, aseo del cuerpo, lavado de alimentos y alimentaci\u00f3n saludable, entre otros).",
+      "decreto_id": 2,
+      "eje_id": 15,
+      "usuario_id": 10,
+      "fecha_creacion": "2021-10-15T15:26:44",
+      "modificado_id": 10,
+      "fecha_modificacion": "2021-11-12T18:20:45",
+      "priorizaciones": [
+        {
+          "id": 2,
+          "nombre": "Nivel 2",
+          "_joinData": {
+            "oa_id": 742,
+            "priorizacion_id": 2
+          }
+        }
+      ],
+      "_matchingData": {
+        "Niveles": {
+          "id": 1,
+          "nombre": "1\u00ba B\u00e1sico",
+          "mostrar": 1,
+          "carpeta_guia": "1b"
+        },
+        "Areas": {
+          "id": 1,
+          "nombre": "Ciencias Naturales",
+          "mostrar": 1,
+          "carpeta_guia": "nat"
+        },
+        "OaNiveles": {
+          "oa_id": 742,
+          "nivel_id": 1
+        },
+        "OaAreas": {
+          "oa_id": 742,
+          "area_id": 1
+        }
+      }
+    },
+    {
+      "id": 743,
+      "nombre": "CN01OA08",
+      "descripcion": "Explorar y describir los diferentes tipos de materiales en diversos objetos, clasific\u00e1ndolos seg\u00fan sus propiedades (goma-flexible, pl\u00e1stico-impermeable) e identificando su uso en la vida cotidiana.",
+      "decreto_id": 2,
+      "eje_id": 16,
+      "usuario_id": 10,
+      "fecha_creacion": "2021-10-15T15:26:44",
+      "modificado_id": 10,
+      "fecha_modificacion": "2021-11-12T18:20:45",
+      "priorizaciones": [
+        {
+          "id": 1,
+          "nombre": "Nivel 1",
+          "_joinData": {
+            "oa_id": 743,
+            "priorizacion_id": 1
+          }
+        }
+      ],
+      "_matchingData": {
+        "Niveles": {
+          "id": 1,
+          "nombre": "1\u00ba B\u00e1sico",
+          "mostrar": 1,
+          "carpeta_guia": "1b"
+        },
+        "Areas": {
+          "id": 1,
+          "nombre": "Ciencias Naturales",
+          "mostrar": 1,
+          "carpeta_guia": "nat"
+        },
+        "OaNiveles": {
+          "oa_id": 743,
+          "nivel_id": 1
+        },
+        "OaAreas": {
+          "oa_id": 743,
+          "area_id": 1
+        }
+      }
+    },
+    {
+      "id": 744,
+      "nombre": "CN01OA09",
+      "descripcion": "Observar y describir los cambios que se producen en los materiales al aplicarles fuerza, luz, calor y agua.",
+      "decreto_id": 2,
+      "eje_id": 16,
+      "usuario_id": 10,
+      "fecha_creacion": "2021-10-15T15:26:44",
+      "modificado_id": 10,
+      "fecha_modificacion": "2021-11-12T18:20:45",
+      "priorizaciones": [
+        {
+          "id": 3,
+          "nombre": "Nivel 3 (Sin prioridad)",
+          "_joinData": {
+            "oa_id": 744,
+            "priorizacion_id": 3
+          }
+        }
+      ],
+      "_matchingData": {
+        "Niveles": {
+          "id": 1,
+          "nombre": "1\u00ba B\u00e1sico",
+          "mostrar": 1,
+          "carpeta_guia": "1b"
+        },
+        "Areas": {
+          "id": 1,
+          "nombre": "Ciencias Naturales",
+          "mostrar": 1,
+          "carpeta_guia": "nat"
+        },
+        "OaNiveles": {
+          "oa_id": 744,
+          "nivel_id": 1
+        },
+        "OaAreas": {
+          "oa_id": 744,
+          "area_id": 1
+        }
+      }
+    },
+    {
+      "id": 745,
+      "nombre": "CN01OA10",
+      "descripcion": "Dise\u00f1ar instrumentos tecnol\u00f3gicos simples, considerando diversos materiales y sus propiedades para resolver problemas cotidianos.",
+      "decreto_id": 2,
+      "eje_id": 16,
+      "usuario_id": 10,
+      "fecha_creacion": "2021-10-15T15:26:44",
+      "modificado_id": 10,
+      "fecha_modificacion": "2021-11-12T18:20:45",
+      "priorizaciones": [
+        {
+          "id": 3,
+          "nombre": "Nivel 3 (Sin prioridad)",
+          "_joinData": {
+            "oa_id": 745,
+            "priorizacion_id": 3
+          }
+        }
+      ],
+      "_matchingData": {
+        "Niveles": {
+          "id": 1,
+          "nombre": "1\u00ba B\u00e1sico",
+          "mostrar": 1,
+          "carpeta_guia": "1b"
+        },
+        "Areas": {
+          "id": 1,
+          "nombre": "Ciencias Naturales",
+          "mostrar": 1,
+          "carpeta_guia": "nat"
+        },
+        "OaNiveles": {
+          "oa_id": 745,
+          "nivel_id": 1
+        },
+        "OaAreas": {
+          "oa_id": 745,
+          "area_id": 1
+        }
+      }
+    },
+    {
+      "id": 746,
+      "nombre": "CN01OA11",
+      "descripcion": "Describir y registrar el ciclo diario y las diferencias entre el d\u00eda y la noche, a partir de la observaci\u00f3n del Sol, la Luna, las estrellas y la luminosidad del cielo, entre otras, y sus efectos en los seres vivos y el ambiente.",
+      "decreto_id": 2,
+      "eje_id": 17,
+      "usuario_id": 10,
+      "fecha_creacion": "2021-10-15T15:26:44",
+      "modificado_id": 10,
+      "fecha_modificacion": "2021-11-12T18:20:45",
+      "priorizaciones": [
+        {
+          "id": 1,
+          "nombre": "Nivel 1",
+          "_joinData": {
+            "oa_id": 746,
+            "priorizacion_id": 1
+          }
+        }
+      ],
+      "_matchingData": {
+        "Niveles": {
+          "id": 1,
+          "nombre": "1\u00ba B\u00e1sico",
+          "mostrar": 1,
+          "carpeta_guia": "1b"
+        },
+        "Areas": {
+          "id": 1,
+          "nombre": "Ciencias Naturales",
+          "mostrar": 1,
+          "carpeta_guia": "nat"
+        },
+        "OaNiveles": {
+          "oa_id": 746,
+          "nivel_id": 1
+        },
+        "OaAreas": {
+          "oa_id": 746,
+          "area_id": 1
+        }
+      }
+    },
+    {
+      "id": 747,
+      "nombre": "CN01OA12",
+      "descripcion": "Describir y comunicar los cambios del ciclo de las estaciones y sus efectos en los seres vivos y el ambiente.",
+      "decreto_id": 2,
+      "eje_id": 17,
+      "usuario_id": 10,
+      "fecha_creacion": "2021-10-15T15:26:44",
+      "modificado_id": 10,
+      "fecha_modificacion": "2021-11-12T18:20:45",
+      "priorizaciones": [
+        {
+          "id": 3,
+          "nombre": "Nivel 3 (Sin prioridad)",
+          "_joinData": {
+            "oa_id": 747,
+            "priorizacion_id": 3
+          }
+        }
+      ],
+      "_matchingData": {
+        "Niveles": {
+          "id": 1,
+          "nombre": "1\u00ba B\u00e1sico",
+          "mostrar": 1,
+          "carpeta_guia": "1b"
+        },
+        "Areas": {
+          "id": 1,
+          "nombre": "Ciencias Naturales",
+          "mostrar": 1,
+          "carpeta_guia": "nat"
+        },
+        "OaNiveles": {
+          "oa_id": 747,
+          "nivel_id": 1
+        },
+        "OaAreas": {
+          "oa_id": 747,
+          "area_id": 1
+        }
+      }
     }
   ]
 }
