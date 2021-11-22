@@ -22,6 +22,12 @@
         <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/extensions/toastr.min.css">
         <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/forms/select/select2.min.css">
         <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/file-uploaders/dropzone.min.css">
+        
+        <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/tables/datatable/dataTables.bootstrap5.min.css">
+        <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/tables/datatable/responsive.bootstrap4.min.css">
+        <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/tables/datatable/buttons.bootstrap5.min.css">
+        <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/tables/datatable/rowGroup.bootstrap4.min.css">
+        <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/pickers/flatpickr/flatpickr.min.css">
         <!-- END: Vendor CSS-->
 
         <!-- BEGIN: Theme CSS-->
@@ -393,7 +399,97 @@
                                 <div class="d-flex justify-content-between bgc-light ptp-5 pbp-5 ">                               
                                    <div class="psp-20 ptp-5 fw-700"> OA</div>                                      
                                    <div class="d-flex justify-content-end pep-10">
-                                    <button type="submit" class="btn btn_mas waves-effect waves-float waves-light" name="submit" value="Submit">+</button>
+                                   <!-- <button type="submit" class="btn btn_mas waves-effect waves-float waves-light" name="submit" value="Submit">+</button>-->
+                                    <div class="scrolling-inside-modal">
+                                        <!-- Button trigger modal -->
+                                        <button type="button" class="btn btn_mas waves-effect waves-float waves-light" data-bs-toggle="modal" data-bs-target="#exampleModalScrollable">
+                                            +
+                                        </button>
+
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="exampleModalScrollable" tabindex="-1" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-scrollable">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalScrollableTitle">Modal title</h5>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <p>
+                                                            Biscuit powder jelly beans. Lollipop candy canes croissant icing chocolate cake. Cake fruitcake
+                                                            powder pudding pastry.
+                                                        </p>
+                                                        <p>
+                                                            Tootsie roll oat cake I love bear claw I love caramels caramels halvah chocolate bar. Cotton
+                                                            candy gummi bears pudding pie apple pie cookie. Cheesecake jujubes lemon drops danish dessert I
+                                                            love caramels powder.
+                                                        </p>
+                                                        <p>
+                                                            Chocolate cake icing tiramisu liquorice toffee donut sweet roll cake. Cupcake dessert icing
+                                                            dragée dessert. Liquorice jujubes cake tart pie donut. Cotton candy candy canes lollipop
+                                                            liquorice chocolate marzipan muffin pie liquorice.
+                                                        </p>
+                                                        <p>
+                                                            Powder cookie jelly beans sugar plum ice cream. Candy canes I love powder sugar plum tiramisu.
+                                                            Liquorice pudding chocolate cake cupcake topping biscuit. Lemon drops apple pie sesame snaps
+                                                            tootsie roll carrot cake soufflé halvah. Biscuit powder jelly beans. Lollipop candy canes
+                                                            croissant icing chocolate cake. Cake fruitcake powder pudding pastry.
+                                                        </p>
+                                                        <p>
+                                                            Tootsie roll oat cake I love bear claw I love caramels caramels halvah chocolate bar. Cotton
+                                                            candy gummi bears pudding pie apple pie cookie. Cheesecake jujubes lemon drops danish dessert I
+                                                            love caramels powder.
+                                                        </p>
+                                                        <p>
+                                                            Chocolate cake icing tiramisu liquorice toffee donut sweet roll cake. Cupcake dessert icing
+                                                            dragée dessert. Liquorice jujubes cake tart pie donut. Cotton candy candy canes lollipop
+                                                            liquorice chocolate marzipan muffin pie liquorice.
+                                                        </p>
+                                                        <p>
+                                                            Powder cookie jelly beans sugar plum ice cream. Candy canes I love powder sugar plum tiramisu.
+                                                            Liquorice pudding chocolate cake cupcake topping biscuit. Lemon drops apple pie sesame snaps
+                                                            tootsie roll carrot cake soufflé halvah. Biscuit powder jelly beans. Lollipop candy canes
+                                                            croissant icing chocolate cake. Cake fruitcake powder pudding pastry.
+                                                        </p>
+                                                        <p>
+                                                            Tootsie roll oat cake I love bear claw I love caramels caramels halvah chocolate bar. Cotton
+                                                            candy gummi bears pudding pie apple pie cookie. Cheesecake jujubes lemon drops danish dessert I
+                                                            love caramels powder.
+                                                        </p>
+                                                        <p>
+                                                            Chocolate cake icing tiramisu liquorice toffee donut sweet roll cake. Cupcake dessert icing
+                                                            dragée dessert. Liquorice jujubes cake tart pie donut. Cotton candy candy canes lollipop
+                                                            liquorice chocolate marzipan muffin pie liquorice.
+                                                        </p>
+                                                        <p>
+                                                            Powder cookie jelly beans sugar plum ice cream. Candy canes I love powder sugar plum tiramisu.
+                                                            Liquorice pudding chocolate cake cupcake topping biscuit. Lemon drops apple pie sesame snaps
+                                                            tootsie roll carrot cake soufflé halvah. Biscuit powder jelly beans. Lollipop candy canes
+                                                            croissant icing chocolate cake. Cake fruitcake powder pudding pastry.
+                                                        </p>
+                                                        <p>
+                                                            Tootsie roll oat cake I love bear claw I love caramels caramels halvah chocolate bar. Cotton
+                                                            candy gummi bears pudding pie apple pie cookie. Cheesecake jujubes lemon drops danish dessert I
+                                                            love caramels powder.
+                                                        </p>
+                                                        <p>
+                                                            Chocolate cake icing tiramisu liquorice toffee donut sweet roll cake. Cupcake dessert icing
+                                                            dragée dessert. Liquorice jujubes cake tart pie donut. Cotton candy candy canes lollipop
+                                                            liquorice chocolate marzipan muffin pie liquorice.
+                                                        </p>
+                                                        <p>
+                                                            Powder cookie jelly beans sugar plum ice cream. Candy canes I love powder sugar plum tiramisu.
+                                                            Liquorice pudding chocolate cake cupcake topping biscuit. Lemon drops apple pie sesame snaps
+                                                            tootsie roll carrot cake soufflé halvah.
+                                                        </p>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Accept</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                     </div>
                                 </div>
                                 <div class="col-xl-12 cb-contenedor_vacio">
@@ -403,7 +499,60 @@
                                 <div class="d-flex justify-content-between bgc-light ptp-5 pbp-5 ">                               
                                    <div class="psp-20 ptp-5 fw-700"> OAT</div>                                      
                                    <div class="d-flex justify-content-end pep-10">
-                                    <button type="submit" class="btn btn_mas waves-effect waves-float waves-light" name="submit" value="Submit">+</button>
+                                    <div class="scrolling-inside-modal">
+                                        <!-- Button trigger modal -->
+                                        <button type="button" class="btn btn_mas waves-effect waves-float waves-light" data-bs-toggle="modal" data-bs-target="#modaloat">
+                                            +
+                                        </button>
+
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="#modaloat" tabindex="-1" aria-labelledby="#modaloatTitle" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-scrollable">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="#modaloatTitle">Modal title</h5>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <div class="row">
+                                                            <div class="col-12">
+                                                                <p>Read full documnetation <a href="https://datatables.net/" target="_blank">here</a></p>
+                                                            </div>
+                                                        </div>
+                                                        <!-- Basic table -->
+                                                     <!-- <section id="basic-datatable">
+                                                           <div class="row">
+                                                                <div class="col-12">
+                                                                    <div class="card">
+                                                                        <table class="datatables-basic table">
+                                                                            <thead>
+                                                                                <tr>
+                                                                                    <th></th>
+                                                                                    <th></th>
+                                                                                    <th>id</th>
+                                                                                    <th>Name</th>
+                                                                                    <th>Email</th>
+                                                                                    <th>Date</th>
+                                                                                    <th>Salary</th>
+                                                                                    <th>Status</th>
+                                                                                    <th>Action</th>
+                                                                                </tr>
+                                                                            </thead>
+                                                                        </table>
+                                                                    </div>
+                                                                </div>
+                                                            </div> 
+                                                        </section>-->
+                                                            <!-- Basic table -->
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Accept</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
                                     </div>
                                 </div>
                                 <div class="col-xl-12 cb-contenedor_vacio">
@@ -595,6 +744,22 @@
         <script src="app-assets/vendors/js/pickers/flatpickr/flatpickr.min.js"></script>
         <script src="app-assets/vendors/js/file-uploaders/dropzone.min.js"></script>
         <!-- BEGIN: Page Vendor JS-->
+        <!-- BEGIN: Page Vendor JS-->
+    <script src="app-assets/vendors/js/tables/datatable/jquery.dataTables.min.js"></script>
+    <script src="app-assets/vendors/js/tables/datatable/dataTables.bootstrap5.min.js"></script>
+    <script src="app-assets/vendors/js/tables/datatable/dataTables.responsive.min.js"></script>
+    <script src="app-assets/vendors/js/tables/datatable/responsive.bootstrap4.min.js"></script>
+    <script src="app-assets/vendors/js/tables/datatable/datatables.checkboxes.min.js"></script>
+    <script src="app-assets/vendors/js/tables/datatable/datatables.buttons.min.js"></script>
+    <script src="app-assets/vendors/js/tables/datatable/jszip.min.js"></script>
+    <script src="app-assets/vendors/js/tables/datatable/pdfmake.min.js"></script>
+    <script src="app-assets/vendors/js/tables/datatable/vfs_fonts.js"></script>
+    <script src="app-assets/vendors/js/tables/datatable/buttons.html5.min.js"></script>
+    <script src="app-assets/vendors/js/tables/datatable/buttons.print.min.js"></script>
+    <script src="app-assets/vendors/js/tables/datatable/dataTables.rowGroup.min.js"></script>
+    <script src="app-assets/vendors/js/pickers/flatpickr/flatpickr.min.js"></script>
+    <!-- END: Page Vendor JS-->
+
         <!-- <script src="app-assets/vendors/js/charts/apexcharts.min.js"></script>
             <script src="app-assets/vendors/js/extensions/toastr.min.js"></script> -->
         <!-- END: Page Vendor JS-->
@@ -610,6 +775,9 @@
         <!-- BEGIN: Page JS-->
         <script src="app-assets/js/scripts/forms/form-validation.js"></script>
         <script src="app-assets/js/scripts/forms/form-file-uploader.js"></script>
+            <!-- BEGIN: Page JS-->
+    <script src="app-assets/js/scripts/tables/table-datatables-basic.js"></script>
+    <!-- END: Page JS-->
         <!-- END: Page JS-->
 
             <script>
