@@ -346,130 +346,79 @@
     <div
         class="content-body">
         <div>
-            <h4 class="card-title">Ciencias naturales 2° básico</h4>
+            <h4 class="card-title">PROGRAMA</h4>
             </div> 
-            <div class="content-body">
-                <section id="input-group-basic">
-                    <div class="row">
-                        <!-- Unidad 1 -->
-                        <div class="col-md-4">
-                            <div class="card">
-                                <div class="card-header">
-                                    <h4 class="card-title">Unidad 1</h4>
+         <div class="col-12">
+            <div class="card card-revenue-budget">
+                <div class="row mx-0">
+                 <div class="col-12 revenue-report-wrapper">
+                   <div>
+                    <h4 class="card-title">Editar programa por área y nivel</h4>
+                    </div>        
+                    <form id="jquery-val-form" method="post">                                  
+                    <div class="row">                                        
+                            <div class="col-xl-6 col-sm-6">
+                                <div class="mb-1">
+                                    <label class="form-label" for="area">ÁREA</label>
+                                    <select class="form-select select2" data-language="es" id="area" name="area">
+                                            <option value="">Seleciona una opción</option>
+                                            <option value="Providencia">Lenguaje</option>
+                                            <option value="Providencia">Matemática</option>
+                                        </select>
                                 </div>
-                                <div class="card-body">
-                                    <div class="col-xl-12 col-sm-12">
-                                        <div class="mb-1">
-                                            <input type="text" id="nombre" class="form-control" placeholder="Ingresa un texto" aria-label="nombre"  aria-describedby="nombre" required />
-            
-                                        </div>
-                                    </div>
-
+                            </div>
+                            <div class="col-xl-6 col-sm-6">
+                                <div class="mb-1">
+                                    <label class="form-label" for="nivel">NIVEL</label>
+                                    <select class="form-select select2" data-language="es" id="nivel" name="nivel">
+                                            <option value="">Seleciona una opción</option>
+                                            <option value="Providencia">1° básico</option>
+                                            <option value="Providencia">2° básico</option>
+                                            <option value="Providencia">3° básico</option>
+                                            <option value="Providencia">4° básico</option>
+                                            <option value="Providencia">5° básico</option>
+                                        </select>
                                 </div>
-                                <div class="d-flex justify-content-between w-100 bgc-light mbp-30 ptp-5 pbp-20">
-                                   <div class="psp-20"> OA</div>                 
-                                   <div class="d-flex justify-content-end">
-                                    <button type="submit" class="btn btn_mas waves-effect waves-float waves-light" name="submit" value="Submit">+</button>
+                            </div>
+                            <div class="col-xl-6 col-sm-6">
+                                <div class="mb-1">
+                                    <label class="form-label" for="unidades">N° de unidades </label>
+                                    <select class="form-select select2" data-language="es" id="unidades" name="unidades">
+                                            <option value="">Seleciona una opción</option>
+                                            <option value="Providencia">1</option>
+                                            <option value="Providencia">2</option>
+                                            <option value="Providencia">3</option>
+                                            <option value="Providencia">4</option>
+                                        </select>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-sm-6">
+                            <div class="psp-0 ptp-20 pbp-20">
+                                <div class="demo-inline-spacing">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="checked" checked />
+                                        <label class="form-check-label" for="inlineCheckbox1">OA</label>
                                     </div>
-
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="unchecked" />
+                                        <label class="form-check-label" for="inlineCheckbox2">OAT</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="unchecked" />
+                                        <label class="form-check-label" for="inlineCheckbox2">OAA</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="unchecked" />
+                                        <label class="form-check-label" for="inlineCheckbox2">OAH</label>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-
-                        <!-- Unidad 2 -->
-                        <div class="col-md-4">
-                            <div class="card">
-                                <div class="card-header">
-                                    <h4 class="card-title">Unidad 2</h4>
-                                </div>
-                                <div class="card-body">
-                                    <div class="input-group input-group-merge mb-2">
-                                        <span class="input-group-text" id="basic-addon-search2"><i data-feather="search"></i></span>
-                                        <input type="text" class="form-control" placeholder="Search..." aria-label="Search..." aria-describedby="basic-addon-search2" />
-                                    </div>
-
-                                    <label class="form-label" for="basic-default-password1">Password</label>
-                                    <div class="input-group input-group-merge form-password-toggle mb-2">
-                                        <input type="password" class="form-control" id="basic-default-password1" placeholder="Your Password" aria-describedby="basic-default-password1" />
-                                        <span class="input-group-text cursor-pointer"><i data-feather="eye"></i></span>
-                                    </div>
-
-                                    <div class="input-group input-group-merge mb-2">
-                                        <span class="input-group-text" id="basic-addon5">@</span>
-                                        <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon5" />
-                                    </div>
-
-                                    <div class="input-group input-group-merge mb-2">
-                                        <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon6" />
-
-                                        <span class="input-group-text" id="basic-addon6">@example.com</span>
-                                    </div>
-
-                                    <div class="input-group input-group-merge mb-2">
-                                        <span class="input-group-text" id="basic-addon7">https://example.com/users/</span>
-                                        <input type="text" class="form-control" id="basic-url7" aria-describedby="basic-addon7" />
-                                    </div>
-
-                                    <div class="input-group input-group-merge mb-2">
-                                        <span class="input-group-text">$</span>
-                                        <input type="text" class="form-control" placeholder="100" aria-label="Amount (to the nearest dollar)" />
-                                        <span class="input-group-text">.00</span>
-                                    </div>
-
-                                    <div class="input-group input-group-merge">
-                                        <span class="input-group-text">With textarea</span>
-                                        <textarea class="form-control" aria-label="With textarea"></textarea>
-                                    </div>
-                                </div>
-                                
-                            </div>
                         </div>
-                        <!-- Unidad 3 -->
-                        <div class="col-md-4">
-                            <div class="card">
-                                <div class="card-header">
-                                    <h4 class="card-title">Unidad 3</h4>
-                                </div>
-                                <div class="card-body">
-                                    <div class="input-group input-group-merge mb-2">
-                                        <span class="input-group-text" id="basic-addon-search2"><i data-feather="search"></i></span>
-                                        <input type="text" class="form-control" placeholder="Search..." aria-label="Search..." aria-describedby="basic-addon-search2" />
-                                    </div>
-
-                                    <label class="form-label" for="basic-default-password1">Password</label>
-                                    <div class="input-group input-group-merge form-password-toggle mb-2">
-                                        <input type="password" class="form-control" id="basic-default-password1" placeholder="Your Password" aria-describedby="basic-default-password1" />
-                                        <span class="input-group-text cursor-pointer"><i data-feather="eye"></i></span>
-                                    </div>
-
-                                    <div class="input-group input-group-merge mb-2">
-                                        <span class="input-group-text" id="basic-addon5">@</span>
-                                        <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon5" />
-                                    </div>
-
-                                    <div class="input-group input-group-merge mb-2">
-                                        <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon6" />
-
-                                        <span class="input-group-text" id="basic-addon6">@example.com</span>
-                                    </div>
-
-                                    <div class="input-group input-group-merge mb-2">
-                                        <span class="input-group-text" id="basic-addon7">https://example.com/users/</span>
-                                        <input type="text" class="form-control" id="basic-url7" aria-describedby="basic-addon7" />
-                                    </div>
-
-                                    <div class="input-group input-group-merge mb-2">
-                                        <span class="input-group-text">$</span>
-                                        <input type="text" class="form-control" placeholder="100" aria-label="Amount (to the nearest dollar)" />
-                                        <span class="input-group-text">.00</span>
-                                    </div>
-
-                                    <div class="input-group input-group-merge">
-                                        <span class="input-group-text">With textarea</span>
-                                        <textarea class="form-control" aria-label="With textarea"></textarea>
-                                    </div>
-                                </div>
-
+                        <div class="d-flex justify-content-end">
+                            <button type="submit" class="btn btn-primary waves-effect waves-float waves-light" name="submit" value="Submit">Guardar</button>
+                            </div>
+                            </div>
                         </div>
                     </div>
 

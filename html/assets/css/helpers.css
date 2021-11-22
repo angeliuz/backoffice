@@ -1998,6 +1998,15 @@ font-family: 'Lobster', cursive; */
 }
 
 /* padding-right px */
+.pep-5 {
+  padding-right: 5px;
+}
+.pep-10 {
+  padding-right: 10px;
+}
+.pep-15 {
+  padding-right: 15px;
+}
 .pep-20 {
   padding-right: 20px;
 }
