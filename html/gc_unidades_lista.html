@@ -235,32 +235,6 @@
             }
         })
 
-        function david() {
-            Swal.fire({
-                title: '¡Atención!',
-                text: "Estas seguro que deseas eliminar el grupo de unidades. Esta acción no se puede deshacer.",
-                icon: 'warning',
-                showCancelButton: true,
-                confirmButtonText: 'Si, estoy seguro',
-                cancelButtonText: 'No eliminar',
-                customClass: {
-                    confirmButton: 'btn btn-primary',
-                    cancelButton: 'btn btn-outline-danger ms-1'
-                },
-                buttonsStyling: false
-            }).then(function (result) {
-                if (result.value) {
-                    Swal.fire({
-                        icon: 'success',
-                        title: '¡Borrado!',
-                        text: 'El grupo de unidades, ha sido borrado.',
-                        customClass: {
-                            confirmButton: 'btn btn-success'
-                        }
-                    });
-                }
-            });
-        }
     </script>
 </body>
 <!-- END: Body-->
