@@ -15,12 +15,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500;1,600" rel="stylesheet">
     <!-- BEGIN: Vendor CSS-->
     <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/vendors.min.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/extensions/sweetalert2.min.css">
     <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/tables/datatable/dataTables.bootstrap5.min.css">
     <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/tables/datatable/responsive.bootstrap4.min.css">
     <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/pickers/flatpickr/flatpickr.min.css">
     <!-- <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/forms/select/select2.min.css"> -->
-    <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/animate/animate.min.css">
-    <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/extensions/sweetalert2.min.css">
     <!-- END: Vendor CSS-->
 
     <!-- BEGIN: Theme CSS-->
@@ -154,9 +154,6 @@
                                         <div class="card">
                                             <div class="card-header border-bottom">
                                                 <h4 class="card-title">Lista de unidades Mineduc</h4>
-                                                <button type="button" class="btn btn-outline-warning" id="type-warning">Warning</button>
-                                                <button type="button" class="btn btn-outline-primary" id="confirm-text">Confirm Text</button>
-
                                             </div>
                                             <div class="card-datatable">
 
@@ -207,16 +204,16 @@
     <!-- BEGIN Vendor JS-->
 
     <!-- BEGIN: Page Vendor JS-->
+    <script src="app-assets/vendors/js/extensions/sweetalert2.all.min.js"></script>
+    <script src="app-assets/vendors/js/extensions/polyfill.min.js"></script>
+    <!-- END: Page Vendor JS-->
+
+    <!-- BEGIN: Page Vendor JS-->
     <script src="app-assets/vendors/js/tables/datatable/jquery.dataTables.min.js"></script>
     <script src="app-assets/vendors/js/tables/datatable/dataTables.bootstrap5.min.js"></script>
     <script src="app-assets/vendors/js/tables/datatable/dataTables.responsive.min.js"></script>
     <script src="app-assets/vendors/js/tables/datatable/responsive.bootstrap4.js"></script>
     <script src="app-assets/vendors/js/pickers/flatpickr/flatpickr.min.js"></script>
-    <!-- END: Page Vendor JS-->
-
-    <!-- BEGIN: Page Vendor JS-->
-    <script src="app-assets/vendors/js/extensions/sweetalert2.all.min.js"></script>
-    <script src="app-assets/vendors/js/extensions/polyfill.min.js"></script>
     <!-- END: Page Vendor JS-->
 
     <!-- BEGIN: Theme JS-->
@@ -237,6 +234,33 @@
                 });
             }
         })
+
+        function david() {
+            Swal.fire({
+                title: '¡Atención!',
+                text: "Estas seguro que deseas eliminar el grupo de unidades. Esta acción no se puede deshacer.",
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonText: 'Si, estoy seguro',
+                cancelButtonText: 'No eliminar',
+                customClass: {
+                    confirmButton: 'btn btn-primary',
+                    cancelButton: 'btn btn-outline-danger ms-1'
+                },
+                buttonsStyling: false
+            }).then(function (result) {
+                if (result.value) {
+                    Swal.fire({
+                        icon: 'success',
+                        title: '¡Borrado!',
+                        text: 'El grupo de unidades, ha sido borrado.',
+                        customClass: {
+                            confirmButton: 'btn btn-success'
+                        }
+                    });
+                }
+            });
+        }
     </script>
 </body>
 <!-- END: Body-->
