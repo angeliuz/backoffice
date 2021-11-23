@@ -470,27 +470,52 @@
                                                 <!-- Button trigger modal -->
                                                 <button type="button"
                                                     class="btn btn_mas waves-effect waves-float waves-light"
-                                                    data-bs-toggle="modal" data-bs-target="#exampleModalScrollable">
+                                                    data-bs-toggle="modal" data-bs-target="#modaloa">
                                                     +
                                                 </button>
 
-                                                <!-- Modal -->
-                                                <div class="modal fade" id="exampleModalScrollable" tabindex="-1"
-                                                    aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
-                                                    <div class="modal-dialog modal-dialog-scrollable">
+                                                    <!-- Modal -->
+                                                    <div class="modal fade" id="modaloa" tabindex="-1"
+                                                    aria-labelledby="modaloaTitle" aria-hidden="true">
+                                                    <div
+                                                        class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl">
                                                         <div class="modal-content">
+
                                                             <div class="modal-header">
-                                                                <h5 class="modal-title"
-                                                                    id="exampleModalScrollableTitle">Modal title</h5>
+                                                                <h5 class="modal-title" id="modaloaTitle">Agregar Objetivos de aprendizaje a la unidad
+                                                                </h5>
                                                                 <button type="button" class="btn-close"
                                                                     data-bs-dismiss="modal" aria-label="Close"></button>
                                                             </div>
                                                             <div class="modal-body">
-                                                                <p>
-                                                                    Biscuit powder jelly beans. Lollipop candy canes
-                                                                    croissant icing chocolate cake. Cake fruitcake
-                                                                    powder pudding pastry.
-                                                                </p>
+
+
+
+
+                                                                <!-- Basic table -->
+                                                                <section>
+                                                                    <div class="row">
+                                                                        <div class="col-12 revenue-report-wrapper ">
+                                                                            <div class="card">
+                                                                                <table
+                                                                                    class="datatables-basic table table-bordered table-condensed table-striped table-hover">
+                                                                                    <thead>
+                                                                                        <tr>
+                                                                                            <th>
+                                                                                                OBJETIVOS</th>
+                                                                                            <th>DESCRIPCION</th>
+                                                                                            <th>SEL.</th>
+                                                                                        </tr>
+                                                                                    </thead>
+                                                                                </table>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </section>
+                                                                <!-- Basic Table -->
+
+
+
 
                                                             </div>
                                                             <div class="modal-footer">
@@ -499,7 +524,8 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                </div>
+                                                    </div>
+                                                    <!-- Modal -->
                                             </div>
                                         </div>
                                     </div>
@@ -526,7 +552,8 @@
                                                         <div class="modal-content">
 
                                                             <div class="modal-header">
-                                                                <h5 class="modal-title" id="modaloatTitle">Modal title
+                                                                <h5 class="modal-title" id="modaloatTitle">Agregar Objetivos de aprendizaje transversales a la unidad
+                                                                    <h2>Selecciona o busca los Objetivos de aprendizaje transversales que deseas abordar en esta unidad.</h2>
                                                                 </h5>
                                                                 <button type="button" class="btn-close"
                                                                     data-bs-dismiss="modal" aria-label="Close"></button>
@@ -569,6 +596,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
+                                                <!-- Modal -->
                                             </div>
 
                                         </div>
@@ -580,9 +608,63 @@
                                         <div class="psp-20 ptp-5 fw-700">
                                             OAA</div>
                                         <div class="d-flex justify-content-end pep-10">
-                                            <button type="submit"
-                                                class="btn btn_mas waves-effect waves-float waves-light" name="submit"
-                                                value="Submit">+</button>
+                                            <button type="button" id="btn_oaa"
+                                            class="btn btn_mas waves-effect waves-float waves-light"
+                                            data-bs-toggle="modal" data-bs-target="#modaloaa">
+                                            +
+                                        </button>
+                                                 <!-- Modal -->
+                                                <div class="modal fade" id="modaloaa" tabindex="-1"
+                                                    aria-labelledby="modaloaaTitle" aria-hidden="true">
+                                                    <div
+                                                        class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl">
+                                                        <div class="modal-content">
+
+                                                            <div class="modal-header">
+                                                                <h5 class="modal-title" id="modaloaaTitle">Modala
+                                                                </h5>
+                                                                <button type="button" class="btn-close"
+                                                                    data-bs-dismiss="modal" aria-label="Close"></button>
+                                                            </div>
+                                                            <div class="modal-body">
+
+
+
+
+                                                                <!-- Basic table -->
+                                                                <section>
+                                                                    <div class="row">
+                                                                        <div class="col-12 revenue-report-wrapper ">
+                                                                            <div class="card">
+                                                                                <table
+                                                                                    class="datatables-basic table table-bordered table-condensed table-striped table-hover">
+                                                                                    <thead>
+                                                                                        <tr>
+                                                                                            <th>
+                                                                                                OBJETIVOS</th>
+                                                                                            <th>DESCRIPCION</th>
+                                                                                            <th>SEL.</th>
+                                                                                        </tr>
+                                                                                    </thead>
+                                                                                </table>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </section>
+                                                                <!-- Basic Table -->
+
+
+
+
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-primary"
+                                                                    data-bs-dismiss="modal">Accept</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- Modal -->           
                                         </div>
                                     </div>
                                     <div class="col-xl-12 cb-contenedor_vacio"></div>
@@ -595,6 +677,59 @@
                                             <button type="submit"
                                                 class="btn btn_mas waves-effect waves-float waves-light" name="submit"
                                                 value="Submit">+</button>
+                                                
+                                                 <!-- Modal -->
+                                                <div class="modal fade" id="modaloah" tabindex="-1"
+                                                    aria-labelledby="modaloahTitle" aria-hidden="true">
+                                                    <div
+                                                        class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl">
+                                                        <div class="modal-content">
+
+                                                            <div class="modal-header">
+                                                                <h5 class="modal-title" id="modaloahTitle">Modal title
+                                                                </h5>
+                                                                <button type="button" class="btn-close"
+                                                                    data-bs-dismiss="modal" aria-label="Close"></button>
+                                                            </div>
+                                                            <div class="modal-body">
+
+
+
+
+                                                                <!-- Basic table -->
+                                                                <section>
+                                                                    <div class="row">
+                                                                        <div class="col-12 revenue-report-wrapper ">
+                                                                            <div class="card">
+                                                                                <table
+                                                                                    class="datatables-basic table table-bordered table-condensed table-striped table-hover">
+                                                                                    <thead>
+                                                                                        <tr>
+                                                                                            <th>
+                                                                                                OBJETIVOS</th>
+                                                                                            <th>DESCRIPCION</th>
+                                                                                            <th>SEL.</th>
+                                                                                        </tr>
+                                                                                    </thead>
+                                                                                </table>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </section>
+                                                                <!-- Basic Table -->
+
+
+
+
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-primary"
+                                                                    data-bs-dismiss="modal">Accept</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- Modal --> 
                                         </div>
                                     </div>
                                     <div class="col-xl-12 cb-contenedor_vacio"></div>
@@ -812,8 +947,13 @@
 <!-- END: Page JS-->
 <!-- BEGIN: Page JS-->
 <script src="app-assets/js/scripts/forms/form-validation.js"> </script>
-<script src="app-assets/js/scripts/forms/form-file-uploader.js"></script><!-- BEGIN: Page JS-->
-<script src="app-assets/js/scripts/tables/table-datatables-basic-CB.js"></script><!-- END: Page JS-->
+<script src="app-assets/js/scripts/forms/form-file-uploader.js"></script>
+<!-- DATATABLE-->
+<script src="app-assets/js/scripts/tables/datatables-OA-CB.js"></script>
+<script src="app-assets/js/scripts/tables/datatables-OAT-CB.js"></script>
+<script src="app-assets/js/scripts/tables/datatables-OAA-CB.js"></script>
+<script src="app-assets/js/scripts/tables/datatables-OAH-CB.js"></script>
+<!-- END: DATATABLE-->
 <!-- BEGIN: Page JS-->
 <script src="app-assets/js/scripts/extensions/ext-component-sweet-alerts.js"></script>
 <!-- END: Page JS-->
