@@ -93,9 +93,15 @@
               feather.icons["more-vertical"].toSvg({ class: "font-small-4" }) +
               "</a>" +
               '<div class="dropdown-menu dropdown-menu-end">' +
-              '<a href="javascript:;" class="dropdown-item delete-record">' +
+              // '<a href="javascript:;" class="dropdown-item delete-record" id="type-warning">' +
+              // feather.icons["trash-2"].toSvg({ class: "me-50 font-small-4" }) +
+              // "Eliminar</a>" +
+              '<button type="button" class="btn btn-outline-warning waves-effect" id="type-warning">' +
               feather.icons["trash-2"].toSvg({ class: "me-50 font-small-4" }) +
-              "Eliminar</a>" +
+              "Eliminar</button>" +
+              '<button type="button" class="dropdown-item delete-record w-100 waves-effect" id="confirm-text">' +
+              feather.icons["trash-2"].toSvg({ class: "me-50 font-small-4" }) +
+              "Eliminar</button>" +
               "</div>" +
               "</div>" +
               '<a href="gc_unidades_editar.html" target="_self" class="item-edit">' +
