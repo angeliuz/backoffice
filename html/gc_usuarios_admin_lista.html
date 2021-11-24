@@ -112,7 +112,7 @@
                 <div class="content-header-left col-md-7 col-12 mb-2">
                     <div class="row breadcrumbs-top">
                         <div class="col-12">
-                            <h2 class="content-header-title float-start mb-0">Gestor de programas</h2>
+                            <h2 class="content-header-title float-start mb-0">Gestor de usuarios</h2>
                         </div>
                     </div>
                 </div>
@@ -121,7 +121,7 @@
                         <a href="gc_usuario_agregar.html" target="_self">
                             <button type="button" class="btn btn-primary">
                                 <i data-feather='file-plus'></i>
-                                <span>Agregar programa</span>
+                                <span>Agregar usuario</span>
                             </button>
                         </a>
                     </div>
@@ -138,23 +138,36 @@
                                     <div class="col-12">
                                         <div class="card">
                                             <div class="card-header border-bottom">
-                                                <h4 class="card-title">Lista de programas</h4>
+                                                <h4 class="card-title">Lista de usuarios administradores de colegios</h4>
                                             </div>
                                             <div class="card-datatable">
 
-                                                <table class="dt-column-search table">
+                                                <table class="dt-column-search table table-responsive">
                                                     <thead>
                                                         <tr>
-                                                            <th style="width: 50px;">id</th>
-                                                            <th style="width: 20%;">área</th>
-                                                            <th>nivel</th>
-                                                            <th>oa</th>
-                                                            <th>oaa</th>
-                                                            <th>oah</th>
-                                                            <th>oat</th>
+                                                            <th style="width: 40px;">id</th>
+                                                            <th style="width: 20%;">nombre</th>
+                                                            <th style="width: 10%;">rut</th>
+                                                            <th>correo</th>
+                                                            <th style="width: 190px;">administrador de red</th>
+                                                            <th>grupo</th>
+                                                            <th style="width: 40px;">estado</th>
                                                             <th style="width: 40px;">acción</th>
                                                         </tr>
                                                     </thead>
+                                                    <!-- <tfoot>
+                                                        <tr>
+                                                            <th style="width: 40px;">id</th>
+                                                            <th>nombre</th>
+                                                            <th>rut</th>
+                                                            <th>correo</th>
+                                                            <th>rol</th>
+                                                            <th>cargo_interno</th>
+                                                            <th>colegio</th>
+                                                            <th>estado</th>
+                                                            <th style="width: 40px;">acción</th>
+                                                        </tr>
+                                                    </tfoot> -->
                                                 </table>
 
                                             </div>
@@ -192,7 +205,7 @@
 
     <!-- BEGIN: Vendor JS-->
     <script src="app-assets/vendors/js/vendors.min.js"></script>
-    <!-- END: Vendor JS-->
+    <!-- BEGIN Vendor JS-->
 
     <!-- BEGIN: Page Vendor JS-->
     <script src="app-assets/vendors/js/tables/datatable/jquery.dataTables.min.js"></script>
@@ -208,7 +221,7 @@
     <!-- END: Theme JS-->
 
     <!-- BEGIN: Page JS-->
-    <script src="app-assets/js/scripts/tables/gc_programa_lista.js"></script>
+    <script src="app-assets/js/scripts/tables/gc_usuario_admin_lista.js"></script>
     <!-- END: Page JS-->
     <script>
         populateMenu(menu);
