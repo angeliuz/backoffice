@@ -96,19 +96,7 @@
         </div>
         <div class="shadow-bottom"></div>
         <div class="main-menu-content">
-            <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
-                <li class=" nav-item"><a class="d-flex align-items-center" href="index.html"><i data-feather="layers"></i><span class="menu-title text-truncate" data-i18n="Dashboards">Gestor de recursos</span></a></li>
-                <li class=" nav-item"><a class="d-flex align-items-center" href="gc_programas_lista.html"><i data-feather='clipboard'></i><span class="menu-title text-truncate" data-i18n="Email">Gestor de programas</span></a></li>
-                <li class=" nav-item"><a class="d-flex align-items-center" href="gc_guias_lista.html"><i data-feather='book-open'></i><span class="menu-title text-truncate" data-i18n="Chat">Gestor de guías</span></a></li>
-                <li class=" nav-item"><a class="d-flex align-items-center" href="gc_usuarios_lista.html"><i data-feather="users"></i><span class="menu-title text-truncate" data-i18n="Todo">Gestor de usuarios</span></a></li>
-                <li class=" nav-item active"><a class="d-flex align-items-center" href="#"><i data-feather='home'></i><span class="menu-title text-truncate" data-i18n="Calendar">Gestor de colegios</span></a>
-                    <ul class="menu-content"><li><a class="d-flex align-items-center" href="gc_colegio_lista.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="List">Lista de colegios</span></a></li></ul>
-                    <ul class="menu-content"><li><a class="d-flex align-items-center" href="gc_colegio_agregar.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="List">Agregar colegio</span></a></li></ul>
-                    <ul class="menu-content"><li><a class="d-flex align-items-center" href="gc_colegio_grupo.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="List">Grupo de colegios</span></a></li></ul>
-                </li>
-                <li class=" nav-item"><a class="d-flex align-items-center" href="gc_licencias_lista.html"><i data-feather='mail'></i><span class="menu-title text-truncate" data-i18n="Kanban">Gestor de licencias</span></a></li>
-                <li class=" nav-item"><a class="d-flex align-items-center" href="configuraciones.html"><i data-feather='settings'></i><span class="menu-title text-truncate" data-i18n="Invoice">Configuraciones</span></a></li>
-            </ul>
+            <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation"></ul>
         </div>
     </div>
     <!-- END: Main Menu-->
@@ -122,16 +110,16 @@
                 <div class="content-header-left col-md-7 col-12 mb-2">
                     <div class="row breadcrumbs-top">
                         <div class="col-12">
-                            <h2 class="content-header-title float-start mb-0">Gestor de asignaturas</h2>
+                            <h2 class="content-header-title float-start mb-0">Gestor de grupo colegios</h2>
                         </div>
                     </div>
                 </div>
                 <div class="content-header-right text-md-end col-md-5 col-12 d-md-block d-none">
                     <div class="mb-1 breadcrumb-right">
-                        <a href="gc_asignatura_agregar.html" target="_self">
+                        <a href="gc_grupocolegio_agregar.html" target="_self">
                             <button type="button" class="btn btn-primary">
                                 <i data-feather='file-plus'></i>
-                                <span>Agregar asignatura</span>
+                                <span>Agregar grupo</span>
                             </button>
                         </a>
                     </div>
@@ -148,7 +136,7 @@
                                     <div class="col-12">
                                         <div class="card">
                                             <div class="card-header border-bottom">
-                                                <h4 class="card-title">Lista de asignaturas</h4>
+                                                <h4 class="card-title">Lista de grupos</h4>
                                             </div>
                                             <div class="card-datatable">
                                                 <table class="dt-multilingual table">
@@ -156,9 +144,8 @@
                                                         <tr>
                                                             <th>id</th>
                                                             <th style="width: 40px;">id</th>
-                                                            <th>nombre</th>
-                                                            <th>estado</th>
-                                                            <th>carpeta</th>
+                                                            <th>grupo</th>
+                                                            <th>nº de colegios</th>
                                                             <th style="width: 40px;">acción</th>
                                                         </tr>
                                                     </thead>
@@ -186,6 +173,10 @@
     </footer>
     <button class="btn btn-primary btn-icon scroll-top" type="button"><i data-feather="arrow-up"></i></button>
     <!-- END: Footer-->
+
+    <!-- BEGIN MENU -->
+    <script src="app-assets/js/menu.js"></script>
+    <!-- END MENU -->
 
     <!-- Ionic icons -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
@@ -218,9 +209,10 @@
     <!-- END: Theme JS-->
 
     <!-- BEGIN: Page JS-->
-    <script src="app-assets/js/scripts/tables/gc_asignatura_lista.js"></script>
+    <script src="app-assets/js/scripts/tables/gc_grupocolegio_lista.js"></script>
     <!-- END: Page JS-->
     <script>
+        populateMenu(menu);
         $(window).on('load', function() {
             if (feather) {
                 feather.replace({
