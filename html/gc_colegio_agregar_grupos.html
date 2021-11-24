@@ -328,9 +328,14 @@
             <div class="header-navbar-shadow"></div>
             <div class="content-wrapper container-xxl p-0">
 
-    <div
-        class="content-body">
-        
+    <div class="content-body">
+        <div class="content-header-left col-md-7 col-12 mb-2">
+            <div class="row breadcrumbs-top">
+                <div class="col-12">
+                    <h2 class="float-start mb-0">Editar colegios</h2>
+                </div>
+            </div>
+        </div>
         <div class="col-12">
                         <div class="card card-revenue-budget">
                 <div class="row mx-0">
@@ -545,12 +550,16 @@
         <script src="app-assets/js/scripts/tables/gc_colegio_lista.js"></script>
         <!-- END: Page JS-->
 
-            <script>
-$(window).on('load', function () {
-    if (feather) {
-        feather.replace({width: 14, height: 14});
-    }
-})
+    <script>
+        populateMenu(menu);
+        $(window).on('load', function () {
+            if (feather) {
+                feather.replace({
+                    width: 14,
+                    height: 14
+                });
+            }
+        })
     </script>
 </body>
     <!-- END: Body-->
