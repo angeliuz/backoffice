@@ -70,6 +70,11 @@ const menu = [
         enlace: "gc_usuarios_roles_lista.html",
         icon: "circle",
       },
+      {
+        title: "Red de colegios",
+        enlace: "gc_colegio_gestor.html",
+        icon: "circle",
+      },
     ],
   },
   {
