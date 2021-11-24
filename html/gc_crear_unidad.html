@@ -19,6 +19,7 @@
 
     <!-- BEGIN: Vendor CSS-->
     <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/vendors.min.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/extensions/dragula.min.css">
     <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/animate/animate.min.css">
     <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/extensions/sweetalert2.min.css">
     <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/charts/apexcharts.css">
@@ -53,6 +54,8 @@
     <link rel="stylesheet" type="text/css" href="app-assets/css/plugins/extensions/ext-component-toastr.css">
     <link rel="stylesheet" type="text/css" href="app-assets/css/plugins/forms/form-validation.css">
     <link rel="stylesheet" type="text/css" href="app-assets/css/plugins/forms/form-validation.min.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/css/core/menu/menu-types/vertical-menu.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/css/plugins/extensions/ext-component-drag-drop.css">
     <!-- END: Page CSS-->
 
     <!-- BEGIN: Custom CSS-->
@@ -483,6 +486,7 @@
 
                                                             <div class="modal-header">
                                                                 <h5 class="modal-title" id="modaloaTitle">Agregar Objetivos de aprendizaje a la unidad
+                                                                    <p class="fsp-10">Selecciona o busca los Objetivos de aprendizaje transversales que deseas abordar en esta unidad.</p>
                                                                 </h5>
                                                                 <button type="button" class="btn-close"
                                                                     data-bs-dismiss="modal" aria-label="Close"></button>
@@ -498,7 +502,7 @@
                                                                         <div class="col-12 revenue-report-wrapper ">
                                                                             <div class="card">
                                                                                 <table
-                                                                                    class="datatables-basic table table-bordered table-condensed table-striped table-hover">
+                                                                                    class="datatables-OA table table-bordered table-condensed table-striped table-hover">
                                                                                     <thead>
                                                                                         <tr>
                                                                                             <th>
@@ -529,7 +533,18 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-xl-12 cb-contenedor_vacio"></div>
+                                    <div class="col-xl-12">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <ul class="list-group" id="handle-list-1">
+                                                    <li class="list-group-item text-primary fw-700"><span class="handle me-50">+</span>CNo2 OA a</li>
+                                                    <li class="list-group-item text-primary fw-700"><span class="handle me-50">+</span>CNo2 OA b</li>
+                                                    <li class="list-group-item text-primary fw-700"><span class="handle me-50">+</span>CNo2 OA c</li>
+                                                    <li class="list-group-item text-primary fw-700"><span class="handle me-50">+</span>CNo2 OA d</li>
+                                                </ul>
+                                            </div>
+                                    </div>
+                                    </div>
                                 </div>
                                 <div>
                                     <div class="d-flex justify-content-between bgc-light ptp-5 pbp-5 ">
@@ -553,7 +568,7 @@
 
                                                             <div class="modal-header">
                                                                 <h5 class="modal-title" id="modaloatTitle">Agregar Objetivos de aprendizaje transversales a la unidad
-                                                                    <h2>Selecciona o busca los Objetivos de aprendizaje transversales que deseas abordar en esta unidad.</h2>
+                                                                    <p class="fsp-10">Selecciona o busca los Objetivos de aprendizaje transversales que deseas abordar en esta unidad.</p>
                                                                 </h5>
                                                                 <button type="button" class="btn-close"
                                                                     data-bs-dismiss="modal" aria-label="Close"></button>
@@ -569,7 +584,7 @@
                                                                         <div class="col-12 revenue-report-wrapper ">
                                                                             <div class="card">
                                                                                 <table
-                                                                                    class="datatables-basic table table-bordered table-condensed table-striped table-hover">
+                                                                                    class="datatables-OAT table table-bordered table-condensed table-striped table-hover">
                                                                                     <thead>
                                                                                         <tr>
                                                                                             <th>
@@ -601,7 +616,18 @@
 
                                         </div>
                                     </div>
-                                    <div class="col-xl-12 cb-contenedor_vacio"></div>
+                                    <div class="col-xl-12">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <ul class="list-group" id="handle-list-1">
+                                                    <li class="list-group-item text-info fw-700"><span class="handle me-50">+</span>CNo2 OAT a</li>
+                                                    <li class="list-group-item text-info fw-700"><span class="handle me-50">+</span>CNo2 OAT b</li>
+                                                    <li class="list-group-item text-info fw-700"><span class="handle me-50">+</span>CNo2 OAT c</li>
+                                                    <li class="list-group-item text-info fw-700"><span class="handle me-50">+</span>CNo2 OAT d</li>
+                                                </ul>
+                                            </div>
+                                    </div>
+                                    </div>
                                 </div>
                                 <div>
                                     <div class="d-flex justify-content-between bgc-light ptp-5 pbp-5 ">
@@ -621,7 +647,8 @@
                                                         <div class="modal-content">
 
                                                             <div class="modal-header">
-                                                                <h5 class="modal-title" id="modaloaaTitle">Modala
+                                                                <h5 class="modal-title" id="modaloaaTitle">Agregar Actitudes a la unidad
+                                                                    <p class="fsp-10">Selecciona o busca los Objetivos de aprendizaje transversales que deseas abordar en esta unidad.</p>
                                                                 </h5>
                                                                 <button type="button" class="btn-close"
                                                                     data-bs-dismiss="modal" aria-label="Close"></button>
@@ -637,7 +664,7 @@
                                                                         <div class="col-12 revenue-report-wrapper ">
                                                                             <div class="card">
                                                                                 <table
-                                                                                    class="datatables-basic table table-bordered table-condensed table-striped table-hover">
+                                                                                    class="datatables-OAA table table-bordered table-condensed table-striped table-hover">
                                                                                     <thead>
                                                                                         <tr>
                                                                                             <th>
@@ -667,16 +694,29 @@
                                                 <!-- Modal -->           
                                         </div>
                                     </div>
-                                    <div class="col-xl-12 cb-contenedor_vacio"></div>
+                                    <div class="col-xl-12">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <ul class="list-group" id="handle-list-1">
+                                                    <li class="list-group-item text-success fw-700"><span class="handle me-50">+</span>CNo2 OAA a</li>
+                                                    <li class="list-group-item text-success fw-700"><span class="handle me-50">+</span>CNo2 OAA b</li>
+                                                    <li class="list-group-item text-success fw-700"><span class="handle me-50">+</span>CNo2 OAA c</li>
+                                                    <li class="list-group-item text-success fw-700"><span class="handle me-50">+</span>CNo2 OAA d</li>
+                                                </ul>
+                                            </div>
+                                    </div>
+                                    </div>
                                 </div>
                                 <div>
                                     <div class="d-flex justify-content-between bgc-light ptp-5 pbp-5 ">
                                         <div class="psp-20 ptp-5 fw-700">
                                             OAH</div>
                                         <div class="d-flex justify-content-end pep-10">
-                                            <button type="submit"
-                                                class="btn btn_mas waves-effect waves-float waves-light" name="submit"
-                                                value="Submit">+</button>
+                                            <button type="button" id="btn_oah"
+                                            class="btn btn_mas waves-effect waves-float waves-light"
+                                            data-bs-toggle="modal" data-bs-target="#modaloah">
+                                            +
+                                        </button>
                                                 
                                                  <!-- Modal -->
                                                 <div class="modal fade" id="modaloah" tabindex="-1"
@@ -686,7 +726,9 @@
                                                         <div class="modal-content">
 
                                                             <div class="modal-header">
-                                                                <h5 class="modal-title" id="modaloahTitle">Modal title
+                                                                <h5 class="modal-title" id="modaloahTitle">Agregar Habilidades a la unidad
+                                                                    <p class="fsp-10">Selecciona o busca los Objetivos de aprendizaje transversales que deseas abordar en esta unidad.</p>
+
                                                                 </h5>
                                                                 <button type="button" class="btn-close"
                                                                     data-bs-dismiss="modal" aria-label="Close"></button>
@@ -702,7 +744,7 @@
                                                                         <div class="col-12 revenue-report-wrapper ">
                                                                             <div class="card">
                                                                                 <table
-                                                                                    class="datatables-basic table table-bordered table-condensed table-striped table-hover">
+                                                                                    class="datatables-OAH table table-bordered table-condensed table-striped table-hover">
                                                                                     <thead>
                                                                                         <tr>
                                                                                             <th>
@@ -732,7 +774,18 @@
                                                 <!-- Modal --> 
                                         </div>
                                     </div>
-                                    <div class="col-xl-12 cb-contenedor_vacio"></div>
+                                    <div class="col-xl-12 ">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <ul class="list-group" id="handle-list-1">
+                                                    <li class="list-group-item text-warning fw-700"><span class="handle me-50">+</span>CNo2 OAH a</li>
+                                                    <li class="list-group-item text-warning fw-700"><span class="handle me-50">+</span>CNo2 OAH b</li>
+                                                    <li class="list-group-item text-warning fw-700"><span class="handle me-50">+</span>CNo2 OAH c</li>
+                                                    <li class="list-group-item text-warning fw-700"><span class="handle me-50">+</span>CNo2 OAH d</li>
+                                                </ul>
+                                            </div>
+                                    </div>
+                                    </div>
                                 </div>
 
                             </div>
@@ -742,7 +795,7 @@
                         <div class="col-md-4">
                             <div class="card">
                                 <div
-                                    class="modal-header-deco w-100 position-absolute hp-5 color-primary bg-primary mt-0">
+                                    class="modal-header-deco_u2 w-100 position-absolute hp-5 color-warning bg-warning mt-0">
                                 </div>
                                 <div class="card-header">
                                     <h4 class="card-title">Unidad 2
@@ -765,57 +818,332 @@
                                         <div class="psp-20 ptp-5 fw-700">
                                             OA</div>
                                         <div class="d-flex justify-content-end pep-10">
-                                            <button type="submit"
-                                                class="btn btn_mas waves-effect waves-float waves-light" name="submit"
-                                                value="Submit">+</button>
+                                            <!-- <button type="submit" class="btn btn_mas waves-effect waves-float waves-light" name="submit" value="Submit">+</button>-->
+                                            <div class="scrolling-inside-modal">
+                                                <!-- Button trigger modal -->
+                                                <button type="button"
+                                                    class="btn btn_mas waves-effect waves-float waves-light"
+                                                    data-bs-toggle="modal" data-bs-target="#modaloa">
+                                                    +
+                                                </button>
+
+                                                    <!-- Modal -->
+                                                    <div class="modal fade" id="modaloa" tabindex="-1"
+                                                    aria-labelledby="modaloaTitle" aria-hidden="true">
+                                                    <div
+                                                        class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl">
+                                                        <div class="modal-content">
+
+                                                            <div class="modal-header">
+                                                                <h5 class="modal-title" id="modaloaTitle">Agregar Objetivos de aprendizaje a la unidad
+                                                                    <p class="fsp-10">Selecciona o busca los Objetivos de aprendizaje transversales que deseas abordar en esta unidad.</p>
+                                                                </h5>
+                                                                <button type="button" class="btn-close"
+                                                                    data-bs-dismiss="modal" aria-label="Close"></button>
+                                                            </div>
+                                                            <div class="modal-body">
+
+
+
+
+                                                                <!-- Basic table -->
+                                                                <section>
+                                                                    <div class="row">
+                                                                        <div class="col-12 revenue-report-wrapper ">
+                                                                            <div class="card">
+                                                                                <table
+                                                                                    class="datatables-OA table table-bordered table-condensed table-striped table-hover">
+                                                                                    <thead>
+                                                                                        <tr>
+                                                                                            <th>
+                                                                                                OBJETIVOS</th>
+                                                                                            <th>DESCRIPCION</th>
+                                                                                            <th>SEL.</th>
+                                                                                        </tr>
+                                                                                    </thead>
+                                                                                </table>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </section>
+                                                                <!-- Basic Table -->
+
+
+
+
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-primary"
+                                                                    data-bs-dismiss="modal">Accept</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    </div>
+                                                    <!-- Modal -->
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="col-xl-12 cb-contenedor_vacio"></div>
+                                    <div class="col-xl-12">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <ul class="list-group" id="handle-list-1">
+                                                    <li class="list-group-item text-primary fw-700"><span class="handle me-50">+</span>CNo2 OA a</li>
+                                                    <li class="list-group-item text-primary fw-700"><span class="handle me-50">+</span>CNo2 OA b</li>
+                                                    <li class="list-group-item text-primary fw-700"><span class="handle me-50">+</span>CNo2 OA c</li>
+                                                    <li class="list-group-item text-primary fw-700"><span class="handle me-50">+</span>CNo2 OA d</li>
+                                                </ul>
+                                            </div>
+                                    </div>
+                                    </div>
                                 </div>
                                 <div>
                                     <div class="d-flex justify-content-between bgc-light ptp-5 pbp-5 ">
                                         <div class="psp-20 ptp-5 fw-700">
                                             OAT</div>
                                         <div class="d-flex justify-content-end pep-10">
-                                            <button type="submit"
-                                                class="btn btn_mas waves-effect waves-float waves-light" name="submit"
-                                                value="Submit">+</button>
+                                            <div class="scrolling-inside-modal">
+                                                <!-- Button trigger modal -->
+                                                <button type="button" id="btn_oat"
+                                                    class="btn btn_mas waves-effect waves-float waves-light"
+                                                    data-bs-toggle="modal" data-bs-target="#modaloat">
+                                                    +
+                                                </button>
+
+                                                <!-- Modal -->
+                                                <div class="modal fade" id="modaloat" tabindex="-1"
+                                                    aria-labelledby="modaloatTitle" aria-hidden="true">
+                                                    <div
+                                                        class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl">
+                                                        <div class="modal-content">
+
+                                                            <div class="modal-header">
+                                                                <h5 class="modal-title" id="modaloatTitle">Agregar Objetivos de aprendizaje transversales a la unidad
+                                                                    <p class="fsp-10">Selecciona o busca los Objetivos de aprendizaje transversales que deseas abordar en esta unidad.</p>
+                                                                </h5>
+                                                                <button type="button" class="btn-close"
+                                                                    data-bs-dismiss="modal" aria-label="Close"></button>
+                                                            </div>
+                                                            <div class="modal-body">
+
+
+
+
+                                                                <!-- Basic table -->
+                                                                <section>
+                                                                    <div class="row">
+                                                                        <div class="col-12 revenue-report-wrapper ">
+                                                                            <div class="card">
+                                                                                <table
+                                                                                    class="datatables-OAT table table-bordered table-condensed table-striped table-hover">
+                                                                                    <thead>
+                                                                                        <tr>
+                                                                                            <th>
+                                                                                                OBJETIVOS</th>
+                                                                                            <th>DESCRIPCION</th>
+                                                                                            <th>SEL.</th>
+                                                                                        </tr>
+                                                                                    </thead>
+                                                                                </table>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </section>
+                                                                <!-- Basic Table -->
+
+
+
+
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-primary"
+                                                                    data-bs-dismiss="modal">Accept</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- Modal -->
+                                            </div>
+
                                         </div>
                                     </div>
-                                    <div class="col-xl-12 cb-contenedor_vacio"></div>
+                                    <div class="col-xl-12">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <ul class="list-group" id="handle-list-1">
+                                                    <li class="list-group-item text-info fw-700"><span class="handle me-50">+</span>CNo2 OAT a</li>
+                                                    <li class="list-group-item text-info fw-700"><span class="handle me-50">+</span>CNo2 OAT b</li>
+                                                    <li class="list-group-item text-info fw-700"><span class="handle me-50">+</span>CNo2 OAT c</li>
+                                                    <li class="list-group-item text-info fw-700"><span class="handle me-50">+</span>CNo2 OAT d</li>
+                                                </ul>
+                                            </div>
+                                    </div>
+                                    </div>
                                 </div>
                                 <div>
                                     <div class="d-flex justify-content-between bgc-light ptp-5 pbp-5 ">
                                         <div class="psp-20 ptp-5 fw-700">
                                             OAA</div>
                                         <div class="d-flex justify-content-end pep-10">
-                                            <button type="submit"
-                                                class="btn btn_mas waves-effect waves-float waves-light" name="submit"
-                                                value="Submit">+</button>
+                                            <button type="button" id="btn_oaa"
+                                            class="btn btn_mas waves-effect waves-float waves-light"
+                                            data-bs-toggle="modal" data-bs-target="#modaloaa">
+                                            +
+                                        </button>
+                                                 <!-- Modal -->
+                                                <div class="modal fade" id="modaloaa" tabindex="-1"
+                                                    aria-labelledby="modaloaaTitle" aria-hidden="true">
+                                                    <div
+                                                        class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl">
+                                                        <div class="modal-content">
+
+                                                            <div class="modal-header">
+                                                                <h5 class="modal-title" id="modaloaaTitle">Agregar Actitudes a la unidad
+                                                                    <p class="fsp-10">Selecciona o busca los Objetivos de aprendizaje transversales que deseas abordar en esta unidad.</p>
+                                                                </h5>
+                                                                <button type="button" class="btn-close"
+                                                                    data-bs-dismiss="modal" aria-label="Close"></button>
+                                                            </div>
+                                                            <div class="modal-body">
+
+
+
+
+                                                                <!-- Basic table -->
+                                                                <section>
+                                                                    <div class="row">
+                                                                        <div class="col-12 revenue-report-wrapper ">
+                                                                            <div class="card">
+                                                                                <table
+                                                                                    class="datatables-OAA table table-bordered table-condensed table-striped table-hover">
+                                                                                    <thead>
+                                                                                        <tr>
+                                                                                            <th>
+                                                                                                OBJETIVOS</th>
+                                                                                            <th>DESCRIPCION</th>
+                                                                                            <th>SEL.</th>
+                                                                                        </tr>
+                                                                                    </thead>
+                                                                                </table>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </section>
+                                                                <!-- Basic Table -->
+
+
+
+
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-primary"
+                                                                    data-bs-dismiss="modal">Accept</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- Modal -->           
                                         </div>
                                     </div>
-                                    <div class="col-xl-12 cb-contenedor_vacio"></div>
+                                    <div class="col-xl-12">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <ul class="list-group" id="handle-list-1">
+                                                    <li class="list-group-item text-success fw-700"><span class="handle me-50">+</span>CNo2 OAA a</li>
+                                                    <li class="list-group-item text-success fw-700"><span class="handle me-50">+</span>CNo2 OAA b</li>
+                                                    <li class="list-group-item text-success fw-700"><span class="handle me-50">+</span>CNo2 OAA c</li>
+                                                    <li class="list-group-item text-success fw-700"><span class="handle me-50">+</span>CNo2 OAA d</li>
+                                                </ul>
+                                            </div>
+                                    </div>
+                                    </div>
                                 </div>
                                 <div>
                                     <div class="d-flex justify-content-between bgc-light ptp-5 pbp-5 ">
                                         <div class="psp-20 ptp-5 fw-700">
                                             OAH</div>
                                         <div class="d-flex justify-content-end pep-10">
-                                            <button type="submit"
-                                                class="btn btn_mas waves-effect waves-float waves-light" name="submit"
-                                                value="Submit">+</button>
+                                            <button type="button" id="btn_oah"
+                                            class="btn btn_mas waves-effect waves-float waves-light"
+                                            data-bs-toggle="modal" data-bs-target="#modaloah">
+                                            +
+                                        </button>
+                                                
+                                                 <!-- Modal -->
+                                                <div class="modal fade" id="modaloah" tabindex="-1"
+                                                    aria-labelledby="modaloahTitle" aria-hidden="true">
+                                                    <div
+                                                        class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl">
+                                                        <div class="modal-content">
+
+                                                            <div class="modal-header">
+                                                                <h5 class="modal-title" id="modaloahTitle">Agregar Habilidades a la unidad
+                                                                    <p class="fsp-10">Selecciona o busca los Objetivos de aprendizaje transversales que deseas abordar en esta unidad.</p>
+
+                                                                </h5>
+                                                                <button type="button" class="btn-close"
+                                                                    data-bs-dismiss="modal" aria-label="Close"></button>
+                                                            </div>
+                                                            <div class="modal-body">
+
+
+
+
+                                                                <!-- Basic table -->
+                                                                <section>
+                                                                    <div class="row">
+                                                                        <div class="col-12 revenue-report-wrapper ">
+                                                                            <div class="card">
+                                                                                <table
+                                                                                    class="datatables-OAH table table-bordered table-condensed table-striped table-hover">
+                                                                                    <thead>
+                                                                                        <tr>
+                                                                                            <th>
+                                                                                                OBJETIVOS</th>
+                                                                                            <th>DESCRIPCION</th>
+                                                                                            <th>SEL.</th>
+                                                                                        </tr>
+                                                                                    </thead>
+                                                                                </table>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </section>
+                                                                <!-- Basic Table -->
+
+
+
+
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-primary"
+                                                                    data-bs-dismiss="modal">Accept</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- Modal --> 
                                         </div>
                                     </div>
-                                    <div class="col-xl-12 cb-contenedor_vacio"></div>
+                                    <div class="col-xl-12 ">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <ul class="list-group" id="handle-list-1">
+                                                    <li class="list-group-item text-warning fw-700"><span class="handle me-50">+</span>CNo2 OAH a</li>
+                                                    <li class="list-group-item text-warning fw-700"><span class="handle me-50">+</span>CNo2 OAH b</li>
+                                                    <li class="list-group-item text-warning fw-700"><span class="handle me-50">+</span>CNo2 OAH c</li>
+                                                    <li class="list-group-item text-warning fw-700"><span class="handle me-50">+</span>CNo2 OAH d</li>
+                                                </ul>
+                                            </div>
+                                    </div>
+                                    </div>
                                 </div>
-
                             </div>
                         </div>
                         <!-- Unidad 3 -->
                         <div class="col-md-4">
                             <div class="card">
                                 <div
-                                    class="modal-header-deco w-100 position-absolute hp-5 color-primary bg-primary mt-0">
+                                    class="modal-header-deco_u3 w-100 position-absolute hp-5 color-info bg-info mt-0">
                                 </div>
                                 <div class="card-header">
                                     <h4 class="card-title">Unidad 3</h4>
@@ -837,51 +1165,326 @@
                                         <div class="psp-20 ptp-5 fw-700">
                                             OA</div>
                                         <div class="d-flex justify-content-end pep-10">
-                                            <button type="submit"
-                                                class="btn btn_mas waves-effect waves-float waves-light" name="submit"
-                                                value="Submit">+</button>
+                                            <!-- <button type="submit" class="btn btn_mas waves-effect waves-float waves-light" name="submit" value="Submit">+</button>-->
+                                            <div class="scrolling-inside-modal">
+                                                <!-- Button trigger modal -->
+                                                <button type="button"
+                                                    class="btn btn_mas waves-effect waves-float waves-light"
+                                                    data-bs-toggle="modal" data-bs-target="#modaloa">
+                                                    +
+                                                </button>
+
+                                                    <!-- Modal -->
+                                                    <div class="modal fade" id="modaloa" tabindex="-1"
+                                                    aria-labelledby="modaloaTitle" aria-hidden="true">
+                                                    <div
+                                                        class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl">
+                                                        <div class="modal-content">
+
+                                                            <div class="modal-header">
+                                                                <h5 class="modal-title" id="modaloaTitle">Agregar Objetivos de aprendizaje a la unidad
+                                                                    <p class="fsp-10">Selecciona o busca los Objetivos de aprendizaje transversales que deseas abordar en esta unidad.</p>
+                                                                </h5>
+                                                                <button type="button" class="btn-close"
+                                                                    data-bs-dismiss="modal" aria-label="Close"></button>
+                                                            </div>
+                                                            <div class="modal-body">
+
+
+
+
+                                                                <!-- Basic table -->
+                                                                <section>
+                                                                    <div class="row">
+                                                                        <div class="col-12 revenue-report-wrapper ">
+                                                                            <div class="card">
+                                                                                <table
+                                                                                    class="datatables-OA table table-bordered table-condensed table-striped table-hover">
+                                                                                    <thead>
+                                                                                        <tr>
+                                                                                            <th>
+                                                                                                OBJETIVOS</th>
+                                                                                            <th>DESCRIPCION</th>
+                                                                                            <th>SEL.</th>
+                                                                                        </tr>
+                                                                                    </thead>
+                                                                                </table>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </section>
+                                                                <!-- Basic Table -->
+
+
+
+
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-primary"
+                                                                    data-bs-dismiss="modal">Accept</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    </div>
+                                                    <!-- Modal -->
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="col-xl-12 cb-contenedor_vacio"></div>
+                                    <div class="col-xl-12">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <ul class="list-group" id="handle-list-1">
+                                                    <li class="list-group-item text-primary fw-700"><span class="handle me-50">+</span>CNo2 OA a</li>
+                                                    <li class="list-group-item text-primary fw-700"><span class="handle me-50">+</span>CNo2 OA b</li>
+                                                    <li class="list-group-item text-primary fw-700"><span class="handle me-50">+</span>CNo2 OA c</li>
+                                                    <li class="list-group-item text-primary fw-700"><span class="handle me-50">+</span>CNo2 OA d</li>
+                                                </ul>
+                                            </div>
+                                    </div>
+                                    </div>
                                 </div>
                                 <div>
                                     <div class="d-flex justify-content-between bgc-light ptp-5 pbp-5 ">
                                         <div class="psp-20 ptp-5 fw-700">
                                             OAT</div>
                                         <div class="d-flex justify-content-end pep-10">
-                                            <button type="submit"
-                                                class="btn btn_mas waves-effect waves-float waves-light" name="submit"
-                                                value="Submit">+</button>
+                                            <div class="scrolling-inside-modal">
+                                                <!-- Button trigger modal -->
+                                                <button type="button" id="btn_oat"
+                                                    class="btn btn_mas waves-effect waves-float waves-light"
+                                                    data-bs-toggle="modal" data-bs-target="#modaloat">
+                                                    +
+                                                </button>
+
+                                                <!-- Modal -->
+                                                <div class="modal fade" id="modaloat" tabindex="-1"
+                                                    aria-labelledby="modaloatTitle" aria-hidden="true">
+                                                    <div
+                                                        class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl">
+                                                        <div class="modal-content">
+
+                                                            <div class="modal-header">
+                                                                <h5 class="modal-title" id="modaloatTitle">Agregar Objetivos de aprendizaje transversales a la unidad
+                                                                    <p class="fsp-10">Selecciona o busca los Objetivos de aprendizaje transversales que deseas abordar en esta unidad.</p>
+                                                                </h5>
+                                                                <button type="button" class="btn-close"
+                                                                    data-bs-dismiss="modal" aria-label="Close"></button>
+                                                            </div>
+                                                            <div class="modal-body">
+
+
+
+
+                                                                <!-- Basic table -->
+                                                                <section>
+                                                                    <div class="row">
+                                                                        <div class="col-12 revenue-report-wrapper ">
+                                                                            <div class="card">
+                                                                                <table
+                                                                                    class="datatables-OAT table table-bordered table-condensed table-striped table-hover">
+                                                                                    <thead>
+                                                                                        <tr>
+                                                                                            <th>
+                                                                                                OBJETIVOS</th>
+                                                                                            <th>DESCRIPCION</th>
+                                                                                            <th>SEL.</th>
+                                                                                        </tr>
+                                                                                    </thead>
+                                                                                </table>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </section>
+                                                                <!-- Basic Table -->
+
+
+
+
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-primary"
+                                                                    data-bs-dismiss="modal">Accept</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- Modal -->
+                                            </div>
+
                                         </div>
                                     </div>
-                                    <div class="col-xl-12 cb-contenedor_vacio"></div>
+                                    <div class="col-xl-12">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <ul class="list-group" id="handle-list-1">
+                                                    <li class="list-group-item text-info fw-700"><span class="handle me-50">+</span>CNo2 OAT a</li>
+                                                    <li class="list-group-item text-info fw-700"><span class="handle me-50">+</span>CNo2 OAT b</li>
+                                                    <li class="list-group-item text-info fw-700"><span class="handle me-50">+</span>CNo2 OAT c</li>
+                                                    <li class="list-group-item text-info fw-700"><span class="handle me-50">+</span>CNo2 OAT d</li>
+                                                </ul>
+                                            </div>
+                                    </div>
+                                    </div>
                                 </div>
                                 <div>
                                     <div class="d-flex justify-content-between bgc-light ptp-5 pbp-5 ">
                                         <div class="psp-20 ptp-5 fw-700">
                                             OAA</div>
                                         <div class="d-flex justify-content-end pep-10">
-                                            <button type="submit"
-                                                class="btn btn_mas waves-effect waves-float waves-light" name="submit"
-                                                value="Submit">+</button>
+                                            <button type="button" id="btn_oaa"
+                                            class="btn btn_mas waves-effect waves-float waves-light"
+                                            data-bs-toggle="modal" data-bs-target="#modaloaa">
+                                            +
+                                        </button>
+                                                 <!-- Modal -->
+                                                <div class="modal fade" id="modaloaa" tabindex="-1"
+                                                    aria-labelledby="modaloaaTitle" aria-hidden="true">
+                                                    <div
+                                                        class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl">
+                                                        <div class="modal-content">
+
+                                                            <div class="modal-header">
+                                                                <h5 class="modal-title" id="modaloaaTitle">Agregar Actitudes a la unidad
+                                                                    <p class="fsp-10">Selecciona o busca los Objetivos de aprendizaje transversales que deseas abordar en esta unidad.</p>
+                                                                </h5>
+                                                                <button type="button" class="btn-close"
+                                                                    data-bs-dismiss="modal" aria-label="Close"></button>
+                                                            </div>
+                                                            <div class="modal-body">
+
+
+
+
+                                                                <!-- Basic table -->
+                                                                <section>
+                                                                    <div class="row">
+                                                                        <div class="col-12 revenue-report-wrapper ">
+                                                                            <div class="card">
+                                                                                <table
+                                                                                    class="datatables-OAA table table-bordered table-condensed table-striped table-hover">
+                                                                                    <thead>
+                                                                                        <tr>
+                                                                                            <th>
+                                                                                                OBJETIVOS</th>
+                                                                                            <th>DESCRIPCION</th>
+                                                                                            <th>SEL.</th>
+                                                                                        </tr>
+                                                                                    </thead>
+                                                                                </table>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </section>
+                                                                <!-- Basic Table -->
+
+
+
+
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-primary"
+                                                                    data-bs-dismiss="modal">Accept</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- Modal -->           
                                         </div>
                                     </div>
-                                    <div class="col-xl-12 cb-contenedor_vacio"></div>
+                                    <div class="col-xl-12">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <ul class="list-group" id="handle-list-1">
+                                                    <li class="list-group-item text-success fw-700"><span class="handle me-50">+</span>CNo2 OAA a</li>
+                                                    <li class="list-group-item text-success fw-700"><span class="handle me-50">+</span>CNo2 OAA b</li>
+                                                    <li class="list-group-item text-success fw-700"><span class="handle me-50">+</span>CNo2 OAA c</li>
+                                                    <li class="list-group-item text-success fw-700"><span class="handle me-50">+</span>CNo2 OAA d</li>
+                                                </ul>
+                                            </div>
+                                    </div>
+                                    </div>
                                 </div>
                                 <div>
                                     <div class="d-flex justify-content-between bgc-light ptp-5 pbp-5 ">
                                         <div class="psp-20 ptp-5 fw-700">
                                             OAH</div>
                                         <div class="d-flex justify-content-end pep-10">
-                                            <button type="submit"
-                                                class="btn btn_mas waves-effect waves-float waves-light" name="submit"
-                                                value="Submit">+</button>
+                                            <button type="button" id="btn_oah"
+                                            class="btn btn_mas waves-effect waves-float waves-light"
+                                            data-bs-toggle="modal" data-bs-target="#modaloah">
+                                            +
+                                        </button>
+                                                
+                                                 <!-- Modal -->
+                                                <div class="modal fade" id="modaloah" tabindex="-1"
+                                                    aria-labelledby="modaloahTitle" aria-hidden="true">
+                                                    <div
+                                                        class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl">
+                                                        <div class="modal-content">
+
+                                                            <div class="modal-header">
+                                                                <h5 class="modal-title" id="modaloahTitle">Agregar Habilidades a la unidad
+                                                                    <p class="fsp-10">Selecciona o busca los Objetivos de aprendizaje transversales que deseas abordar en esta unidad.</p>
+
+                                                                </h5>
+                                                                <button type="button" class="btn-close"
+                                                                    data-bs-dismiss="modal" aria-label="Close"></button>
+                                                            </div>
+                                                            <div class="modal-body">
+
+
+
+
+                                                                <!-- Basic table -->
+                                                                <section>
+                                                                    <div class="row">
+                                                                        <div class="col-12 revenue-report-wrapper ">
+                                                                            <div class="card">
+                                                                                <table
+                                                                                    class="datatables-OAH table table-bordered table-condensed table-striped table-hover">
+                                                                                    <thead>
+                                                                                        <tr>
+                                                                                            <th>
+                                                                                                OBJETIVOS</th>
+                                                                                            <th>DESCRIPCION</th>
+                                                                                            <th>SEL.</th>
+                                                                                        </tr>
+                                                                                    </thead>
+                                                                                </table>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </section>
+                                                                <!-- Basic Table -->
+
+
+
+
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-primary"
+                                                                    data-bs-dismiss="modal">Accept</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- Modal --> 
                                         </div>
                                     </div>
-                                    <div class="col-xl-12 cb-contenedor_vacio"></div>
+                                    <div class="col-xl-12 ">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <ul class="list-group" id="handle-list-1">
+                                                    <li class="list-group-item text-warning fw-700"><span class="handle me-50">+</span>CNo2 OAH a</li>
+                                                    <li class="list-group-item text-warning fw-700"><span class="handle me-50">+</span>CNo2 OAH b</li>
+                                                    <li class="list-group-item text-warning fw-700"><span class="handle me-50">+</span>CNo2 OAH c</li>
+                                                    <li class="list-group-item text-warning fw-700"><span class="handle me-50">+</span>CNo2 OAH d</li>
+                                                </ul>
+                                            </div>
+                                    </div>
+                                    </div>
                                 </div>
 
-                            </div>
                         </div>
 
 
@@ -954,6 +1557,8 @@
 <script src="app-assets/js/scripts/tables/datatables-OAA-CB.js"></script>
 <script src="app-assets/js/scripts/tables/datatables-OAH-CB.js"></script>
 <!-- END: DATATABLE-->
+<script src="app-assets/vendors/js/extensions/dragula.min.js"></script>
+<script src="app-assets/js/scripts/extensions/ext-component-drag-drop.js"></script>
 <!-- BEGIN: Page JS-->
 <script src="app-assets/js/scripts/extensions/ext-component-sweet-alerts.js"></script>
 <!-- END: Page JS-->
