@@ -104,25 +104,7 @@
         </div>
         <div class="shadow-bottom"></div>
         <div class="main-menu-content">
-            <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
-                <li class=" nav-item active"><a class="d-flex align-items-center" href="index.html"><i data-feather="layers"></i><span class="menu-title text-truncate" data-i18n="Dashboards">Gestor de recursos</span></a>
-                </li>
-                <!-- <li class=" navigation-header"><span data-i18n="Apps &amp; Pages">Opciones</span><i data-feather="more-horizontal"></i> -->
-                </li>
-                <li class=" nav-item"><a class="d-flex align-items-center" href="gestor_de_programas.html"><i data-feather='clipboard'></i><span class="menu-title text-truncate" data-i18n="Email">Gestor de programas</span></a>
-                </li>
-                <li class=" nav-item"><a class="d-flex align-items-center" href="gestor_de_guias.html"><i data-feather='book-open'></i><span class="menu-title text-truncate" data-i18n="Chat">Gestor de guías</span></a>
-                </li>
-                <li class=" nav-item"><a class="d-flex align-items-center" href="app-todo.html"><i data-feather="users"></i><span class="menu-title text-truncate" data-i18n="Todo">Gestor de usuarios</span></a>
-                </li>
-                <li class=" nav-item"><a class="d-flex align-items-center" href="app-calendar.html"><i data-feather='home'></i><span class="menu-title text-truncate" data-i18n="Calendar">Gestor de colegios</span></a>
-                </li>
-                <li class=" nav-item"><a class="d-flex align-items-center" href="app-kanban.html"><i data-feather='mail'></i><span class="menu-title text-truncate" data-i18n="Kanban">Gestor de licencias</span></a>
-                </li>
-                <li class=" nav-item"><a class="d-flex align-items-center" href="#"><i data-feather='settings'></i><span class="menu-title text-truncate" data-i18n="Invoice">Configuraciones</span></a>
-                </li>
-               
-            </ul>
+            <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation"></ul>
         </div>
     </div>
     <!-- END: Main Menu-->
@@ -245,10 +227,15 @@
     <button class="btn btn-primary btn-icon scroll-top" type="button"><i data-feather="arrow-up"></i></button>
     <!-- END: Footer-->
 
+    <!-- BEGIN MENU -->
+    <script src="app-assets/js/menu.js"></script>
+    <!-- END MENU -->
+
     <!-- Ionic icons -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <!-- / Ionic icons -->
+
     <!-- BEGIN: Vendor JS-->
     <script src="app-assets/vendors/js/vendors.min.js"></script>
     <!-- BEGIN Vendor JS-->
@@ -278,6 +265,7 @@
     <script src="app-assets/js/scripts/forms/form-select2.js"></script>
     <!-- END: Page JS-->
     <script>
+        populateMenu(menu);
         $(window).on('load', function() {
             if (feather) {
                 feather.replace({
