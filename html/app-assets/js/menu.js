@@ -57,12 +57,12 @@ const menu = [
     submenus: [
       {
         title: "Colegios",
-        enlace: "gc_usuarios_lista.html",
+        enlace: "gc_colegios_lista.html",
         icon: "circle",
       },
       {
         title: "Grupos de colegios",
-        enlace: "gc_usuarios_roles_lista.html",
+        enlace: "gc_grupos_colegio_lista.html",
         icon: "circle",
       },
       {
@@ -74,7 +74,7 @@ const menu = [
   },
   {
     title: "Unidades MINEDUC",
-    enlace: "index.html",
+    enlace: "gc_unidades_lista.html",
     icon: "grid",
   },
   {
@@ -106,12 +106,12 @@ const menu = [
     submenus: [
       {
         title: "Niveles",
-        enlace: "gc_usuarios_lista.html",
+        enlace: "gc_niveles_lista.html",
         icon: "circle",
       },
       {
         title: "Asignaturas",
-        enlace: "gc_usuarios_roles_lista.html",
+        enlace: "gc_asignaturas_lista.html",
         icon: "circle",
       },
     ],
