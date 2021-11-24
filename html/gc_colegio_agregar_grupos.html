@@ -32,9 +32,6 @@
         <link rel="stylesheet" type="text/css" href="app-assets/css/themes/bordered-layout.css">
         <link rel="stylesheet" type="text/css" href="app-assets/css/themes/semi-dark-layout.css">
         <link rel="stylesheet" type="text/css" href="app-assets/css/plugins/forms/form-file-uploader.css">
-        <!--drop-->
-
-        <!-- END: Vendor CSS-->
 
         <!-- BEGIN: Page CSS-->
         <link rel="stylesheet" type="text/css" href="app-assets/css/core/menu/menu-types/vertical-menu.css">
@@ -315,6 +312,7 @@
             </div>
             <div class="shadow-bottom"></div>
             <div class="main-menu-content">
+
                 <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
 
                     <!-- Carga desde menu.js -->
@@ -330,21 +328,20 @@
             <div class="header-navbar-shadow"></div>
             <div class="content-wrapper container-xxl p-0">
 
-    <div
-        class="content-body">
+    <div class="content-body">
         <div class="content-header-left col-md-7 col-12 mb-2">
             <div class="row breadcrumbs-top">
                 <div class="col-12">
-                    <h2 class="float-start mb-0">Editar datos de colegio</h2>
+                    <h2 class="float-start mb-0">Editar colegios</h2>
                 </div>
             </div>
         </div>
-         <div class="col-12">
-            <div class="card card-revenue-budget">
+        <div class="col-12">
+                        <div class="card card-revenue-budget">
                 <div class="row mx-0">
                  <div class="col-12 revenue-report-wrapper">
                    <div>
-                    <h4 class="card-title">Detalle de colegio</h4>
+                    <h4 class="card-title">Lista de colegios</h4>
                     </div>        
                     <form id="jquery-val-form" method="post">                                  
                     <div class="row">
@@ -414,16 +411,16 @@
                             <div class="mb-1">
                                 <label class="form-label " for="itemcost">GRUPO DE COLEGIOS</label>
                                 <div class="mb-1">
-                                    <select class="form-select select2 pep-40 mb-1" id="basicSelect">
-                                        <option value="">Seleciona una opción</option>
+                                    <select class="form-select pep-40 mb-1 text-primary" id="basicSelect">
                                         <option>Colegio Pumahue</option>
-                                        <option>Colegios Manquequra</option>
+                                        <option selected>Colegios Manquequra</option>
                                         <option>Boston college​</option>>
                                     </select>
                                 </div>
 
                             </div>
                         </div>
+
                         <div class="col-12 p-0">
                             <div class="card">
                                 <div class="card-body">
@@ -435,57 +432,57 @@
                             </div>
                         </div>
                 </div>
-                <div class="d-flex justify-content-end">
-                <button type="submit" class="btn btn-primary waves-effect waves-float waves-light" name="submit" value="Submit">Guardar cambios</button>
-                </div>
+
+
             </form>
-
-            
-            <div class="row">
-
-                <div>
-                    <h4 class="card-title">Grupos de colegios</h4>
-                    </div> 
-
-
-                <div class="col-xl-12  col-xs-12">
-                    <div class="mb-1">
-                        <label class="form-label" for="colegio">BUSCAR GRUPOS DE COLEGIOS</label>
-                        <select class="form-select select2" data-language="es" id="colegio" name="colegio">
-                                <option value="">Seleciona una opción</option>
-                                <option value="Providencia">Colegio Pumahue</option>
-                                <option value="santiago">Boston college</option>
-                            </select>
-                    </div>
-                </div>
-
-
-                
-                
-
-                
-                
-                <div class="col-xl-12 ">
-                <div class="d-flex justify-content-end align-items-center pt-2">
-                    <button type="submit" class="btn btn-primary waves-effect waves-float waves-light" name="submit" value="Submit">Agregar al grupo</button>
-                    </div>
-                </div>
-
-
-
-
-     
-        </div>
+                    
             
 
 
-                </div>
+                <!-- AGREGAR A LA RED-->
+
+                <div class="row">
+
+                    <div>
+                        <h4 class="card-title">Grupos de colegios</h4>
+                        </div> 
+
+
+                    <div class="col-xl-12  col-xs-12">
+                        <div class="mb-1">
+                            <label class="form-label" for="colegio">BUSCAR GRUPOS DE COLEGIOS</label>
+                            <select class="form-select select2" data-language="es" id="colegio" name="colegio">
+                                    <option value="">Seleciona una opción</option>
+                                    <option value="Providencia">Colegio Pumahue</option>
+                                    <option value="santiago">Boston college</option>
+                                </select>
+                        </div>
+                    </div>
+
+
+                    
+                    
+
+                    
+                    
+                    <div class="col-xl-12 ">
+                    <div class="d-flex justify-content-end align-items-center pt-2">
+                        <button type="submit" class="btn btn-primary waves-effect waves-float waves-light" name="submit" value="Submit">Agregar al grupo</button>
+                        </div>
+                    </div>
 
 
 
 
-
+         
             </div>
+
+
+
+
+                </div>
+ 
+            </div> 
         </div>
     </div>
 </div>
@@ -508,16 +505,32 @@
             <i data-feather="arrow-up"></i>
         </button>
         <!-- END: Footer-->
+        <!-- BEGIN MENU -->
         <script src="app-assets/js/menu.js"></script>
+        <!-- END MENU -->
 
         <!-- BEGIN: Vendor JS-->
         <script src="app-assets/vendors/js/vendors.min.js"></script>
         <!-- BEGIN Vendor JS-->
+        <script src="app-assets/vendors/js/tables/datatable/jquery.dataTables.min.js"></script>
+        <script src="app-assets/vendors/js/tables/datatable/dataTables.bootstrap5.min.js"></script>
+        <script src="app-assets/vendors/js/tables/datatable/dataTables.responsive.min.js"></script>
+        <script src="app-assets/vendors/js/tables/datatable/responsive.bootstrap4.min.js"></script>
+        <script src="app-assets/vendors/js/tables/datatable/datatables.checkboxes.min.js"></script>
+        <script src="app-assets/vendors/js/tables/datatable/datatables.buttons.min.js"></script>
+        <script src="app-assets/vendors/js/tables/datatable/jszip.min.js"></script>
+        <script src="app-assets/vendors/js/tables/datatable/pdfmake.min.js"></script>
+        <script src="app-assets/vendors/js/tables/datatable/vfs_fonts.js"></script>
+        <script src="app-assets/vendors/js/tables/datatable/buttons.html5.min.js"></script>
+        <script src="app-assets/vendors/js/tables/datatable/buttons.print.min.js"></script>
+        <script src="app-assets/vendors/js/tables/datatable/dataTables.rowGroup.min.js"></script>
+
+
         <script src="app-assets/vendors/js/forms/select/select2.full.min.js"></script>
         <script src="app-assets/vendors/js/forms/validation/jquery.validate.min.js"></script>
         <script src="app-assets/vendors/js/pickers/flatpickr/flatpickr.min.js"></script>
-        <script src="app-assets/vendors/js/file-uploaders/dropzone.min.js"></script>
         <!-- BEGIN: Page Vendor JS-->
+        <script src="app-assets/vendors/js/file-uploaders/dropzone.min.js"></script>
         <!-- <script src="app-assets/vendors/js/charts/apexcharts.min.js"></script>
             <script src="app-assets/vendors/js/extensions/toastr.min.js"></script> -->
         <!-- END: Page Vendor JS-->
@@ -531,21 +544,23 @@
         <!-- <script src="app-assets/js/scripts/pages/dashboard-ecommerce.js"></script> -->
         <!-- END: Page JS-->
         <!-- BEGIN: Page JS-->
-        <script src="app-assets/js/scripts/forms/form-validation.js"></script>
         <script src="app-assets/js/scripts/forms/form-file-uploader.js"></script>
+        <script src="app-assets/js/scripts/forms/form-validation.js"></script>
+
+        <script src="app-assets/js/scripts/tables/gc_colegio_lista.js"></script>
         <!-- END: Page JS-->
 
-            <script>
-                populateMenu(menu);
-                $(window).on('load', function () {
-                    if (feather) {
-                        feather.replace({
-                            width: 14,
-                            height: 14
-                        });
-                    }
-                })
-            </script>
+    <script>
+        populateMenu(menu);
+        $(window).on('load', function () {
+            if (feather) {
+                feather.replace({
+                    width: 14,
+                    height: 14
+                });
+            }
+        })
+    </script>
 </body>
     <!-- END: Body-->
 

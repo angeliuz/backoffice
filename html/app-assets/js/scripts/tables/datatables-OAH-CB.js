@@ -104,7 +104,7 @@ $(function () {
     dt_basic_table.DataTable().columns.adjust();
     dt_basic_table.DataTable().responsive.recalc();
 
-    $("#modaloat").on("shown.bs.modal", function () {
+    $("#modaloah").on("shown.bs.modal", function () {
       dt_basic_table.DataTable().columns.adjust();
       dt_basic_table.DataTable().responsive.recalc();
     });

@@ -313,62 +313,10 @@
             <div class="shadow-bottom"></div>
             <div class="main-menu-content">
                 <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
-                    <li class=" nav-item active">
-                        <a class="d-flex align-items-center" href="index.html">
-                            <i data-feather="home"></i>
-                            <span class="menu-title text-truncate" data-i18n="Dashboards">Dashboard</span>
-                        </a>
-                    </li>
-                    <li class=" navigation-header">
-                        <span data-i18n="Apps &amp; Pages">Opciones</span>
-                        <i data-feather="more-horizontal"></i>
-                    </li>
-                    <li class=" nav-item">
-                        <a class="d-flex align-items-center" href="app-email.html">
-                            <i data-feather='plus-circle'></i>
-                            <span class="menu-title text-truncate" data-i18n="Email">Cursos</span>
-                        </a>
-                        <ul class="menu-content">
-                            <li>
-                                <a class="d-flex align-items-center" href="app-invoice-list.html">
-                                    <i data-feather="circle"></i>
-                                    <span class="menu-item text-truncate" data-i18n="List">Mis cursos</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class=" nav-item">
-                        <a class="d-flex align-items-center" href="app-chat.html">
-                            <i data-feather='clipboard'></i>
-                            <span class="menu-title text-truncate" data-i18n="Chat">Planificaciones</span>
-                        </a>
-                    </li>
-                    <li class=" nav-item">
-                        <a class="d-flex align-items-center" href="app-todo.html">
-                            <i data-feather="check-square"></i>
-                            <span class="menu-title text-truncate" data-i18n="Todo">Evaluaciones</span>
-                        </a>
-                    </li>
-                    <li class=" nav-item">
-                        <a class="d-flex align-items-center" href="app-calendar.html">
-                            <i data-feather='share-2'></i>
-                            <span class="menu-title text-truncate" data-i18n="Calendar">Compartidos</span>
-                        </a>
-                    </li>
-                    <li class=" nav-item">
-                        <a class="d-flex align-items-center" href="app-kanban.html">
-                            <i data-feather='mail'></i>
-                            <span class="menu-title text-truncate" data-i18n="Kanban">Mensajes</span>
-                        </a>
-                    </li>
-                    <li class=" nav-item">
-                        <a class="d-flex align-items-center" href="#">
-                            <i data-feather='help-circle'></i>
-                            <span class="menu-title text-truncate" data-i18n="Invoice">Ayuda</span>
-                        </a>
-                    </li>
 
-                </ul>
+                    <!-- Carga desde menu.js -->
+            
+                  </ul>
             </div>
         </div>
         <!-- END: Main Menu-->
@@ -386,7 +334,7 @@
                 <div class="row mx-0">
                  <div class="col-12 revenue-report-wrapper">
                    <div>
-                    <h4 class="card-title">Agregar Asignatura</h4>
+                    <h4 class="card-title">Crear Red de colegios</h4>
                     </div>        
                     <form id="jquery-val-form" method="post">                                  
                     <div class="row">
@@ -426,6 +374,39 @@
                             <button type="submit" class="btn btn-primary waves-effect waves-float waves-light" name="submit" value="Submit">Agregar a la Red</button>
                             </div>
                         </div>
+                                    <!-- Dashboard Ecommerce Starts -->
+ <section id="dashboard-ecommerce">
+    <div class="row match-height">
+    <!-- Column Search -->
+    <section id="column-search-datatable">
+    <div class="row">
+    <div class="col-12">
+    <div class="card">
+    <div class="card-header border-bottom">
+    <h4 class="card-title">Lista de colegios</h4>
+    </div>
+    <div class="card-datatable">
+    <table class="dt-multilingual table">
+    <thead>
+    <tr>
+    <th>id</th>
+    <th style="width: 40px">id</th>
+    <th>nombre</th>
+    <th>rbd</th>
+    <th>dirección</th>
+    <th>distrito</th>
+    <th style="width: 40px">acción</th>
+    </tr>
+    </thead>
+    </table>
+    </div>
+    </div>
+    </div>
+    </div>
+    </section>
+    <!--/ Column Search -->
+    </div>
+    </section>
                         
 
              
@@ -458,7 +439,9 @@
             <i data-feather="arrow-up"></i>
         </button>
         <!-- END: Footer-->
-
+        <!-- BEGIN MENU -->
+        <script src="app-assets/js/menu.js"></script>
+        <!-- END MENU -->
 
         <!-- BEGIN: Vendor JS-->
         <script src="app-assets/vendors/js/vendors.min.js"></script>
@@ -478,6 +461,9 @@
         <!-- END: Theme JS-->
 
         <!-- BEGIN: Page JS-->
+        <!-- DATATABLE-->
+       <script src="app-assets/js/scripts/tables/datatables-colegios-cb.js"></script>
+       <!-- END:DATATABLE-->
         <!-- <script src="app-assets/js/scripts/pages/dashboard-ecommerce.js"></script> -->
         <!-- END: Page JS-->
         <!-- BEGIN: Page JS-->
