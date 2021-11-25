@@ -360,7 +360,7 @@
                 <div class="content-header-left col-md-7 col-12 mb-2">
                     <div class="row breadcrumbs-top">
                         <div class="col-12">
-                            <h2 class="content-header-title float-start mb-0">Gestor de colegios</h2>
+                            <h2 class="float-start mb-0">Gestor de colegios</h2>
                         </div>
                     </div>
                 </div>
@@ -452,6 +452,13 @@
                                         <!-- Basic Table -->
 
                                     </div>
+                                    <div class="col-xl-12 col-xs-12">
+                                        <div class="d-flex justify-content-end align-items-center pt-2">
+                                            <button type="submit"
+                                                class="btn btn-primary waves-effect waves-float waves-light"
+                                                name="submit" value="Submit">Guardar</button>
+                                        </div>
+                                    </div>
 
 
                                 </div>
@@ -538,13 +545,15 @@
     <script src="app-assets/js/scripts/forms/form-validation.js"></script>
     <!-- END: Page JS-->
 
-    <script>
-        $(window).on('load', function () {
-            if (feather) {
-                feather.replace({ width: 14, height: 14 });
-            }
-        })
-    </script>
+      <script>
+        populateMenu(menu);
+        $(window).on("load", function () {
+          if (feather) {
+            feather.replace({ width: 14, height: 14 });
+          }
+        });
+      </script>
+
 </body>
 <!-- END: Body-->
 

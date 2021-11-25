@@ -1,0 +1,31 @@
+{
+  "data": [
+    {
+      "id": "1261",
+      "nombre": "Orietta Corrial Rojas",
+      "rut": "14000333-7",
+      "correo": "ctaldo@gmail.com",
+      "administrador": "Administrativo",
+      "grupo": "Colegios Pumahue",
+      "estado": "0"
+    },
+    {
+      "id": "22548",
+      "nombre": "Juan Pablo Figueroa Condes",
+      "rut": "11000333-2",
+      "correo": "ctaldo1@gmail.com",
+      "administrador": "Administrativo",
+      "grupo": "Colegios Manquecura",
+      "estado": "1"
+    },
+    {
+      "id": "186",
+      "nombre": "Pedro Pablo Gutierrez",
+      "rut": "5739863-2",
+      "correo": "pedro.pablo@gmail.com",
+      "administrador": "Administrativo",
+      "grupo": "Instituto del Mar",
+      "estado": "1"
+    }
+  ]
+}

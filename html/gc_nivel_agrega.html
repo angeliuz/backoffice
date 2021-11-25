@@ -316,22 +316,9 @@
             <div class="shadow-bottom"></div>
             <div class="main-menu-content">
                 <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
-                    <li class=" nav-item active"><a class="d-flex align-items-center" href="index.html"><i data-feather="layers"></i><span class="menu-title text-truncate" data-i18n="Dashboards">Gestor de recursos</span></a>
-                    </li>
-                    <!-- <li class=" navigation-header"><span data-i18n="Apps &amp; Pages">Opciones</span><i data-feather="more-horizontal"></i> -->
-                    </li>
-                    <li class=" nav-item"><a class="d-flex align-items-center" href="gestor_de_programas.html"><i data-feather='clipboard'></i><span class="menu-title text-truncate" data-i18n="Email">Gestor de programas</span></a>
-                    </li>
-                    <li class=" nav-item"><a class="d-flex align-items-center" href="gestor_de_guias.html"><i data-feather='book-open'></i><span class="menu-title text-truncate" data-i18n="Chat">Gestor de guías</span></a>
-                    </li>
-                    <li class=" nav-item"><a class="d-flex align-items-center" href="app-todo.html"><i data-feather="users"></i><span class="menu-title text-truncate" data-i18n="Todo">Gestor de usuarios</span></a>
-                    </li>
-                    <li class=" nav-item"><a class="d-flex align-items-center" href="gestor_de_colegios.html"><i data-feather='home'></i><span class="menu-title text-truncate" data-i18n="Calendar">Gestor de colegios</span></a>
-                    </li>
-                    <li class=" nav-item"><a class="d-flex align-items-center" href="app-kanban.html"><i data-feather='mail'></i><span class="menu-title text-truncate" data-i18n="Kanban">Gestor de licencias</span></a>
-                    </li>
-                    <li class=" nav-item"><a class="d-flex align-items-center" href="#"><i data-feather='settings'></i><span class="menu-title text-truncate" data-i18n="Invoice">Configuraciones</span></a>
-                    </li>
+    
+                    <!-- Carga desde menu.js -->
+    
                 </ul>
             </div>
         </div>
@@ -345,15 +332,23 @@
 
     <div
         class="content-body">
-        <div>
-            <h4 class="card-title"></h4>
-            </div> 
+        <div class="content-header row">
+            <div class="content-header-left col-md-7 col-12 mb-2">
+                <div class="row breadcrumbs-top">
+                    <div class="col-12">
+                        <h2 class="float-start mb-0">Asignaturas y Niveles</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="content-header-right text-md-end col-md-5 col-12 d-md-block d-none">
+            </div>
+        </div>
          <div class="col-12">
             <div class="card card-revenue-budget">
                 <div class="row mx-0">
                  <div class="col-12 revenue-report-wrapper">
                    <div>
-                    <h4 class="card-title">Agregar Nivel</h4>
+                    <h2 class="card-title">Agregar Nivel</h2>
                     </div>        
                     <form id="jquery-val-form" method="post">                                  
                     <div class="row">
@@ -421,7 +416,7 @@
         </button>
         <!-- END: Footer-->
 
-
+        <script src="app-assets/js/menu.js"></script>
         <!-- BEGIN: Vendor JS-->
         <script src="app-assets/vendors/js/vendors.min.js"></script>
         <!-- BEGIN Vendor JS-->
@@ -447,13 +442,14 @@
         <script src="app-assets/js/scripts/forms/form-file-uploader.js"></script>
         <!-- END: Page JS-->
 
-            <script>
-$(window).on('load', function () {
-    if (feather) {
-        feather.replace({width: 14, height: 14});
-    }
-})
-    </script>
+        <script>
+            populateMenu(menu);
+            $(window).on("load", function () {
+              if (feather) {
+                feather.replace({ width: 14, height: 14 });
+              }
+            });
+          </script>
 </body>
     <!-- END: Body-->
 

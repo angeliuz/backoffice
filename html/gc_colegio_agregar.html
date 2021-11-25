@@ -313,61 +313,9 @@
             <div class="shadow-bottom"></div>
             <div class="main-menu-content">
                 <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
-                    <li class=" nav-item active">
-                        <a class="d-flex align-items-center" href="index.html">
-                            <i data-feather="home"></i>
-                            <span class="menu-title text-truncate" data-i18n="Dashboards">Dashboard</span>
-                        </a>
-                    </li>
-                    <li class=" navigation-header">
-                        <span data-i18n="Apps &amp; Pages">Opciones</span>
-                        <i data-feather="more-horizontal"></i>
-                    </li>
-                    <li class=" nav-item">
-                        <a class="d-flex align-items-center" href="app-email.html">
-                            <i data-feather='plus-circle'></i>
-                            <span class="menu-title text-truncate" data-i18n="Email">Cursos</span>
-                        </a>
-                        <ul class="menu-content">
-                            <li>
-                                <a class="d-flex align-items-center" href="app-invoice-list.html">
-                                    <i data-feather="circle"></i>
-                                    <span class="menu-item text-truncate" data-i18n="List">Mis cursos</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class=" nav-item">
-                        <a class="d-flex align-items-center" href="app-chat.html">
-                            <i data-feather='clipboard'></i>
-                            <span class="menu-title text-truncate" data-i18n="Chat">Planificaciones</span>
-                        </a>
-                    </li>
-                    <li class=" nav-item">
-                        <a class="d-flex align-items-center" href="app-todo.html">
-                            <i data-feather="check-square"></i>
-                            <span class="menu-title text-truncate" data-i18n="Todo">Evaluaciones</span>
-                        </a>
-                    </li>
-                    <li class=" nav-item">
-                        <a class="d-flex align-items-center" href="app-calendar.html">
-                            <i data-feather='share-2'></i>
-                            <span class="menu-title text-truncate" data-i18n="Calendar">Compartidos</span>
-                        </a>
-                    </li>
-                    <li class=" nav-item">
-                        <a class="d-flex align-items-center" href="app-kanban.html">
-                            <i data-feather='mail'></i>
-                            <span class="menu-title text-truncate" data-i18n="Kanban">Mensajes</span>
-                        </a>
-                    </li>
-                    <li class=" nav-item">
-                        <a class="d-flex align-items-center" href="#">
-                            <i data-feather='help-circle'></i>
-                            <span class="menu-title text-truncate" data-i18n="Invoice">Ayuda</span>
-                        </a>
-                    </li>
-
+    
+                    <!-- Carga desde menu.js -->
+    
                 </ul>
             </div>
         </div>
@@ -509,7 +457,7 @@
         </button>
         <!-- END: Footer-->
 
-
+        <script src="app-assets/js/menu.js"></script>
         <!-- BEGIN: Vendor JS-->
         <script src="app-assets/vendors/js/vendors.min.js"></script>
         <!-- BEGIN Vendor JS-->
@@ -535,13 +483,14 @@
         <script src="app-assets/js/scripts/forms/form-validation.js"></script>
         <!-- END: Page JS-->
 
-            <script>
-$(window).on('load', function () {
-    if (feather) {
-        feather.replace({width: 14, height: 14});
-    }
-})
-    </script>
+          <script>
+            populateMenu(menu);
+            $(window).on("load", function () {
+              if (feather) {
+                feather.replace({ width: 14, height: 14 });
+              }
+            });
+          </script>
 </body>
     <!-- END: Body-->
 
