@@ -1067,10 +1067,18 @@ font-family: 'Lobster', cursive; */
   margin-top: 200%;
 }
 
+.mtp-4 {
+  margin-top: 4px;
+}
 .mtp-5 {
   margin-top: 5px;
 }
-
+.mtp-10 {
+  margin-top: 10px;
+}
+.mtp-15 {
+  margin-top: 15px;
+}
 .mtp-20 {
   margin-top: 20px;
 }
@@ -2470,6 +2478,12 @@ font-family: 'Lobster', cursive; */
 }
 
 /* padding-left px */
+.psp-10 {
+  padding-left: 10px;
+}
+.psp-15 {
+  padding-left: 15px;
+}
 .psp-20 {
   padding-left: 20px;
 }
@@ -2732,6 +2746,9 @@ font-family: 'Lobster', cursive; */
 
 .fsp-10 {
   font-size: 10px;
+}
+.fsp-11 {
+  font-size: 11px;
 }
 .fsp-12 {
   font-size: 12px;
