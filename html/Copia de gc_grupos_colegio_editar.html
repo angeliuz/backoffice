@@ -15,9 +15,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500;1,600" rel="stylesheet">
     <!-- BEGIN: Vendor CSS-->
     <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/vendors.min.css">
-    <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/tables/datatable/dataTables.bootstrap5.min.css">
-    <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/tables/datatable/responsive.bootstrap4.min.css">
-    <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/pickers/flatpickr/flatpickr.min.css">
     <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/forms/select/select2.min.css">
     <!-- END: Vendor CSS-->
 
@@ -110,55 +107,81 @@
                 <div class="content-header-left col-md-7 col-12 mb-2">
                     <div class="row breadcrumbs-top">
                         <div class="col-12">
-                            <h2 class="content-header-title float-start mb-0">Gestor de grupo colegios</h2>
+                            <h2 class="float-start mb-0">Gestor de grupo colegios</h2>
                         </div>
                     </div>
                 </div>
-                <div class="content-header-right text-md-end col-md-5 col-12 d-md-block d-none">
+                <!-- <div class="content-header-right text-md-end col-md-5 col-12 d-md-block d-none">
                     <div class="mb-1 breadcrumb-right">
-                        <a href="gc_grupos_colegio_agregar.html" target="_self">
+                        <a href="gc_grupocolegio_agregar.html" target="_self">
                             <button type="button" class="btn btn-primary">
                                 <i data-feather='file-plus'></i>
                                 <span>Agregar grupo</span>
                             </button>
                         </a>
                     </div>
-                </div>
+                </div> -->
             </div>
             <div class="content-body">
                 <!-- Dashboard Ecommerce Starts -->
                 <section id="dashboard-ecommerce">
                     <div class="row match-height">
-                        
-                            <!-- Column Search -->
-                            <section id="column-search-datatable">
-                                <div class="row">
-                                    <div class="col-12">
-                                        <div class="card">
-                                            <div class="card-header border-bottom">
-                                                <h4 class="card-title">Lista de grupos</h4>
+
+                        <!-- Revenue Report Card -->
+                        <div class="col-12">
+                            <div class="card card-revenue-budget">
+                                <div class="row mx-0">
+                                    <div class="col-12 revenue-report-wrapper border-0">
+                                        <div><h4 class="card-title">Agregar colegios al grupo</h4></div> 
+
+                                        <div class="row">
+                                            <div class="col-10 mb-1">
+                                                <label class="form-label" for="itemcost">Nombre del grupo</label>
+                                                <label class="form-control" for="itemcost">Colegio Pumahue</label>
+                                                <!-- <input type="number" class="form-control" id="nombre" aria-describedby="itemcost" placeholder="Colegios Pumahue" disabled/> -->
                                             </div>
-                                            <div class="card-datatable">
-                                                <table class="dt-multilingual table">
-                                                    <thead>
-                                                        <tr>
-                                                            <th>id</th>
-                                                            <th style="width: 40px;">id</th>
-                                                            <th>grupo</th>
-                                                            <th>nº de colegios</th>
-                                                            <th style="width: 40px;">acción</th>
-                                                        </tr>
-                                                    </thead>
-                                                </table>
+                                            <div class="col-2 mb-1">
+                                                <label class="form-label" for="itemcost">Número de colegios</label>
+                                                <label class="form-control" for="itemcost">5</label>
+                                                <!-- <input type="number" class="form-control" id="numero" aria-describedby="itemcost" placeholder="5" disabled/> -->
                                             </div>
                                         </div>
+
+                                        <div class="row">
+                                            <div class="col-12 mb-1">
+                                                <label class="form-label" for="select2-multiple">Colegios</label>
+                                                <select class="select2 form-select" id="select1-multiple" multiple>
+                                                    <option value="01" selected>Colegio Pumahue - Valparaíso</option>
+                                                    <option value="02" selected>Colegio Pumahue - Chicureo</option>
+                                                    <option value="03" selected>Colegio Pumahue - Chicauma</option>
+                                                    <option value="04" selected>Colegio Pumahue - Lampa</option>
+                                                    <option value="05" selected>Colegio Pumahue - Huechuraba</option>
+                                                    <option value="06">Colegio Pumahue - La Florida</option>
+                                                    <option value="06">Colegio Pumahue - Concepción</option>
+                                                    <option value="06">Colegio Pumahue - Punta Arenas</option>
+                                                    <option value="06">Colegio Pumahue - Temuco</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <div class="row d-flex justify-content-end">
+                                            <div class="col-auto">
+                                                <div class="d-flex w-100">
+                                                    <a href="gc_grupocolegio_lista.html" target="_self">
+                                                        <!-- <div class="btn btn-primary h-100 w-100 px-1 py-1">GUARDAR</div> -->
+                                                    <button type="submit" class="btn btn-primary waves-effect waves-float waves-light" name="submit" value="Submit">Guardar</button>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+
                                     </div>
                                 </div>
-                            </section>
-                            <!--/ Column Search -->
-                        
+                            </div>
+                        </div>
                     </div>
                 </section>
+
             </div>
         </div>
     </div>
@@ -188,19 +211,7 @@
     <!-- BEGIN Vendor JS-->
 
     <!-- BEGIN: Page Vendor JS-->
-    <script src="app-assets/vendors/js/tables/datatable/jquery.dataTables.min.js"></script>
-    <script src="app-assets/vendors/js/tables/datatable/dataTables.bootstrap5.min.js"></script>
-    <script src="app-assets/vendors/js/tables/datatable/dataTables.responsive.min.js"></script>
-    <script src="app-assets/vendors/js/tables/datatable/responsive.bootstrap4.min.js"></script>
-    <script src="app-assets/vendors/js/tables/datatable/datatables.checkboxes.min.js"></script>
-    <script src="app-assets/vendors/js/tables/datatable/datatables.buttons.min.js"></script>
-    <script src="app-assets/vendors/js/tables/datatable/jszip.min.js"></script>
-    <script src="app-assets/vendors/js/tables/datatable/pdfmake.min.js"></script>
-    <script src="app-assets/vendors/js/tables/datatable/vfs_fonts.js"></script>
-    <script src="app-assets/vendors/js/tables/datatable/buttons.html5.min.js"></script>
-    <script src="app-assets/vendors/js/tables/datatable/buttons.print.min.js"></script>
-    <script src="app-assets/vendors/js/tables/datatable/dataTables.rowGroup.min.js"></script>
-    <script src="app-assets/vendors/js/pickers/flatpickr/flatpickr.min.js"></script>
+    <script src="app-assets/vendors/js/forms/select/select2.full.min.js"></script>
     <!-- END: Page Vendor JS-->
 
     <!-- BEGIN: Theme JS-->
@@ -209,7 +220,7 @@
     <!-- END: Theme JS-->
 
     <!-- BEGIN: Page JS-->
-    <script src="app-assets/js/scripts/tables/gc_grupocolegio_lista.js"></script>
+    <script src="app-assets/js/scripts/forms/form-select2.js"></script>
     <!-- END: Page JS-->
     <script>
         populateMenu(menu);
