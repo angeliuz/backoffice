@@ -26,3 +26,18 @@
 .linea_top{
     border-top: 1px solid #ebe9f1 !important;
 }
+.linea_right{
+    border-right: 1px solid #ebe9f1 !important;
+}
+.btn_mas{
+    /* border-color: #645E77 !important; */
+    background-color: #645E77 !important;
+    color: #fff !important;
+    width: 30px!important;
+    height: 30px!important;
+    /* border-radius: 5px ; */
+    padding: 0px !important;;
+}
+.bgc{
+    background-color:#ebe9f1;
+}

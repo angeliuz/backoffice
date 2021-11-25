@@ -117,7 +117,7 @@
                 <div class="content-header-right text-md-end col-auto d-md-block d-none">
                     <div class="mb-1 breadcrumb-right">
                         <a href="gc_grupocolegio_agregar.html" target="_self">
-                            <button type="button" class="btn btn-outline-primary">
+                            <button type="button" class="btn btn-outline-primary bg-white">
                                 <i data-feather='upload'></i>
                                 <span>Agregar secuencia</span>
                             </button>
@@ -142,40 +142,316 @@
 
                         <!-- Revenue Report Card -->
                         <div class="col-12">
-                            <div class="card card-revenue-budget">
+                            <div class="card">
                                 <div class="row mx-0">
                                     <div class="col-12 revenue-report-wrapper border-0">
-                                        <div><h4 class="card-title">Secuencias de aprendizaje</h4></div> 
+                                        <div class="mtp-20"><h4 class="card-title">Secuencias de aprendizaje</h4></div> 
 
                                         <div class="row linea_top">
-                                            <div class="col-2 revenue-report-wrapper p-0">
+                                            <div class="col-2 linea_right p-0">
                                                 <div class="col bg-primary ptp-10 pbp-20 psp-15 text-white">
                                                     <div class="fsp-11">SECUENCIA 1</div>
                                                     <div class="fw-500">Sin nombre</div>
                                                 </div>
+                                                <div class="mb-1 d-flex justify-content-center align-items-end h-90">
+                                                    <a href="gc_grupocolegio_agregar.html" target="_self">
+                                                        <button type="button" class="btn bgc-light bgc-waves-effect waves-float waves-light">
+                                                            <i data-feather='arrow-up-circle'></i>
+                                                            <span>Agregar secuencia</span>
+                                                        </button>
+                                                    </a>
+                                                </div>
                                             </div>
                                             <div class="col">
-                                                <div class="d-flex mtp-10">
-                                                    <span class="bullet bullet-sm bullet-danger mtp-4 mep-10"></span>
-                                                    <h5 class="">SECUENCIA 1</h5></div>
-                                                <div class="col-4 mb-1"><input type="number" class="form-control" id="itemcost" aria-describedby="itemcost" placeholder="Sin nombre"/></div>
-                                            <ul class="list-group" id="handle-list-2">
-                                                <li class="list-group-item"><span class="handle me-50">+</span>Cras justo odio</li>
-                                                <li class="list-group-item"><span class="handle me-50">+</span>Dapibus ac facilisis in</li>
-                                                <li class="list-group-item"><span class="handle me-50">+</span>Morbi leo risus</li>
-                                                <li class="list-group-item"><span class="handle me-50">+</span>Porta ac consectetur ac</li>
-                                                <li class="list-group-item"><span class="handle me-50">+</span>Vestibulum at eros</li>
-                                            </ul>
+                                                <div class="d-flex mtp-10"><span class="bullet bullet-sm bullet-danger mtp-4 mep-10"></span><h5 class="">SECUENCIA 1</h5></div>
+                                                <div class="col-4 mb-1 w-100"><input type="number" class="form-control" id="itemcost" aria-describedby="itemcost" placeholder="Sin nombre"/></div>
+
+                                                <div class="row">
+                                                    <div class="d-flex justify-content-between bgc-light ptp-5 pbp-5 ">
+                                                        <div class="psp-20 ptp-5 fw-700">OBJETIVOS DE APRENDIZAJE</div>
+                                                        <div class="d-flex justify-content-end pep-10">
+                                                            <!-- <button type="submit" class="btn btn_mas waves-effect waves-float waves-light" name="submit" value="Submit">+</button>-->
+                                                            <div class="scrolling-inside-modal">
+                                                                <!-- Button trigger modal -->
+                                                                <button type="button" class="btn btn_mas waves-effect waves-float waves-light" data-bs-toggle="modal" data-bs-target="#modaloa">+</button>
+
+                                                                    <!-- Modal -->
+                                                                    <div class="modal fade" id="modaloa" tabindex="-1" aria-labelledby="modaloaTitle" aria-hidden="true">
+                                                                        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl">
+                                                                            <div class="modal-content">
+
+                                                                                <div class="modal-header">
+                                                                                    <h5 class="modal-title" id="modaloaTitle">Agregar Objetivos de aprendizaje a la unidad
+                                                                                        <p class="fsp-10">Selecciona o busca los Objetivos de aprendizaje transversales que deseas abordar en esta unidad.</p>
+                                                                                    </h5>
+                                                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                                                </div>
+
+                                                                                <!-- Basic table -->
+                                                                                <div class="modal-body">
+                                                                                    <section>
+                                                                                        <div class="row">
+                                                                                            <div class="col-12 revenue-report-wrapper ">
+                                                                                                <div class="card">
+                                                                                                    <table class="datatables-OA table table-bordered table-condensed table-striped table-hover">
+                                                                                                        <thead>
+                                                                                                            <tr>
+                                                                                                                <th>OBJETIVOS</th>
+                                                                                                                <th>DESCRIPCION</th>
+                                                                                                                <th>SEL.</th>
+                                                                                                            </tr>
+                                                                                                        </thead>
+                                                                                                    </table>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </section>
+                                                                                </div>
+                                                                                <!-- Basic Table -->
+
+                                                                                <div class="modal-footer"><button type="button" class="btn btn-primary" data-bs-dismiss="modal">Guardar</button></div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <!-- Modal -->
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-block text-center mtp-60 mbp-60 fsp-12"><span>No hay OAs seleccionados.<br>Haz clic aquí para agregarlos.</span></div>
+                                                </div>
+
+                                                <div class="row">
+                                                    <div class="d-flex justify-content-between bgc-light ptp-5 pbp-5 ">
+                                                        <div class="psp-20 ptp-5 fw-700">HABILIDADES</div>
+                                                        <div class="d-flex justify-content-end pep-10">
+                                                            <!-- <button type="submit" class="btn btn_mas waves-effect waves-float waves-light" name="submit" value="Submit">+</button>-->
+                                                            <div class="scrolling-inside-modal">
+                                                                <!-- Button trigger modal -->
+                                                                <button type="button" class="btn btn_mas waves-effect waves-float waves-light" data-bs-toggle="modal" data-bs-target="#modaloa">+</button>
+
+                                                                    <!-- Modal -->
+                                                                    <div class="modal fade" id="modaloa" tabindex="-1" aria-labelledby="modaloaTitle" aria-hidden="true">
+                                                                        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl">
+                                                                            <div class="modal-content">
+
+                                                                                <div class="modal-header">
+                                                                                    <h5 class="modal-title" id="modaloaTitle">Agregar Objetivos de aprendizaje a la unidad
+                                                                                        <p class="fsp-10">Selecciona o busca los Objetivos de aprendizaje transversales que deseas abordar en esta unidad.</p>
+                                                                                    </h5>
+                                                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                                                </div>
+
+                                                                                <!-- Basic table -->
+                                                                                <div class="modal-body">
+                                                                                    <section>
+                                                                                        <div class="row">
+                                                                                            <div class="col-12 revenue-report-wrapper ">
+                                                                                                <div class="card">
+                                                                                                    <table class="datatables-OA table table-bordered table-condensed table-striped table-hover">
+                                                                                                        <thead>
+                                                                                                            <tr>
+                                                                                                                <th>OBJETIVOS</th>
+                                                                                                                <th>DESCRIPCION</th>
+                                                                                                                <th>SEL.</th>
+                                                                                                            </tr>
+                                                                                                        </thead>
+                                                                                                    </table>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </section>
+                                                                                </div>
+                                                                                <!-- Basic Table -->
+
+                                                                                <div class="modal-footer"><button type="button" class="btn btn-primary" data-bs-dismiss="modal">Guardar</button></div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <!-- Modal -->
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-block text-center mtp-60 mbp-60 fsp-12"><span>No hay OAs seleccionados.<br>Haz clic aquí para agregarlos.</span></div>
+                                                </div>
+
+                                                <div class="row">
+                                                    <div class="d-flex justify-content-between bgc-light ptp-5 pbp-5 ">
+                                                        <div class="psp-20 ptp-5 fw-700">ACTITUDES</div>
+                                                        <div class="d-flex justify-content-end pep-10">
+                                                            <!-- <button type="submit" class="btn btn_mas waves-effect waves-float waves-light" name="submit" value="Submit">+</button>-->
+                                                            <div class="scrolling-inside-modal">
+                                                                <!-- Button trigger modal -->
+                                                                <button type="button" class="btn btn_mas waves-effect waves-float waves-light" data-bs-toggle="modal" data-bs-target="#modaloa">+</button>
+
+                                                                    <!-- Modal -->
+                                                                    <div class="modal fade" id="modaloa" tabindex="-1" aria-labelledby="modaloaTitle" aria-hidden="true">
+                                                                        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl">
+                                                                            <div class="modal-content">
+
+                                                                                <div class="modal-header">
+                                                                                    <h5 class="modal-title" id="modaloaTitle">Agregar Objetivos de aprendizaje a la unidad
+                                                                                        <p class="fsp-10">Selecciona o busca los Objetivos de aprendizaje transversales que deseas abordar en esta unidad.</p>
+                                                                                    </h5>
+                                                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                                                </div>
+
+                                                                                <!-- Basic table -->
+                                                                                <div class="modal-body">
+                                                                                    <section>
+                                                                                        <div class="row">
+                                                                                            <div class="col-12 revenue-report-wrapper ">
+                                                                                                <div class="card">
+                                                                                                    <table class="datatables-OA table table-bordered table-condensed table-striped table-hover">
+                                                                                                        <thead>
+                                                                                                            <tr>
+                                                                                                                <th>OBJETIVOS</th>
+                                                                                                                <th>DESCRIPCION</th>
+                                                                                                                <th>SEL.</th>
+                                                                                                            </tr>
+                                                                                                        </thead>
+                                                                                                    </table>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </section>
+                                                                                </div>
+                                                                                <!-- Basic Table -->
+
+                                                                                <div class="modal-footer"><button type="button" class="btn btn-primary" data-bs-dismiss="modal">Guardar</button></div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <!-- Modal -->
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-block text-center mtp-60 mbp-60 fsp-12"><span>No hay OAs seleccionados.<br>Haz clic aquí para agregarlos.</span></div>
+                                                </div>
+
+                                                <div class="row">
+                                                    <div class="d-flex justify-content-between bgc-light ptp-5 pbp-5 ">
+                                                        <div class="psp-20 ptp-5 fw-700">EVALUACIONES</div>
+                                                        <div class="d-flex justify-content-end pep-10">
+                                                            <!-- <button type="submit" class="btn btn_mas waves-effect waves-float waves-light" name="submit" value="Submit">+</button>-->
+                                                            <div class="scrolling-inside-modal">
+                                                                <!-- Button trigger modal -->
+                                                                <button type="button" class="btn btn_mas waves-effect waves-float waves-light" data-bs-toggle="modal" data-bs-target="#modaloa">+</button>
+
+                                                                    <!-- Modal -->
+                                                                    <div class="modal fade" id="modaloa" tabindex="-1" aria-labelledby="modaloaTitle" aria-hidden="true">
+                                                                        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl">
+                                                                            <div class="modal-content">
+
+                                                                                <div class="modal-header">
+                                                                                    <h5 class="modal-title" id="modaloaTitle">Agregar Objetivos de aprendizaje a la unidad
+                                                                                        <p class="fsp-10">Selecciona o busca los Objetivos de aprendizaje transversales que deseas abordar en esta unidad.</p>
+                                                                                    </h5>
+                                                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                                                </div>
+
+                                                                                <!-- Basic table -->
+                                                                                <div class="modal-body">
+                                                                                    <section>
+                                                                                        <div class="row">
+                                                                                            <div class="col-12 revenue-report-wrapper ">
+                                                                                                <div class="card">
+                                                                                                    <table class="datatables-OA table table-bordered table-condensed table-striped table-hover">
+                                                                                                        <thead>
+                                                                                                            <tr>
+                                                                                                                <th>OBJETIVOS</th>
+                                                                                                                <th>DESCRIPCION</th>
+                                                                                                                <th>SEL.</th>
+                                                                                                            </tr>
+                                                                                                        </thead>
+                                                                                                    </table>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </section>
+                                                                                </div>
+                                                                                <!-- Basic Table -->
+
+                                                                                <div class="modal-footer"><button type="button" class="btn btn-primary" data-bs-dismiss="modal">Guardar</button></div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <!-- Modal -->
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-block text-center mtp-60 mbp-60 fsp-12"><span>No hay OAs seleccionados.<br>Haz clic aquí para agregarlos.</span></div>
+                                                </div>
+
+                                                <div class="row">
+                                                    <div class="d-flex justify-content-between bgc-light ptp-5 pbp-5 ">
+                                                        <div class="psp-20 ptp-5 fw-700">ACTIVIDADES</div>
+                                                        <div class="d-flex justify-content-end pep-10">
+                                                            <!-- <button type="submit" class="btn btn_mas waves-effect waves-float waves-light" name="submit" value="Submit">+</button>-->
+                                                            <div class="scrolling-inside-modal">
+                                                                <!-- Button trigger modal -->
+                                                                <button type="button" class="btn btn_mas waves-effect waves-float waves-light" data-bs-toggle="modal" data-bs-target="#modaloa">+</button>
+
+                                                                    <!-- Modal -->
+                                                                    <div class="modal fade" id="modaloa" tabindex="-1" aria-labelledby="modaloaTitle" aria-hidden="true">
+                                                                        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl">
+                                                                            <div class="modal-content">
+
+                                                                                <div class="modal-header">
+                                                                                    <h5 class="modal-title" id="modaloaTitle">Agregar Objetivos de aprendizaje a la unidad
+                                                                                        <p class="fsp-10">Selecciona o busca los Objetivos de aprendizaje transversales que deseas abordar en esta unidad.</p>
+                                                                                    </h5>
+                                                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                                                </div>
+
+                                                                                <!-- Basic table -->
+                                                                                <div class="modal-body">
+                                                                                    <section>
+                                                                                        <div class="row">
+                                                                                            <div class="col-12 revenue-report-wrapper ">
+                                                                                                <div class="card">
+                                                                                                    <table class="datatables-OA table table-bordered table-condensed table-striped table-hover">
+                                                                                                        <thead>
+                                                                                                            <tr>
+                                                                                                                <th>OBJETIVOS</th>
+                                                                                                                <th>DESCRIPCION</th>
+                                                                                                                <th>SEL.</th>
+                                                                                                            </tr>
+                                                                                                        </thead>
+                                                                                                    </table>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </section>
+                                                                                </div>
+                                                                                <!-- Basic Table -->
+
+                                                                                <div class="modal-footer"><button type="button" class="btn btn-primary" data-bs-dismiss="modal">Guardar</button></div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <!-- Modal -->
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-block text-center mtp-60 mbp-60 fsp-12"><span>No hay OAs seleccionados.<br>Haz clic aquí para agregarlos.</span></div>
+                                                </div>
+
+                                                <div class="row bgc-light hp-20"></div>
+
                                             </div>
                                         </div>
-
                                     </div>
                                 </div>
                             </div>
                         </div>
+
                     </div>
                 </section>
-
             </div>
         </div>
     </div>
