@@ -8,8 +8,20 @@
 const menu = [
   {
     title: "Gestor de recursos",
-    enlace: "index.html",
+    enlace: "#",
     icon: "layers",
+    submenus: [
+      {
+        title: "Recursos",
+        enlace: "index.html",
+        icon: "circle",
+      },
+      {
+        title: "Palabras claves",
+        enlace: "gc_palabrasclaves_lista.html",
+        icon: "circle",
+      },
+    ],
   },
   {
     title: "Gestor de programas",
@@ -79,7 +91,7 @@ const menu = [
   },
   {
     title: "Secuencias SM",
-    enlace: "index.html",
+    enlace: "gc_.html",
     icon: "package",
   },
   {
@@ -89,12 +101,12 @@ const menu = [
     submenus: [
       {
         title: "Licencias",
-        enlace: "gc_usuarios_lista.html",
+        enlace: "gc_licencias_lista.html",
         icon: "circle",
       },
       {
         title: "Solicitar licencias",
-        enlace: "gc_usuarios_roles_lista.html",
+        enlace: "gc_licencias_agregar.html",
         icon: "circle",
       },
     ],
@@ -117,14 +129,26 @@ const menu = [
     ],
   },
 ];
+
+
+
+
 function populateMenu(menu) {
   $("#main-menu-navigation").html("");
+  
+  console.log(window.location.pathname)
+  
+let active = "";
+
+  let path =  window.location.pathname.replace('/html/','');
+  console.log(path)
+  
+
   for (let i = 0; i < menu.length; i++) {
-    console.log(menu);
     let botonSolo = "";
     if (menu[i].submenus) {
       //console.log(menu[i].submenus);
-      botonSolo = '<li class="nav-item has-sub">';
+      botonSolo = '<li class="nav-item has-sub" id="menuParent'+i+'">';
       botonSolo += '<a class="d-flex align-items-center" href="' + menu[i].enlace + '">';
       botonSolo += '<i data-feather="' + menu[i].icon + '"></i>';
       botonSolo += '<span class="menu-title text-truncate">' + menu[i].title + "</span>";
@@ -133,8 +157,16 @@ function populateMenu(menu) {
       botonSolo += '<ul class="menu-content">';
 
       for (let a = 0; a < menu[i].submenus.length; a++) {
-        console.log(menu[i].submenus[a].title);
-        botonSolo += "<li>";
+        // console.log(menu[i].submenus[a].title);
+        if(menu[i].submenus[a].enlace == path){
+          console.log(menu[i].submenus[a].enlace +" == "+ path)
+          active = "active";
+        }else{
+          active = "";
+        }
+
+
+        botonSolo += '<li class="'+active+'" id="element'+a+'">';
         botonSolo += '<a class="d-flex align-items-center" href="' + menu[i].submenus[a].enlace + '">';
         botonSolo += '<i data-feather="' + menu[i].submenus[a].icon + '"></i>';
         botonSolo += '<span class="menu-item text-truncate">' + menu[i].submenus[a].title + "</span>";
@@ -145,10 +177,22 @@ function populateMenu(menu) {
       botonSolo += "</li>";
 
       $("#main-menu-navigation").append(botonSolo);
+
+      
     } else {
-      botonSolo = '<li class="nav-item">' + '<a class="d-flex align-items-center" href="' + menu[i].enlace + '">' + '<i data-feather="' + menu[i].icon + '"></i>' + '<span class="menu-title text-truncate">' + menu[i].title + "</span>";
+      if(menu[i].enlace == path){
+        console.log(menu[i].enlace +" == "+ path)
+        active = "active";
+      }else{
+        active = "";
+      }
+      botonSolo = '<li class="nav-item '+active+'">' + '<a class="d-flex align-items-center" href="' + menu[i].enlace + '">' + '<i data-feather="' + menu[i].icon + '"></i>' + '<span class="menu-title text-truncate">' + menu[i].title + "</span>";
       $("#main-menu-navigation").append(botonSolo);
     }
+
   }
+  
+  
+
 }
 // Provide the DOM element where the menu should be inserted:
