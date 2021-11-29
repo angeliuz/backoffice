@@ -3130,6 +3130,13 @@ font-family: 'Lobster', cursive; */
   border-radius: 0px 0px 20px 20px;
 }
 
+/* BORDER */
+
+.bbp{
+  border-bottom: 1px solid;
+}
+
+
 .min-hp-150 {
   min-height: 150px !important;
 }
