@@ -1,0 +1,46 @@
+{
+  "data": [
+    {
+      "nombre": "Programa 1: Aprender a pensar",
+      "preview": "Savia",
+      "indicadores": "Ciencias Naturales",
+      "oa": "1º básico",
+      "seleccionar": "Guía",
+      "formato": "PDF",
+      "oa": [{
+        "oa_code": "CN02 OA 07",
+        "priorizacion": "1"
+      },{
+        "oa_code": "CN02 OA 08",
+        "priorizacion": "2"
+      },{
+        "oa_code": "CN02 OA 01",
+        "priorizacion": "0"
+      }
+    ],
+      "eje": "Ciencias de la Tierra y el Universo",
+      "claves": "Universo, Tierra",
+      "descargable": "Sí"
+    },
+    {
+      "nombre": "Programa 2: Aprender a pensar",
+      "preview": "Savia",
+      "indicadores": "Ciencias Naturales",
+      "oa": "1º básico",
+      "seleccionar": "Guía",
+      "formato": "PDF",
+      "oa": [{
+        "oa_code": "CN02 OA 07",
+        "priorizacion": "1"
+      },{
+        "oa_code": "CN02 OA 01",
+        "priorizacion": "0"
+      }
+    ],
+      "eje": "El sol y la tierra",
+      "claves": "Sol, Tierra",
+      "descargable": "No"
+    }
+    
+  ]
+}

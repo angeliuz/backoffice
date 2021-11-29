@@ -1,0 +1,30 @@
+{
+  "data": [
+    {
+      "id": "7",
+      "nombre": "Evaluacion 1",
+      "preview": "1",
+      "indicadores": "A",
+      "oa": "CNº2 OA 07",
+      "seleccionar": "1"
+    },
+    {
+      "id": "98",
+      "nombre": "Evaluacion 1",
+      "preview": "1",
+      "indicadores": "A",
+      "oa": "CNº2 OA 07",
+      "seleccionar": "1"
+    },
+    {
+      "id": "50",
+      "nombre": "Colegio Pedro",
+      "preview": "1",
+      "indicadores": "A",
+      "oa": "CNº2 OA 07",
+      "seleccionar": "1"
+    
+    
+    }
+  ]
+}
