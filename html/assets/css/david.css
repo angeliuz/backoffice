@@ -29,6 +29,12 @@
 .linea_right{
     border-right: 1px solid #ebe9f1 !important;
 }
+.linea_bottom{
+    border-bottom: 1px solid #ebe9f1 !important;
+}
+.linea_left{
+    border-left: 1px solid #ebe9f1 !important;
+}
 .btn_mas{
     /* border-color: #645E77 !important; */
     background-color: #645E77 !important;
@@ -40,4 +46,7 @@
 }
 .bgc{
     background-color:#ebe9f1;
+}
+.linea_lila{
+    border-top: 7px solid #7367f0 !important;
 }
