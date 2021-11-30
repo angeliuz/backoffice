@@ -91,7 +91,7 @@ const menu = [
   },
   {
     title: "Secuencias SM",
-    enlace: "gc_detalle_secuencias.html",
+    enlace: "gc_secuencias_lista.html",
     icon: "package",
   },
   {
