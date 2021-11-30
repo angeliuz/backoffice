@@ -1,0 +1,25 @@
+{
+  "data": [
+    {
+      "id": "7",
+      "area": "Ciencias para la ciudadania",
+      "nivel": "3º y 4º medio",
+      "secuencias": "4",
+      "creada": "Lucia Donoso"
+    },
+    {
+      "id": "199",
+      "area": "Matemáticas",
+      "nivel": "1º básico",
+      "secuencias": "5",
+      "creada": "Erik Pereda"
+    },
+    {
+      "id": "59",
+      "area": "Lenguaje",
+      "nivel": "3º básico",
+      "secuencias": "2",
+      "creada": "Mark Gonzalez"
+    }
+  ]
+}
