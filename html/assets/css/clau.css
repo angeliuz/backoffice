@@ -60,3 +60,10 @@
     border-top-right-radius: 5px;
     border-top-color: #00cfe8;
 }
+.cb-cortina{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, .5);
+    text-align: center;
+}
