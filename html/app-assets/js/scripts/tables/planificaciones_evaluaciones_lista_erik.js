@@ -1,439 +1,137 @@
 /**
- * DataTables Advanced
+ * DataTables Basic
  */
 
-"use strict";
-
-function abreIndicadoresOA(id_oa) {
-  $(".modal-body").html(id_oa);
-}
-
-// Advanced Search Functions Starts
-// --------------------------------------------------------------------
-
-// Filter column wise function
-function filterColumn(i, val) {
-  if (i == 5) {
-    var startDate = $(".start_date").val(),
-      endDate = $(".end_date").val();
-    if (startDate !== "" && endDate !== "") {
-      filterByDate(i, startDate, endDate); // We call our filter function
-    }
-
-    $(".dt-advanced-search").dataTable().fnDraw();
-  } else {
-    $(".dt-advanced-search")
-      .DataTable()
-      .column(i)
-      .search(val, false, true)
-      .draw();
-  }
-}
-
-// Datepicker for advanced filter
-var separator = " - ",
-  rangePickr = $(".flatpickr-range"),
-  dateFormat = "MM/DD/YYYY";
-var options = {
-  autoUpdateInput: false,
-  autoApply: true,
-  locale: {
-    format: dateFormat,
-    separator: separator,
-  },
-  opens: $("html").attr("data-textdirection") === "rtl" ? "left" : "right",
-};
-
-//
-if (rangePickr.length) {
-  rangePickr.flatpickr({
-    mode: "range",
-    dateFormat: "m/d/Y",
-    onClose: function (selectedDates, dateStr, instance) {
-      var startDate = "",
-        endDate = new Date();
-      if (selectedDates[0] != undefined) {
-        startDate =
-          selectedDates[0].getMonth() +
-          1 +
-          "/" +
-          selectedDates[0].getDate() +
-          "/" +
-          selectedDates[0].getFullYear();
-        $(".start_date").val(startDate);
-      }
-      if (selectedDates[1] != undefined) {
-        endDate =
-          selectedDates[1].getMonth() +
-          1 +
-          "/" +
-          selectedDates[1].getDate() +
-          "/" +
-          selectedDates[1].getFullYear();
-        $(".end_date").val(endDate);
-      }
-      $(rangePickr).trigger("change").trigger("keyup");
-    },
-  });
-}
-
-// Advance filter function
-// We pass the column location, the start date, and the end date
-var filterByDate = function (column, startDate, endDate) {
-  // Custom filter syntax requires pushing the new filter to the global filter array
-  $.fn.dataTableExt.afnFiltering.push(function (oSettings, aData, iDataIndex) {
-    var rowDate = normalizeDate(aData[column]),
-      start = normalizeDate(startDate),
-      end = normalizeDate(endDate);
-
-    // If our date from the row is between the start and end
-    if (start <= rowDate && rowDate <= end) {
-      return true;
-    } else if (rowDate >= start && end === "" && start !== "") {
-      return true;
-    } else if (rowDate <= end && start === "" && end !== "") {
-      return true;
-    } else {
-      return false;
-    }
-  });
-};
-
-// converts date strings to a Date object, then normalized into a YYYYMMMDD format (ex: 20131220). Makes comparing dates easier. ex: 20131220 > 20121220
-var normalizeDate = function (dateString) {
-  var date = new Date(dateString);
-  var normalized =
-    date.getFullYear() +
-    "" +
-    ("0" + (date.getMonth() + 1)).slice(-2) +
-    "" +
-    ("0" + date.getDate()).slice(-2);
-  return normalized;
-};
-// Advanced Search Functions Ends
-
 $(function () {
-  var isRtl = $("html").attr("data-textdirection") === "rtl";
+  "use strict";
 
-  var dt_filter_table = $(".dt-column-search"),
-    dt_filter_table_oas = $(".dt-column-search2"),
-    dt_filter_guias_de_trabajo = $(".dt-column-guias"),
-    assetPath = "app-assets/";
+  var html = "";
+  var checked = "";
+  var obj_oa = "";
 
-  if ($("body").attr("data-framework") === "laravel") {
-    assetPath = $("body").attr("data-asset-path");
-  }
+  var dt_basic_table = $(".dt-column-search");
 
-  // Advanced Search Functions Starts
+  var assetPath = "app-assets/";
+
+  // DataTable with buttons
   // --------------------------------------------------------------------
 
-  // Column Search
-  // --------------------------------------------------------------------
-
-  if (dt_filter_table.length) {
-    // Setup - add a text input to each footer cell
-    $(".dt-column-search thead tr")
-      .clone(true)
-      .appendTo(".dt-column-search thead");
-    $(".dt-column-search thead tr:eq(1) th").each(function (i) {
-      var title = $(this).text();
-      $(this).html(
-        '<input type="text" class="form-control form-control-sm" placeholder="Buscar ' +
-          title +
-          '" />'
-      );
-
-      $("input", this).on("keyup change", function () {
-        if (dt_filter.column(i).search() !== this.value) {
-          dt_filter.column(i).search(this.value).draw();
-        }
-      });
-    });
-
-    var dt_filter = dt_filter_table.DataTable({
-      ajax: assetPath + "data/datatable_planificaciones_evaluaciones_lista_erik.json",
-     /// ajax: assetPath + "data/datatable_recursos_clasificados.json",
-      columns: [
-        { data: "nombre" },  //// nombre
-        { data: "preview" },  ///tipo_recurso
-        { data: "indicadores" },   ////oa
-        { data: "oa" },  ////eje
-        { data: "" },  /// claves
-        ///{ data: "descargable" },  /// descargable
-      ],
-      columnDefs: [
-        {
-          // For Responsive
-          className: "control",
-          orderable: false,
-          targets: 0,
-        },
-        {
-          targets: 5,
-        orderable: false,
-        responsivePriority: 3,
-        render: function (data, type, full, meta) {
-          return (
-            '<div class="form-check"> <input class="form-check-input dt-checkboxes" type="checkbox" value="" id="checkbox' +
-            data +
-            '" /><label class="form-check-label" for="checkbox' +
-            data +
-            '"></label></div>'
-          );
-        },
-        checkboxes: {
-          selectAllRender:
-            '<div class="form-check"> <input class="form-check-input" type="checkbox" value="" id="checkboxSelectAll" /><label class="form-check-label" for="checkboxSelectAll"></label></div>'
-        }
-      },
-        {
-          // For Checkboxes
-          targets: 3,
-          orderable: true,
-          responsivePriority: 0,
-          render: function (data, type, full, meta) {
-            const objetivos = function () {
-              let conca = full["oa"];
-              let oas = "";
-              let priorizacion;
-
-              for (var i = 0; i < conca.length; i++) {
-                if (conca[i]["priorizacion"] == "1") {
-                  console.log(conca[i]["priorizacion"]);
-                  priorizacion =
-                    '<ion-icon name="star" class="text-warning"></ion-icon>';
-                } else {
-                  if (conca[i]["priorizacion"] == "2") {
-                    priorizacion =
-                      '<ion-icon name="star-outline" class="text-warning"></ion-icon>';
-                  } else {
-                    priorizacion = "";
-                  }
-                }
-                oas +=
-                  '<div class="d-flex align-items-center"><div class="text-primary fw-500 mep-5">' +
-                  conca[i]["oa_code"] +
-                  "</div>" +
-                  priorizacion +
-                  "</div>";
-                if (conca.length - 1 === i) {
-                  return oas;
-                }
-              }
-            };
-            return objetivos;
-          },
-          checkboxes: {
-            selectAllRender:
-              '<div class="form-check"> <input class="form-check-input" type="checkbox" value="" id="checkboxSelectAll" /><label class="form-check-label" for="checkboxSelectAll"></label></div>',
-          },
-        },
-      ],
-
+  if (dt_basic_table.length) {
+    dt_basic_table.DataTable({
+      processing: true,
+      api: true,
       dom: '<"d-flex justify-content-between align-items-center mx-0 row"<"col-sm-12 col-md-6"l><"col-sm-12 col-md-6"f>>t<"d-flex justify-content-between mx-0 row"<"col-sm-12 col-md-6"i><"col-sm-12 col-md-6"p>>',
-      orderCellsTop: true,
+      ajax: assetPath + "data/datatable_planificaciones_evaluaciones_lista_erik.json",
+      destroy: true,
       language: {
         paginate: {
           // remove previous & next text from pagination
           previous: "&nbsp;",
           next: "&nbsp;",
+          limit: 5,
         },
       },
-    });
-  }
-
-
-  
-
-  
-  if (dt_filter_table_oas.length) {
-    // TABLA GESTOR DE PROGRAMAS
-    $(".dt-column-search2 thead tr")
-      .clone(true)
-      .appendTo(".dt-column-search2 thead");
-    $(".dt-column-search2 thead tr:eq(1) th").each(function (i) {
-      var title = $(this).text();
-      $(this).html(
-        '<input type="text" class="form-control form-control-sm" placeholder="Buscar ' +
-          title +
-          '" />'
-      );
-
-      $("input", this).on("keyup change", function () {
-        if (dt_filterl_oa.column(i).search() !== this.value) {
-          dt_filterl_oa.column(i).search(this.value).draw();
-        }
-      });
-    });
-
-    var dt_filterl_oa = dt_filter_table_oas.DataTable({
-      ajax: assetPath + "data/datatable_oas.json",
       columns: [
-        { data: "id" },
-        { data: "codigo" },
-        { data: "priorizacion" },
-        { data: "descripcion" },
-        { data: "eje" },
+        { data: "id", visible: false },
+        { data: "nombre_evaluacion" }, //// nombre
+        { data: "" }, ///tipo_recurso
+        { data: "" }, ////oa
+        { data: "oa" }, ////eje
+        { data: "" }, ///
       ],
       columnDefs: [
         {
-          // For Responsive
-          className: "control",
-          orderable: false,
           targets: 0,
         },
         {
           targets: 1,
-          orderable: true,
-          responsivePriority: 0,
-          render: function (data, type, full, meta) {
-            const objetivos = function () {
-              let oas = "";
-              oas +=
-                '<div class="d-flex align-items-center"><div class="text-primary fw-500 mep-5">' +
-                full["codigo"] +
-                "</div>";
+          data: "download_link",
+          autowidth: false,
+          render: function (data, type, row, meta) {
+            console.log(row.enlace);
+            html = '<div class="d-flex justify-content-left align-items-center"><div class="me-1"><img src="app-assets/images/icons/' + row.icono + '"></div><div class="d-flex flex-column"><span class="emp_name text-truncate fw-bold">' + row.nombre_evaluacion + "</span>";
 
-              return oas;
-            };
-            return objetivos;
+            return html;
           },
         },
         {
           targets: 2,
-          visible: true,
-          orderable: true,
-          responsivePriority: 0,
-          render: function (data, type, full, meta) {
-            const objetivos = function () {
-              let priorizacion;
-              let oas = "";
-              if (full["priorizacion"] == "1") {
-                priorizacion =
-                  '<ion-icon name="star" class="text-warning"></ion-icon>';
-              } else {
-                if (full["priorizacion"] == "2") {
-                  priorizacion =
-                    '<ion-icon name="star-outline" class="text-warning"></ion-icon>';
-                } else {
-                  priorizacion = "";
-                }
-              }
-              oas +=
-                '<div class="w-100 d-flex justify-content-center fsp-20 mb-1">' +
-                priorizacion +
-                "</div>";
+          data: "download_link",
+          autowidth: false,
+          render: function (data, type, row, meta) {
+            html = '<div class="w-100 text-center"><i data-feather="eye" class="text-primary"></i></div>';
 
-              return oas;
-            };
-            return objetivos;
+            return html;
           },
         },
         {
-          // For Checkboxes
+          targets: 3,
+          data: "download_link",
+          autowidth: false,
+          render: function (data, type, row, meta) {
+            html = '<div class="w-100 text-center"><i data-feather="mouse-pointer" class="text-primary"></i></div>';
+
+            return html;
+          },
+        },
+        {
           targets: 4,
-          orderable: true,
-          responsivePriority: 0,
-          render: function (data, type, full, meta) {
-            const objetivos = function () {
-              var id_oa = full["id"];
-              return (
-                '<div class="w-100 d-flex justify-content-center" onclick="' +
-                abreIndicadoresOA(id_oa) +
-                '" data-bs-toggle="modal" data-bs-target="#modalIndicadores">Ver</div>'
-              );
-            };
-            return objetivos;
+          data: "download_link",
+          autowidth: false,
+          render: function (data, type, row, meta) {
+            html = "";
+            for (var i in row.objetivos) {
+              if (row.objetivos[i].priorizaciones[0].id == 1) {
+                html += '<div class="d-flex align-items-start flex-column">' + '<div class="text-primary fw-500 mep-5" id="' + row.objetivos[i].id + '" >' + row.objetivos[i].nombre + '<ion-icon name="star" class="text-warning msp-5"></ion-icon>' + "</div>";
+              } else if (row.objetivos[i].priorizaciones[0].id == 2) {
+                html += '<div class="d-flex align-items-start flex-column">' + '<div class="text-primary fw-500 mep-5" id="' + row.objetivos[i].id + '" >' + row.objetivos[i].nombre + '<ion-icon name="star-outline" class="text-warning msp-5"></ion-icon>' + "</div>";
+              } else {
+                html += '<div class="d-flex align-items-start flex-column">' + '<div class="text-primary fw-500 mep-5" id="' + row.objetivos[i].id + '" >' + row.objetivos[i].nombre + "</div>";
+                console.log("no hay priorizacion");
+              }
+            }
+            return html;
+          },
+        },
+        {
+          targets: 5,
+          data: "download_link",
+          render: function (data, type, row, meta) {
+            checked = "";
+            html = '<div class="w-100 text-center" ><div class="form-check form-check-inline mt-0 mb-1"><input class="form-check-input check-oa" type="checkbox" id="inlineCheckboxOa" value="" data-id="" data-nombre="" data-priorizacion="" data-descripcion=""></div></div>';
+            return html;
           },
         },
       ],
-
-      dom: '<"d-flex justify-content-between align-items-center mx-0 row"<"col-sm-12 col-md-6"l><"col-sm-12 col-md-6"f>>t<"d-flex justify-content-between mx-0 row"<"col-sm-12 col-md-6"i><"col-sm-12 col-md-6"p>>',
-      orderCellsTop: true,
       language: {
-        paginate: {
-          // remove previous & next text from pagination
-          previous: "&nbsp;",
-          next: "&nbsp;",
-        },
+        url: "//cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/Spanish.json",
       },
     });
-  }
+    //dt_basic_table.columns.adjust().draw();
+    dt_basic_table.DataTable().columns.adjust();
+    dt_basic_table.DataTable().responsive.recalc();
 
-  // Advanced Search Functions Starts
-  // --------------------------------------------------------------------
-  // GUIAS DE TRABAJO
-  // --------------------------------------------------------------------
-
-  if (dt_filter_guias_de_trabajo.length) {
-    // Setup - add a text input to each footer cell
-    $(".dt-column-guias thead tr")
-      .clone(true)
-      .appendTo(".dt-column-guias thead");
-    $(".dt-column-guias thead tr:eq(1) th").each(function (i) {
-      var title = $(this).text();
-      $(this).html(
-        '<input type="text" class="form-control form-control-sm" placeholder="Buscar ' +
-          title +
-          '" />'
-      );
-
-      $("input", this).on("keyup change", function () {
-        if (dt_filter.column(i).search() !== this.value) {
-          dt_filter.column(i).search(this.value).draw();
-        }
-      });
+    $("#modaloa").on("shown.bs.modal", function () {
+      dt_basic_table.DataTable().columns.adjust();
+      dt_basic_table.DataTable().responsive.recalc();
     });
 
-    var dt_filter = dt_filter_guias_de_trabajo.DataTable({
-      ajax: assetPath + "data/datatable_guias.json",
-      columns: [
-        { data: "nombre" },
-        { data: "asignatura" },
-        { data: "nivel" },
-        { data: "creado_por" },
-      ],
-      columnDefs: [
-        {
-          // For Responsive
-          className: "control",
-          orderable: false,
-          targets: 0,
-        },
-        {
-          targets: 0,
-          orderable: true,
-          responsivePriority: 0,
-          render: function (data, type, full, meta) {
-            const objetivos = function () {
-              let oas = "";
-              oas +=
-                '<div class="d-flex align-items-center"><div class="text-primary fw-500 mep-5"><a href="https://gc.desarrollosm.cl/editorguia/pages/page_ficha_editable.html" target="_blank">' +
-                full["nombre"] +
-                "</a></div>";
-
-              return oas;
-            };
-            return objetivos;
-          },
-        },
-      ],
-
-      dom: '<"d-flex justify-content-between align-items-center mx-0 row"<"col-sm-12 col-md-6"l><"col-sm-12 col-md-6"f>>t<"d-flex justify-content-between mx-0 row"<"col-sm-12 col-md-6"i><"col-sm-12 col-md-6"p>>',
-      orderCellsTop: true,
-      language: {
-        paginate: {
-          // remove previous & next text from pagination
-          previous: "&nbsp;",
-          next: "&nbsp;",
-        },
-      },
-    });
+    // dt_basic_table.on("click", ".sweetAlert", function (e, dt, type, indexes) {
+    //   console.log("id: " + this.id);
+    //   Swal.fire({
+    //     title: "Are you sure?",
+    //     text: "You won't be able to revert this!",
+    //     icon: "warning",
+    //     showCancelButton: true,
+    //     confirmButtonColor: "#3085d6",
+    //     cancelButtonColor: "#d33",
+    //     confirmButtonText: "Yes, delete it!",
+    //   }).then((result) => {
+    //     if (result.isConfirmed) {
+    //       Swal.fire("Deleted!", "Your file has been deleted.", "success");
+    //     }
+    //   });
+    // });
+    $("div.head-label").html('<h6 class="mb-0">DataTable with Buttons</h6>');
   }
-
-  // Filter form control to default size for all tables
-  $(".dataTables_filter .form-control").removeClass("form-control-sm");
-  $(".dataTables_length .form-select")
-    .removeClass("form-select-sm")
-    .removeClass("form-control-sm");
 });
