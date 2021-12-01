@@ -50,3 +50,12 @@
 .linea_lila{
     border-top: 7px solid #7367f0 !important;
 }
+.modal_super_xl{
+    min-width: calc(100vw - 50px) !important;
+}
+.modal_content_super_xl{
+    min-height: calc(100vh - 30px) !important;
+}
+.modal_content_interior_super_xl{
+    min-height: calc(100vh - 120px) !important;
+}
