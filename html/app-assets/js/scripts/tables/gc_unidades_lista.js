@@ -194,9 +194,9 @@ $(function () {
       if (result.isConfirmed) {
         Swal.fire({
           icon: 'success',
-          title: '¡Borrado!',
+          title: '¡Eliminado!',
           confirmButtonText: 'Cerrar',
-          text: 'El grupo de unidades, ha sido borrado.',
+          text: 'El grupo de unidades, ha sido eliminado.',
           customClass: {
             confirmButton: 'btn btn-success'
           }
