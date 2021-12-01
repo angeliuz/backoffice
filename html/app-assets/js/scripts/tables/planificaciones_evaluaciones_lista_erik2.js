@@ -28,16 +28,13 @@ $(function () {
           // remove previous & next text from pagination
           previous: "&nbsp;",
           next: "&nbsp;",
-          limit: 5,
+          limit: 2,
         },
       },
       columns: [
         { data: "id", visible: false },
-        { data: "nombre_evaluacion" }, //// nombre
-        { data: "" }, ///tipo_recurso
-        { data: "" }, ////oa
-        { data: "oa" }, ////eje
-        { data: "" }, ///
+        { data: "descripcion" }, //// nombre
+        { data: "nombre" }, ////eje
       ],
       columnDefs: [
         {
@@ -48,34 +45,13 @@ $(function () {
           data: "download_link",
           autowidth: false,
           render: function (data, type, row, meta) {
-            console.log(row.enlace);
-            html = '<div class="d-flex justify-content-left wp-30 align-items-center"><div class="me-1"><img class="wp-40" src="app-assets/images/icons/' + row.icono + '"></div><div class="d-flex flex-column"><span class="emp_name text-truncate fw-bold">' + row.nombre_evaluacion + "</span>";
+            html = '<div class="w-100 text-start"></div>';
 
             return html;
           },
         },
         {
           targets: 2,
-          data: "download_link",
-          autowidth: false,
-          render: function (data, type, row, meta) {
-            html = '<div class="w-100 text-center"><ion-icon name="eye-outline" class="text-primary  h2"></ion-icon></div>';
-
-            return html;
-          },
-        },
-        {
-          targets: 3,
-          data: "download_link",
-          autowidth: false,
-          render: function (data, type, row, meta) {
-            html = '<div class="w-100 text-center " data-bs-toggle="modal" data-bs-target="#modal_indicadores" ><ion-icon name="navigate-outline" class="text-primary h2"></div>';
-
-            return html;
-          },
-        },
-        {
-          targets: 4,
           data: "download_link",
           autowidth: false,
           render: function (data, type, row, meta) {
@@ -93,16 +69,7 @@ $(function () {
             return html;
           },
         },
-        {
-          targets: 5,
-          data: "download_link",
-          render: function (data, type, row, meta) {
-            checked = "";
-            html = '<div class="w-100 text-center" ><div class="form-check form-check-inline mt-0 mb-1"><input class="form-check-input check-oa" type="checkbox" id="inlineCheckboxOa" value="" data-id="" data-nombre="" data-priorizacion="" data-descripcion=""></div></div>';
-            return html;
-          },
-        },
-      ],
+        ],
       language: {
         url: "//cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/Spanish.json",
       },
@@ -111,7 +78,7 @@ $(function () {
     dt_basic_table.DataTable().columns.adjust();
     dt_basic_table.DataTable().responsive.recalc();
 
-    $("#modaloa").on("shown.bs.modal", function () {
+    $("#modal_indicadores").on("shown.bs.modal", function () {
       dt_basic_table.DataTable().columns.adjust();
       dt_basic_table.DataTable().responsive.recalc();
     });

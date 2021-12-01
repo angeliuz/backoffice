@@ -2,7 +2,7 @@
  * DataTables Basic
  */
 
-$(function () {
+ $(function () {
   "use strict";
 
   var html = "";
@@ -21,7 +21,7 @@ $(function () {
       processing: true,
       api: true,
       dom: '<"d-flex justify-content-between align-items-center mx-0 row"<"col-sm-12 col-md-6"l><"col-sm-12 col-md-6"f>>t<"d-flex justify-content-between mx-0 row"<"col-sm-12 col-md-6"i><"col-sm-12 col-md-6"p>>',
-      ajax: assetPath + "data/datatable_planificaciones_evaluaciones_lista_erik.json",
+      ajax: assetPath + "data/table-datatable-EP2.json",
       destroy: true,
       language: {
         paginate: {
@@ -33,11 +33,8 @@ $(function () {
       },
       columns: [
         { data: "id", visible: false },
-        { data: "nombre_evaluacion" }, //// nombre
-        { data: "" }, ///tipo_recurso
-        { data: "" }, ////oa
+        { data: "descripcion" }, //// nombre
         { data: "oa" }, ////eje
-        { data: "" }, ///
       ],
       columnDefs: [
         {

@@ -1,3 +1,12 @@
-.modal-header-erik {  
+.modal-header-erik{  
     background-color: #fff !important;
+}
+
+.erik-modal{
+    min-width: calc(100vw - 50px);
+   
+}
+
+.modal-content-erik{
+    min-height: calc(100vh - 30px);
 }

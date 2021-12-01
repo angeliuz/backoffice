@@ -1,3 +1,16 @@
+:root {
+--milk:#3dbd99;
+--goku:#ff8181;
+--vegeta:#4f8af5;
+--cell:#b9db34;
+--broly:#ffcd41;
+--videl:#ca67fd;
+--freezer:#f763d7;
+--info:#00cfe8;
+--warning:#ff9f43;
+--primary:#7367f0;
+}
+
 .bgc-aqua {
   background-color: aqua;
 }
@@ -23,23 +36,54 @@
 }
 
 .bgc-milk {
-  background-color: #3dbd99;
+  background-color:var(--milk);
 }
 .bgc-goku {
-  background-color: #ff8181;
+  background-color: var(--goku);
 }
 .bgc-vegeta{
-  background-color: #4f8af5
+  background-color: var(--vegeta);
 }
 .bgc-cell {
-  background-color: #b9db34;
+  background-color: var(--cell);
 }
 .bgc-broly{
-  background-color: #ffcd41;
+  background-color: var(--broly);
 }
 .bgc-videl{
-  background-color: #ca67fd;
+  background-color: var(--videl);
 }
 .bgc-freezer{
-  background-color: #f763d7;
+  background-color: var(--freezer);
+}
+
+.btc-milk{ 
+  border-top-color:var(--milk);
+}
+.btc-goku{ 
+  border-top-color:var(--goku);
+}
+.btc-vegeta{ 
+  border-top-color:var(--vegeta);
+}
+.btc-cell{ 
+  border-top-color:var(--cell);
+}
+.btc-broly{ 
+  border-top-color:var(--broly);
+}
+.btc-videl{ 
+  border-top-color:var(--videl);
+}
+.btc-freezer{ 
+  border-top-color:var(--freezer);
+}
+.btc-info{ 
+  border-top-color:var(--info);
+}
+.btc-warning{ 
+  border-top-color:var(--warning);
+}
+.btc-primary{ 
+  border-top-color:var(--primary);
 }
