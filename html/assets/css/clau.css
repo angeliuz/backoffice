@@ -44,10 +44,15 @@
     border-top-right-radius: 5px;
 }
 
-.cb-cortina{
+.modal-content {
+    position: relative;
     display: flex;
+    flex-direction: column;
     width: 100%;
-    justify-content: center;
-    background-color:#22292fbf;
-    text-align: center;
+    pointer-events: auto;
+   background-color: #1414149c !important;
+    background-clip: padding-box;
+    border: 0px solid rgba(34, 41, 47, 0.2);
+    border-radius: 0.357rem;
+    outline: 0px;
 }
