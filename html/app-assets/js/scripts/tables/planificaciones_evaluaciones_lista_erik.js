@@ -83,9 +83,9 @@ $(function () {
             html = "";
             for (var i in row.objetivos) {
               if (row.objetivos[i].priorizaciones[0].id == 1) {
-                html += '<div class="d-flex justify-content-center align-items-start  text-center flex-column">' + '<div class="text-primary fw-500 mep-5" id="' + row.objetivos[i].id + '" >' + row.objetivos[i].nombre + '<ion-icon name="star" class="text-warning  msp-5"></ion-icon>' + "</div></div>";
+                html += '<div class="d-flex justify-content-center align-items-start block flex-column  data-bs-html="true" data-bs-toggle="tooltip" title="ERIK">' + '<div class="text-primary fw-500 mep-5" id="' + row.objetivos[i].id + '" >' + row.objetivos[i].nombre + '<ion-icon name="star" class="text-warning  msp-5  data-bs-html="true" data-bs-toggle="tooltip" title="PEREDA" "></ion-icon>' + "</div></div>";
               } else if (row.objetivos[i].priorizaciones[0].id == 2) {
-                html += '<div class="d-flex justify-content-center align-items-start flex-column">' + '<div class="text-primary fw-500 mep-5 " id="' + row.objetivos[i].id + '" >' + row.objetivos[i].nombre + '<ion-icon name="star-outline" class="text-warning  msp-5"></ion-icon>' + "</div>";
+                html += '<div class="d-flex justify-content-end align-items-start flex-column ">' + '<div class="text-primary fw-500 mep-5 " id="' + row.objetivos[i].id + '" >' + row.objetivos[i].nombre + '<ion-icon name="star-outline" class="text-warning  msp-5"></ion-icon>' + "</div>";
               } else {
                 html += '<div class="d-flex justify-content-center align-items-start flex-column">' + '<div class="text-primary fw-500 mep-5 text-center" id="' + row.objetivos[i].id + '" >' + row.objetivos[i].nombre + "</div>";
                 console.log("no hay priorizacion");
@@ -106,6 +106,9 @@ $(function () {
       ],
       language: {
         url: "//cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/Spanish.json",
+      },
+      drawCallback: function () {
+        $(document).find('[data-bs-toggle="tooltip"]').tooltip();
       },
     });
     //dt_basic_table.columns.adjust().draw();
