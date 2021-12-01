@@ -69,8 +69,8 @@
       ]
     },
     {
-      "id": 1,
-      "nombre_evaluacion": "Nombre de la evaluación",
+      "id": 2,
+      "nombre_evaluacion": "evaluación 2",
       "icono": "pdf.png",
       "enlace": "enlace evaluacion",
       "objetivos": [
@@ -106,8 +106,8 @@
         },
         {
           "id": 3,
-          "nombre": "CN01OA03",
-          "descripcion": "Describir y comunicar los cambios del ciclo de las estaciones y sus efectos en los seres vivos y el ambiente.",
+          "nombre": "CN01Okeko",
+          "descripcion": "Efectos en los seres vivos y el ambiente.",
           "priorizaciones": [
             {
               "id": 3,
@@ -122,7 +122,7 @@
         {
           "id": 4,
           "nombre": "CN01OA03",
-          "descripcion": "Describir y comunicar los cambios del ciclo de las estaciones y sus efectos en los seres vivos y el ambiente.",
+          "descripcion": "el ambiente.",
           "priorizaciones": [
             {
               "id": 3,
