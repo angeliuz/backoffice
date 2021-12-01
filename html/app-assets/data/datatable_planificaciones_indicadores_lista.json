@@ -1,0 +1,49 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "indicador": "Resuelven situaciones que involucren conteo de 1 en 1, de 2 en 2, 5 en 5 y de 10 en 10.",
+      "id_objetivo": 736,
+      "nombre_objetivo": "CN01OA01",
+      "descripcion": "Reconocer y observar, por medio de la exploraci\u00f3n, que los seres vivos crecen, responden a est\u00edmulos del medio, se reproducen y necesitan agua, alimento y aire para vivir, compar\u00e1ndolos con las cosas no vivas.",
+      "id_priorizacion": 1,
+      "nombre_priorizacion": "Nivel 1"
+    },
+    {
+      "id": 2,
+      "indicador": "Ordenan cantidades hasta 1 000 usando la recta numérica.",
+      "id_objetivo": 737,
+      "nombre_objetivo": "CN01OA02",
+      "descripcion": "Planificar una investigación experimental sobre la base de una pregunta y/o problema y diversas fuentes de información científica, considerando:<ul><li>La selección de instrumentos y materiales a usar de acuerdo a las variables presentes en el estudio.</li><li>La manipulación de una variable.</li><li>La explicación clara de procedimientos posibles de replicar.</li></ul>",
+      "id_priorizacion": 2,
+      "nombre_priorizacion": "Nivel 2"
+    },
+    {
+      "id": 3,
+      "indicador": "Resuelven situaciones que involucren conteo de 1 en 1, de 2 en 2, 5 en 5 y de 10 en 10.",
+      "id_objetivo": 738,
+      "nombre_objetivo": "CN01OA03",
+      "descripcion": "Reconocer y observar, por medio de la exploraci\u00f3n, que los seres vivos crecen, responden a est\u00edmulos del medio, se reproducen y necesitan agua, alimento y aire para vivir, compar\u00e1ndolos con las cosas no vivas.",
+      "id_priorizacion": 3,
+      "nombre_priorizacion": "Nivel 3"
+    },
+    {
+      "id": 4,
+      "indicador": "Resuelven situaciones que involucren conteo de 1 en 1, de 2 en 2, 5 en 5 y de 10 en 10.",
+      "id_objetivo": 739,
+      "nombre_objetivo": "CN01OA04",
+      "descripcion": "Reconocer y observar, por medio de la exploraci\u00f3n, que los seres vivos crecen, responden a est\u00edmulos del medio, se reproducen y necesitan agua, alimento y aire para vivir, compar\u00e1ndolos con las cosas no vivas.",
+      "id_priorizacion": 1,
+      "nombre_priorizacion": "Nivel 1"
+    },
+    {
+      "id": 5,
+      "indicador": "Resuelven situaciones que involucren conteo de 1 en 1, de 2 en 2, 5 en 5 y de 10 en 10.",
+      "id_objetivo": 740,
+      "nombre_objetivo": "CN01OA05",
+      "descripcion": "Reconocer y observar, por medio de la exploraci\u00f3n, que los seres vivos crecen, responden a est\u00edmulos del medio, se reproducen y necesitan agua, alimento y aire para vivir, compar\u00e1ndolos con las cosas no vivas.",
+      "id_priorizacion": 1,
+      "nombre_priorizacion": "Nivel 1"
+    }
+  ]
+}
