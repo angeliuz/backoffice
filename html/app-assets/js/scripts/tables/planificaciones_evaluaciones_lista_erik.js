@@ -83,7 +83,7 @@ $(function () {
             html = "";
             for (var i in row.objetivos) {
               if (row.objetivos[i].priorizaciones[0].id == 1) {
-                html += '<div class="d-flex justify-content-center align-items-start text center flex-column data-bs-html="true" data-bs-toggle="tooltip" title="ERIK">' + '<div class="text-primary fw-500 mep-5" id="' + row.objetivos[i].id + '" >' + row.objetivos[i].nombre + '<ion-icon name="star" class="text-warning  msp-5  data-bs-html="true" data-bs-toggle="tooltip" title="PEREDA" "></ion-icon>' + "</div></div>";
+                html += '<div class="d-flex justify-content-center align-items-start text center flex-column>' + '<div class="text-primary fw-500 mep-5" id="' + row.objetivos[i].id + '" data-bs-html="true" data-bs-toggle="tooltip" title="ERIK" >' + row.objetivos[i].nombre + '</div><div data-bs-html="true" data-bs-toggle="tooltip" title="PEREDA"><ion-icon name="star" class="text-warning  msp-5   ></ion-icon></div> </div>';
               } else if (row.objetivos[i].priorizaciones[0].id == 2) {
                 html += '<div class="d-flex justify-content-end align-items-start flex-column  data-bs-html="true" data-bs-toggle="tooltip" title="ANAKIN"">' + '<div class="text-primary fw-500 mep-5 " id="' + row.objetivos[i].id + '" >' + row.objetivos[i].nombre + '<ion-icon name="star-outline" class="text-warning  msp-5 data-bs-html="true" data-bs-toggle="tooltip" title="SKYWALKER""></ion-icon>' + "</div>";
               } else {
