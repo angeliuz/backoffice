@@ -36,30 +36,14 @@
     margin-bottom: 0;
     border-radius: 0 !important;
 }
-.modal-header-deco_u1 {
+.modal-header-decor {
     margin-top: 0px !important;
     border-top-style: solid;
     border-top-width: 1px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-    border-top-color: #7367f0;
 }
-.modal-header-deco_u2 {
-    margin-top: 0px !important;
-    border-top-style: solid;
-    border-top-width: 1px;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    border-top-color: #ff9f43;
-}
-.modal-header-deco_u3 {
-    margin-top: 0px !important;
-    border-top-style: solid;
-    border-top-width: 1px;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    border-top-color: #00cfe8;
-}
+
 .cb-cortina{
     display: flex;
     width: 100%;
