@@ -50,6 +50,89 @@
               }
             }
           ]
+        },
+        {
+          "id": 4,
+          "nombre": "CN01OA03",
+          "descripcion": "Describir y comunicar los cambios del ciclo de las estaciones y sus efectos en los seres vivos y el ambiente.",
+          "priorizaciones": [
+            {
+              "id": 3,
+              "nombre": "Nivel 0",
+              "_joinData": {
+                "oa_id": 738,
+                "priorizacion_id": 3
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "nombre_evaluacion": "evaluación 2",
+      "icono": "pdf.png",
+      "enlace": "enlace evaluacion",
+      "objetivos": [
+        {
+          "id": 736,
+          "nombre": "CN01OA01",
+          "descripcion": "Reconocer y observar, por medio de la exploraci\u00f3n, que los seres vivos crecen, responden a est\u00edmulos del medio, se reproducen y necesitan agua, alimento y aire para vivir, compar\u00e1ndolos con las cosas no vivas.",
+          "priorizaciones": [
+            {
+              "id": 1,
+              "nombre": "Nivel 1",
+              "_joinData": {
+                "oa_id": 736,
+                "priorizacion_id": 1
+              }
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "nombre": "CN01OA02",
+          "descripcion": "Describir y registrar el ciclo diario y las diferencias entre el d\u00eda y la noche, a partir de la observaci\u00f3n del Sol, la Luna, las estrellas y la luminosidad del cielo, entre otras, y sus efectos en los seres vivos y el ambiente.",
+          "priorizaciones": [
+            {
+              "id": 2,
+              "nombre": "Nivel 2",
+              "_joinData": {
+                "oa_id": 737,
+                "priorizacion_id": 2
+              }
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "nombre": "CN01Okeko",
+          "descripcion": "Efectos en los seres vivos y el ambiente.",
+          "priorizaciones": [
+            {
+              "id": 3,
+              "nombre": "Nivel 0",
+              "_joinData": {
+                "oa_id": 738,
+                "priorizacion_id": 3
+              }
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "nombre": "CN01OA03",
+          "descripcion": "el ambiente.",
+          "priorizaciones": [
+            {
+              "id": 3,
+              "nombre": "Nivel 0",
+              "_joinData": {
+                "oa_id": 738,
+                "priorizacion_id": 3
+              }
+            }
+          ]
         }
       ]
     }
