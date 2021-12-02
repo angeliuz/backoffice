@@ -173,16 +173,19 @@
                                                                 <div class="modal fade" id="modaloa" tabindex="-1" aria-labelledby="modaloaTitle" aria-hidden="true">
                                                                     <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-fullscreen">
                                                                         <div class="modal-content modal-content-erik">
-                                                                            <div class="modal-header">
-                                                                                <img src="app-assets/images/icons/pdf-02.png" class="mep-10" alt="">
-                                                                                <h5 class="modal-title fsp-10 ptp-20" id="modaloaTitle">Guía de trabajo práctico <p class="fsp-15 fw-700">Los órganos</p>
-                                                                                </h5>
+                                                                            <div class="modal-guia">
+                                                                                <div class="justify-contente-start align-items-center d-flex">
+                                                                                <img src="app-assets/images/icons/pdf-03.png" class="psp-10 mep-10" alt="">
+                                                                                <span class="fsp-10 ptp-5">Guía  </span><span class=" psp-10 fsp-15 fw-700">Los órganos</span>
+                                                                            </div>                                                                              
                                                                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                                                             </div>
+                                                                            
                                                                             <!-- Basic table -->
                                                                             <div class="modal-body text-center">
                                                                                 <img src="app-assets/images/illustration/guia.jpg" class="" alt="">
                                                                             </div>
+                                                                            <!-- Basic Table -->
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -296,35 +299,26 @@
                                                                 <button type="button" class="btn btn_mas waves-effect waves-float waves-light" data-bs-toggle="modal" data-bs-target="#modaloaa">+</button>
                                                                 <!-- Modal -->
                                                                 <div class="modal fade" id="modaloaa" tabindex="-1" aria-labelledby="modaloaaTitle" aria-hidden="true">
-                                                                    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl">
+                                                                    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-l">
                                                                         <div class="modal-content">
-                                                                            <div class="modal-header">
-                                                                                <h5 class="modal-title" id="modaloaaTitle">Agregar Actitudes a la unidad <p class="fsp-10">Selecciona o busca los Objetivos de aprendizaje transversales que deseas abordar en esta unidad.</p>
-                                                                                </h5>
+                                                                            <div class="modal-music">
+                                                                                <div class="justify-contente-start align-items-center d-flex">
+                                                                                <img src="app-assets/images/icons/sonido-02.png" class="psp-10 mep-10" alt="">
+                                                                                <span class="fsp-10 ptp-5">Audio  </span><span class=" psp-10 fsp-15 fw-700">Los órganos</span>
+                                                                            </div>                                                                              
                                                                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                                                             </div>
-                                                                            <!-- Basic table -->
-                                                                            <div class="modal-body">
-                                                                                <section>
-                                                                                    <div class="row">
-                                                                                        <div class="col-12 revenue-report-wrapper ">
-                                                                                            <div class="card">
-                                                                                                <table class="datatables-OAA table table-bordered table-condensed table-striped table-hover">
-                                                                                                    <thead>
-                                                                                                        <tr>
-                                                                                                            <th>OBJETIVOS</th>
-                                                                                                            <th>DESCRIPCION</th>
-                                                                                                            <th>SEL.</th>
-                                                                                                        </tr>
-                                                                                                    </thead>
-                                                                                                </table>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </section>
-                                                                            </div>
-                                                                            <!-- Basic Table -->
-                                                                            <div class="modal-footer"><button type="button" class="btn btn-primary" data-bs-dismiss="modal">Guardar</button></div>
+                                                                            <!-- musica -->                                                                          
+                                                                                <div class="col-12">
+                                                                                    <div class="Scriptcontent d-flex justify-content-center align-items-center cb-music">                                                                              
+                                                                                 <audio controls>
+                                                                                    <source src="app-assets/music/backsound.mp3"  type="audio/mp3">
+                                                                                </audio>                                                                                           
+                                                                                <div class="cb-music-estilo"></div>                                                      
+                                                                                </div>      
+                                                                                 </div>                                                                                                  
+                                                                            <!-- musica -->
+                                                                            
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -512,6 +506,7 @@
     <!-- BEGIN: Page JS-->
     <!-- <script src="app-assets/js/scripts/forms/form-select2.js"></script> -->
     <script src="app-assets/js/scripts/extensions/ext-component-drag-drop.js"></script>
+    <script  src="app-assets/js/scripts/music/player.js"></script>
     <!-- END: Page JS-->
     <script>
         populateMenu(menu);
