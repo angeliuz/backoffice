@@ -59,3 +59,6 @@
 .modal_content_interior_super_xl{
     min-height: calc(100vh - 120px) !important;
 }
+.modal-header-david{
+    background-color: #fff !important;
+}

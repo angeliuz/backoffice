@@ -15,6 +15,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500;1,600" rel="stylesheet">
     <!-- BEGIN: Vendor CSS-->
     <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/vendors.min.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/tables/datatable/dataTables.bootstrap5.min.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/tables/datatable/responsive.bootstrap4.min.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/pickers/flatpickr/flatpickr.min.css">
     <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/extensions/dragula.min.css">
     <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/forms/wizard/bs-stepper.min.css">
     <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/forms/select/select2.min.css">
@@ -34,6 +37,7 @@
     <link rel="stylesheet" type="text/css" href="app-assets/css/plugins/extensions/ext-component-drag-drop.css">
     <link rel="stylesheet" type="text/css" href="app-assets/css/plugins/forms/form-validation.css">
     <link rel="stylesheet" type="text/css" href="app-assets/css/plugins/forms/form-wizard.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/css/plugins/forms/pickers/form-flat-pickr.css">
     <!-- END: Page CSS-->
 
     <!-- BEGIN: Custom CSS-->
@@ -119,12 +123,10 @@
                 </div>
                 <div class="content-header-right text-md-end col-auto d-md-block d-none">
                     <div class="mb-1 breadcrumb-right">
-                        <a href="gc_grupocolegio_agregar.html" target="_self">
-                            <button type="button" class="btn btn-outline-primary bg-white">
-                                <i data-feather='upload'></i>
-                                <span>Agregar secuencia</span>
-                            </button>
-                        </a>
+                        <button type="button" class="btn btn-outline-primary bg-white" data-bs-toggle="modal" data-bs-target="#modalagregar">
+                            <i data-feather='upload'></i>
+                            <span>Agregar secuencia</span>
+                        </button>
                     </div>
                 </div>
                 <div class="content-header-right text-md-end col-auto d-md-block d-none">
@@ -142,6 +144,60 @@
                 <!-- Dashboard Ecommerce Starts -->
                 <section id="dashboard-ecommerce">
                     <div class="row match-height">
+
+                        <!-- Modal -->
+                        <div class="modal fade text-start" id="modalagregar" tabindex="-1" aria-labelledby="myModalLabel1" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header-deco w-100 position-absolute hp-5 color-primary bg-primary mt-0"></div>
+                                    <div class=" modal-header modal-header-david bgc-white hp-5">
+                                        <button type="button" class="btn-close mt-2" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <h5>Crear grupo de secuencias SM</h5>
+                                        <p> Selecciona un área y nivel para crear un grupo </p>
+
+                                        <form id="jquery-val-form" method="post">
+                                            <div class="row">
+                                                <div class="col-xl-8 col-sm-6">
+                                                    <div class="mb-1">
+                                                        <label class="form-label" for="area">ÁREA</label>
+                                                        <select class="form-select select2" data-language="es" id="area" name="area">
+                                                            <option value="0">Seleciona una opción</option>
+                                                            <option value="Providencia">Lenguaje</option>
+                                                            <option value="Providencia">Matemática</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-xl-6 col-sm-6 mb-2">
+                                                    <div class="mb-1">
+                                                        <label class="form-label" for="nivel">NIVEL</label>
+                                                        <select class="form-select select2" data-language="es" id="nivel" name="nivel">
+                                                            <option value="0">Seleciona una opción</option>
+                                                            <option value="Providencia">1° básico</option>
+                                                            <option value="Providencia">2° básico</option>
+                                                            <option value="Providencia">3° básico</option>
+                                                            <option value="Providencia">4° básico</option>
+                                                            <option value="Providencia">5° básico</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="d-flex justify-content-end mb-2">
+                                                <button type="submit" class="btn btn-primary waves-effect waves-float waves-light me-1" name="submit" value="Submit">Cancelar</button>
+                                                <button type="submit" class="btn btn-primary waves-effect waves-float waves-light" name="submit" value="Submit">Guardar</button>
+                                            </div>
+
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ENDModal -->
 
                         <!-- Revenue Report Card -->
                         <div class="col-12">
@@ -729,6 +785,11 @@
     <script src="app-assets/vendors/js/forms/select/select2.full.min.js"></script>
     <script src="app-assets/vendors/js/forms/validation/jquery.validate.min.js"></script>
     <script src="app-assets/js/scripts/forms/form-wizard.js"></script>
+    <script src="app-assets/vendors/js/tables/datatable/jquery.dataTables.min.js"></script>
+    <script src="app-assets/vendors/js/tables/datatable/dataTables.bootstrap5.min.js"></script>
+    <script src="app-assets/vendors/js/tables/datatable/dataTables.responsive.min.js"></script>
+    <script src="app-assets/vendors/js/tables/datatable/responsive.bootstrap4.js"></script>
+    <script src="app-assets/vendors/js/pickers/flatpickr/flatpickr.min.js"></script>
     <!-- END: Page Vendor JS-->
 
     <!-- BEGIN: Theme JS-->
@@ -740,6 +801,7 @@
     <script src="app-assets/js/scripts/forms/form-select2.js"></script>
     <script src="app-assets/js/scripts/extensions/ext-component-drag-drop.js"></script>
     <script src="app-assets/js/scripts/forms/form-wizard.js"></script>
+    <script src="app-assets/js/scripts/components/components-modals.js"></script>
     <!-- END: Page JS-->
     <script>
         populateMenu(menu);
