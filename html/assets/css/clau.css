@@ -44,19 +44,28 @@
     border-top-right-radius: 5px;
 }
 
-.modal-content {
+.modal-content1 {
     position: relative;
     display: flex;
     flex-direction: column;
     width: 100%;
     pointer-events: auto;
-   background-color: #1414149c !important;
+   background-color: #1414142e !important;
     background-clip: padding-box;
     border: 0px solid rgba(34, 41, 47, 0.2);
     border-radius: 0.357rem;
     outline: 0px;
 }
 
+.modal-fullscreen .modal-content1 {
+    height: 100%;
+    border: 0;
+    border-radius: 0;
+}
+.modal .modal-content1 {
+    overflow: visible;
+    box-shadow: 0 5px 20px 0 rgb(34 41 47 / 10%);
+}
 .cb-music{
     height: 200px;
     margin-left: 40px;
@@ -87,7 +96,7 @@
     opacity: 1;
     transition: all 0.23s ease 0.1s;
     position: relative;
-    transform: translate(8px, -10px) !important;
+    transform: translate(-2px, 0px) !important;
 }
 
 .modal-guia {
