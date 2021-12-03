@@ -21,6 +21,10 @@
     <!-- BEGIN: Theme CSS-->
     <link rel="stylesheet" type="text/css" href="app-assets/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="app-assets/css/bootstrap-extended.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/tables/datatable/dataTables.bootstrap5.min.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/tables/datatable/responsive.bootstrap4.min.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/tables/datatable/buttons.bootstrap5.min.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/tables/datatable/rowGroup.bootstrap4.min.css">
     <link rel="stylesheet" type="text/css" href="app-assets/css/colors.css">
     <link rel="stylesheet" type="text/css" href="app-assets/css/components.css">
     <link rel="stylesheet" type="text/css" href="app-assets/css/themes/dark-layout.css">
@@ -38,6 +42,7 @@
     <link rel="stylesheet" type="text/css" href="assets/css/helpers.css">
     <link rel="stylesheet" type="text/css" href="assets/css/custom_colors.css">
     <link rel="stylesheet" type="text/css" href="assets/css/david.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/erik.css" />
     <!-- END: Custom CSS-->
 </head>
 <!-- END: Head-->
@@ -145,19 +150,31 @@
                                         <div class="col-md-2 col-sm-12 m-0 p-0 border-end  d-flex flex-column">
                                             <div class="list-group" id="list-tab" role="tablist" style="border-radius: 0;">
                                                 <a class="list-group-item list-group-item-action active" id="list-home-list" data-bs-toggle="list" href="#list-secuencia1" role="tab" aria-controls="list-home" style="border-right-width: 0;border-left-width: 0; border-top-width: 0;">
-                                                    <div class="fsp-11">SECUENCIA 1</div>
+                                                    <div class="d-flex w-100 justify-content-between">
+                                                        <div class="fsp-11">SECUENCIA 1</div>
+                                                        <span class="fsp-11 eliminar"><i data-feather='trash-2'></i></span>
+                                                    </div>
                                                     <div class="fw-500">Sin nombre</div>
                                                 </a>
                                                 <a class="list-group-item list-group-item-action" id="list-profile-list" data-bs-toggle="list" href="#list-secuencia2" role="tab" aria-controls="list-profile" style="border-right-width: 0;border-left-width: 0;">
-                                                    <div class="fsp-11">SECUENCIA 2</div>
+                                                    <div class="d-flex w-100 justify-content-between">
+                                                        <div class="fsp-11">SECUENCIA 2</div>
+                                                        <span class="fsp-11 eliminar"><i data-feather='trash-2'></i></span>
+                                                    </div>
                                                     <div class="fw-500">Sin nombre</div>
                                                 </a>
                                                 <a class="list-group-item list-group-item-action" id="list-messages-list" data-bs-toggle="list" href="#list-secuencia3" role="tab" aria-controls="list-messages" style="border-right-width: 0;border-left-width: 0;">
-                                                    <div class="fsp-11">SECUENCIA 3</div>
+                                                    <div class="d-flex w-100 justify-content-between">
+                                                        <div class="fsp-11">SECUENCIA 3</div>
+                                                        <span class="fsp-11 eliminar"><i data-feather='trash-2'></i></span>
+                                                    </div>
                                                     <div class="fw-500">Sin nombre</div>
                                                 </a>
                                                 <a class="list-group-item list-group-item-action" id="list-settings-list" data-bs-toggle="list" href="#list-secuencia4" role="tab" aria-controls="list-settings" style="border-right-width: 0;border-left-width: 0;">
-                                                    <div class="fsp-11">SECUENCIA 4</div>
+                                                    <div class="d-flex w-100 justify-content-between">
+                                                        <div class="fsp-11">SECUENCIA 4</div>
+                                                        <span class="fsp-11 eliminar"><i data-feather='trash-2'></i></span>
+                                                    </div>
                                                     <div class="fw-500">Sin nombre</div>
                                                 </a>
                                             </div>
@@ -175,7 +192,8 @@
                                                 <div class="tab-pane fade show active" id="list-secuencia1" role="tabpanel" aria-labelledby="list-home-list">
                                                     <!-- BEGIN CONTENIDO SECUENCIA 1-->
                                                     <div class="row">
-                                                        <div class="d-flex mtp-10"><span class="bullet bullet-sm bullet-danger mtp-4 mep-10"></span>
+                                                        <div class="d-flex mtp-10">
+                                                            <span class="bullet bullet-sm bullet-danger mtp-4 mep-10"></span>
                                                             <h5 class="">SECUENCIA 1</h5>
                                                         </div>
                                                         <div class="col-4 mb-1 w-100"><input type="number" class="form-control" id="itemcost" aria-describedby="itemcost" placeholder="Sin nombre" /></div>
@@ -263,7 +281,8 @@
                                                 <div class="tab-pane fade" id="list-secuencia2" role="tabpanel" aria-labelledby="list-profile-list">
                                                     <!-- BEGIN CONTENIDO SECUENCIA 2 -->
                                                     <div class="row">
-                                                        <div class="d-flex mtp-10"><span class="bullet bullet-sm bullet-danger mtp-4 mep-10"></span>
+                                                        <div class="d-flex mtp-10">
+                                                            <span class="bullet bullet-sm bullet-danger mtp-4 mep-10"></span>
                                                             <h5 class="">SECUENCIA 2</h5>
                                                         </div>
                                                         <div class="col-4 mb-1 w-100"><input type="number" class="form-control" id="itemcost" aria-describedby="itemcost" placeholder="Sin nombre" /></div>
@@ -545,7 +564,7 @@
     </footer>
     <button class="btn btn-primary btn-icon scroll-top" type="button"><i data-feather="arrow-up"></i></button>
     <!-- END: Footer-->
-    <!-- Modal -->
+    <!-- Modal Objetivos de aprendizaje -->
     <div class="modal fade" id="modaloa" tabindex="-1" aria-labelledby="modaloaTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl">
             <div class="modal-content">
@@ -556,14 +575,16 @@
                 </div>
                 <!-- Basic table -->
                 <div class="modal-body">
+                    <!-- Basic table -->
                     <section>
                         <div class="row">
                             <div class="col-12 revenue-report-wrapper ">
                                 <div class="card">
-                                    <table class="datatables-OA table table-bordered table-condensed table-striped table-hover">
+                                    <table
+                                           class="datatables-OA table table-bordered table-condensed table-striped table-hover">
                                         <thead>
                                             <tr>
-                                                <th>OBJETIVOS</th>
+                                                <th> OBJETIVOS</th>
                                                 <th>DESCRIPCION</th>
                                                 <th>SEL.</th>
                                             </tr>
@@ -573,14 +594,15 @@
                             </div>
                         </div>
                     </section>
+                    <!-- Basic Table -->
                 </div>
                 <!-- Basic Table -->
                 <div class="modal-footer"><button type="button" class="btn btn-primary" data-bs-dismiss="modal">Guardar</button></div>
             </div>
         </div>
     </div>
-    <!-- Modal -->
-    <!-- Modal -->
+    <!-- Modal Objetivos de aprendizaje -->
+    <!-- Modal Objetivos transversales -->
     <div class="modal fade" id="modaloat" tabindex="-1" aria-labelledby="modaloaTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl">
             <div class="modal-content">
@@ -614,8 +636,8 @@
             </div>
         </div>
     </div>
-    <!-- Modal -->
-    <!-- Modal -->
+    <!-- Modal Objetivos transversales -->
+    <!-- Modal Habilidades -->
     <div class="modal fade" id="modaloah" tabindex="-1" aria-labelledby="modaloaTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl">
             <div class="modal-content">
@@ -649,8 +671,8 @@
             </div>
         </div>
     </div>
-    <!-- Modal -->
-    <!-- Modal -->
+    <!-- Modal Habilidades -->
+    <!-- Modal Actitudes -->
     <div class="modal fade" id="modaloaa" tabindex="-1" aria-labelledby="modaloaTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl">
             <div class="modal-content">
@@ -684,43 +706,8 @@
             </div>
         </div>
     </div>
-    <!-- Modal -->
-    <!-- Modal -->
-    <div class="modal fade" id="modalevaluaciones" tabindex="-1" aria-labelledby="modaloaTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="modaloaTitle">Agregar Evaluaciones a la secuencia <p class="fsp-10">Selecciona o busca las evaluaciones que deseas abordar en esta unidad.</p>
-                    </h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <!-- Basic table -->
-                <div class="modal-body">
-                    <section>
-                        <div class="row">
-                            <div class="col-12 revenue-report-wrapper ">
-                                <div class="card">
-                                    <table class="datatables-OA table table-bordered table-condensed table-striped table-hover">
-                                        <thead>
-                                            <tr>
-                                                <th>OBJETIVOS</th>
-                                                <th>DESCRIPCION</th>
-                                                <th>SEL.</th>
-                                            </tr>
-                                        </thead>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                </div>
-                <!-- Basic Table -->
-                <div class="modal-footer"><button type="button" class="btn btn-primary" data-bs-dismiss="modal">Guardar</button></div>
-            </div>
-        </div>
-    </div>
-    <!-- Modal -->
-    <!-- Modal -->
+    <!-- Modal Actitudes -->
+    <!-- Modal Actividades -->
     <div class="modal fade" id="modalactividades" tabindex="-1" aria-labelledby="modaloaTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl">
             <div class="modal-content">
@@ -754,7 +741,111 @@
             </div>
         </div>
     </div>
-    <!-- Modal -->
+    <!-- Modal Actividades -->
+    <!-- Modal Evaluaciones -->
+    <div class="modal fade" id="modalevaluaciones" tabindex="-1" aria-labelledby="modalevTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered erik-modal">
+            <div class="modal-header-deco w-100 position-absolute hp-5 color-primary bg-primary mt-0"></div>
+            <div class="modal-content modal-content-erik">
+                <div class="modal-header linea_lila">
+                    <h5 class="modal-title" id="modalevTitle">Banco de evaluaciones <p class="fsp-10">sube o selecciona una evaluación</p>
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <!-- Basic table -->
+                <div class="modal-body">
+                    <section>
+                        <div class="row">
+                            <div class="col-12 revenue-report-wrapper">
+                                <!-- Dashboard Ecommerce Starts -->
+                                <section id="dashboard-ecommerce">
+                                    <div class="row match-height">
+                                        <!-- Column Search -->
+                                        <section id="column-search-datatable">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div class="card">
+                                                        <div class="card-header border-bottom">
+                                                            <h4 class="card-title">Lista de evaluaciones </h4>
+                                                        </div>
+                                                        <div class="card-datatable">
+                                                            <table class="dt-column-search table text-center">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>id </th>
+                                                                        <th style="width: 300px;">
+                                                                            <div class="text-start wp-200">nombre</div>
+                                                                        </th>
+                                                                        <th style="width: 40px;">preview</th>
+                                                                        <th style="width: 40px;">indicadores</th>
+                                                                        <th style="width: 50px;"> oa </th>
+                                                                        <th>acción</th>
+                                                                    </tr>
+                                                                </thead>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </section>
+                                        <!--/ Column Search -->
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <!-- Basic Table -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-primary bg-white"> Cancelar</button>
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Guardar Selección</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Evaluaciones -->
+    <!-- Modal Indicadores -->
+    <div class="modal fade" id="modal_indicadores" tabindex="-1"
+         aria-labelledby="modaloeTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered erik-modal">
+            <div class="modal-content modal-content-erik">
+                <div class="modal-header linea_lila">
+                    <h5 class="modal-title" id="modaloeTitle"> INDICADORES <p class="fsp-10">Selecciona o busca los Objetivos de aprendizaje aprendizaje transversales que deseas abordar en esta unidad.</p>
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <!-- Basic table -->
+                <div class="modal-body">
+                    <section>
+                        <div class="row">
+                            <div class="col-12 revenue-report-wrapper">
+                                <div class="card">
+                                    <div class="card-header border-bottom">
+                                        <h4 class="card-title">Lista de indicadores </h4>
+                                    </div>
+                                    <table class="dt-indicadores table table-bordered table-condensed table-striped table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th></th>
+                                                <th>DESCRIPCIÓN DE INDICADOR</th>
+                                                <th>OBJETIVOS </th>
+                                            </tr>
+                                        </thead>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <!-- Basic Table -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary"
+                            data-bs-dismiss="modal">Guardar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Indicadores -->
     <!-- BEGIN MENU -->
     <script src="app-assets/js/menu.js"></script>
     <!-- END MENU -->
@@ -764,7 +855,11 @@
     <!-- / Ionic icons -->
     <!-- BEGIN: Vendor JS-->
     <script src="app-assets/vendors/js/vendors.min.js"></script>
-    <!-- BEGIN Vendor JS-->
+    <!-- END: Page Vendor JS-->
+    <!-- BEGIN: Page Vendor JS-->
+    <script src="app-assets/vendors/js/extensions/sweetalert2.all.min.js"></script>
+    <script src="app-assets/vendors/js/extensions/polyfill.min.js"></script>
+    <!-- END: Page Vendor JS-->
     <!-- BEGIN: Page Vendor JS-->
     <!-- <script src="app-assets/vendors/js/forms/select/select2.full.min.js"></script> -->
     <script src="app-assets/vendors/js/extensions/dragula.min.js"></script>
@@ -776,11 +871,29 @@
     <!-- BEGIN: Page JS-->
     <!-- <script src="app-assets/js/scripts/forms/form-select2.js"></script> -->
     <script src="app-assets/js/scripts/extensions/ext-component-drag-drop.js"></script>
+    <script src="app-assets/vendors/js/tables/datatable/jquery.dataTables.min.js"></script>
+    <script src="app-assets/vendors/js/tables/datatable/dataTables.bootstrap5.min.js"></script>
+    <script src="app-assets/vendors/js/tables/datatable/dataTables.responsive.min.js"></script>
+    <script src="app-assets/vendors/js/tables/datatable/responsive.bootstrap4.min.js"></script>
+    <script src="app-assets/vendors/js/tables/datatable/datatables.checkboxes.min.js"></script>
+    <script src="app-assets/vendors/js/tables/datatable/datatables.buttons.min.js"></script>
     <!-- END: Page JS-->
+    <!-- BEGIN: Clases Objetivos Claudia -->
+    <script src="app-assets/js/scripts/tables/datatables-OA-CB.js"></script>
+    <script src="app-assets/js/scripts/tables/datatables-OAT-CB.js"></script>
+    <script src="app-assets/js/scripts/tables/datatables-OAA-CB.js"></script>
+    <script src="app-assets/js/scripts/tables/datatables-OAH-CB.js"></script>
+    <!-- END Clases Objetivos Claudia -->
     <!-- BEGIN: Page JS-->
     <script src="app-assets/vendors/js/forms/wizard/bs-stepper.min.js"></script>
     <script src="app-assets/vendors/js/forms/select/select2.full.min.js"></script>
     <script src="app-assets/js/scripts/forms/form-wizard.js"></script>
+    <!-- END: Page JS-->
+    <!-- BEGIN: Page JS-->
+    <script src="app-assets/js/scripts/extensions/secuencias_sweet_alert.js"></script>
+    <!-- END: Page JS-->
+    <!-- BEGIN: Page JS-->
+    <script src="app-assets/js/scripts/tables/planificaciones_evaluaciones_lista_erik.js"></script>
     <!-- END: Page JS-->
     <script>
         populateMenu(menu);

@@ -134,7 +134,8 @@ $(function () {
         { data: "nivel", autoWidth: true },
         { data: "secuencias", autoWidth: true },
         { data: "creada", autoWidth: true },
-        { data: "", width: "50px" }],
+        { data: "", width: "50px" },
+      ],
       columnDefs: [
         {
           // For Responsive
@@ -167,7 +168,7 @@ $(function () {
               "Eliminar</button>" +
               "</div>" +
               "</div>" +
-              '<a href="gc_unidades_editar.html" target="_self" class="item-edit">' +
+              '<a href="gc_planificaciones_detalle_secuencia.html" target="_self" class="item-edit">' +
               feather.icons["edit"].toSvg({ class: "font-small-4" }) +
               "</a>"
             );
@@ -183,23 +184,23 @@ $(function () {
       text: "Estas seguro que deseas eliminar la secuencia. Esta acción no se puede deshacer.",
       icon: "warning",
       showCancelButton: true,
-      confirmButtonText: 'Si, estoy seguro',
+      confirmButtonText: "Si, estoy seguro",
       cancelButtonText: "No eliminar",
-        customClass: {
-          confirmButton: 'btn btn-primary',
-          cancelButton: 'btn btn-danger ms-1'
-        },
-        buttonsStyling: false
+      customClass: {
+        confirmButton: "btn btn-primary",
+        cancelButton: "btn btn-danger ms-1",
+      },
+      buttonsStyling: false,
     }).then((result) => {
       if (result.isConfirmed) {
         Swal.fire({
-          icon: 'success',
-          title: '¡Eliminada!',
-          confirmButtonText: 'Cerrar',
-          text: 'La secuencia, ha sido eliminada.',
+          icon: "success",
+          title: "¡Eliminada!",
+          confirmButtonText: "Cerrar",
+          text: "La secuencia, ha sido eliminada.",
           customClass: {
-            confirmButton: 'btn btn-success'
-          }
+            confirmButton: "btn btn-success",
+          },
         });
       }
     });
