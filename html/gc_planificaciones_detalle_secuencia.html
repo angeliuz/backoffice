@@ -18,7 +18,6 @@
     <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/extensions/dragula.min.css">
     <!-- <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/forms/select/select2.min.css"> -->
     <!-- END: Vendor CSS-->
-
     <!-- BEGIN: Theme CSS-->
     <link rel="stylesheet" type="text/css" href="app-assets/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="app-assets/css/bootstrap-extended.css">
@@ -27,26 +26,24 @@
     <link rel="stylesheet" type="text/css" href="app-assets/css/themes/dark-layout.css">
     <link rel="stylesheet" type="text/css" href="app-assets/css/themes/bordered-layout.css">
     <link rel="stylesheet" type="text/css" href="app-assets/css/themes/semi-dark-layout.css">
-
     <!-- BEGIN: Page CSS-->
     <link rel="stylesheet" type="text/css" href="app-assets/css/core/menu/menu-types/vertical-menu.css">
     <link rel="stylesheet" type="text/css" href="app-assets/css/plugins/extensions/ext-component-drag-drop.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/forms/wizard/bs-stepper.min.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/forms/select/select2.min.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/css/plugins/forms/form-wizard.css">
     <!-- END: Page CSS-->
-
     <!-- BEGIN: Custom CSS-->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link rel="stylesheet" type="text/css" href="assets/css/helpers.css">
     <link rel="stylesheet" type="text/css" href="assets/css/custom_colors.css">
     <link rel="stylesheet" type="text/css" href="assets/css/david.css">
     <!-- END: Custom CSS-->
-
 </head>
 <!-- END: Head-->
-
 <!-- BEGIN: Body-->
 
 <body class="vertical-layout vertical-menu-modern navbar-floating footer-static" data-open="click" data-menu="vertical-menu-modern" data-col="">
-
     <!-- BEGIN: Header-->
     <nav class="header-navbar navbar navbar-expand-lg align-items-center floating-nav navbar-light navbar-shadow container-xxl">
         <div class="navbar-container d-flex content">
@@ -59,7 +56,7 @@
                         <div class="d-flex align-items-center">
                             <div>
                                 <div class="avatar-content">
-                                    <span ><img src="assets/images/logo_sm.png" alt="avatar" height="40"></span>
+                                    <span><img src="assets/images/logo_sm.png" alt="avatar" height="40"></span>
                                 </div>
                             </div>
                             <div>
@@ -82,7 +79,6 @@
         </div>
     </nav>
     <!-- END: Header-->
-
     <!-- BEGIN: Main Menu-->
     <div class="main-menu menu-fixed menu-dark menu-accordion menu-shadow" data-scroll-to-active="true">
         <div class="navbar-header">
@@ -90,7 +86,8 @@
                 <li class="nav-item me-auto">
                     <a class="navbar-brand" href="html/ltr/vertical-menu-template/index.html">
                         <h2 class="brand-text p-0">Gestor curricular</h2>
-                    </a></li>
+                    </a>
+                </li>
                 <li class="nav-item nav-toggle"><a class="nav-link modern-nav-toggle pe-0" data-bs-toggle="collapse"><i class="d-block d-xl-none text-primary toggle-icon font-medium-4" data-feather="x"></i><i class="d-none d-xl-block collapse-toggle-icon font-medium-4  text-primary" data-feather="disc" data-ticon="disc"></i></a></li>
             </ul>
         </div>
@@ -100,7 +97,6 @@
         </div>
     </div>
     <!-- END: Main Menu-->
-
     <!-- BEGIN: Content-->
     <div class="app-content content ">
         <div class="content-overlay"></div>
@@ -136,422 +132,659 @@
                 </div>
             </div>
             <div class="content-body">
-                <!-- Dashboard Ecommerce Starts -->
-                <section id="dashboard-ecommerce">
-                    <div class="row match-height">
-
-                        <!-- Revenue Report Card -->
+                <!--List group with tabs Starts-->
+                <section id="list-group-tabs">
+                    <div class="row">
                         <div class="col-12">
                             <div class="card">
-                                <div class="row mx-0">
-                                    <div class="col-12 revenue-report-wrapper border-0">
-                                        <div class="mtp-20"><h4 class="card-title">Secuencias de aprendizaje</h4></div> 
-
-                                        <div class="row linea_top">
-                                            <div class="col-2 linea_right p-0">
-                                                <div class="col bg-primary ptp-10 pbp-20 psp-15 text-white">
+                                <div class="card-header border-bottom">
+                                    <h4 class="card-title">Secuencias de aprendizaje</h4>
+                                </div>
+                                <div class="card-body p-0">
+                                    <div class="row mt-0 p-0 m-0">
+                                        <div class="col-md-2 col-sm-12 m-0 p-0 border-end  d-flex flex-column">
+                                            <div class="list-group" id="list-tab" role="tablist" style="border-radius: 0;">
+                                                <a class="list-group-item list-group-item-action active" id="list-home-list" data-bs-toggle="list" href="#list-secuencia1" role="tab" aria-controls="list-home" style="border-right-width: 0;border-left-width: 0; border-top-width: 0;">
                                                     <div class="fsp-11">SECUENCIA 1</div>
                                                     <div class="fw-500">Sin nombre</div>
-                                                </div>
-                                                <div class="mb-1 d-flex justify-content-center align-items-end h-90">
-                                                    <a href="gc_grupocolegio_agregar.html" target="_self">
-                                                        <button type="button" class="btn bgc-light bgc-waves-effect waves-float waves-light">
-                                                            <i data-feather='arrow-up-circle'></i>
-                                                            <span>Agregar secuencia</span>
-                                                        </button>
-                                                    </a>
-                                                </div>
+                                                </a>
+                                                <a class="list-group-item list-group-item-action" id="list-profile-list" data-bs-toggle="list" href="#list-secuencia2" role="tab" aria-controls="list-profile" style="border-right-width: 0;border-left-width: 0;">
+                                                    <div class="fsp-11">SECUENCIA 2</div>
+                                                    <div class="fw-500">Sin nombre</div>
+                                                </a>
+                                                <a class="list-group-item list-group-item-action" id="list-messages-list" data-bs-toggle="list" href="#list-secuencia3" role="tab" aria-controls="list-messages" style="border-right-width: 0;border-left-width: 0;">
+                                                    <div class="fsp-11">SECUENCIA 3</div>
+                                                    <div class="fw-500">Sin nombre</div>
+                                                </a>
+                                                <a class="list-group-item list-group-item-action" id="list-settings-list" data-bs-toggle="list" href="#list-secuencia4" role="tab" aria-controls="list-settings" style="border-right-width: 0;border-left-width: 0;">
+                                                    <div class="fsp-11">SECUENCIA 4</div>
+                                                    <div class="fw-500">Sin nombre</div>
+                                                </a>
                                             </div>
-                                            <div class="col">
-                                                <div class="row">
-                                                    <div class="d-flex mtp-10"><span class="bullet bullet-sm bullet-danger mtp-4 mep-10"></span><h5 class="">SECUENCIA 1</h5></div>
-                                                    <div class="col-4 mb-1 w-100"><input type="number" class="form-control" id="itemcost" aria-describedby="itemcost" placeholder="Sin nombre"/></div>
-                                                </div>
-
-                                                <div class="row">
-                                                    <div class="d-flex justify-content-between bgc-light ptp-5 pbp-5 ">
-                                                        <div class="psp-20 ptp-5 fw-700">OBJETIVOS DE APRENDIZAJE</div>
-                                                        <div class="d-flex justify-content-end pep-10">
-                                                            <!-- <button type="submit" class="btn btn_mas waves-effect waves-float waves-light" name="submit" value="Submit">+</button>-->
-                                                            <div class="scrolling-inside-modal">
-                                                                <!-- Button trigger modal -->
-                                                                <button type="button" class="btn btn_mas waves-effect waves-float waves-light" data-bs-toggle="modal" data-bs-target="#modaloa">+</button>
-
-                                                                    <!-- Modal -->
-                                                                    <div class="modal fade" id="modaloa" tabindex="-1" aria-labelledby="modaloaTitle" aria-hidden="true">
-                                                                        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl">
-                                                                            <div class="modal-content">
-
-                                                                                <div class="modal-header">
-                                                                                    <h5 class="modal-title" id="modaloaTitle">Agregar Objetivos de aprendizaje a la unidad
-                                                                                        <p class="fsp-10">Selecciona o busca los Objetivos de aprendizaje transversales que deseas abordar en esta unidad.</p>
-                                                                                    </h5>
-                                                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                                                                </div>
-
-                                                                                <!-- Basic table -->
-                                                                                <div class="modal-body">
-                                                                                    <section>
-                                                                                        <div class="row">
-                                                                                            <div class="col-12 revenue-report-wrapper ">
-                                                                                                <div class="card">
-                                                                                                    <table class="datatables-OA table table-bordered table-condensed table-striped table-hover">
-                                                                                                        <thead>
-                                                                                                            <tr>
-                                                                                                                <th>OBJETIVOS</th>
-                                                                                                                <th>DESCRIPCION</th>
-                                                                                                                <th>SEL.</th>
-                                                                                                            </tr>
-                                                                                                        </thead>
-                                                                                                    </table>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </section>
-                                                                                </div>
-                                                                                <!-- Basic Table -->
-
-                                                                                <div class="modal-footer"><button type="button" class="btn btn-primary" data-bs-dismiss="modal">Guardar</button></div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <!-- Modal -->
-
+                                            <div class="w-100 d-flex justify-content-center flex-grow-1">
+                                                <a href="gc_grupocolegio_agregar.html" target="_self" class="align-self-start mbp-20 mtp-20">
+                                                    <button type="button" class="btn bgc-light bgc-waves-effect waves-float waves-light">
+                                                        <i data-feather='plus-circle'></i>
+                                                        <span>Agregar secuencia</span>
+                                                    </button>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-10 col-sm-12 mt-1">
+                                            <div class="tab-content" id="nav-tabContent">
+                                                <div class="tab-pane fade show active" id="list-secuencia1" role="tabpanel" aria-labelledby="list-home-list">
+                                                    <!-- BEGIN CONTENIDO SECUENCIA 1-->
+                                                    <div class="row">
+                                                        <div class="d-flex mtp-10"><span class="bullet bullet-sm bullet-danger mtp-4 mep-10"></span>
+                                                            <h5 class="">SECUENCIA 1</h5>
+                                                        </div>
+                                                        <div class="col-4 mb-1 w-100"><input type="number" class="form-control" id="itemcost" aria-describedby="itemcost" placeholder="Sin nombre" /></div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="d-flex justify-content-between bgc-light ptp-5 pbp-5 ">
+                                                            <div class="psp-5 ptp-5 fw-700 text-uppercase">Objetivos de aprendizaje</div>
+                                                            <div class="d-flex justify-content-end">
+                                                                <!-- <button type="submit" class="btn btn_mas waves-effect waves-float waves-light" name="submit" value="Submit">+</button>-->
+                                                                <div class="scrolling-inside-modal">
+                                                                    <!-- Button trigger modal -->
+                                                                    <button type="button" class="btn btn_mas waves-effect waves-float waves-light" data-bs-toggle="modal" data-bs-target="#modaloa">+</button>
+                                                                </div>
                                                             </div>
                                                         </div>
+                                                        <div class="d-block text-center mtp-60 mbp-60 fsp-12"><span>No hay Objetivos de aprendizaje seleccionados.<br>Haz clic aquí para agregarlos.</span></div>
                                                     </div>
-                                                    <div class="d-block text-center mtp-60 mbp-60 fsp-12"><span>No hay OAs seleccionados.<br>Haz clic aquí para agregarlos.</span></div>
-                                                </div>
-
-                                                <div class="row">
-                                                    <div class="d-flex justify-content-between bgc-light ptp-5 pbp-5 ">
-                                                        <div class="psp-20 ptp-5 fw-700">OBJETIVOS TRANSVERSALES</div>
-                                                        <div class="d-flex justify-content-end pep-10">
-                                                            <!-- <button type="submit" class="btn btn_mas waves-effect waves-float waves-light" name="submit" value="Submit">+</button>-->
-                                                            <div class="scrolling-inside-modal">
-                                                                <!-- Button trigger modal -->
-                                                                <button type="button" class="btn btn_mas waves-effect waves-float waves-light" data-bs-toggle="modal" data-bs-target="#modaloa">+</button>
-
-                                                                    <!-- Modal -->
-                                                                    <div class="modal fade" id="modaloa" tabindex="-1" aria-labelledby="modaloaTitle" aria-hidden="true">
-                                                                        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl">
-                                                                            <div class="modal-content">
-
-                                                                                <div class="modal-header">
-                                                                                    <h5 class="modal-title" id="modaloaTitle">Agregar Objetivos de aprendizaje a la unidad
-                                                                                        <p class="fsp-10">Selecciona o busca los Objetivos de aprendizaje transversales que deseas abordar en esta unidad.</p>
-                                                                                    </h5>
-                                                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                                                                </div>
-
-                                                                                <!-- Basic table -->
-                                                                                <div class="modal-body">
-                                                                                    <section>
-                                                                                        <div class="row">
-                                                                                            <div class="col-12 revenue-report-wrapper ">
-                                                                                                <div class="card">
-                                                                                                    <table class="datatables-OA table table-bordered table-condensed table-striped table-hover">
-                                                                                                        <thead>
-                                                                                                            <tr>
-                                                                                                                <th>OBJETIVOS</th>
-                                                                                                                <th>DESCRIPCION</th>
-                                                                                                                <th>SEL.</th>
-                                                                                                            </tr>
-                                                                                                        </thead>
-                                                                                                    </table>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </section>
-                                                                                </div>
-                                                                                <!-- Basic Table -->
-
-                                                                                <div class="modal-footer"><button type="button" class="btn btn-primary" data-bs-dismiss="modal">Guardar</button></div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <!-- Modal -->
-
+                                                    <div class="row">
+                                                        <div class="d-flex justify-content-between bgc-light ptp-5 pbp-5 ">
+                                                            <div class="psp-5  ptp-5 fw-700 text-uppercase">Objetivos transversales</div>
+                                                            <div class="d-flex justify-content-end">
+                                                                <!-- <button type="submit" class="btn btn_mas waves-effect waves-float waves-light" name="submit" value="Submit">+</button>-->
+                                                                <div class="scrolling-inside-modal">
+                                                                    <!-- Button trigger modal -->
+                                                                    <button type="button" class="btn btn_mas waves-effect waves-float waves-light" data-bs-toggle="modal" data-bs-target="#modaloat">+</button>
+                                                                </div>
                                                             </div>
                                                         </div>
+                                                        <div class="d-block text-center mtp-60 mbp-60 fsp-12"><span>No hay Objetivos transversales seleccionados.<br>Haz clic aquí para agregarlos.</span></div>
                                                     </div>
-                                                    <div class="d-block text-center mtp-60 mbp-60 fsp-12"><span>No hay OAs seleccionados.<br>Haz clic aquí para agregarlos.</span></div>
-                                                </div>
-
-                                                <div class="row">
-                                                    <div class="d-flex justify-content-between bgc-light ptp-5 pbp-5 ">
-                                                        <div class="psp-20 ptp-5 fw-700">HABILIDADES</div>
-                                                        <div class="d-flex justify-content-end pep-10">
-                                                            <!-- <button type="submit" class="btn btn_mas waves-effect waves-float waves-light" name="submit" value="Submit">+</button>-->
-                                                            <div class="scrolling-inside-modal">
-                                                                <!-- Button trigger modal -->
-                                                                <button type="button" class="btn btn_mas waves-effect waves-float waves-light" data-bs-toggle="modal" data-bs-target="#modaloa">+</button>
-
-                                                                    <!-- Modal -->
-                                                                    <div class="modal fade" id="modaloa" tabindex="-1" aria-labelledby="modaloaTitle" aria-hidden="true">
-                                                                        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl">
-                                                                            <div class="modal-content">
-
-                                                                                <div class="modal-header">
-                                                                                    <h5 class="modal-title" id="modaloaTitle">Agregar Objetivos de aprendizaje a la unidad
-                                                                                        <p class="fsp-10">Selecciona o busca los Objetivos de aprendizaje transversales que deseas abordar en esta unidad.</p>
-                                                                                    </h5>
-                                                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                                                                </div>
-
-                                                                                <!-- Basic table -->
-                                                                                <div class="modal-body">
-                                                                                    <section>
-                                                                                        <div class="row">
-                                                                                            <div class="col-12 revenue-report-wrapper ">
-                                                                                                <div class="card">
-                                                                                                    <table class="datatables-OA table table-bordered table-condensed table-striped table-hover">
-                                                                                                        <thead>
-                                                                                                            <tr>
-                                                                                                                <th>OBJETIVOS</th>
-                                                                                                                <th>DESCRIPCION</th>
-                                                                                                                <th>SEL.</th>
-                                                                                                            </tr>
-                                                                                                        </thead>
-                                                                                                    </table>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </section>
-                                                                                </div>
-                                                                                <!-- Basic Table -->
-
-                                                                                <div class="modal-footer"><button type="button" class="btn btn-primary" data-bs-dismiss="modal">Guardar</button></div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <!-- Modal -->
-
+                                                    <div class="row">
+                                                        <div class="d-flex justify-content-between bgc-light ptp-5 pbp-5 ">
+                                                            <div class="psp-5 ptp-5 fw-700 text-uppercase">Habilidades</div>
+                                                            <div class="d-flex justify-content-end ">
+                                                                <!-- <button type="submit" class="btn btn_mas waves-effect waves-float waves-light" name="submit" value="Submit">+</button>-->
+                                                                <div class="scrolling-inside-modal">
+                                                                    <!-- Button trigger modal -->
+                                                                    <button type="button" class="btn btn_mas waves-effect waves-float waves-light" data-bs-toggle="modal" data-bs-target="#modaloah">+</button>
+                                                                </div>
                                                             </div>
                                                         </div>
+                                                        <div class="d-block text-center mtp-60 mbp-60 fsp-12"><span>No hay Habilidades seleccionados.<br>Haz clic aquí para agregarlos.</span></div>
                                                     </div>
-                                                    <div class="d-block text-center mtp-60 mbp-60 fsp-12"><span>No hay OAs seleccionados.<br>Haz clic aquí para agregarlos.</span></div>
-                                                </div>
-
-                                                <div class="row">
-                                                    <div class="d-flex justify-content-between bgc-light ptp-5 pbp-5 ">
-                                                        <div class="psp-20 ptp-5 fw-700">ACTITUDES</div>
-                                                        <div class="d-flex justify-content-end pep-10">
-                                                            <!-- <button type="submit" class="btn btn_mas waves-effect waves-float waves-light" name="submit" value="Submit">+</button>-->
-                                                            <div class="scrolling-inside-modal">
-                                                                <!-- Button trigger modal -->
-                                                                <button type="button" class="btn btn_mas waves-effect waves-float waves-light" data-bs-toggle="modal" data-bs-target="#modaloa">+</button>
-
-                                                                    <!-- Modal -->
-                                                                    <div class="modal fade" id="modaloa" tabindex="-1" aria-labelledby="modaloaTitle" aria-hidden="true">
-                                                                        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl">
-                                                                            <div class="modal-content">
-
-                                                                                <div class="modal-header">
-                                                                                    <h5 class="modal-title" id="modaloaTitle">Agregar Objetivos de aprendizaje a la unidad
-                                                                                        <p class="fsp-10">Selecciona o busca los Objetivos de aprendizaje transversales que deseas abordar en esta unidad.</p>
-                                                                                    </h5>
-                                                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                                                                </div>
-
-                                                                                <!-- Basic table -->
-                                                                                <div class="modal-body">
-                                                                                    <section>
-                                                                                        <div class="row">
-                                                                                            <div class="col-12 revenue-report-wrapper ">
-                                                                                                <div class="card">
-                                                                                                    <table class="datatables-OA table table-bordered table-condensed table-striped table-hover">
-                                                                                                        <thead>
-                                                                                                            <tr>
-                                                                                                                <th>OBJETIVOS</th>
-                                                                                                                <th>DESCRIPCION</th>
-                                                                                                                <th>SEL.</th>
-                                                                                                            </tr>
-                                                                                                        </thead>
-                                                                                                    </table>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </section>
-                                                                                </div>
-                                                                                <!-- Basic Table -->
-
-                                                                                <div class="modal-footer"><button type="button" class="btn btn-primary" data-bs-dismiss="modal">Guardar</button></div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <!-- Modal -->
-
+                                                    <div class="row">
+                                                        <div class="d-flex justify-content-between bgc-light ptp-5 pbp-5 ">
+                                                            <div class="psp-5 ptp-5 fw-700 text-uppercase">Actitudes</div>
+                                                            <div class="d-flex justify-content-end ">
+                                                                <!-- <button type="submit" class="btn btn_mas waves-effect waves-float waves-light" name="submit" value="Submit">+</button>-->
+                                                                <div class="scrolling-inside-modal">
+                                                                    <!-- Button trigger modal -->
+                                                                    <button type="button" class="btn btn_mas waves-effect waves-float waves-light" data-bs-toggle="modal" data-bs-target="#modaloaa">+</button>
+                                                                </div>
                                                             </div>
                                                         </div>
+                                                        <div class="d-block text-center mtp-60 mbp-60 fsp-12"><span>No hay Actitudes seleccionados.<br>Haz clic aquí para agregarlos.</span></div>
                                                     </div>
-                                                    <div class="d-block text-center mtp-60 mbp-60 fsp-12"><span>No hay OAs seleccionados.<br>Haz clic aquí para agregarlos.</span></div>
-                                                </div>
-
-                                                <div class="row">
-                                                    <div class="d-flex justify-content-between bgc-light ptp-5 pbp-5 ">
-                                                        <div class="psp-20 ptp-5 fw-700">EVALUACIONES</div>
-                                                        <div class="d-flex justify-content-end pep-10">
-                                                            <!-- <button type="submit" class="btn btn_mas waves-effect waves-float waves-light" name="submit" value="Submit">+</button>-->
-                                                            <div class="scrolling-inside-modal">
-                                                                <!-- Button trigger modal -->
-                                                                <button type="button" class="btn btn_mas waves-effect waves-float waves-light" data-bs-toggle="modal" data-bs-target="#modaloa">+</button>
-
-                                                                    <!-- Modal -->
-                                                                    <div class="modal fade" id="modaloa" tabindex="-1" aria-labelledby="modaloaTitle" aria-hidden="true">
-                                                                        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl">
-                                                                            <div class="modal-content">
-
-                                                                                <div class="modal-header">
-                                                                                    <h5 class="modal-title" id="modaloaTitle">Agregar Objetivos de aprendizaje a la unidad
-                                                                                        <p class="fsp-10">Selecciona o busca los Objetivos de aprendizaje transversales que deseas abordar en esta unidad.</p>
-                                                                                    </h5>
-                                                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                                                                </div>
-
-                                                                                <!-- Basic table -->
-                                                                                <div class="modal-body">
-                                                                                    <section>
-                                                                                        <div class="row">
-                                                                                            <div class="col-12 revenue-report-wrapper ">
-                                                                                                <div class="card">
-                                                                                                    <table class="datatables-OA table table-bordered table-condensed table-striped table-hover">
-                                                                                                        <thead>
-                                                                                                            <tr>
-                                                                                                                <th>OBJETIVOS</th>
-                                                                                                                <th>DESCRIPCION</th>
-                                                                                                                <th>SEL.</th>
-                                                                                                            </tr>
-                                                                                                        </thead>
-                                                                                                    </table>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </section>
-                                                                                </div>
-                                                                                <!-- Basic Table -->
-
-                                                                                <div class="modal-footer"><button type="button" class="btn btn-primary" data-bs-dismiss="modal">Guardar</button></div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <!-- Modal -->
-
+                                                    <div class="row">
+                                                        <div class="d-flex justify-content-between bgc-light ptp-5 pbp-5 ">
+                                                            <div class="psp-5 ptp-5 fw-700 text-uppercase">Evaluaciones</div>
+                                                            <div class="d-flex justify-content-end">
+                                                                <!-- <button type="submit" class="btn btn_mas waves-effect waves-float waves-light" name="submit" value="Submit">+</button>-->
+                                                                <div class="scrolling-inside-modal">
+                                                                    <!-- Button trigger modal -->
+                                                                    <button type="button" class="btn btn_mas waves-effect waves-float waves-light" data-bs-toggle="modal" data-bs-target="#modalevaluaciones">+</button>
+                                                                </div>
                                                             </div>
                                                         </div>
+                                                        <div class="d-block text-center mtp-60 mbp-60 fsp-12"><span>No hay Evaluaciones seleccionados.<br>Haz clic aquí para agregarlos.</span></div>
                                                     </div>
-                                                    <div class="d-block text-center mtp-60 mbp-60 fsp-12"><span>No hay EVALUACIONES seleccionadas.<br>Haz clic aquí para agregarlas.</span></div>
-                                                </div>
-
-                                                <div class="row">
-                                                    <div class="d-flex justify-content-between bgc-light ptp-5 pbp-5 ">
-                                                        <div class="psp-20 ptp-5 fw-700">ACTIVIDADES</div>
-                                                        <div class="d-flex justify-content-end pep-10">
-                                                            <!-- <button type="submit" class="btn btn_mas waves-effect waves-float waves-light" name="submit" value="Submit">+</button>-->
-                                                            <div class="scrolling-inside-modal">
-                                                                <!-- Button trigger modal -->
-                                                                <button type="button" class="btn btn_mas waves-effect waves-float waves-light" data-bs-toggle="modal" data-bs-target="#modaloa">+</button>
-
-                                                                    <!-- Modal -->
-                                                                    <div class="modal fade" id="modaloa" tabindex="-1" aria-labelledby="modaloaTitle" aria-hidden="true">
-                                                                        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl">
-                                                                            <div class="modal-content">
-
-                                                                                <div class="modal-header">
-                                                                                    <h5 class="modal-title" id="modaloaTitle">Agregar Objetivos de aprendizaje a la unidad
-                                                                                        <p class="fsp-10">Selecciona o busca los Objetivos de aprendizaje transversales que deseas abordar en esta unidad.</p>
-                                                                                    </h5>
-                                                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                                                                </div>
-
-                                                                                <!-- Basic table -->
-                                                                                <div class="modal-body">
-                                                                                    <section>
-                                                                                        <div class="row">
-                                                                                            <div class="col-12 revenue-report-wrapper ">
-                                                                                                <div class="card">
-                                                                                                    <table class="datatables-OA table table-bordered table-condensed table-striped table-hover">
-                                                                                                        <thead>
-                                                                                                            <tr>
-                                                                                                                <th>OBJETIVOS</th>
-                                                                                                                <th>DESCRIPCION</th>
-                                                                                                                <th>SEL.</th>
-                                                                                                            </tr>
-                                                                                                        </thead>
-                                                                                                    </table>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </section>
-                                                                                </div>
-                                                                                <!-- Basic Table -->
-
-                                                                                <div class="modal-footer"><button type="button" class="btn btn-primary" data-bs-dismiss="modal">Guardar</button></div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <!-- Modal -->
-
-                                                            </div> 
+                                                    <div class="row">
+                                                        <div class="d-flex justify-content-between bgc-light ptp-5 pbp-5 ">
+                                                            <div class="psp-5 ptp-5 fw-700 text-uppercase">Actividades</div>
+                                                            <div class="d-flex justify-content-end">
+                                                                <!-- <button type="submit" class="btn btn_mas waves-effect waves-float waves-light" name="submit" value="Submit">+</button>-->
+                                                                <div class="scrolling-inside-modal">
+                                                                    <!-- Button trigger modal -->
+                                                                    <button type="button" class="btn btn_mas waves-effect waves-float waves-light" data-bs-toggle="modal" data-bs-target="#modalactividades">+</button>
+                                                                </div>
+                                                            </div>
                                                         </div>
+                                                        <div class="d-block text-center mtp-60 mbp-60 fsp-12"><span>No hay Actividades seleccionados.<br>Haz clic aquí para agregarlos.</span></div>
                                                     </div>
-                                                    <div class="d-block text-center mtp-60 mbp-60 fsp-12"><span>No hay ACTIVIDADES seleccionadas.<br>Haz clic aquí para agregarlas.</span></div>
+                                                    <!-- END CONTENIDO SECUENCIA 1 -->
                                                 </div>
-
+                                                <div class="tab-pane fade" id="list-secuencia2" role="tabpanel" aria-labelledby="list-profile-list">
+                                                    <!-- BEGIN CONTENIDO SECUENCIA 2 -->
+                                                    <div class="row">
+                                                        <div class="d-flex mtp-10"><span class="bullet bullet-sm bullet-danger mtp-4 mep-10"></span>
+                                                            <h5 class="">SECUENCIA 2</h5>
+                                                        </div>
+                                                        <div class="col-4 mb-1 w-100"><input type="number" class="form-control" id="itemcost" aria-describedby="itemcost" placeholder="Sin nombre" /></div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="d-flex justify-content-between bgc-light ptp-5 pbp-5 ">
+                                                            <div class="psp-5 ptp-5 fw-700 text-uppercase">Objetivos de aprendizaje</div>
+                                                            <div class="d-flex justify-content-end">
+                                                                <!-- <button type="submit" class="btn btn_mas waves-effect waves-float waves-light" name="submit" value="Submit">+</button>-->
+                                                                <div class="scrolling-inside-modal">
+                                                                    <!-- Button trigger modal -->
+                                                                    <button type="button" class="btn btn_mas waves-effect waves-float waves-light" data-bs-toggle="modal" data-bs-target="#modaloa">+</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="d-block text-center mtp-60 mbp-60 fsp-12"><span>No hay Objetivos de aprendizaje seleccionados.<br>Haz clic aquí para agregarlos.</span></div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="d-flex justify-content-between bgc-light ptp-5 pbp-5 ">
+                                                            <div class="psp-5  ptp-5 fw-700 text-uppercase">Objetivos transversales</div>
+                                                            <div class="d-flex justify-content-end">
+                                                                <!-- <button type="submit" class="btn btn_mas waves-effect waves-float waves-light" name="submit" value="Submit">+</button>-->
+                                                                <div class="scrolling-inside-modal">
+                                                                    <!-- Button trigger modal -->
+                                                                    <button type="button" class="btn btn_mas waves-effect waves-float waves-light" data-bs-toggle="modal" data-bs-target="#modaloat">+</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="d-block text-center mtp-60 mbp-60 fsp-12"><span>No hay Objetivos transversales seleccionados.<br>Haz clic aquí para agregarlos.</span></div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="d-flex justify-content-between bgc-light ptp-5 pbp-5 ">
+                                                            <div class="psp-5 ptp-5 fw-700 text-uppercase">Habilidades</div>
+                                                            <div class="d-flex justify-content-end ">
+                                                                <!-- <button type="submit" class="btn btn_mas waves-effect waves-float waves-light" name="submit" value="Submit">+</button>-->
+                                                                <div class="scrolling-inside-modal">
+                                                                    <!-- Button trigger modal -->
+                                                                    <button type="button" class="btn btn_mas waves-effect waves-float waves-light" data-bs-toggle="modal" data-bs-target="#modaloah">+</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="d-block text-center mtp-60 mbp-60 fsp-12"><span>No hay Habilidades seleccionados.<br>Haz clic aquí para agregarlos.</span></div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="d-flex justify-content-between bgc-light ptp-5 pbp-5 ">
+                                                            <div class="psp-5 ptp-5 fw-700 text-uppercase">Actitudes</div>
+                                                            <div class="d-flex justify-content-end ">
+                                                                <!-- <button type="submit" class="btn btn_mas waves-effect waves-float waves-light" name="submit" value="Submit">+</button>-->
+                                                                <div class="scrolling-inside-modal">
+                                                                    <!-- Button trigger modal -->
+                                                                    <button type="button" class="btn btn_mas waves-effect waves-float waves-light" data-bs-toggle="modal" data-bs-target="#modaloaa">+</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="d-block text-center mtp-60 mbp-60 fsp-12"><span>No hay Actitudes seleccionados.<br>Haz clic aquí para agregarlos.</span></div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="d-flex justify-content-between bgc-light ptp-5 pbp-5 ">
+                                                            <div class="psp-5 ptp-5 fw-700 text-uppercase">Evaluaciones</div>
+                                                            <div class="d-flex justify-content-end">
+                                                                <!-- <button type="submit" class="btn btn_mas waves-effect waves-float waves-light" name="submit" value="Submit">+</button>-->
+                                                                <div class="scrolling-inside-modal">
+                                                                    <!-- Button trigger modal -->
+                                                                    <button type="button" class="btn btn_mas waves-effect waves-float waves-light" data-bs-toggle="modal" data-bs-target="#modalevaluaciones">+</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="d-block text-center mtp-60 mbp-60 fsp-12"><span>No hay Evaluaciones seleccionados.<br>Haz clic aquí para agregarlos.</span></div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="d-flex justify-content-between bgc-light ptp-5 pbp-5 ">
+                                                            <div class="psp-5 ptp-5 fw-700 text-uppercase">Actividades</div>
+                                                            <div class="d-flex justify-content-end">
+                                                                <!-- <button type="submit" class="btn btn_mas waves-effect waves-float waves-light" name="submit" value="Submit">+</button>-->
+                                                                <div class="scrolling-inside-modal">
+                                                                    <!-- Button trigger modal -->
+                                                                    <button type="button" class="btn btn_mas waves-effect waves-float waves-light" data-bs-toggle="modal" data-bs-target="#modalactividades">+</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="d-block text-center mtp-60 mbp-60 fsp-12"><span>No hay Actividades seleccionados.<br>Haz clic aquí para agregarlos.</span></div>
+                                                    </div>
+                                                    <!-- END CONTENIDO SECUENCIA 3 -->
+                                                </div>
+                                                <div class="tab-pane fade" id="list-secuencia3" role="tabpanel" aria-labelledby="list-messages-list">
+                                                    <!-- BEGIN CONTENIDO SECUENCIA -->
+                                                    <div class="row">
+                                                        <div class="d-flex mtp-10"><span class="bullet bullet-sm bullet-danger mtp-4 mep-10"></span>
+                                                            <h5 class="">SECUENCIA 3</h5>
+                                                        </div>
+                                                        <div class="col-4 mb-1 w-100"><input type="number" class="form-control" id="itemcost" aria-describedby="itemcost" placeholder="Sin nombre" /></div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="d-flex justify-content-between bgc-light ptp-5 pbp-5 ">
+                                                            <div class="psp-5 ptp-5 fw-700 text-uppercase">Objetivos de aprendizaje</div>
+                                                            <div class="d-flex justify-content-end">
+                                                                <!-- <button type="submit" class="btn btn_mas waves-effect waves-float waves-light" name="submit" value="Submit">+</button>-->
+                                                                <div class="scrolling-inside-modal">
+                                                                    <!-- Button trigger modal -->
+                                                                    <button type="button" class="btn btn_mas waves-effect waves-float waves-light" data-bs-toggle="modal" data-bs-target="#modaloa">+</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="d-block text-center mtp-60 mbp-60 fsp-12"><span>No hay Objetivos de aprendizaje seleccionados.<br>Haz clic aquí para agregarlos.</span></div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="d-flex justify-content-between bgc-light ptp-5 pbp-5 ">
+                                                            <div class="psp-5  ptp-5 fw-700 text-uppercase">Objetivos transversales</div>
+                                                            <div class="d-flex justify-content-end">
+                                                                <!-- <button type="submit" class="btn btn_mas waves-effect waves-float waves-light" name="submit" value="Submit">+</button>-->
+                                                                <div class="scrolling-inside-modal">
+                                                                    <!-- Button trigger modal -->
+                                                                    <button type="button" class="btn btn_mas waves-effect waves-float waves-light" data-bs-toggle="modal" data-bs-target="#modaloat">+</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="d-block text-center mtp-60 mbp-60 fsp-12"><span>No hay Objetivos transversales seleccionados.<br>Haz clic aquí para agregarlos.</span></div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="d-flex justify-content-between bgc-light ptp-5 pbp-5 ">
+                                                            <div class="psp-5 ptp-5 fw-700 text-uppercase">Habilidades</div>
+                                                            <div class="d-flex justify-content-end ">
+                                                                <!-- <button type="submit" class="btn btn_mas waves-effect waves-float waves-light" name="submit" value="Submit">+</button>-->
+                                                                <div class="scrolling-inside-modal">
+                                                                    <!-- Button trigger modal -->
+                                                                    <button type="button" class="btn btn_mas waves-effect waves-float waves-light" data-bs-toggle="modal" data-bs-target="#modaloah">+</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="d-block text-center mtp-60 mbp-60 fsp-12"><span>No hay Habilidades seleccionados.<br>Haz clic aquí para agregarlos.</span></div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="d-flex justify-content-between bgc-light ptp-5 pbp-5 ">
+                                                            <div class="psp-5 ptp-5 fw-700 text-uppercase">Actitudes</div>
+                                                            <div class="d-flex justify-content-end ">
+                                                                <!-- <button type="submit" class="btn btn_mas waves-effect waves-float waves-light" name="submit" value="Submit">+</button>-->
+                                                                <div class="scrolling-inside-modal">
+                                                                    <!-- Button trigger modal -->
+                                                                    <button type="button" class="btn btn_mas waves-effect waves-float waves-light" data-bs-toggle="modal" data-bs-target="#modaloaa">+</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="d-block text-center mtp-60 mbp-60 fsp-12"><span>No hay Actitudes seleccionados.<br>Haz clic aquí para agregarlos.</span></div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="d-flex justify-content-between bgc-light ptp-5 pbp-5 ">
+                                                            <div class="psp-5 ptp-5 fw-700 text-uppercase">Evaluaciones</div>
+                                                            <div class="d-flex justify-content-end">
+                                                                <!-- <button type="submit" class="btn btn_mas waves-effect waves-float waves-light" name="submit" value="Submit">+</button>-->
+                                                                <div class="scrolling-inside-modal">
+                                                                    <!-- Button trigger modal -->
+                                                                    <button type="button" class="btn btn_mas waves-effect waves-float waves-light" data-bs-toggle="modal" data-bs-target="#modalevaluaciones">+</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="d-block text-center mtp-60 mbp-60 fsp-12"><span>No hay Evaluaciones seleccionados.<br>Haz clic aquí para agregarlos.</span></div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="d-flex justify-content-between bgc-light ptp-5 pbp-5 ">
+                                                            <div class="psp-5 ptp-5 fw-700 text-uppercase">Actividades</div>
+                                                            <div class="d-flex justify-content-end">
+                                                                <!-- <button type="submit" class="btn btn_mas waves-effect waves-float waves-light" name="submit" value="Submit">+</button>-->
+                                                                <div class="scrolling-inside-modal">
+                                                                    <!-- Button trigger modal -->
+                                                                    <button type="button" class="btn btn_mas waves-effect waves-float waves-light" data-bs-toggle="modal" data-bs-target="#modalactividades">+</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="d-block text-center mtp-60 mbp-60 fsp-12"><span>No hay Actividades seleccionados.<br>Haz clic aquí para agregarlos.</span></div>
+                                                    </div>
+                                                    <!-- END CONTENIDO SECUENCIA 4 -->
+                                                </div>
+                                                <div class="tab-pane fade" id="list-secuencia4" role="tabpanel" aria-labelledby="list-settings-list">
+                                                    <!-- BEGIN CONTENIDO SECUENCIA -->
+                                                    <div class="row">
+                                                        <div class="d-flex mtp-10"><span class="bullet bullet-sm bullet-danger mtp-4 mep-10"></span>
+                                                            <h5 class="">SECUENCIA 4</h5>
+                                                        </div>
+                                                        <div class="col-4 mb-1 w-100"><input type="number" class="form-control" id="itemcost" aria-describedby="itemcost" placeholder="Sin nombre" /></div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="d-flex justify-content-between bgc-light ptp-5 pbp-5 ">
+                                                            <div class="psp-5 ptp-5 fw-700 text-uppercase">Objetivos de aprendizaje</div>
+                                                            <div class="d-flex justify-content-end">
+                                                                <!-- <button type="submit" class="btn btn_mas waves-effect waves-float waves-light" name="submit" value="Submit">+</button>-->
+                                                                <div class="scrolling-inside-modal">
+                                                                    <!-- Button trigger modal -->
+                                                                    <button type="button" class="btn btn_mas waves-effect waves-float waves-light" data-bs-toggle="modal" data-bs-target="#modaloa">+</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="d-block text-center mtp-60 mbp-60 fsp-12"><span>No hay Objetivos de aprendizaje seleccionados.<br>Haz clic aquí para agregarlos.</span></div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="d-flex justify-content-between bgc-light ptp-5 pbp-5 ">
+                                                            <div class="psp-5  ptp-5 fw-700 text-uppercase">Objetivos transversales</div>
+                                                            <div class="d-flex justify-content-end">
+                                                                <!-- <button type="submit" class="btn btn_mas waves-effect waves-float waves-light" name="submit" value="Submit">+</button>-->
+                                                                <div class="scrolling-inside-modal">
+                                                                    <!-- Button trigger modal -->
+                                                                    <button type="button" class="btn btn_mas waves-effect waves-float waves-light" data-bs-toggle="modal" data-bs-target="#modaloat">+</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="d-block text-center mtp-60 mbp-60 fsp-12"><span>No hay Objetivos transversales seleccionados.<br>Haz clic aquí para agregarlos.</span></div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="d-flex justify-content-between bgc-light ptp-5 pbp-5 ">
+                                                            <div class="psp-5 ptp-5 fw-700 text-uppercase">Habilidades</div>
+                                                            <div class="d-flex justify-content-end ">
+                                                                <!-- <button type="submit" class="btn btn_mas waves-effect waves-float waves-light" name="submit" value="Submit">+</button>-->
+                                                                <div class="scrolling-inside-modal">
+                                                                    <!-- Button trigger modal -->
+                                                                    <button type="button" class="btn btn_mas waves-effect waves-float waves-light" data-bs-toggle="modal" data-bs-target="#modaloah">+</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="d-block text-center mtp-60 mbp-60 fsp-12"><span>No hay Habilidades seleccionados.<br>Haz clic aquí para agregarlos.</span></div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="d-flex justify-content-between bgc-light ptp-5 pbp-5 ">
+                                                            <div class="psp-5 ptp-5 fw-700 text-uppercase">Actitudes</div>
+                                                            <div class="d-flex justify-content-end ">
+                                                                <!-- <button type="submit" class="btn btn_mas waves-effect waves-float waves-light" name="submit" value="Submit">+</button>-->
+                                                                <div class="scrolling-inside-modal">
+                                                                    <!-- Button trigger modal -->
+                                                                    <button type="button" class="btn btn_mas waves-effect waves-float waves-light" data-bs-toggle="modal" data-bs-target="#modaloaa">+</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="d-block text-center mtp-60 mbp-60 fsp-12"><span>No hay Actitudes seleccionados.<br>Haz clic aquí para agregarlos.</span></div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="d-flex justify-content-between bgc-light ptp-5 pbp-5 ">
+                                                            <div class="psp-5 ptp-5 fw-700 text-uppercase">Evaluaciones</div>
+                                                            <div class="d-flex justify-content-end">
+                                                                <!-- <button type="submit" class="btn btn_mas waves-effect waves-float waves-light" name="submit" value="Submit">+</button>-->
+                                                                <div class="scrolling-inside-modal">
+                                                                    <!-- Button trigger modal -->
+                                                                    <button type="button" class="btn btn_mas waves-effect waves-float waves-light" data-bs-toggle="modal" data-bs-target="#modalevaluaciones">+</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="d-block text-center mtp-60 mbp-60 fsp-12"><span>No hay Evaluaciones seleccionados.<br>Haz clic aquí para agregarlos.</span></div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="d-flex justify-content-between bgc-light ptp-5 pbp-5 ">
+                                                            <div class="psp-5 ptp-5 fw-700 text-uppercase">Actividades</div>
+                                                            <div class="d-flex justify-content-end">
+                                                                <!-- <button type="submit" class="btn btn_mas waves-effect waves-float waves-light" name="submit" value="Submit">+</button>-->
+                                                                <div class="scrolling-inside-modal">
+                                                                    <!-- Button trigger modal -->
+                                                                    <button type="button" class="btn btn_mas waves-effect waves-float waves-light" data-bs-toggle="modal" data-bs-target="#modalactividades">+</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="d-block text-center mtp-60 mbp-60 fsp-12"><span>No hay Actividades seleccionados.<br>Haz clic aquí para agregarlos.</span></div>
+                                                    </div>
+                                                    <!-- END CONTENIDO SECUENCIA -->
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </section>
+                <!--List group with tabs Ends-->
             </div>
         </div>
     </div>
     <!-- END: Content-->
-
     <div class="sidenav-overlay"></div>
     <div class="drag-target"></div>
-
     <!-- BEGIN: Footer-->
     <footer class="footer footer-static footer-light">
         <p class="clearfix mb-0"><span class="float-md-start d-block d-md-inline-block mt-25">COPYRIGHT &copy; 2021<a class="ms-25" href="https://www.grupo-sm.com/cl/" target="_blank">SM Chile</a><span class="d-none d-sm-inline-block">, All rights Reserved</span></span></p>
     </footer>
     <button class="btn btn-primary btn-icon scroll-top" type="button"><i data-feather="arrow-up"></i></button>
     <!-- END: Footer-->
-
+    <!-- Modal -->
+    <div class="modal fade" id="modaloa" tabindex="-1" aria-labelledby="modaloaTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modaloaTitle">Agregar Objetivos de aprendizaje a la secuencia <p class="fsp-10">Selecciona o busca los Objetivos de aprendizaje transversales que deseas abordar en esta unidad.</p>
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <!-- Basic table -->
+                <div class="modal-body">
+                    <section>
+                        <div class="row">
+                            <div class="col-12 revenue-report-wrapper ">
+                                <div class="card">
+                                    <table class="datatables-OA table table-bordered table-condensed table-striped table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th>OBJETIVOS</th>
+                                                <th>DESCRIPCION</th>
+                                                <th>SEL.</th>
+                                            </tr>
+                                        </thead>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <!-- Basic Table -->
+                <div class="modal-footer"><button type="button" class="btn btn-primary" data-bs-dismiss="modal">Guardar</button></div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <!-- Modal -->
+    <div class="modal fade" id="modaloat" tabindex="-1" aria-labelledby="modaloaTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modaloaTitle">Agregar Objetivos transversales a la secuencia <p class="fsp-10">Selecciona o busca los Objetivos de aprendizaje transversales que deseas abordar en esta unidad.</p>
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <!-- Basic table -->
+                <div class="modal-body">
+                    <section>
+                        <div class="row">
+                            <div class="col-12 revenue-report-wrapper ">
+                                <div class="card">
+                                    <table class="datatables-OA table table-bordered table-condensed table-striped table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th>OBJETIVOS</th>
+                                                <th>DESCRIPCION</th>
+                                                <th>SEL.</th>
+                                            </tr>
+                                        </thead>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <!-- Basic Table -->
+                <div class="modal-footer"><button type="button" class="btn btn-primary" data-bs-dismiss="modal">Guardar</button></div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <!-- Modal -->
+    <div class="modal fade" id="modaloah" tabindex="-1" aria-labelledby="modaloaTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modaloaTitle">Agregar Habilidades a la secuencia <p class="fsp-10">Selecciona o busca los habilidades que deseas abordar en esta unidad.</p>
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <!-- Basic table -->
+                <div class="modal-body">
+                    <section>
+                        <div class="row">
+                            <div class="col-12 revenue-report-wrapper ">
+                                <div class="card">
+                                    <table class="datatables-OA table table-bordered table-condensed table-striped table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th>OBJETIVOS</th>
+                                                <th>DESCRIPCION</th>
+                                                <th>SEL.</th>
+                                            </tr>
+                                        </thead>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <!-- Basic Table -->
+                <div class="modal-footer"><button type="button" class="btn btn-primary" data-bs-dismiss="modal">Guardar</button></div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <!-- Modal -->
+    <div class="modal fade" id="modaloaa" tabindex="-1" aria-labelledby="modaloaTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modaloaTitle">Agregar Actitudes a la secuencia <p class="fsp-10">Selecciona o busca los actitudes que deseas abordar en esta unidad.</p>
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <!-- Basic table -->
+                <div class="modal-body">
+                    <section>
+                        <div class="row">
+                            <div class="col-12 revenue-report-wrapper ">
+                                <div class="card">
+                                    <table class="datatables-OA table table-bordered table-condensed table-striped table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th>OBJETIVOS</th>
+                                                <th>DESCRIPCION</th>
+                                                <th>SEL.</th>
+                                            </tr>
+                                        </thead>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <!-- Basic Table -->
+                <div class="modal-footer"><button type="button" class="btn btn-primary" data-bs-dismiss="modal">Guardar</button></div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <!-- Modal -->
+    <div class="modal fade" id="modalevaluaciones" tabindex="-1" aria-labelledby="modaloaTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modaloaTitle">Agregar Evaluaciones a la secuencia <p class="fsp-10">Selecciona o busca las evaluaciones que deseas abordar en esta unidad.</p>
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <!-- Basic table -->
+                <div class="modal-body">
+                    <section>
+                        <div class="row">
+                            <div class="col-12 revenue-report-wrapper ">
+                                <div class="card">
+                                    <table class="datatables-OA table table-bordered table-condensed table-striped table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th>OBJETIVOS</th>
+                                                <th>DESCRIPCION</th>
+                                                <th>SEL.</th>
+                                            </tr>
+                                        </thead>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <!-- Basic Table -->
+                <div class="modal-footer"><button type="button" class="btn btn-primary" data-bs-dismiss="modal">Guardar</button></div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <!-- Modal -->
+    <div class="modal fade" id="modalactividades" tabindex="-1" aria-labelledby="modaloaTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modaloaTitle">Agregar Actividades a la secuencia <p class="fsp-10">Selecciona o busca las actividades que deseas abordar en esta unidad.</p>
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <!-- Basic table -->
+                <div class="modal-body">
+                    <section>
+                        <div class="row">
+                            <div class="col-12 revenue-report-wrapper ">
+                                <div class="card">
+                                    <table class="datatables-OA table table-bordered table-condensed table-striped table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th>OBJETIVOS</th>
+                                                <th>DESCRIPCION</th>
+                                                <th>SEL.</th>
+                                            </tr>
+                                        </thead>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <!-- Basic Table -->
+                <div class="modal-footer"><button type="button" class="btn btn-primary" data-bs-dismiss="modal">Guardar</button></div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
     <!-- BEGIN MENU -->
     <script src="app-assets/js/menu.js"></script>
     <!-- END MENU -->
-
     <!-- Ionic icons -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <!-- / Ionic icons -->
-
     <!-- BEGIN: Vendor JS-->
     <script src="app-assets/vendors/js/vendors.min.js"></script>
     <!-- BEGIN Vendor JS-->
-
     <!-- BEGIN: Page Vendor JS-->
     <!-- <script src="app-assets/vendors/js/forms/select/select2.full.min.js"></script> -->
     <script src="app-assets/vendors/js/extensions/dragula.min.js"></script>
     <!-- END: Page Vendor JS-->
-
     <!-- BEGIN: Theme JS-->
     <script src="app-assets/js/core/app-menu.js"></script>
     <script src="app-assets/js/core/app.js"></script>
     <!-- END: Theme JS-->
-
     <!-- BEGIN: Page JS-->
     <!-- <script src="app-assets/js/scripts/forms/form-select2.js"></script> -->
     <script src="app-assets/js/scripts/extensions/ext-component-drag-drop.js"></script>
     <!-- END: Page JS-->
+    <!-- BEGIN: Page JS-->
+    <script src="app-assets/vendors/js/forms/wizard/bs-stepper.min.js"></script>
+    <script src="app-assets/vendors/js/forms/select/select2.full.min.js"></script>
+    <script src="app-assets/js/scripts/forms/form-wizard.js"></script>
+    <!-- END: Page JS-->
     <script>
         populateMenu(menu);
-        $(window).on('load', function() {
+        $(window).on('load', function () {
             if (feather) {
                 feather.replace({
                     width: 14,
