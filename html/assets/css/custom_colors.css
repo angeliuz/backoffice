@@ -87,3 +87,6 @@
 .btc-primary{ 
   border-top-color:var(--primary);
 }
+.border-top-primary{ 
+  border-top-color:var(--primary);
+}

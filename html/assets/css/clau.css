@@ -50,7 +50,7 @@
     flex-direction: column;
     width: 100%;
     pointer-events: auto;
-   background-color: #1414142e !important;
+   background-color: #14141494 !important;
     background-clip: padding-box;
     border: 0px solid rgba(34, 41, 47, 0.2);
     border-radius: 0.357rem;
@@ -63,6 +63,16 @@
     border-radius: 0;
 }
 .modal .modal-content1 {
+    overflow: visible;
+    box-shadow: 0 5px 20px 0 rgb(34 41 47 / 10%);
+}
+
+.modal-fullscreen .modal-content2 {
+    height: 100%;
+    border: 0;
+    border-radius: 0;
+}
+.modal .modal-content2 {
     overflow: visible;
     box-shadow: 0 5px 20px 0 rgb(34 41 47 / 10%);
 }
