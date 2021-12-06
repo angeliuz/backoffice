@@ -10,3 +10,13 @@
 .modal-content-erik{
     min-height: calc(100vh - 30px);
 }
+
+.wp-350{
+    width: 350px !important;
+}
+
+
+.bgc-tabla{
+    background-color:#F3F2F7;
+
+}
