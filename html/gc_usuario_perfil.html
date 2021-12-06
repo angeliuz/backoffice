@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html
+    class="loading semi-dark-layout" lang="es" data-layout="semi-dark-layout" data-textdirection="ltr">
+    <!-- BEGIN: Head-->
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0,minimal-ui">
+        <meta name="description" content="Vuexy admin is super flexible, powerful, clean &amp; modern responsive bootstrap 4 admin template with unlimited possibilities.">
+        <meta name="keywords" content="admin template, Vuexy admin template, dashboard template, flat admin template, responsive admin template, web app">
+        <meta name="author" content="PIXINVENT">
+        <title>Gestor curricular</title>
+        <link rel="apple-touch-icon" href="app-assets/images/ico/apple-icon-120.png">
+        <link rel="shortcut icon" type="image/x-icon" href="app-assets/images/ico/favicon.ico">
+        <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500;1,600" rel="stylesheet">
+
+        <!-- BEGIN: Vendor CSS-->
+        <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/vendors.min.css">
+        <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/charts/apexcharts.css">
+        <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/extensions/toastr.min.css">
+        <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/forms/select/select2.min.css">
+        <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/file-uploaders/dropzone.min.css">
+        <!-- END: Vendor CSS-->
+
+        <!-- BEGIN: Theme CSS-->
+        <link rel="stylesheet" type="text/css" href="app-assets/css/bootstrap.css"> <link rel="stylesheet" type="text/css" href="app-assets/css/bootstrap-extended.css">
+        <link rel="stylesheet" type="text/css" href="app-assets/css/colors.css">
+        <link rel="stylesheet" type="text/css" href="app-assets/css/components.css">
+        <link rel="stylesheet" type="text/css" href="app-assets/css/themes/dark-layout.css">
+        <link rel="stylesheet" type="text/css" href="app-assets/css/themes/bordered-layout.css">
+        <link rel="stylesheet" type="text/css" href="app-assets/css/themes/semi-dark-layout.css">
+        <link rel="stylesheet" type="text/css" href="app-assets/css/plugins/forms/form-file-uploader.css">
+        <!--drop-->
+
+        <!-- END: Vendor CSS-->
+
+        <!-- BEGIN: Page CSS-->
+        <link rel="stylesheet" type="text/css" href="app-assets/css/core/menu/menu-types/vertical-menu.css">
+        <link rel="stylesheet" type="text/css" href="app-assets/css/pages/dashboard-ecommerce.css">
+        <link rel="stylesheet" type="text/css" href="app-assets/css/plugins/charts/chart-apex.css">
+        <link rel="stylesheet" type="text/css" href="app-assets/css/plugins/extensions/ext-component-toastr.css">
+        <link rel="stylesheet" type="text/css" href="app-assets/css/plugins/forms/form-validation.css">
+        <link rel="stylesheet" type="text/css" href="app-assets/css/plugins/forms/form-validation.min.css">
+        <!-- END: Page CSS-->
+
+        <!-- BEGIN: Custom CSS-->
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/helpers.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/custom_colors.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/clau.css">
+    <!-- END: Custom CSS-->
+
+    </head>
+    <!-- END: Head-->
+
+    <!-- BEGIN: Body-->
+
+    <body
+        class="vertical-layout vertical-menu-modern  navbar-floating footer-static  " data-open="click" data-menu="vertical-menu-modern" data-col="">
+
+        <!-- BEGIN: Header-->
+        <nav class="header-navbar navbar navbar-expand-lg align-items-center floating-nav navbar-light navbar-shadow container-xxl">
+            <div class="navbar-container d-flex content">
+                <div class="bookmark-wrapper d-flex align-items-center">
+                    <ul class="nav navbar-nav d-xl-none">
+                        <li class="nav-item">
+                            <a class="nav-link menu-toggle" href="#">
+                                <i class="ficon" data-feather="menu"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav ">
+                        <li class="nav-item">
+                            <div class="d-flex align-items-center">
+                                <div>
+                                    <div class="avatar-content">
+                                        <span><img src="data/images/logos_colegios/logo_instituto_nacional.png" alt="avatar" height="40" width="40">
+                                        </span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="d-none d-lg-block mcl-5">Instituto Nacional General José Miguel Carrera</div>
+                                    <!-- <div class="font-small-2 text-muted">meguc@ruj.io</div> -->
+                                </div>
+                            </div>
+
+
+                        </li>
+                    </ul>
+                </div>
+                <ul class="nav navbar-nav align-items-center ms-auto">
+
+                    <li class="nav-item d-none d-lg-block">
+                        <a class="nav-link nav-link-style">
+                            <i class="ficon" data-feather="moon"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item nav-search">
+                        <a class="nav-link nav-link-search">
+                            <i class="ficon" data-feather="search"></i>
+                        </a>
+                        <div class="search-input">
+                            <div class="search-input-icon">
+                                <i data-feather="search"></i>
+                            </div>
+                            <input class="form-control input" type="text" placeholder="Explore Vuexy..." tabindex="-1" data-search="search">
+                            <div class="search-input-close">
+                                <i data-feather="x"></i>
+                            </div>
+                            <ul class="search-list search-list-main"></ul>
+                        </div>
+                    </li>
+                    <li class="nav-item me-25">
+                        <a
+                            class="nav-link" href="#">
+                            <!-- <i class="ficon" data-feather="shopping-cart"></i> -->
+                            <i class="ficon" data-feather='mail'></i>
+                            <span class="badge rounded-pill bg-primary badge-up cart-item-count">6</span>
+                        </a>
+
+                    </li>
+                    <li class="nav-item dropdown dropdown-notification me-25">
+                        <a class="nav-link" href="#" data-bs-toggle="dropdown">
+                            <i class="ficon" data-feather="bell"></i>
+                            <span class="badge rounded-pill bg-danger badge-up">5</span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-media dropdown-menu-end">
+                            <li class="dropdown-menu-header">
+                                <div class="dropdown-header d-flex">
+                                    <h4 class="notification-title mb-0 me-auto">Notificaciones</h4>
+                                    <div class="badge rounded-pill badge-light-primary">6 Nuevos</div>
+                                </div>
+                            </li>
+                            <li class="scrollable-container media-list">
+                                <a class="d-flex" href="#">
+                                    <div class="list-item d-flex align-items-start">
+                                        <div class="me-1">
+                                            <div class="avatar"><img src="app-assets/images/portrait/small/avatar-s-15.jpg" alt="avatar" width="32" height="32"></div>
+                                        </div>
+                                        <div class="list-item-body flex-grow-1">
+                                            <p class="media-heading">
+                                                <span class="fw-bolder">Congratulation Sam 🎉</span>winner!</p>
+                                            <small class="notification-text">
+                                                Won the monthly best seller badge.</small>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="d-flex" href="#">
+                                    <div class="list-item d-flex align-items-start">
+                                        <div class="me-1">
+                                            <div class="avatar"><img src="app-assets/images/portrait/small/avatar-s-3.jpg" alt="avatar" width="32" height="32"></div>
+                                        </div>
+                                        <div class="list-item-body flex-grow-1">
+                                            <p class="media-heading">
+                                                <span class="fw-bolder">New message</span>&nbsp;received</p>
+                                            <small class="notification-text">
+                                                You have 10 unread messages</small>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="d-flex" href="#">
+                                    <div class="list-item d-flex align-items-start">
+                                        <div class="me-1">
+                                            <div class="avatar bg-light-danger">
+                                                <div class="avatar-content">MD</div>
+                                            </div>
+                                        </div>
+                                        <div class="list-item-body flex-grow-1">
+                                            <p class="media-heading">
+                                                <span class="fw-bolder">Revised Order 👋</span>&nbsp;checkout</p>
+                                            <small class="notification-text">
+                                                MD Inc. order updated</small>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="list-item d-flex align-items-center">
+                                    <h6 class="fw-bolder me-auto mb-0">System Notifications</h6>
+                                    <div class="form-check form-check-primary form-switch">
+                                        <input class="form-check-input" id="systemNotification" type="checkbox" checked="">
+                                        <label class="form-check-label" for="systemNotification"></label>
+                                    </div>
+                                </div>
+                                <a class="d-flex" href="#">
+                                    <div class="list-item d-flex align-items-start">
+                                        <div class="me-1">
+                                            <div class="avatar bg-light-danger">
+                                                <div class="avatar-content">
+                                                    <i class="avatar-icon" data-feather="x"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="list-item-body flex-grow-1">
+                                            <p class="media-heading">
+                                                <span class="fw-bolder">Server down</span>&nbsp;registered</p>
+                                            <small class="notification-text">
+                                                USA Server is down due to high CPU usage</small>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="d-flex" href="#">
+                                    <div class="list-item d-flex align-items-start">
+                                        <div class="me-1">
+                                            <div class="avatar bg-light-success">
+                                                <div class="avatar-content">
+                                                    <i class="avatar-icon" data-feather="check"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="list-item-body flex-grow-1">
+                                            <p class="media-heading">
+                                                <span class="fw-bolder">Sales report</span>&nbsp;generated</p>
+                                            <small class="notification-text">
+                                                Last month sales report generated</small>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="d-flex" href="#">
+                                    <div class="list-item d-flex align-items-start">
+                                        <div class="me-1">
+                                            <div class="avatar bg-light-warning">
+                                                <div class="avatar-content">
+                                                    <i class="avatar-icon" data-feather="alert-triangle"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="list-item-body flex-grow-1">
+                                            <p class="media-heading">
+                                                <span class="fw-bolder">High memory</span>&nbsp;usage</p>
+                                            <small class="notification-text">
+                                                BLR Server using high memory</small>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="dropdown-menu-footer">
+                                <a class="btn btn-primary w-100" href="#">Ver todas las notificaciones</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown dropdown-user">
+                        <a class="nav-link dropdown-toggle dropdown-user-link" id="dropdown-user" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <div class="user-nav d-sm-flex d-none">
+                                <span class="user-name fw-bolder">Lucia Donoso</span>
+                                <span class="user-status">Docente</span>
+                            </div>
+                            <span class="avatar"><img class="round" src="app-assets/images/portrait/small/avatar-s-10.jpg" alt="avatar" height="40" width="40"><span class="avatar-status-online"></span>
+                            </span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdown-user">
+                            <a class="dropdown-item" href="page-profile.html">
+                                <i class="me-50" data-feather="user"></i>
+                                Perfil</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="page-account-settings.html">
+                                <i class="me-50" data-feather="settings"></i>
+                                Configuración</a>
+                            <a class="dropdown-item" href="page-faq.html">
+                                <i class="me-50" data-feather="help-circle"></i>
+                                FAQ</a>
+                            <a class="dropdown-item" href="page-auth-login-v2.html">
+                                <i class="me-50" data-feather="power"></i>
+                                Salir</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- END: Header-->
+
+
+        <!-- BEGIN: Main Menu-->
+        <div class="main-menu menu-fixed menu-light menu-accordion menu-shadow" data-scroll-to-active="true">
+            <div class="navbar-header">
+                <ul class="nav navbar-nav flex-row">
+                    <li class="nav-item me-auto">
+                        <a class="navbar-brand">
+                            <h2 class="brand-text">Gestor curricular</h2>
+                        </a>
+                    </li>
+                    <li class="nav-item nav-toggle">
+                        <a class="nav-link modern-nav-toggle pe-0" data-bs-toggle="collapse">
+                            <i class="d-block d-xl-none text-primary toggle-icon font-medium-4" data-feather="x"></i>
+                            <i class="d-none d-xl-block collapse-toggle-icon font-medium-4  text-primary" data-feather="disc" data-ticon="disc"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="shadow-bottom"></div>
+            <div class="main-menu-content">
+                <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
+    
+                    <!-- Carga desde menu.js -->
+    
+                </ul>
+            </div>
+        </div>
+        <!-- END: Main Menu-->
+
+        <!-- BEGIN: Content-->
+        <div class="app-content content ">
+            <div class="content-overlay"></div>
+            <div class="header-navbar-shadow"></div>
+            <div class="content-wrapper container-xxl p-0">
+
+    <div
+        class="content-body">
+        <div>
+            <h2 class="card-title">Gestor de Usuarios</h2>
+            </div> 
+         <div class="col-12">
+            <div class="card card-revenue-budget">
+                <div class="row mx-0">
+                 <div class="col-12 revenue-report-wrapper">       
+                    <form id="jquery-val-form" method="post">                                  
+                    <div class="row">
+                        <div class="col-xl-12">                 
+                       <!-- BEGIN: Content-->
+    <div>
+        <div class="content-overlay"></div>
+        <div class="header-navbar-shadow"></div>
+        <div class="content-wrapper container-xxl p-0">
+            <div class="content-header row">
+                <div class="content-header-left col-md-9 col-12 mb-2">
+                    <div class="row breadcrumbs-top">
+                        <div class="col-12">
+                            <h4 class="float-start mb-0">Configuración de Cuenta</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content-body">
+                <!-- account setting page -->
+                <section id="page-account-settings">
+                    <div class="row">
+                        <!-- left menu section -->
+                        <div class="col-md-3 mb-2 mb-md-0">
+                            <ul class="nav nav-pills flex-column nav-left">
+                                <!-- general -->
+                                <li class="nav-item">
+                                    <a class="nav-link active" id="account-pill-general" data-bs-toggle="pill" href="#account-vertical-general" aria-expanded="true">
+                                        <i data-feather="user" class="font-medium-3 me-1"></i>
+                                        <span class="fw-bold">General</span>
+                                    </a>
+                                </li>
+                                <!-- change password -->
+                                <li class="nav-item">
+                                    <a class="nav-link" id="account-pill-password" data-bs-toggle="pill" href="#account-vertical-password" aria-expanded="false">
+                                        <i data-feather="lock" class="font-medium-3 me-1"></i>
+                                        <span class="fw-bold">Cambiar Contraseña</span>
+                                    </a>
+                                </li>
+                                <!-- information -->
+                                <li class="nav-item">
+                                    <a class="nav-link" id="account-pill-info" data-bs-toggle="pill" href="#account-vertical-info" aria-expanded="false">
+                                        <i data-feather="info" class="font-medium-3 me-1"></i>
+                                        <span class="fw-bold">Licencias</span>
+                                    </a>
+                                </li>
+                            
+                            </ul>
+                        </div>
+                        <!--/ left menu section -->
+
+                        <!-- right content section -->
+                        <div class="col-md-9">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="tab-content">
+                                        <!-- general tab -->
+                                        <div role="tabpanel" class="tab-pane active" id="account-vertical-general" aria-labelledby="account-pill-general" aria-expanded="true">
+                                            <!-- header section -->
+                                            <div class="d-flex">
+                                                <a href="#" class="me-25">
+                                                    <img src="app-assets/images/portrait/small/avatar-s-11.jpg" id="account-upload-img" class="rounded me-50" alt="profile image" height="80" width="80" />
+                                                </a>
+                                                <!-- upload and reset button -->
+                                                <div class="mt-75 ms-1">
+                                                    <label for="account-upload" class="btn btn-sm btn-primary mb-75 me-75">Subir</label>
+                                                    <input type="file" id="account-upload" hidden accept="image/*" />
+                                                    <button class="btn btn-sm btn-outline-secondary mb-75">Restablecer</button>
+                                                    <p>Formato permitido JPG o PNG. Max tamaño de 800kB</p>
+                                                </div>
+                                                <!--/ upload and reset button -->
+                                            </div>
+                                            <!--/ header section -->
+
+                                            <!-- form -->
+                                            <form class="validate-form mt-2">
+                                                <div class="row">
+                                                    <div class="col-12 col-sm-6">
+                                                        <div class="mb-1">
+                                                            <label class="form-label" for="account-username">NOMBRE</label>
+                                                            <input type="text" class="form-control" id="account-username" name="username" placeholder="Username" value="John" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-sm-6">
+                                                        <div class="mb-1">
+                                                            <label class="form-label" for="account-name">APELLIDOS</label>
+                                                            <input type="text" class="form-control" id="account-name" name="name" placeholder="Name" value="Cena" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-sm-6">
+                                                        <div class="d-flex align-items-center justify-content-start">                      
+                                                            <div class="flex-grow-1">
+                                                                <div class="mb-1">
+                                                                    <label class="form-label" for="rut">RUT</label>
+                                                                    <input type="number" class="form-control" id="rut" name="rut" placeholder="rut" value="12345678"/>   
+                                                                </div>
+                                                            </div>
+                                                             
+                                                            <div class="col-xl-1 col-sm-1 col-xs-1 text-center">
+                                                                <div class="">
+                                                                    <div class="ptp-10"> -</div>
+                                    
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-xl-1 col-sm-1 col-xs-1 ptp-22">
+                                                                <div class="mb-1">
+                                                                    <input type="number" class="form-control" id="rut" name="rut" placeholder="rut_verificador" value="1"/> 
+                                    
+                                                                </div>
+                                                            </div>
+                                
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-sm-6">
+                                                        <div class="mb-1">
+                                                            <label class="form-label" for="account-name">ROL</label>
+                                                            <div class="form-control fw-bolder" id="account-name" name="name" placeholder="Name" value="Ingresa un texto" >Docente</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-sm-6">
+                                                        <div class="mb-1">
+                                                            <label class="form-label" for="account-e-mail">MAIL</label>
+                                                            <input type="email" class="form-control" id="account-e-mail" name="email" placeholder="Email" value="Hola@gmail.com" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-sm-6">
+                                                        <div class="mb-1">
+                                                            <label class="form-label" for="account-company">COLEGIO</label>
+                                                            <div class="form-control fw-bolder" id="account-name" name="name" placeholder="Name" value="Ingresa un texto" >Colegio Pumahue</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-sm-6">
+                                                        <div class="mb-1">
+                                                            <label class="form-label" for="account-e-mail">COMUNA</label>
+                                                            <div class="form-control fw-bolder" id="account-name" name="name" placeholder="Name" value="Ingresa un texto" >Huechuraba</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-sm-6">
+                                                        <div class="mb-1">
+                                                            <label class="form-label" for="account-company">DIRECCION</label>
+                                                            <div class="form-control fw-bolder" id="account-name" name="name" placeholder="Name" value="Ingresa un texto" >Calle falsa 123</div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-12">
+                                                        <button type="submit" class="btn btn-primary mt-2 me-1">Guardar Cambios</button>
+                                                        <button type="reset" class="btn btn-outline-secondary mt-2">Cancelar</button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                            <!--/ form -->
+                                        </div>
+                                        <!--/ general tab -->
+
+                                        <!-- change password -->
+                                        <div class="tab-pane fade" id="account-vertical-password" role="tabpanel" aria-labelledby="account-pill-password" aria-expanded="false">
+                                            <!-- form -->
+                                            <form class="validate-form">
+                                                <div class="row">
+                                                    <div class="col-12 col-sm-6">
+                                                        <div class="mb-1">
+                                                            <label class="form-label" for="account-old-password">Nueva Contraseña</label>
+                                                            <div class="input-group form-password-toggle input-group-merge">
+                                                                <input type="password" class="form-control" id="account-old-password" name="password" placeholder="Ingresa un texto" />
+                                                                <div class="input-group-text cursor-pointer">
+                                                                    <i data-feather="eye"></i>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12 col-sm-6">
+                                                        <div class="mb-1">
+                                                            <label class="form-label" for="account-new-password">Confirmar contraseña</label>
+                                                            <div class="input-group form-password-toggle input-group-merge">
+                                                                <input type="password" id="account-new-password" name="new-password" class="form-control" placeholder="Ingresa un texto" />
+                                                                <div class="input-group-text cursor-pointer">
+                                                                    <i data-feather="eye"></i>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                  
+                                                    <div class="col-12">
+                                                        <button type="submit" class="btn btn-primary me-1 mt-1">Guardar</button>
+                                                        <button type="reset" class="btn btn-outline-secondary mt-1">Cancelar</button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                            <!--/ form -->
+                                        </div>
+                                        <!--/ change password -->
+
+                                        <!-- information -->
+                                        <div class="tab-pane fade" id="account-vertical-info" role="tabpanel" aria-labelledby="account-pill-info" aria-expanded="false">
+                                            <!-- form -->
+                <div class="content-body">
+        <!-- Basic Tables start -->
+        <div class="row" id="basic-table">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h4 class="card-title">Licencias</h4>
+                    </div>
+
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>LICENCIA</th>
+                                    <th>LIBRO</th>
+                                    <th>ESTADO</th>
+                                    <th>FECHA DE ACTIVACIÓN</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        
+                                        <span class="fw-bold">1</span>
+                                    </td>
+                                    <td>TSAN1B-DFSD-FDSF</td>
+                                    <td>
+                                        <div class="avatar-group">
+                                             Ciencias Sociales 1° Básico
+                                        </div>
+                                    </td>
+                                    <td><span class="badge rounded-pill badge-light-success me-1">Activo</span></td>
+                                    <td>
+                                        <div class="text-center">
+                                            11/10/2019
+                                          </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="fw-bold">2</span>
+                                    </td>
+                                    <td>TSAN2B-DFSD-FDSF</td>
+                                    <td>
+                                        <div class="avatar-group">
+                                            Ciencias Sociales 2° Básico
+                                        </div>
+                                    </td>
+                                    <td><span class="badge rounded-pill badge-light-warning me-1">Inactivo</span></td>
+                                    <td>
+                                        <div class="text-center">
+                                            11/10/2017
+                                          </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="fw-bold">3</span>
+                                    </td>
+                                    <td>TSAN3B-DFSD-FDSF</td>
+                                    <td>
+                                        <div class="avatar-group">
+                                            Ciencias Sociales 3° Básico
+                                        </div>
+                                    </td>
+                                    <td><span class="badge rounded-pill badge-light-success me-1">Activo</span></td>
+                                    <td>
+                                        <div class="text-center">
+                                            11/10/2019
+                                          </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="fw-bold">4</span>
+                                    </td>
+                                    <td>TSAN4B-DFSD-FDSF</td>
+                                    <td>
+                                        <div class="avatar-group">
+                                            Ciencias Sociales 4° Básico
+                                        </div>
+                                    </td>
+                                    <td><span class="badge rounded-pill badge-light-info me-1">Temporal</span></td>
+                                    <td>
+                                        <div class="text-center">
+                                          11/10/2019
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Basic Tables end -->
+                                
+                                            <!--/ form -->
+                                        </div>
+                                        <!--/ information -->
+
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/ right content section -->
+                    </div>
+                </section>
+                <!-- / account setting page -->
+
+            </div>
+        </div>
+    </div>
+    <!-- END: Content-->
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+            </div>
+        </div>
+        <!-- END: Content-->
+
+        <div class="sidenav-overlay"></div>
+        <div class="drag-target"></div>
+
+        <!-- BEGIN: Footer-->
+        <footer class="footer-static footer-light">
+            <p class="clearfix mb-0">
+                <span class="float-md-start d-block d-md-inline-block mt-25">COPYRIGHT &copy; 2021<a class="ms-25" href="https://www.grupo-sm.com/cl/" target="_blank">SM Chile</a>
+                    <span class="d-none d-sm-inline-block">, All rights Reserved</span>
+                </span>
+            </p>
+        </footer>
+        <button class="btn btn-primary btn-icon scroll-top" type="button">
+            <i data-feather="arrow-up"></i>
+        </button>
+        <!-- END: Footer-->
+
+        <script src="app-assets/js/menu.js"></script>
+        <!-- BEGIN: Vendor JS-->
+        <script src="app-assets/vendors/js/vendors.min.js"></script>
+        <!-- BEGIN Vendor JS-->
+        <script src="app-assets/vendors/js/forms/select/select2.full.min.js"></script>
+        <script src="app-assets/vendors/js/forms/validation/jquery.validate.min.js"></script>
+        <script src="app-assets/vendors/js/pickers/flatpickr/flatpickr.min.js"></script>
+        <script src="app-assets/vendors/js/file-uploaders/dropzone.min.js"></script>
+        <!-- BEGIN: Page Vendor JS-->
+        <!-- <script src="app-assets/vendors/js/charts/apexcharts.min.js"></script>
+            <script src="app-assets/vendors/js/extensions/toastr.min.js"></script> -->
+        <!-- END: Page Vendor JS-->
+
+        <!-- BEGIN: Theme JS-->
+        <script src="app-assets/js/core/app-menu.js"></script>
+        <script src="app-assets/js/core/app.js"></script>
+        <!-- END: Theme JS-->
+
+        <!-- BEGIN: Page JS-->
+        <!-- <script src="app-assets/js/scripts/pages/dashboard-ecommerce.js"></script> -->
+        <!-- END: Page JS-->
+        <!-- BEGIN: Page JS-->
+        <script src="app-assets/js/scripts/forms/form-validation.js"></script>
+        <script src="app-assets/js/scripts/forms/form-file-uploader.js"></script>
+        <!-- END: Page JS-->
+
+        <script>
+            populateMenu(menu);
+            $(window).on("load", function () {
+              if (feather) {
+                feather.replace({ width: 14, height: 14 });
+              }
+            });
+          </script>
+</body>
+    <!-- END: Body-->
+
+</html>
