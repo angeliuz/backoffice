@@ -707,6 +707,41 @@
         </div>
     </div>
     <!-- Modal Actitudes -->
+    <!-- Modal Actividades -->
+    <div class="modal fade" id="modalactividades" tabindex="-1" aria-labelledby="modaloaTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modaloaTitle">Agregar Actividades a la secuencia <p class="fsp-10">Selecciona o busca las actividades que deseas abordar en esta unidad.</p>
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <!-- Basic table -->
+                <div class="modal-body">
+                    <section>
+                        <div class="row">
+                            <div class="col-12 revenue-report-wrapper ">
+                                <div class="card">
+                                    <table class="datatables-OA table table-bordered table-condensed table-striped table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th>OBJETIVOS</th>
+                                                <th>DESCRIPCION</th>
+                                                <th>SEL.</th>
+                                            </tr>
+                                        </thead>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <!-- Basic Table -->
+                <div class="modal-footer"><button type="button" class="btn btn-primary" data-bs-dismiss="modal">Guardar</button></div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Actividades -->
     <!-- Modal Evaluaciones -->
     <div class="modal fade" id="modalevaluaciones" tabindex="-1" aria-labelledby="modalevTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered erik-modal">
@@ -807,228 +842,6 @@
         </div>
     </div>
     <!-- Modal Indicadores -->
-    <!-- Modal Actividades -->
-    <div class="modal fade" id="modalactividades" tabindex="-1" aria-labelledby="modalactividadesTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal_super_xl">
-            <div class="modal-content modal_content_super_xl">
-                <div class="modal-header linea_lila">
-                    <h5 class="modal-title mtp-5" id="modalactividadesTitle">Crear actividad <p class="fsp-12">Ingresar los datos para que puedas crear una actividad.</p>
-                    </h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <!-- Vertical Wizard -->
-                <section class="vertical-wizard">
-                    <div class="bs-stepper vertical vertical-wizard-example modal_content_interior_super_xl">
-                        <div class="bs-stepper-header">
-                            <div class="step" data-target="#account-details-vertical" role="tab" id="account-details-vertical-trigger">
-                                <button type="button" class="step-trigger">
-                                    <span class="bs-stepper-box">1</span>
-                                    <span class="bs-stepper-label">
-                                        <span class="bs-stepper-title">Titulo y Objetivos</span>
-                                        <span class="bs-stepper-subtitle">Agrega datos de la actividad</span>
-                                    </span>
-                                </button>
-                            </div>
-                            <div class="step" data-target="#personal-info-vertical" role="tab" id="personal-info-vertical-trigger">
-                                <button type="button" class="step-trigger">
-                                    <span class="bs-stepper-box">2</span>
-                                    <span class="bs-stepper-label">
-                                        <span class="bs-stepper-title">Indicadores</span>
-                                        <span class="bs-stepper-subtitle">Selecciona los indicadores</span>
-                                    </span>
-                                </button>
-                            </div>
-                            <div class="step" data-target="#address-step-vertical" role="tab" id="address-step-vertical-trigger">
-                                <button type="button" class="step-trigger">
-                                    <span class="bs-stepper-box">3</span>
-                                    <span class="bs-stepper-label">
-                                        <span class="bs-stepper-title">Banco de recursos</span>
-                                        <span class="bs-stepper-subtitle">Selecciona recursos SM</span>
-                                    </span>
-                                </button>
-                            </div>
-                            <div class="step" data-target="#social-links-vertical" role="tab" id="social-links-vertical-trigger">
-                                <button type="button" class="step-trigger">
-                                    <span class="bs-stepper-box">4</span>
-                                    <span class="bs-stepper-label">
-                                        <span class="bs-stepper-title">Lista de materiales</span>
-                                        <span class="bs-stepper-subtitle">Agregar materiales</span>
-                                    </span>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="bs-stepper-content">
-                            <div id="account-details-vertical" class="content" role="tabpanel" aria-labelledby="account-details-vertical-trigger">
-                                <div class="content-header">
-                                    <h5 class="mb-0">Datos de la actividad</h5>
-                                    <span class="fsp-12">Selecciona el o los objetivos que abordarás en esta actividad.</span>
-                                </div>
-                                <div class="d-flex mb-1">
-                                    <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
-                                        <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off" />
-                                        <label class="btn btn-outline-primary me-1" for="btncheck1" data-bs-toggle="tooltip" data-bs-placement="top" title="CNo2 OA 7">CNo2 OA 7 <ion-icon name="star" class="text-warning msp-5"></ion-icon>
-                                        </label>
-                                        <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off" />
-                                        <label class="btn btn-outline-primary me-1" for="btncheck2" data-bs-toggle="tooltip" data-bs-placement="top" title="CNo2 OA 8">CNo2 OA 8</label>
-                                        <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off" />
-                                        <label class="btn btn-outline-primary" for="btncheck3" data-bs-toggle="tooltip" data-bs-placement="top" title="CNo2 OA 1">CNo2 OA 1 <ion-icon name="star-outline" class="text-warning msp-5"></ion-icon>
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="mb-1 col-12">
-                                        <label class="form-label" for="vertical-username">Titulo</label>
-                                        <input type="text" id="titulo" class="form-control" placeholder="Ingresa un nombre para la actividad" />
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="mb-1 col-12">
-                                        <label class="form-label" for="vertical-username">Descripción</label>
-                                        <textarea type="textarea" id="descripcion" class="form-control" rows="7" placeholder="Ingresa un texto"></textarea>
-                                    </div>
-                                </div>
-                                <div class="position-absolute bottom-0 end-0">
-                                    <button class="btn btn-primary btn-next">
-                                        <span class="align-middle d-sm-inline-block d-none">SIGUIENTE</span>
-                                        <i data-feather="arrow-right" class="align-middle ms-sm-25 ms-0"></i>
-                                    </button>
-                                </div>
-                            </div>
-                            <div id="personal-info-vertical" class="content" role="tabpanel" aria-labelledby="personal-info-vertical-trigger">
-                                <div class="content-header">
-                                    <h5 class="mb-0">Personal Info</h5>
-                                    <small>Enter Your Personal Info.</small>
-                                </div>
-                                <div class="row">
-                                    <div class="mb-1 col-md-6">
-                                        <label class="form-label" for="vertical-first-name">First Name</label>
-                                        <input type="text" id="vertical-first-name" class="form-control" placeholder="John" />
-                                    </div>
-                                    <div class="mb-1 col-md-6">
-                                        <label class="form-label" for="vertical-last-name">Last Name</label>
-                                        <input type="text" id="vertical-last-name" class="form-control" placeholder="Doe" />
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="mb-1 col-md-6">
-                                        <label class="form-label" for="vertical-country">Country</label>
-                                        <select class="select2 w-100" id="vertical-country">
-                                            <option label=" "></option>
-                                            <option>UK</option>
-                                            <option>USA</option>
-                                            <option>Spain</option>
-                                            <option>France</option>
-                                            <option>Italy</option>
-                                            <option>Australia</option>
-                                        </select>
-                                    </div>
-                                    <div class="mb-1 col-md-6">
-                                        <label class="form-label" for="vertical-language">Language</label>
-                                        <select class="select2 w-100" id="vertical-language" multiple>
-                                            <option>English</option>
-                                            <option>French</option>
-                                            <option>Spanish</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="d-flex justify-content-between">
-                                    <button class="btn btn-primary btn-prev">
-                                        <i data-feather="arrow-left" class="align-middle me-sm-25 me-0"></i>
-                                        <span class="align-middle d-sm-inline-block d-none">Previous</span>
-                                    </button>
-                                    <button class="btn btn-primary btn-next">
-                                        <span class="align-middle d-sm-inline-block d-none">Next</span>
-                                        <i data-feather="arrow-right" class="align-middle ms-sm-25 ms-0"></i>
-                                    </button>
-                                </div>
-                            </div>
-                            <div id="address-step-vertical" class="content" role="tabpanel" aria-labelledby="address-step-vertical-trigger">
-                                <div class="content-header">
-                                    <h5 class="mb-0">Address</h5>
-                                    <small>Enter Your Address.</small>
-                                </div>
-                                <div class="row">
-                                    <div class="mb-1 col-md-6">
-                                        <label class="form-label" for="vertical-address">Address</label>
-                                        <input type="text" id="vertical-address" class="form-control" placeholder="98  Borough bridge Road, Birmingham" />
-                                    </div>
-                                    <div class="mb-1 col-md-6">
-                                        <label class="form-label" for="vertical-landmark">Landmark</label>
-                                        <input type="text" id="vertical-landmark" class="form-control" placeholder="Borough bridge" />
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="mb-1 col-md-6">
-                                        <label class="form-label" for="pincode2">Pincode</label>
-                                        <input type="text" id="pincode2" class="form-control" placeholder="658921" />
-                                    </div>
-                                    <div class="mb-1 col-md-6">
-                                        <label class="form-label" for="city2">City</label>
-                                        <input type="text" id="city2" class="form-control" placeholder="Birmingham" />
-                                    </div>
-                                </div>
-                                <div class="d-flex justify-content-between">
-                                    <button class="btn btn-primary btn-prev">
-                                        <i data-feather="arrow-left" class="align-middle me-sm-25 me-0"></i>
-                                        <span class="align-middle d-sm-inline-block d-none">Previous</span>
-                                    </button>
-                                    <button class="btn btn-primary btn-next">
-                                        <span class="align-middle d-sm-inline-block d-none">Next</span>
-                                        <i data-feather="arrow-right" class="align-middle ms-sm-25 ms-0"></i>
-                                    </button>
-                                </div>
-                            </div>
-                            <div id="social-links-vertical" class="content" role="tabpanel" aria-labelledby="social-links-vertical-trigger">
-                                <div class="content-header">
-                                    <h5 class="mb-0">Materiales</h5>
-                                </div>
-                                <div class="row">
-                                    <div class="mb-1 col-12 d-flex">
-                                        <input type="text" id="titulo" class="form-control me-1" placeholder="" />
-                                        <button class="btn btn-primary btn-next">
-                                            <span class="align-middle d-sm-inline-block d-none">AGREGAR</span>
-                                        </button>
-                                    </div>
-                                </div>
-                                <div class="row linea_top linea_bottom">
-                                    <div class="d-flex justify-content-between align-items-center bgc-light ptp-10 pbp-10 ">
-                                        <div class="psp-20 fsp-12">NOMBRE</div>
-                                    </div>
-                                </div>
-                                <div class="row linea_top linea_bottom">
-                                    <div class="d-flex justify-content-between align-items-center ptp-5 pbp-5 ">
-                                        <div class="psp-20 fw-700">Tijeras</div>
-                                        <div class="scrolling-inside-modal">
-                                            <button type="button" class="btn waves-effect waves-float waves-light"><i data-feather="trash-2" class="align-middle me-sm-25 me-0"></i></button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row linea_bottom mb-1">
-                                    <div class="d-flex justify-content-between align-items-center ptp-5 pbp-5 ">
-                                        <div class="psp-20 fw-700">Lapicez color</div>
-                                        <div class="scrolling-inside-modal">
-                                            <button type="button" class="btn waves-effect waves-float waves-light"><i data-feather="trash-2" class="align-middle me-sm-25 me-0"></i></button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="d-flex justify-content-between">
-                                    <button class="btn btn-outline-primary btn-prev">
-                                        <i data-feather="arrow-left" class="align-middle me-sm-25 me-0"></i>
-                                        <span class="align-middle d-sm-inline-block d-none">ANTERIOR</span>
-                                    </button>
-                                    <button class="btn btn-primary btn-next">
-                                        <span class="align-middle d-sm-inline-block d-none">TERMINAR</span>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <!-- /Vertical Wizard -->
-            </div>
-        </div>
-    </div>
-    <!-- Modal Actividades -->
     <!-- BEGIN MENU -->
     <script src="app-assets/js/menu.js"></script>
     <!-- END MENU -->
