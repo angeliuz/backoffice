@@ -11,7 +11,7 @@ $(function () {
   var obj_oa = "";
 
   var dt_basic_table = $(".dt-column-search");
-  var dt_act_indicadores = $(".dt-indicadores");
+  var dt_act_indicadores = $(".dt-indicadores-actividad");
   
  
   var assetPath = "app-assets/";
@@ -38,14 +38,15 @@ $(function () {
         },
       },
       columns: [
-        { data: "id", width: "80px" },
-        { data: "indicador", autoWidth: true },
-        { data: "nombre_objetivo", width: "190px" },
+        { data: "id" },
+        { data: "indicador" },
+        { data: "nombre_objetivo" },
       ],
       columnDefs: [
         {
           // Actions
           targets: 0,
+          width:"20px",
           orderable: false,
           render: function (data, type, full, meta) {
             return (
@@ -57,8 +58,13 @@ $(function () {
             );
           },
         },
+        { 
+          targets: 1,
+          width:"20px",
+        },
         {
           targets: 2,
+          width:"50px",
           data: "download_link",
           render: function (data, type, row, meta) {
             let html =
@@ -91,13 +97,13 @@ $(function () {
     });
     //dt_basic_table.columns.adjust().draw();
     console.log("carga dt indicadores");
-    dt_indicadores.DataTable().columns.adjust();
-    dt_indicadores.DataTable().responsive.recalc();
+    dt_act_indicadores.DataTable().columns.adjust().draw();
+    dt_act_indicadores.DataTable().responsive.recalc().draw();
 
     $("#modalactividades").on("shown.bs.modal", function () {
       console.log("apertura modal indicadores");
-      dt_indicadores.DataTable().columns.adjust();
-      dt_indicadores.DataTable().responsive.recalc();
+      dt_act_indicadores.DataTable().columns.adjust().draw();
+      dt_act_indicadores.DataTable().responsive.recalc().draw();
     });
 
     $("div.head-label").html('<h6 class="mb-0">DataTable with Buttons</h6>');
