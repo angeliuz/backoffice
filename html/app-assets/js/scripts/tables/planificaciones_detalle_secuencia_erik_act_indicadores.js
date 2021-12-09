@@ -46,7 +46,7 @@ $(function () {
         {
           // Actions
           targets: 0,
-          width:"20px",
+          width:20,
           orderable: false,
           render: function (data, type, full, meta) {
             return (
@@ -60,11 +60,11 @@ $(function () {
         },
         { 
           targets: 1,
-          width:"20px",
+          autoWidth:true,
         },
         {
           targets: 2,
-          width:"50px",
+          width:50,
           data: "download_link",
           render: function (data, type, row, meta) {
             let html =
@@ -109,6 +109,8 @@ $(function () {
     $("div.head-label").html('<h6 class="mb-0">DataTable with Buttons</h6>');
   }
 });
-
-
+//AJUSTE 
+$("#btn-wizard-indicadores").click(function () {
+  $(".dt-indicadores-actividad").DataTable().columns.adjust();
+ });
 

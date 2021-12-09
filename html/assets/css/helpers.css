@@ -1533,6 +1533,12 @@ font-family: 'Lobster', cursive; */
 }
 
 /* padding px */
+.pp-2 {
+  padding: 2px;
+}
+.pp-5 {
+  padding: 5px;
+}
 .pp-10 {
   padding: 10px;
 }
@@ -2009,6 +2015,9 @@ font-family: 'Lobster', cursive; */
 }
 
 /* padding-right px */
+.pep-2 {
+  padding-right: 2px;
+}
 .pep-5 {
   padding-right: 5px;
 }
@@ -2753,6 +2762,15 @@ font-family: 'Lobster', cursive; */
   font-size: 200%;
 }
 
+.fsp-7 {
+  font-size: 7px;
+}
+.fsp-8 {
+  font-size: 8px;
+}
+.fsp-9 {
+  font-size: 9px;
+}
 .fsp-10 {
   font-size: 10px;
 }
