@@ -132,3 +132,7 @@
     position: relative;
     transform: translate(-2px, 0px) !important;
 }
+
+.cb-row{
+    --bs-gutter-x: 3rem !important;
+}
