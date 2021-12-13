@@ -84,6 +84,7 @@ $(function () {
               (row.id_priorizacion == 3 ? "" : "") +
               "</div>" +
               "</div>";
+              $('[data-bs-toggle="tooltip"]').tooltip()
             return html;
           },
         },
@@ -110,7 +111,7 @@ $(function () {
   }
 });
 //AJUSTE 
-$("#btn-wizard-indicadores").click(function () {
+$("#btn_indicadores").click(function () {
   $(".dt-indicadores-actividad").DataTable().columns.adjust();
  });
 

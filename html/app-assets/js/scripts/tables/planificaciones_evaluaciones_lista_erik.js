@@ -9,7 +9,7 @@ $(function () {
   var checked = "";
   var obj_oa = "";
 
-  var dt_basic_table = $(".dt-column-search");
+  var dt_basic_table = $(".dt-evaluaciones");
   var dt_indicadores = $(".dt-indicadores");
 
   var assetPath = "app-assets/";
@@ -34,11 +34,11 @@ $(function () {
       },
       columns: [
         { data: "id", visible: false },
-        { data: "nombre_evaluacion" }, //// nombre
-        { data: "" }, ///tipo_recurso
-        { data: "" }, ////oa
-        { data: "oa" }, ////eje
-        { data: "" }, ///
+        { data: "nombre_evaluacion", autoWidth: true }, //// nombre
+        { data: "", width: 100 }, ///tipo_recurso
+        { data: "", width: 100 }, ////oa
+        { data: "oa", width: 150 }, ////eje
+        { data: "", width: 60 }, ///
       ],
       columnDefs: [
         {
@@ -47,7 +47,6 @@ $(function () {
         {
           targets: 1,
           data: "download_link",
-          autowidth: false,
           render: function (data, type, row, meta) {
             console.log(row.enlace);
             html = '<div class="d-flex justify-content-left wp-30 align-items-center"><div class="me-1"><img class="wp-40" src="app-assets/images/icons/' + row.icono + '"></div><div class="d-flex flex-column"><span class="emp_name text-truncate fw-bold">' + row.nombre_evaluacion + "</span>";
@@ -58,9 +57,8 @@ $(function () {
         {
           targets: 2,
           data: "download_link",
-          autowidth: false,
           render: function (data, type, row, meta) {
-            html = '<div class="w-100 text-center"><ion-icon name="eye-outline" class="text-primary  h2"></ion-icon></div>';
+            html = '<div class="w-100 text-center" data-bs-toggle="modal" data-bs-target="#previewpdf"><ion-icon name="eye-outline" class="text-primary  h2"></ion-icon></div>';
 
             return html;
           },
@@ -68,7 +66,6 @@ $(function () {
         {
           targets: 3,
           data: "download_link",
-          autowidth: false,
           render: function (data, type, row, meta) {
             html = '<div class="w-100 text-center " data-bs-toggle="modal" data-bs-target="#modal_indicadores" ><ion-icon name="navigate-outline" class="text-primary h2"></div>';
 
@@ -78,35 +75,20 @@ $(function () {
         {
           targets: 4,
           data: "download_link",
-          autowidth: false,
           render: function (data, type, row, meta) {
             html = "";
             for (var i in row.objetivos) {
-              html+='<div class="d-flex justify-content-start flex-column>"' +
-              '<div class="text-start" ><div class="text-primary text-start fw-500" data-bs-html="true" data-bs-toggle="tooltip" title="<div class=\'text-start\'>' +
-              row.objetivos[i].descripcion +
-              '</div>" id="' +
-              row.objetivos[i].id +
-              '"  >' +
-              row.objetivos[i].nombre +
-              "</div>" +
-              '<div data-bs-toggle="tooltip" title="' +
-              row.objetivos[i].priorizaciones[0].nombre +
-              '">' +
-              (row.objetivos[i].priorizaciones[0].id == 1 ? '<ion-icon name="star" class="text-warning msp-5"></ion-icon></div>' : "") +
-              (row.objetivos[i].priorizaciones[0].id == 2 ? '<ion-icon name="star-outline" class="text-warning msp-5"></ion-icon></div>' : "") +
-              (row.objetivos[i].priorizaciones[0].id == 3 ? "" : "") +
-              "</div>" +
-              "</div>";
-
-              // if (row.objetivos[i].priorizaciones[0].id == 1) {
-              //   html += '<div class="d-flex justify-content-start flex-column">' + '<div class="text-primary fw-500 mep-5" id="' + row.objetivos[i].id + '" data-bs-html="true" data-bs-toggle="tooltip" title="ERIK" >' + row.objetivos[i].nombre + '</div><div data-bs-html="true" data-bs-toggle="tooltip" title="PEREDA"><ion-icon name="star" class="text-warning  msp-5   ></ion-icon></div> </div>';
-              // } else if (row.objetivos[i].priorizaciones[0].id == 2) {
-              //   html += '<div class="d-flex justify-content-end align-items-start flex-column  data-bs-html="true" data-bs-toggle="tooltip" title="ANAKIN"">' + '<div class="text-primary fw-500 mep-5 " id="' + row.objetivos[i].id + '" >' + row.objetivos[i].nombre + '<ion-icon name="star-outline" class="text-warning  msp-5 data-bs-html="true" data-bs-toggle="tooltip" title="SKYWALKER""></ion-icon>' + "</div>";
-              // } else {
-              //   html += '<div class="d-flex justify-content-center align-items-start text-center d-block flex-column data-bs-html="true" data-bs-toggle="tooltip" title="OBI WAN"">' + '<div class="text-primary fw-500 mep-5 text-center"  data-bs-html="true" data-bs-toggle="tooltip" title="KENOBI" id="' + row.objetivos[i].id + '" >' + row.objetivos[i].nombre + "</div>";
-              //   console.log("no hay priorizacion");
-              // }
+              html +=
+                '<div class="d-flex align-items-center">' +
+                    '<div class="d-flex text-primary fw-500 mep-5 hp-30 align-items-center" data-bs-html="true" data-bs-toggle="tooltip" title="<div class=\'text-start\'>' +  row.objetivos[i].descripcion +'</div>" id="' + row.objetivos[i].id +'"  >' +
+                      row.objetivos[i].nombre +
+                    '</div>' +
+                    '<div data-bs-toggle="tooltip" title="' + row.objetivos[i].priorizaciones[0].nombre +'" class="d-flex hp-30 align-items-center">' +
+                      (row.objetivos[i].priorizaciones[0].id == 1 ? '<ion-icon name="star" class="text-warning"></ion-icon>' : "") +
+                      (row.objetivos[i].priorizaciones[0].id == 2 ? '<ion-icon name="star-outline" class="text-warning"></ion-icon>' : "") +
+                      (row.objetivos[i].priorizaciones[0].id == 3 ? "" : "") +
+                    '</div>'+
+                '</div>';
             }
             return html;
           },
@@ -132,7 +114,7 @@ $(function () {
     dt_basic_table.DataTable().columns.adjust();
     dt_basic_table.DataTable().responsive.recalc();
 
-    $("#modaloa").on("shown.bs.modal", function () {
+    $("#modalevaluaciones").on("shown.bs.modal", function () {
       dt_basic_table.DataTable().columns.adjust();
       dt_basic_table.DataTable().responsive.recalc();
     });
@@ -208,3 +190,8 @@ $(function () {
     $("div.head-label").html('<h6 class="mb-0">DataTable with Buttons</h6>');
   }
 });
+//AJUSTE
+// $(".btn").click(function () {
+//   console.log("Hola");
+//   $(".dt-evaluaciones").DataTable().columns.adjust();
+// });

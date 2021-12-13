@@ -41,8 +41,6 @@
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link rel="stylesheet" type="text/css" href="assets/css/helpers.css">
     <link rel="stylesheet" type="text/css" href="assets/css/custom_colors.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/david.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/erik.css" />
     <!-- END: Custom CSS-->
 </head>
 <!-- END: Head-->
@@ -734,16 +732,14 @@
                                                             <h4 class="card-title">Lista de evaluaciones </h4>
                                                         </div>
                                                         <div class="card-datatable">
-                                                            <table class="dt-column-search table text-center">
+                                                            <table class="dt-evaluaciones table text-center">
                                                                 <thead>
                                                                     <tr>
                                                                         <th>id </th>
-                                                                        <th style="width: 300px;">
-                                                                            <div class="text-start wp-200">nombre</div>
-                                                                        </th>
-                                                                        <th style="width: 40px;">preview</th>
-                                                                        <th style="width: 40px;">indicadores</th>
-                                                                        <th style="width: 50px;"> oa </th>
+                                                                        <th class="text-start">nombre</th>
+                                                                        <th>preview</th>
+                                                                        <th>indicadores</th>
+                                                                        <th> oa </th>
                                                                         <th>acción</th>
                                                                     </tr>
                                                                 </thead>
@@ -820,7 +816,7 @@
                 <section class="vertical-wizard">
                     <div class="bs-stepper vertical vertical-wizard-example modal_content_interior_super_xl">
                         <div class="bs-stepper-header">
-                            <div class="step" data-target="#account-details-vertical" role="tab" id="account-details-vertical-trigger">
+                            <div class="step" data-target="#seccion_titulo" role="tab" id="btn_tituloObjetivos">
                                 <button type="button" class="step-trigger">
                                     <span class="bs-stepper-box">1</span>
                                     <span class="bs-stepper-label">
@@ -829,7 +825,7 @@
                                     </span>
                                 </button>
                             </div>
-                            <div class="step" data-target="#personal-info-vertical" role="tab" id="personal-info-vertical-trigger">
+                            <div class="step" data-target="#seccion_indicadores" role="tab" id="btn_indicadores">
                                 <button type="button" class="step-trigger">
                                     <span class="bs-stepper-box">2</span>
                                     <span class="bs-stepper-label">
@@ -838,7 +834,7 @@
                                     </span>
                                 </button>
                             </div>
-                            <div class="step" data-target="#address-step-vertical" role="tab" id="address-step-vertical-trigger">
+                            <div class="step" data-target="#seccion_bancorecursos" role="tab" id="btn_bancoRecursos">
                                 <button type="button" class="step-trigger">
                                     <span class="bs-stepper-box">3</span>
                                     <span class="bs-stepper-label">
@@ -847,7 +843,7 @@
                                     </span>
                                 </button>
                             </div>
-                            <div class="step" data-target="#social-links-vertical" role="tab" id="social-links-vertical-trigger">
+                            <div class="step" data-target="#seccion_materiales" role="tab" id="btn_materiales">
                                 <button type="button" class="step-trigger">
                                     <span class="bs-stepper-box">4</span>
                                     <span class="bs-stepper-label">
@@ -857,22 +853,30 @@
                                 </button>
                             </div>
                         </div>
+                        <!-- WIZARD TITULO Y OBJETIVOS -->
                         <div class="bs-stepper-content">
-                            <div id="account-details-vertical" class="content" role="tabpanel" aria-labelledby="account-details-vertical-trigger">
+                            <div id="seccion_titulo" class="content" role="tabpanel" aria-labelledby="btn_tituloObjetivos">
                                 <div class="content-header">
                                     <h5 class="mb-0">Datos de la actividad</h5>
                                     <span class="fsp-12">Selecciona el o los objetivos que abordarás en esta actividad.</span>
                                 </div>
                                 <div class="d-flex mb-1">
-                                    <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
-                                        <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off" />
-                                        <label class="btn btn-outline-primary me-1" for="btncheck1" data-bs-toggle="tooltip" data-bs-placement="top" title="CNo2 OA 7">CNo2 OA 7 <ion-icon name="star" class="text-warning msp-5"></ion-icon>
-                                        </label>
-                                        <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off" />
-                                        <label class="btn btn-outline-primary me-1" for="btncheck2" data-bs-toggle="tooltip" data-bs-placement="top" title="CNo2 OA 8">CNo2 OA 8</label>
-                                        <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off" />
-                                        <label class="btn btn-outline-primary" for="btncheck3" data-bs-toggle="tooltip" data-bs-placement="top" title="CNo2 OA 1">CNo2 OA 1 <ion-icon name="star-outline" class="text-warning msp-5"></ion-icon>
-                                        </label>
+                                    <div class="d-flex flex-row custom-options-checkable g-1">
+                                        <div class="mep-10">
+                                            <input class="custom-option-item-check" type="checkbox" name="customOptionsCheckableCheckboxWithIcon" id="customOptionsCheckableCheckboxWithIcon1" checked />
+                                            <label class="custom-option-item text-center pp-10 fw-500" for="customOptionsCheckableCheckboxWithIcon1"> CN02 OA 7 <ion-icon name="star" class="text-warning"></ion-icon>
+                                            </label>
+                                        </div>
+                                        <div class="mep-10">
+                                            <input class="custom-option-item-check" type="checkbox" name="customOptionsCheckableCheckboxWithIcon" id="customOptionsCheckableCheckboxWithIcon2" value="" />
+                                            <label class="custom-option-item text-center pp-10 fw-500" for="customOptionsCheckableCheckboxWithIcon2"> CN02 OA 7 <ion-icon name="star" class="text-warning msp-5"></ion-icon>
+                                            </label>
+                                        </div>
+                                        <div class="mep-10">
+                                            <input class="custom-option-item-check" type="checkbox" name="customOptionsCheckableCheckboxWithIcon" id="customOptionsCheckableCheckboxWithIcon3" value="" />
+                                            <label class="custom-option-item text-center pp-10 fw-500" for="customOptionsCheckableCheckboxWithIcon3"> CN02 OA 7 <ion-icon name="star" class="text-warning msp-5"></ion-icon>
+                                            </label>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="row">
@@ -887,98 +891,141 @@
                                         <textarea type="textarea" id="descripcion" class="form-control" rows="7" placeholder="Ingresa un texto"></textarea>
                                     </div>
                                 </div>
-                                <div class="position-absolute bottom-0 end-0">
+                                <div class="d-flex justify-content-between">
+                                    <button class="btn btn-outline-secondary btn-prev">
+                                        <i data-feather="arrow-left" class="align-middle me-sm-25 me-0"></i>
+                                        <span class="align-middle d-sm-inline-block d-none">ANTERIOR</span>
+                                    </button>
                                     <button class="btn btn-primary btn-next">
                                         <span class="align-middle d-sm-inline-block d-none">SIGUIENTE</span>
                                         <i data-feather="arrow-right" class="align-middle ms-sm-25 ms-0"></i>
                                     </button>
                                 </div>
                             </div>
-                            <div id="personal-info-vertical" class="content" role="tabpanel" aria-labelledby="personal-info-vertical-trigger">
+                            <!-- WIZARD TITULO Y OBJETIVOS -->
+                            <!-- BEGIN WIZARD INDICADORES -->
+                            <div id="seccion_indicadores" class="content" role="tabpanel" aria-labelledby="btn_indicadores">
                                 <div class="content-header">
-                                    <h5 class="mb-0">Personal Info</h5>
-                                    <small>Enter Your Personal Info.</small>
+                                    <h5 class="mb-0">Indicadores</h5>
+                                    <small>Agrega o Selecciona el o los indicadores.</small>
                                 </div>
-                                <div class="row">
-                                    <div class="mb-1 col-md-6">
-                                        <label class="form-label" for="vertical-first-name">First Name</label>
-                                        <input type="text" id="vertical-first-name" class="form-control" placeholder="John" />
+                                <div class="row d-flex align-middle">
+                                    <div class="col-xl-10 col-sm-12 pe-0">
+                                        <div class="align-items-center w-100">
+                                            <div class="d-flex align-items-center w-100">
+                                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="1" placeholder="Indicadores"></textarea>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="mb-1 col-md-6">
-                                        <label class="form-label" for="vertical-last-name">Last Name</label>
-                                        <input type="text" id="vertical-last-name" class="form-control" placeholder="Doe" />
+                                    <div class="col-xl-2 col-sm-12 d-flex justify-content-center ptp-0">
+                                        <div class="d-flex justify-content-center align-items-top w-100 mb-1">
+                                            <button type="submit"
+                                                    class="btn btn-primary waves-effect waves-float waves-light w-100 ptp-15 pbp-15"
+                                                    name="submit" value="Submit">Agregar</button>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="row">
-                                    <div class="mb-1 col-md-6">
-                                        <label class="form-label" for="vertical-country">Country</label>
-                                        <select class="select2 w-100" id="vertical-country">
-                                            <option label=" "></option>
-                                            <option>UK</option>
-                                            <option>USA</option>
-                                            <option>Spain</option>
-                                            <option>France</option>
-                                            <option>Italy</option>
-                                            <option>Australia</option>
-                                        </select>
-                                    </div>
-                                    <div class="mb-1 col-md-6">
-                                        <label class="form-label" for="vertical-language">Language</label>
-                                        <select class="select2 w-100" id="vertical-language" multiple>
-                                            <option>English</option>
-                                            <option>French</option>
-                                            <option>Spanish</option>
-                                        </select>
+                                <div class="row mbp-5">
+                                    <div class="card shadow-none">
+                                        <table class="dt-indicadores-actividad table table-bordered table-condensed table-striped table-hover">
+                                            <thead>
+                                                <tr>
+                                                    <th>SEL.</th>
+                                                    <th>DESCRIPCIÓN DE INDICADOR</th>
+                                                    <th>OBJETIVOS</th>
+                                                </tr>
+                                            </thead>
+                                        </table>
                                     </div>
                                 </div>
                                 <div class="d-flex justify-content-between">
                                     <button class="btn btn-primary btn-prev">
                                         <i data-feather="arrow-left" class="align-middle me-sm-25 me-0"></i>
-                                        <span class="align-middle d-sm-inline-block d-none">Previous</span>
+                                        <span class="align-middle d-sm-inline-block d-none">ANTERIOR</span>
                                     </button>
                                     <button class="btn btn-primary btn-next">
-                                        <span class="align-middle d-sm-inline-block d-none">Next</span>
+                                        <span class="align-middle d-sm-inline-block d-none">SIGUIENTE</span>
                                         <i data-feather="arrow-right" class="align-middle ms-sm-25 ms-0"></i>
                                     </button>
                                 </div>
                             </div>
-                            <div id="address-step-vertical" class="content" role="tabpanel" aria-labelledby="address-step-vertical-trigger">
+                            <!-- END WIZARRD INDICADORES -->
+                            <!-- BEGIN WIZARD BANCO DE RECURSOS -->
+                            <div id="seccion_bancorecursos" class="content" role="tabpanel" aria-labelledby="btn_bancoRecursos">
                                 <div class="content-header">
                                     <h5 class="mb-0">Address</h5>
                                     <small>Enter Your Address.</small>
                                 </div>
-                                <div class="row">
-                                    <div class="mb-1 col-md-6">
-                                        <label class="form-label" for="vertical-address">Address</label>
-                                        <input type="text" id="vertical-address" class="form-control" placeholder="98  Borough bridge Road, Birmingham" />
+                                <div class="row  m-0 p-0 g-0 mb-4 border border-1 border-color-primary ">
+                                    <div class="col-4 h-100 m-0 p-0">
+                                        <div class="d-flex align-items-top">
+                                            <div class="border-1 border-color-secondary border-end w-100 ">
+                                                <div class="border  border-1 border-color-secondary m-0 pp-10 h-0 fsp-12 fw-600 bgc-tabla psp-25">MI SELECCIÓN</div>
+                                                <div class="w-100 m-0 h-0  ">
+                                                    <div class="d-block w-100 p-1 border-2 border-color-primary border-bottom ">
+                                                        <div class="d-flex justify-content-between align-items-center p-0 m-0">
+                                                            <div class="d-block text-black fsp-10 fw-300">Guía de trabajo práctico</div>
+                                                            <i data-feather="trash-2" class="font-medium-2 text-body"></i>
+                                                        </div>
+                                                        <div class="d-block text-secondary fsp-12 fw-500">Los órganos</div>
+                                                        <div class="d-flex justify-content-between align-items-center ">
+                                                            <div class="d-inline text-primary fsp-11 fw-600">CN02 OA 07</div>
+                                                            <!-- <div class="d-inline badge rounded-pill badge-light-info">Modificado</div> -->
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-block w-100 p-1 border-2 border-color-primary border-bottom ">
+                                                        <div class="d-flex justify-content-between align-items-center p-0 m-0">
+                                                            <div class="d-block text-black fsp-11 fw-300">Ticket de salida</div>
+                                                            <i data-feather="trash-2" class="font-medium-2 text-body"></i>
+                                                        </div>
+                                                        <div class="d-block text-secondary fsp-12 fw-500">Cuerpo humano</div>
+                                                        <div class="d-flex justify-content-between align-items-center ">
+                                                            <div class="d-flex align-items-center" data-bs-toggle="tooltip" data-bs-placement="bottom" title="" data-bs-html="true" data-bs-original-title="Leer en voz alta de manera fluida variados textos apropiados a su edad: 
+<ul><li> pronunciando cada palabra con precisión; </li>
+<li>respetando los signos de puntuación; </li>
+<li>leyendo con entonación adecuada; </li>
+<li>leyendo con velocidad adecuada para el nivel.</li></ul>">
+                                                                <div class="text-primary fw-500 mep-5">LE04OA01</div>
+                                                                <ion-icon name="star-outline" class="text-warning md hydrated" role="img" aria-label="star outline"></ion-icon>
+                                                            </div>
+                                                            <!-- <div class="d-inline badge rounded-pill badge-light-warning">Original</div> -->
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-flex justify-content-center bgc-tabla p-1">
+                                                        <button class="btn btn-primary btn-next">
+                                                            <span class="align-middle text-center d-sm-inline-block d-none">Crear Guía de trabajo</span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="mb-1 col-md-6">
-                                        <label class="form-label" for="vertical-landmark">Landmark</label>
-                                        <input type="text" id="vertical-landmark" class="form-control" placeholder="Borough bridge" />
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="mb-1 col-md-6">
-                                        <label class="form-label" for="pincode2">Pincode</label>
-                                        <input type="text" id="pincode2" class="form-control" placeholder="658921" />
-                                    </div>
-                                    <div class="mb-1 col-md-6">
-                                        <label class="form-label" for="city2">City</label>
-                                        <input type="text" id="city2" class="form-control" placeholder="Birmingham" />
+                                    <div class="col-8">
+                                        <table class="dt-banco-recursos table table-bordered table-condensed table-striped table-hover">
+                                            <thead>
+                                                <tr>
+                                                    <th>NOMBRE</th>
+                                                    <th>OA</th>
+                                                    <th>SEL</th>
+                                                </tr>
+                                            </thead>
+                                        </table>
                                     </div>
                                 </div>
                                 <div class="d-flex justify-content-between">
                                     <button class="btn btn-primary btn-prev">
                                         <i data-feather="arrow-left" class="align-middle me-sm-25 me-0"></i>
-                                        <span class="align-middle d-sm-inline-block d-none">Previous</span>
+                                        <span class="align-middle d-sm-inline-block d-none">ANTERIOR</span>
                                     </button>
                                     <button class="btn btn-primary btn-next">
-                                        <span class="align-middle d-sm-inline-block d-none">Next</span>
+                                        <span class="align-middle d-sm-inline-block d-none">SIGUIENTE</span>
                                         <i data-feather="arrow-right" class="align-middle ms-sm-25 ms-0"></i>
                                     </button>
                                 </div>
                             </div>
-                            <div id="social-links-vertical" class="content" role="tabpanel" aria-labelledby="social-links-vertical-trigger">
+                            <!-- END WIZARD BANCO DE RECURSOS -->
+                            <!-- BEGIN WIZARD MATERIALES -->
+                            <div id="seccion_materiales" class="content" role="tabpanel" aria-labelledby="btn_materiales">
                                 <div class="content-header">
                                     <h5 class="mb-0">Materiales</h5>
                                 </div>
@@ -1021,6 +1068,7 @@
                                     </button>
                                 </div>
                             </div>
+                            <!-- END WIZARD MATERIALES -->
                         </div>
                     </div>
                 </section>
@@ -1029,6 +1077,28 @@
         </div>
     </div>
     <!-- Modal Actividades -->
+    <!-- Modal Preview PDF -->
+    <div class="modal fade" id="previewpdf" tabindex="-1" aria-labelledby="modaloaTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-fullscreen">
+            <div class="modal-content1 modal-content-erik">
+                <div class="modal-guia">
+                    <div class="justify-contente-start align-items-center d-flex">
+                        <img src="app-assets/images/icons/pdf-03.png" class="psp-10 mep-10" alt="">
+                        <div class="d-flex flex-column">
+                            <span class="fsp-10 ptp-5">Guía </span><span class=" pbp-5 fsp-15 fw-700">Los órganos</span>
+                        </div>
+                    </div>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <!-- Basic table -->
+                <div class="modal-body text-center">
+                    <img src="app-assets/images/illustration/guia.jpg" class="" alt="">
+                </div>
+                <!-- Basic Table -->
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
     <!-- BEGIN MENU -->
     <script src="app-assets/js/menu.js"></script>
     <!-- END MENU -->
@@ -1077,6 +1147,7 @@
     <!-- END: Page JS-->
     <!-- BEGIN: Page JS-->
     <script src="app-assets/js/scripts/tables/planificaciones_evaluaciones_lista_erik.js"></script>
+    <script src="app-assets/js/scripts/tables/planificaciones_detalle_secuencia_erik_act_indicadores.js"></script>
     <!-- END: Page JS-->
     <script>
         populateMenu(menu);
