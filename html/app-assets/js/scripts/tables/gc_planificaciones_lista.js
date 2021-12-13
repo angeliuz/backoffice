@@ -168,7 +168,7 @@ $(function () {
               "Eliminar</button>" +
               "</div>" +
               "</div>" +
-              '<a href="gc_planificaciones_detalle_secuencia.html" target="_self" class="item-edit">' +
+              '<a href="gc_secuencia_detalle.html" target="_self" class="item-edit">' +
               feather.icons["edit"].toSvg({ class: "font-small-4" }) +
               "</a>"
             );
