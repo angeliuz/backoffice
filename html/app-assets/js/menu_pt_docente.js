@@ -12,14 +12,19 @@ const menu = [
     icon: "layers",
   },
   {
+    title: "Mis Recursos",
+    enlace: "#",
+    icon: "archive",
+  },
+  {
     title: "Evaluaciones",
     enlace: "#",
-    icon: "clipboard",
+    icon: "check-square",
   },
   {
     title: "Compartidos",
     enlace: "gc_guias_lista.html",
-    icon: "book-open",
+    icon: "share-2",
     submenus: [
       {
         title: "Planificaciones",
@@ -36,12 +41,12 @@ const menu = [
   {
     title: "Mensajes",
     enlace: "#",
-    icon: "users",
+    icon: "mail",
   },
   {
     title: "Ayuda",
     enlace: "#",
-    icon: "home",
+    icon: "help-circle",
   },
 ];
 
