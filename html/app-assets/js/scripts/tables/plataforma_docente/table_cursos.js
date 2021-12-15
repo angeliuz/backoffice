@@ -43,16 +43,23 @@
                     var $post = full['nivel'];
                     
                     // For Avatar badge
-                    var stateNum = full['id_area'];
-                    var states = ['', 'warning', 'danger', 'success', 'primary', 'info', 'secondary', 'dark'];
-                    var $state = states[stateNum],
-                    $name = full['area'],
-                    $initials = $name.match(/\b\w/g) || [];
+                    let $stateNum = full['id_area'];
+                    //let states = ['', 'bg-light-warning', 'bg-light-danger', 'bg-light-success', 'bg-light-primary', 'bg-light-info', 'bg-light-secondary', 'bg-light-dark'];
+                    var $states = {
+                        1: { area: 'Matemática', class: ' bg-light-warning' },
+                        2: { area: 'Lenguaje', class: 'bg-light-danger' },
+                        3: { area: 'Ciencias Naturales', class: ' bg-light-success' },
+                        4: { area: 'Ciencias Sociales', class: ' bg-light-primary' },
+                    };
+                    var $state = $states[$stateNum].class;
+                    
+                    $name = full['area'];
+                    var $initials = $name.match(/\b\w/g) || [];
                     $initials = (($initials.shift() || '') + ($initials.pop() || '')).toUpperCase();
                     var $output = '<span class="avatar-content">' + $initials + '</span>';
                 
 
-                    var colorClass = ' bg-light-' + $state;
+                    var colorClass = $state;
                     // Creates full output for row
                     var $row_output =
                       '<div class="d-flex justify-content-left align-items-center">' +
