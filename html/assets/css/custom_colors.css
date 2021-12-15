@@ -9,6 +9,7 @@
 --info:#00cfe8;
 --warning:#ff9f43;
 --primary:#7367f0;
+--gohan:#ececec;
 }
 
 .bgc-aqua {
@@ -89,4 +90,7 @@
 }
 .border-top-primary{ 
   border-top-color:var(--primary);
+}
+.border-top-gohan { 
+  border-top-color:var(--gohan);
 }
