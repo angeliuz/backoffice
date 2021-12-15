@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+    <head>
+        <title></title>
+        <meta charset="utf-8" />
+        <meta http-equiv="pragma" content="no-cache" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <link href="css/fonts.css" rel="stylesheet" type="text/css" />
+        <style>input::-ms-clear { display: none; }</style>
+        <script>
+            var originalWidth = 960;
+            var originalHeight = 600;
+        </script>
+        <script src="css/infantil.js" type="text/javascript"></script>
+        <script src="js/modernizr-1.7.js" type="text/javascript"></script>
+        <script src="js/jquery.min.js" type="text/javascript"></script>
+        <script src="js/jquery.keyframes.js" type="text/javascript"></script>
+        <script src="js/easeljs-0.8.2.min.js" type="text/javascript"></script>
+        <script src="js/soundjs-0.6.2.min.js" type="text/javascript"></script>
+        <script src="js/tweenjs-0.6.2.min.js" type="text/javascript"></script>
+        <script src="js/buzz.js" type="text/javascript"></script>
+        <script src="js/pds-buzzsoundmanager.js" type="text/javascript"></script>
+        <script src="js/pds-imagemanager-0.3.0.js" type="text/javascript"></script>
+        <script src="js/mae.com.int.js" type="text/javascript"></script>
+        <script src="js/sm-0.3.2.js" type="text/javascript"></script>
+        <script src="js/sm-infantil-0.3.0.js" type="text/javascript"></script>
+        <script src="js/sm-selectengine-0.3.2.js" type="text/javascript"></script>
+        <script src="js/sm-confettianimation-0.1.1.js" type="text/javascript"></script>
+
+        <script src="data/imgs/imagenes.js" type="text/javascript"></script>
+        <script src="data/texts/cadenas.js" type="text/javascript"></script>
+        <script src="data/audios/audios.js" type="text/javascript"></script>
+        <script src="js/config.js" type="text/javascript"></script>
+        <style>
+            .preload {
+                background-repeat: no-repeat;
+                background-position: center center;
+                width: 960px;
+                height: 600px;
+                display: none;
+                margin: auto;
+            }
+        </style>
+    </head>
+    <body style="background-color: #FFFFFF; width: 100%; margin: auto; overflow: hidden" unselectable="on" ondragstart="return false;">
+        <div id="startLayer" class="preload"></div>
+        <div id="gameLayer">
+            <div style="position: absolute; left: 0; top: 0"><a href="#" id="dummylink"></a></div>
+            <div id="dynDomE"></div>
+            <canvas id="html5Canvas" style="background-color: transparent;"></canvas>
+        </div>
+    </body>
+</html>
