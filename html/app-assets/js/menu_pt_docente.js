@@ -27,11 +27,6 @@ const menu = [
         icon: "circle",
       },
       {
-        title: "Evaluaciones",
-        enlace: "gc_grupos_colegio_lista.html",
-        icon: "circle",
-      },
-      {
         title: "Recursos",
         enlace: "gc_usuarios_roles_lista.html",
         icon: "circle",
