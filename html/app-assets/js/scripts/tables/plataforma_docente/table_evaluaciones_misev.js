@@ -31,6 +31,7 @@
             { data: '' },
             { data: 'nivel' },
             { data: 'area' },
+            { data: '' },
             { data: '' }
           ],
           columnDefs: [
@@ -68,9 +69,47 @@
               targets:2,
               orderable:true,
             },
+            {
+              targets: 3,
+              orderable:false,
+              data: "download_link",
+              render: function (data, type, row, meta) {
+                var html = '<div class="w-100 text-center " data-bs-toggle="modal" data-bs-target="#modal_indicadores" ><ion-icon name="navigate-outline" class="text-primary h2"></div>';
+    
+                return html;
+              },
+            },
+            {
+              targets:4,
+              orderable:true,
+              render: function (data, type, full, meta) {
+                var html = '';
+                for (var i in full.objetivos) {
+                html += '<div class="d-flex justify-content-center align-items-center flex-row">' +
+                        '<div class="text-primary" data-bs-toggle="tooltip" title="' + full.objetivos[i].descripcion +'" >' +
+                        full.objetivos[i].nombre +
+                        '</div>';
+                
+                html += '<div class="text-warning msp-5">';
+                        if(full.objetivos[i].priorizacion_id == "1"){
+                            html += '<ion-icon name="star"></ion-icon>'
+                        }
+                        if(full.objetivos[i].priorizacion_id == "2"){
+                            html += '<ion-icon name="star-outline"></ion-icon>'
+                        }
+                        if(full.objetivos[i].priorizacion_id == "3"){
+                            html += ''
+                        }
+                        html += '</div>';
+                        html += '</div>';
+
+                }
+                return html;
+              }
+            },
            {
               // Actions
-              targets: 3,
+              targets: 5,
               orderable: false,
               className: 'text-center',
               width: '80px',

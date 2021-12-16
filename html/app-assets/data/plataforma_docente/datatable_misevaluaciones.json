@@ -7,7 +7,21 @@
       "area": "Matemática",
       "id_area": 1,
       "nivel": "1º básico",
-      "nombre": "Los órganos"
+      "nombre": "Los órganos",
+      "objetivos": [
+        {
+          "id": 1,
+          "nombre": "MA01OA01",
+          "descripcion": "Reconocer y observar, por medio de la exploraci\u00f3n, que los seres vivos crecen, responden a est\u00edmulos del medio, se reproducen y necesitan agua, alimento y aire para vivir, compar\u00e1ndolos con las cosas no vivas.",
+          "priorizacion_id": 1
+        },
+        {
+          "id": 2,
+          "nombre": "MA01OA03",
+          "descripcion": "Reconocer y observar, por medio de la exploraci\u00f3n, que los seres vivos crecen, responden a est\u00edmulos del medio, se reproducen y necesitan agua, alimento y aire para vivir, compar\u00e1ndolos con las cosas no vivas.",
+          "priorizacion_id": 2
+        }
+      ]
     },
     {
       "responsive_id": "",
@@ -16,8 +30,15 @@
       "area": "Ciencias Sociales",
       "id_area": 2,
       "nivel": "2º básico",
-      "nombre": "universo"
+      "nombre": "Universo",
+      "objetivos": [
+        {
+          "id": 1,
+          "nombre": "CS01OA02",
+          "descripcion": "Reconocer y observar, por medio de la exploraci\u00f3n, que los seres vivos crecen, responden a est\u00edmulos del medio, se reproducen y necesitan agua, alimento y aire para vivir, compar\u00e1ndolos con las cosas no vivas.",
+          "priorizacion_id": 3
+        }
+      ]
     }
-    
   ]
 }
