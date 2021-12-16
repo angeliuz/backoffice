@@ -3,10 +3,20 @@
     {
       "responsive_id": "",
       "id": 1,
-      "icon": "10-small.png",
+      "icon": "pdf.png",
       "area": "Matemática",
       "id_area": 1,
-      "nivel": "1º básico"
+      "nivel": "1º básico",
+      "nombre": "Los órganos"
+    },
+    {
+      "responsive_id": "",
+      "id": 2,
+      "icon": "sonido-02.png",
+      "area": "Ciencias Sociales",
+      "id_area": 2,
+      "nivel": "2º básico",
+      "nombre": "universo"
     }
     
   ]

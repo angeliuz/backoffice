@@ -28,7 +28,9 @@
           },
         },
         columns: [
+            { data: '' },
             { data: 'nivel' },
+            { data: 'area' },
             { data: '' }
           ],
           columnDefs: [
@@ -36,41 +38,35 @@
                 targets:0 ,
                 render: function (data, type, full, meta) {
                     
-                    var $name = full['area'];
-                    var $post = full['nivel'];
+                    var $name = full['nombre'];
                     
-                    // For Avatar badge
-                    let $stateNum = full['id_area'];
-                    //let states = ['', 'bg-light-warning', 'bg-light-danger', 'bg-light-success', 'bg-light-primary', 'bg-light-info', 'bg-light-secondary', 'bg-light-dark'];
-                    var $states = {
-                        1: { tipo: 'PDF', img: 'pdf.png' },
-                    };
-                    var $state = $states[$stateNum].img;
                     var icono = full['icon'];
-                    $name = full['area'];
-                    //var $initials = $name.match(/\b\w/g) || [];
-                    //$initials = (($initials.shift() || '') + ($initials.pop() || '')).toUpperCase();
-                    //var $output = '<span class="avatar-content">' + $initials + '</span>';
-                
 
-                    var colorClass = $state;
-                    // Creates full output for row
                     var $row_output =
                       '<div class="d-flex justify-content-left align-items-center">' +
-                      '<div class="avatar me-1">' +
-                      '<img src="../app-assets/images/icons/pdf.png">' +
+                      '<div class="me-1">' +
+                      '<img src="../app-assets/images/icons/'+ 
+                      icono +
+                      '" class="hp-40">' +
                       '</div>' +
                       '<div class="d-flex flex-column">' +
+                      '<small class="emp_post text-truncate text-muted">Mis evaluaciones</small>' +
                       '<span class="emp_name text-truncate fw-bold">' +
                       $name +
                       '</span>' +
-                      '<small class="emp_post text-truncate text-muted">' +
-                      $post +
-                      '</small>' +
+                     
                       '</div>' +
                       '</div>';
                     return $row_output;
                 },
+            },
+            {
+              targets:1,
+              orderable:true,
+            },
+            {
+              targets:2,
+              orderable:true,
             },
            {
               // Actions
