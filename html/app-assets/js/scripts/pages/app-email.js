@@ -47,7 +47,7 @@ $(function () {
     composeMaximize = $('.compose-maximize'),
     isRtl = $('html').attr('data-textdirection') === 'rtl';
 
-  var assetPath = '../../../app-assets/';
+  var assetPath = '../../../html/app-assets/';
 
   if ($('body').attr('data-framework') === 'laravel') {
     assetPath = $('body').attr('data-asset-path');
@@ -373,7 +373,7 @@ $(function () {
         syntax: true,
         toolbar: '.compose-editor-toolbar'
       },
-      placeholder: 'Message',
+      placeholder: 'Mensaje',
       theme: 'snow'
     });
   }
