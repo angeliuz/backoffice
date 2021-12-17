@@ -136,3 +136,8 @@
 .cb-row{
     --bs-gutter-x: 3rem !important;
 }
+.cb-img{
+    width: 50%;
+    margin: 0 auto ;
+
+}
