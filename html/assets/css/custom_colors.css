@@ -9,7 +9,7 @@
 --info:#00cfe8;
 --warning:#ff9f43;
 --primary:#7367f0;
---gohan:#ececec;
+--gohan:#EEEDFD;
 }
 
 .bgc-aqua {
@@ -57,6 +57,9 @@
 .bgc-freezer{
   background-color: var(--freezer);
 }
+.bgc-gohan { 
+  background-color:var(--gohan);
+}
 
 .btc-milk{ 
   border-top-color:var(--milk);
@@ -91,6 +94,7 @@
 .border-top-primary{ 
   border-top-color:var(--primary);
 }
-.border-top-gohan { 
-  border-top-color:var(--gohan);
+
+.border-primary{ 
+  border-color:var(--primary);
 }
