@@ -1,0 +1,26 @@
+{
+  "data": [
+    {
+      "responsive_id": "",
+      "id": 1,
+      "nombre": "10-small.png",
+      "nombre_usuario_iniciales": "KP",
+      "nombre_usuario": "Kekosas Pereda",
+      "nombre_carpeta": "Mis evaluaciones",
+      "titulo_planificacion": "Los órganos",
+      "tipo": "PDF",
+      "status": 2
+    },
+    {
+      "responsive_id": "",
+      "id": 1,
+      "nombre": "10-kekito.png",
+      "nombre_usuario_iniciales": "AS",
+      "nombre_usuario": "Anakin Skywalker",
+      "nombre_carpeta": "Mis cocos",
+      "titulo_planificacion": "Los dksadljsa",
+      "tipo": "PDF",
+      "status": 2
+    }
+  ]
+}
