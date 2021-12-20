@@ -14,7 +14,7 @@ $(function () {
   var dt_act_indicadores = $(".dt-indicadores-actividad");
   
  
-  var assetPath = "app-assets/";
+  var assetPath = "app-assets/";;
 
   // DataTable with buttons
   // --------------------------------------------------------------------
