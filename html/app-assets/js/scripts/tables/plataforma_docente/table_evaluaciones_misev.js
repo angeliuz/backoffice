@@ -74,7 +74,7 @@
               orderable:false,
               data: "download_link",
               render: function (data, type, row, meta) {
-                var html = '<div class="w-100 text-center " data-bs-toggle="modal" data-bs-target="#modal_indicadores" ><ion-icon name="navigate-outline" class="text-primary h2"></div>';
+                var html = '<div class="w-100 text-center" id="btn_indicadores" data-bs-toggle="modal" data-bs-target="#modal_indicadores" ><ion-icon name="navigate-outline" class="text-primary h2"></div>';
     
                 return html;
               },

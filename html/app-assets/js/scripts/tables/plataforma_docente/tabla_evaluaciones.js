@@ -11,10 +11,10 @@ $(function () {
   var obj_oa = "";
 
   var dt_basic_table = $(".dt-column-search");
-  var dt_act_indicadores = $(".dt-indicadores-actividad");
+  var dt_act_indicadores = $(".dt-misevaluaciones-indicadores");
   
  
-  var assetPath = "app-assets/";;
+  var assetPath = "../app-assets/";
 
   // DataTable with buttons
   // --------------------------------------------------------------------
@@ -101,7 +101,7 @@ $(function () {
     dt_act_indicadores.DataTable().columns.adjust().draw();
     dt_act_indicadores.DataTable().responsive.recalc().draw();
 
-    $("#modalactividades").on("shown.bs.modal", function () {
+    $("#modal_indicadores").on("shown.bs.modal", function () {
       console.log("apertura modal indicadores");
       dt_act_indicadores.DataTable().columns.adjust().draw();
       dt_act_indicadores.DataTable().responsive.recalc().draw();
@@ -112,6 +112,7 @@ $(function () {
 });
 //AJUSTE 
 $("#btn_indicadores").click(function () {
+  console.log("btn_indicadores");
   $(".dt-indicadores-actividad").DataTable().columns.adjust();
  });
 
