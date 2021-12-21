@@ -8,7 +8,7 @@
 const menu = [
   {
     title: "Mis Cursos",
-    enlace: "#",
+    enlace: "index.html",
     icon: "layers",
   },
   {
@@ -18,7 +18,7 @@ const menu = [
   },
   {
     title: "Evaluaciones",
-    enlace: "#",
+    enlace: "gc_evaluaciones_misevaluaciones.html",
     icon: "check-square",
   },
   {
@@ -28,12 +28,12 @@ const menu = [
     submenus: [
       {
         title: "Planificaciones",
-        enlace: "gc_colegios_lista.html",
+        enlace: "compartidos_planificaciones.html",
         icon: "circle",
       },
       {
         title: "Recursos",
-        enlace: "gc_usuarios_roles_lista.html",
+        enlace: "compartidos_recursos.html",
         icon: "circle",
       },
     ],
