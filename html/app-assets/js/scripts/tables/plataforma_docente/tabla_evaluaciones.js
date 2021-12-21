@@ -27,7 +27,7 @@ $(function () {
       api: true,
       dom: '<"d-flex justify-content-between align-items-center mx-0 row"<"col-sm-12 col-md-6"l><"col-sm-12 col-md-6"f>>t<"d-flex justify-content-between mx-0 row"<"col-sm-12 col-md-6"i><"col-sm-12 col-md-6"p>>',
       //ajax: assetPath + "data/datatable_planificaciones_indicadores_lista.json",
-      ajax: assetPath + "data/datatable_planificaciones_detalle_secuencia_act_indicadores_lista.json",
+      ajax: assetPath + "app-assets/data/datatable_planificaciones_detalle_secuencia_act_indicadores_lista.json",
       destroy: true,
       language: {
         paginate: {

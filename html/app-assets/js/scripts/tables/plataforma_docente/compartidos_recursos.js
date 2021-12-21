@@ -5,8 +5,8 @@
 $(function () {
   "use strict";
 
-  var dt_basic_table = $(".dt-compartidos-plan-comcon"),
-   dt_date_table_dos = $(".dt-compartidos-plan-com"),
+  var dt_basic_table = $(".dt-compartidos-recu-comcon"),
+   dt_date_table_dos = $(".dt-compartidos-recu-com"),
    dt_date_table = $(".dt-date"),
    dt_complex_header_table = $(".dt-complex-header"),
    dt_row_grouping_table = $(".dt-row-grouping"),
@@ -83,7 +83,7 @@ $(function () {
         },
       ],
       order: [[2, "desc"]],
-      //dom: '<"card-header border-bottom p-1"<"head-label"><"dt-action-buttons text-end"B>><"d-flex justify-content-between align-items-center mx-0 row"<"col-sm-12 col-md-6"l><"col-sm-12 col-md-6"f>>t<"d-flex justify-content-between mx-0 row"<"col-sm-12 col-md-6"i><"col-sm-12 col-md-6"p>>',
+      // dom: '<"card-header border-bottom p-1"<"head-label"><"dt-action-buttons text-end"B>><"d-flex justify-content-between align-items-center mx-0 row"<"col-sm-12 col-md-6"l><"col-sm-12 col-md-6"f>>t<"d-flex justify-content-between mx-0 row"<"col-sm-12 col-md-6"i><"col-sm-12 col-md-6"p>>',
       // displayLength: 7,
       // lengthMenu: [7, 10, 25, 50, 75, 100],
       // buttons: [
@@ -175,7 +175,7 @@ $(function () {
         url : '//cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/Spanish.json'
     },
     });
-   // $("div.head-label").html('<h6 class="mb-0">DataTable with Buttons</h6>');
+    $("div.head-label").html('<h6 class="mb-0">DataTable with Buttons</h6>');
   }
 
 
@@ -202,11 +202,11 @@ $(function () {
 
   // DataTable with buttons
   // --------------------------------------------------------------------
-  console.log(assetPath + "data/plataforma_docente/table-compartidos_planificaciones.json")
+  console.log(assetPath + "data/plataforma_docente/table-compartidos_recursos.json")
   
   if (dt_date_table_dos.length) {
     var dt_basic = dt_date_table_dos.DataTable({
-      ajax: assetPath + "data/plataforma_docente/table-compartidos_planificaciones.json",
+      ajax: assetPath + "data/plataforma_docente/table-compartidos_recursos.json",
       columns: [
         { data: "nombre" },
         { data: "nombre_usuario" }, // used for sorting so will hide this column
@@ -356,7 +356,17 @@ $(function () {
       //   },
       // ],
 
-language: {
+      language: {
+        paginate: {
+          // remove previous & next text from pagination
+          previous: "&nbsp;",
+          next: "&nbsp;",
+        },
+      },
+      drawCallback: function () {
+        $(document).find('[data-bs-toggle="tooltip"]').tooltip();
+        },
+      language: {
 	          url : '//cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/Spanish.json'
 	      },
     });
@@ -773,6 +783,14 @@ language: {
           },
         },
       ],
+      language: {
+        url: "//cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/" + lang + ".json",
+        paginate: {
+          // remove previous & next text from pagination
+          previous: "&nbsp;",
+          next: "&nbsp;",
+        },
+      },
       language: {
         url : '//cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/Spanish.json'
     },
