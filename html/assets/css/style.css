@@ -245,3 +245,8 @@
   max-width: 800px;
   text-align: left;
 }
+
+/* JORGE A.E. */
+.modal .modal-header .btn-close{
+  transform: none;
+}

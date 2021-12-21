@@ -118,12 +118,10 @@
                 </div>
                 <div class="content-header-right text-md-end col-md-5 col-12 d-md-block d-none">
                     <div class="mb-1 breadcrumb-right">
-                        <a href="clasificador_recursos.html" target="_self">
-                            <button type="button" class="btn btn-primary">
-                                <i data-feather='file-plus'></i>
-                                <span>Crear curso</span>
-                            </button>
-                        </a>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal_crearCurso">
+                            <i data-feather='file-plus'></i>
+                            <span>Crear curso</span>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -139,8 +137,6 @@
                                         <div class="card-header border-bottom">
                                             <h4 class="card-title">Recursos clasificados</h4>
                                         </div>
-
-
                                         <div class="card-datatable">
                                             <table class="dt-cursos table">
                                                 <thead>
@@ -152,7 +148,7 @@
                                                     </tr>
                                                 </thead>
                                             </table>
-                                        </div> 
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -172,6 +168,23 @@
     </footer>
     <button class="btn btn-primary btn-icon scroll-top" type="button"><i data-feather="arrow-up"></i></button>
     <!-- END: Footer-->
+    <!-- Begin Modal Crear Curso -->
+    <div class="modal fade text-start" id="modal_crearCurso" tabindex="-1" aria-labelledby="modal_crearCurso" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header-deco w-100 position-absolute hp-5 color-primary bg-primary mt-0"></div>
+                <div class="modal-header">
+                    <h4 class="modal-title" id="modal_crearCurso">Default Modal</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body"> I love candy candy cake powder I love icing ice cream pastry. Biscuit lemon drops sesame snaps. Topping biscuit croissant gummi bears jelly beans cake cake bear claw muffin. Lemon drops oat cake pastry bear claw liquorice lemon drops. </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Accept</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Modal Crear Curso -->
     <!-- BEGIN MENU -->
     <script src="../app-assets/js/menu_pt_docente.js"></script>
     <!-- END MENU -->

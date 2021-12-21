@@ -135,15 +135,9 @@
                   feather.icons['more-vertical'].toSvg({ class: 'font-small-4' }) +
                   '</a>' +
                   '<div class="dropdown-menu dropdown-menu-end">' +
-                  '<a href="javascript:;" class="dropdown-item">' +
-                  feather.icons['file-text'].toSvg({ class: 'me-50 font-small-4' }) +
-                  'Details</a>' +
-                  '<a href="javascript:;" class="dropdown-item">' +
-                  feather.icons['archive'].toSvg({ class: 'me-50 font-small-4' }) +
-                  'Archive</a>' +
                   '<a href="javascript:;" class="dropdown-item delete-record">' +
                   feather.icons['trash-2'].toSvg({ class: 'me-50 font-small-4' }) +
-                  'Delete</a>' +
+                  'Eliminar</a>' +
                   '</div>' +
                   '</div>' +
                   '<a href="javascript:;" class="item-edit">' +
