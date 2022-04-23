@@ -123,8 +123,21 @@
                                 <i data-feather='file-plus'></i>
                                 <span>Crear curso</span>
                             </button>
+
+
+
+
                         </a>
                     </div>
+
+
+
+                    <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modalNoCompartir">
+                        Extra Large Modal
+                    </button>
+
+
+
                 </div>
             </div>
             <div class="content-body">
@@ -170,8 +183,7 @@
 
 
                                                 </div>
-                                                <div class="tab-pane" id="compartidas_pormi" aria-labelledby="compartidas_pormi"
-                                                    role="tabpanel">
+                                                <div class="tab-pane" id="compartidas_pormi" aria-labelledby="compartidas_pormi" role="tabpanel">
 
                                                     <div class="card-datatable">
                                                         <table class="dt-compartidos-recu-com table">
@@ -205,6 +217,73 @@
                                 </div>
                             </div>
                         </section>
+
+
+
+
+   <!-- Modal Clonar-->
+   <div class="modal fade text-start" id="modalNoCompartir" tabindex="-1" aria-labelledby="myModalLabel16" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel16">RECURSO COMPARTIDO POR MÍ</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Cake cupcake sugar plum. Sesame snaps pudding cupc
+                    
+
+                             <!-- Connections -->
+                             <div class="d-flex mt-2 align-middle">
+                                <div class="flex-shrink-0">
+                                    <img src="/html/assets/images/iconos_recursos/pdf.svg" alt="" class="me-1  " height="60"   />
+                                </div>
+                                <div class="d-flex align-item-center justify-content-between flex-grow-1">
+                                    <div class="me-1 mt-1">
+                                        <h4 class=" mb-0 ">Mis evaluaciones</h4>
+                                        <span>Los órganos</span>
+                                    </div>
+                               
+                                </div>
+                            </div>
+                </div>
+
+               
+
+                <div class="tab-content">
+                    <div class="tab-pane active" id="compartidas_conmigo" aria-labelledby="home-tab" role="tabpanel">
+                        <div class="card-datatable">
+                            <table class="dt-compartidos-recu-comcon-dejar table table-hover">
+                                <thead>
+                                    <tr>
+                                    <!-- <th>documento compartido</th>  -->
+                                        <th>compartido por</th>
+                                        <th class="text-center">acción</th>                                                              
+                                    </tr>
+                                </thead>
+                            </table>
+                        </div>
+
+                    </div>
+
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Guardar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
                         <!--/ Column Search -->
                     </div>
                 </section>
@@ -255,6 +334,7 @@
     <script src="../app-assets/js/scripts/components/components-tooltips.js"></script>
     <script src="../app-assets/js/scripts/tables/plataforma_docente/table_cursos.js"></script>
     <script src="../app-assets/js/scripts/tables/plataforma_docente/compartidos_recursos.js"></script>
+    <script src="../app-assets/js/scripts/tables/plataforma_docente/dejar_compartir_recursos.js"></script>
     <script>
         populateMenu(menu);
         $(window).on('load', function () {

@@ -5,7 +5,7 @@
 $(function () {
   "use strict";
 
-  var dt_basic_table = $(".dt-compartidos-recu-comcon");
+  var dt_basic_table = $(".dt-compartidos-recu-comcon-dejar");
   var dt_date_table_dos = $(".dt-compartidos-recu-com");
 
   var assetPath = "/html/app-assets/";
@@ -22,32 +22,32 @@ $(function () {
     var dt_basic = dt_basic_table.DataTable({
       ajax: assetPath + "data/plataforma_docente/table-compartidos_conmigo_planificaciones.json",
       columns: [
-        { data: "nombre" },
+        // { data: "nombre" },
         { data: "nombre_usuario" }, // used for sorting so will hide this column
         { data: "id" },
       ],
       columnDefs: [
+        // {
+        //   // For Checkboxes
+        //   targets: 0,
+        //   orderable: false,
+        //   responsivePriority: 3,
+        //   render: function (data, type, full, meta) {
+        //     console.log("data " + data, "type " + type, "full " + full, "meta " + meta)
+        //     return (
+        //       '<div class="d-flex">' +
+        //       '<img class="hp-45 me-1" src="/html/assets/images/iconos_recursos/pdf.svg" alt="">' +
+        //       '<div class="d-flex flex-column me-5">' +
+        //       '<small class="emp_post text-truncate"> ' + full.nombre_carpeta + ' </small>' +
+        //       '<span class="emp_name text-truncate fw-bold"> ' + full.titulo_planificacion + ' </span>' +
+        //       '</div>' +
+        //       '</div>'
+        //     );
+        //   }
+        // },
         {
           // For Checkboxes
           targets: 0,
-          orderable: false,
-          responsivePriority: 3,
-          render: function (data, type, full, meta) {
-            console.log("data " + data, "type " + type, "full " + full, "meta " + meta)
-            return (
-              '<div class="d-flex">' +
-              '<img class="hp-45 me-1" src="/html/assets/images/iconos_recursos/pdf.svg" alt="">' +
-              '<div class="d-flex flex-column me-5">' +
-              '<small class="emp_post text-truncate"> ' + full.nombre_carpeta + ' </small>' +
-              '<span class="emp_name text-truncate fw-bold"> ' + full.titulo_planificacion + ' </span>' +
-              '</div>' +
-              '</div>'
-            );
-          }
-        },
-        {
-          // For Checkboxes
-          targets: 1,
           orderable: false,
           responsivePriority: 3,
           render: function (data, type, full, meta) {
@@ -63,19 +63,19 @@ $(function () {
         },
         {
           // For Checkboxes
-          targets: 2,
+          targets: 1,
           orderable: false,
           responsivePriority: 3,
           render: function (data, type, full, meta) {
             console.log("data " + data, "type " + type, "full " + full, "meta " + meta)
             return (
-              '<button type="button"   class="btn btn-primary waves-effect waves-float waves-light rounded-pill float-end">Clonar</button>'
+              '<button type="button" class="btn btn-primary waves-effect waves-float waves-light rounded-pill float-end">Dejar de compartir</button>'
             );
 
           },
         },
       ],
-      order: [[2, "desc"]],
+      order: [[0, "asc"]],
       // dom: '<"card-header border-bottom p-1"<"head-label"><"dt-action-buttons text-end"B>><"d-flex justify-content-between align-items-center mx-0 row"<"col-sm-12 col-md-6"l><"col-sm-12 col-md-6"f>>t<"d-flex justify-content-between mx-0 row"<"col-sm-12 col-md-6"i><"col-sm-12 col-md-6"p>>',
       language: {
         paginate: {
@@ -156,7 +156,7 @@ $(function () {
           render: function (data, type, full, meta) {
             console.log("data " + data, "type " + type, "full " + full, "meta " + meta)
             return (
-              '<button type="button" data-bs-toggle="modal" data-bs-target="#modalNoCompartir" data-id="' + full.id + '" class="btn btn-primary waves-effect waves-float waves-light rounded-pill float-end">Dejar de compartir</button>'
+              '<button type="button" class="btn btn-primary waves-effect waves-float waves-light rounded-pill float-end">Dejar de compartir</button>'
             );
 
           },
