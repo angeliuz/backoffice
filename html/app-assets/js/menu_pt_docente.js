@@ -17,8 +17,8 @@ const menu = [
     icon: "archive",
   },
   {
-    title: "Evaluaciones",
-    enlace: "gc_evaluaciones_misevaluaciones.html",
+    title: "Directivo",
+    enlace: "gc_planificaciones_listadodocente.html",
     icon: "check-square",
   },
   {
