@@ -76,7 +76,7 @@ function populateMenu(menu) {
     if (menu[i].submenus) {
       //console.log(menu[i].submenus);
       botonSolo = '<li class="nav-item has-sub" id="menuParent' + i + '">';
-      botonSolo += '<a class="d-flex align-items-center" href="' + menu[i].enlace + '">';
+      botonSolo += '<a class="d-flex align-items-center " href="' + menu[i].enlace + '">';
       botonSolo += '<i data-feather="' + menu[i].icon + '"></i>';
       botonSolo += '<span class="menu-title text-truncate">' + menu[i].title + "</span>";
       botonSolo += "</a>";
@@ -110,7 +110,7 @@ function populateMenu(menu) {
       } else {
         active = "";
       }
-      botonSolo = '<li class="nav-item ' + active + '">' + '<a class="d-flex align-items-center" href="' + menu[i].enlace + '">' + '<i data-feather="' + menu[i].icon + '"></i>' + '<span class="menu-title text-truncate">' + menu[i].title + "</span>";
+      botonSolo = '<li class="nav-item ' + active + '">' + '<a class="d-flex align-items-center btn-primary" href="' + menu[i].enlace + '">' + '<i data-feather="' + menu[i].icon + '"></i>' + '<span class="menu-title text-truncate">' + menu[i].title + "</span>";
       $("#main-menu-navigation").append(botonSolo);
     }
   }
