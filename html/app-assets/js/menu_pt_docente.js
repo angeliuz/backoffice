@@ -48,6 +48,17 @@ const menu = [
     enlace: "#",
     icon: "help-circle",
   },
+  {
+    title: "Administrador",
+    enlace: "#",
+
+  },
+  {
+    title: "Directivo",
+    enlace: "#",
+
+  },
+  
 ];
 
 function populateMenu(menu) {
