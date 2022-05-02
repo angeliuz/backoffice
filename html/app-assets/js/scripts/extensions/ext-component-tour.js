@@ -17,8 +17,8 @@ $(function () {
     tour.addStep({
       title: 'Navbar',
       // text: 'This is your navbar',
-      text: '<div class="position-relative"><div class="position-absolute top-50 start-0 translate-middle msp--68 mtp--90"><img src="app-assets/images/animation/buho1.png" width="130px"></div><div class="lh-sm"><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry´s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p></div></div>',
-      // text: '<div class="d-flex"><div class=""><img src="app-assets/images/animation/buho.gif" width="130px"></div><div class="lh-sm"><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry´s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p></div></div>',
+      text: '<div class="position-relative"><div class="position-absolute top-50 start-0 translate-middle msp--68 mtp--45"><img src="app-assets/images/animation/buho1.png" width="130px"></div><div class="lh-sm"><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry´s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p></div></div>',
+      // text: '<div class="d-flex"><div class=""><img src="app-assets/images/animation/buho.gif" width="130px"></div><div class="lh-sm"><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry´s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p></div></div>',
       attachTo: { element: '.navbar', on: 'top' },
       buttons: [
         {
@@ -36,7 +36,7 @@ $(function () {
     tour.addStep({
       title: 'Card',
       // text: 'This is a card',
-      text: '<div class="d-flex"><div class="position-relative"><img src="app-assets/images/animation/buho1.gif" width="130px"></div><div class="lh-sm"><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry´s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p></div></div>',
+      text: '<div class="d-flex"><div class="position-relative"><img src="app-assets/images/animation/buho1.gif" width="130px"></div><div class="lh-sm"><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry´s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p></div></div>',
       attachTo: { element: '#basic-tour .card', on: 'top' },
       buttons: [
         {
@@ -59,7 +59,7 @@ $(function () {
     tour.addStep({
       title: 'Footer',
       // text: 'This is the footer',
-      text: '<div class="d-flex"><div class="position-relative"><img src="app-assets/images/animation/buho.gif" width="130px"></div><div class="lh-sm"><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry´s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p></div></div>',
+      text: '<div class="d-flex"><div class="position-relative"><img src="app-assets/images/animation/buho.gif" width="130px"></div><div class="lh-sm"><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry´s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p></div></div>',
       attachTo: { element: '.footer', on: 'top' },
       buttons: [
         {

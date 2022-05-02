@@ -128,6 +128,11 @@ const menu = [
       },
     ],
   },
+  {
+    title: "Tour SM",
+    enlace: "gc_tour.html",
+    icon: "fast-forward",
+  },
 ];
 
 function populateMenu(menu) {
