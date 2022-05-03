@@ -36,6 +36,7 @@
     <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
     <link rel="stylesheet" type="text/css" href="../assets/css/helpers.css">
     <link rel="stylesheet" type="text/css" href="../assets/css/custom_colors.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/clau.css">
     <!-- END: Custom CSS-->
 </head>
 <!-- END: Head-->
@@ -105,13 +106,27 @@
         <div class="main-menu-content">
             <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation"></ul>
             <div class="botones-footer mbp-20">
-                <div class="d-flex justify-content-start mbp-20  text-truncate"> ACCESO A PLATAFORMAS</div>
-                <div class="d-flex justify-content-center ">
-                    <button type="button" class="wp-150 btn btn-primary waves-effect waves-float waves-light">Administrador</button>
+                <div class="shadow-bottom"></div>
+                <div class="main-menu-content">
+                    <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
+                        <li class=" nav-item"><a class="d-flex align-items-center" href="index.html"><i data-feather="home"></i><span class="menu-title text-truncate" data-i18n="Dashboards">Dashboards</span><span class="badge badge-light-warning rounded-pill ms-auto me-1">2</span></a>
+                            <ul class="menu-content">
+                                <li><a class="d-flex align-items-center" href="dashboard-analytics.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Analytics">Analytics</span></a>
+                                </li>
+                                <li><a class="d-flex align-items-center" href="dashboard-ecommerce.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="eCommerce">eCommerce</span></a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="navigation-header"><span data-i18n="Apps &amp; Pages">ACCESO A PLATAFORMAS</span><i data-feather="more-horizontal"></i>
+                        </li>
+                        <li class="nav-item mbp-5"><a class="rounded-3 bgc-gohan d-flex align-items-center " href="app-email.html"><i data-feather="user"></i><span class="menu-title text-truncate" data-i18n="Email">Administrador</span></a>
+                        </li>
+                        <li class="nav-item mtp-5"><a class="rounded-3 bgc-gohan d-flex align-items-center" href="app-chat.html"><i data-feather="users"></i><span class="menu-title text-truncate" data-i18n="Chat">Directivo</span></a>
+                        </li>
+    
+                    </ul>
                 </div>
-                <div class="d-flex justify-content-center">
-                    <button type="button" class="wp-150 btn btn-primary waves-effect waves-float waves-light mtp-10">Directivo</button>
-                </div>
+
             </div>
         </div>
     </div>
@@ -144,7 +159,7 @@
             <div class="d-flex justify-content-center"><button type="button" class="wp-150 btn btn-primary waves-effect waves-float waves-light mtp-10">Directivo</button></div>
         </div>
     </div>
-    </div> -->
+    </div> 
     <!-- END: Main Menu-->
     <!-- BEGIN: Content-->
     <div class="app-content content ">

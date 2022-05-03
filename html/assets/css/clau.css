@@ -142,9 +142,15 @@
 }
 .botones-footer{
 position: fixed;
-  bottom: 0;
+  bottom: 5%;
   text-align: center;
-  width: 100%;
+  left: 0;
+  z-index: 1031;
+}
+.feather, [data-feather] {
+    height: 1.5rem !important;
+    width:  1.5rem !important;
+    display: inline-block;
 }
 
 @media (max-width:1321px) and (min-width:740px){
