@@ -48,16 +48,6 @@ const menu = [
     enlace: "#",
     icon: "help-circle",
   },
-  {
-    title: "Administrador",
-    enlace: "#",
-
-  },
-  {
-    title: "Directivo",
-    enlace: "#",
-
-  },
   
 ];
 
@@ -110,7 +100,7 @@ function populateMenu(menu) {
       } else {
         active = "";
       }
-      botonSolo = '<li class="nav-item ' + active + '">' + '<a class="d-flex align-items-center btn-primary" href="' + menu[i].enlace + '">' + '<i data-feather="' + menu[i].icon + '"></i>' + '<span class="menu-title text-truncate">' + menu[i].title + "</span>";
+      botonSolo = '<li class="nav-item ' + active + '">' + '<a class="d-flex align-items-center " href="' + menu[i].enlace + '">' + '<i data-feather="' + menu[i].icon + '"></i>' + '<span class="menu-title text-truncate">' + menu[i].title + "</span>";
       $("#main-menu-navigation").append(botonSolo);
     }
   }

@@ -139,7 +139,12 @@
 .cb-img{
     width: 50%;
     margin: 0 auto ;
-
+}
+.botones-footer{
+position: fixed;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
 }
 
 @media (max-width:1321px) and (min-width:740px){
