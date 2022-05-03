@@ -133,6 +133,11 @@ const menu = [
     enlace: "gc_tour.html",
     icon: "fast-forward",
   },
+  {
+    title: "Contacto",
+    enlace: "gc_contacto.html",
+    icon: "mail",
+  },
 ];
 
 function populateMenu(menu) {
