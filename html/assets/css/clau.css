@@ -152,7 +152,9 @@
     width:  1.5rem !important;
     display: inline-block;
 }
-
+.bgc-raiden{
+    background-color: #e8f1ff;
+}
 
 @media (max-width:1321px) and (min-width:740px){
     #card-demo-example .col-sm-5{
