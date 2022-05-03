@@ -141,7 +141,7 @@
     margin: 0 auto ;
 }
 .botones-footer{
-position: fixed;
+  position: fixed;
   bottom: 5%;
   text-align: center;
   left: 0;
@@ -151,6 +151,13 @@ position: fixed;
     height: 1.5rem !important;
     width:  1.5rem !important;
     display: inline-block;
+}
+.plataforma-header {
+    color: #a6a4b0;
+    margin: calc(2rem + 0.286rem) 0 0.8rem 2.2rem !important;
+    padding: 0;
+    line-height: 1.5;
+    letter-spacing: 0.01rem;
 }
 
 @media (max-width:1321px) and (min-width:740px){
