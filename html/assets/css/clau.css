@@ -156,7 +156,7 @@
     background-color: #e8f1ff;
 }
 
-@media (max-width:1321px) and (min-width:740px){
+@media (max-width:1450px) and (min-width:740px){
     #card-demo-example .col-sm-5{
        width: 100%;
        padding-top: 10px !important;
