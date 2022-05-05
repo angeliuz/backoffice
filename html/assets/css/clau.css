@@ -141,11 +141,7 @@
     margin: 0 auto ;
 }
 .botones-footer{
-  position: fixed;
-  bottom: 5%;
-  text-align: center;
-  left: 0;
-  z-index: 1031;
+    margin-top: auto;
 }
 .feather, [data-feather] {
     height: 1.5rem !important;
@@ -154,6 +150,14 @@
 }
 .bgc-raiden{
     background-color: #e8f1ff;
+}
+.main-menu .main-menu-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-menu ul.navigation-main {
+    overflow: unset !important;
 }
 
 @media (max-width:1450px) and (min-width:740px){
