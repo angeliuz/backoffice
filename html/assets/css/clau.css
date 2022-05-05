@@ -151,6 +151,9 @@
 .bgc-raiden{
     background-color: #e8f1ff;
 }
+.bgc-itto{
+    background-color: #afdeff;
+}
 .main-menu .main-menu-content {
     display: flex;
     flex-direction: column;
