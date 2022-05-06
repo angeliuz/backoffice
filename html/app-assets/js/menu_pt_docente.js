@@ -9,7 +9,7 @@ const menu = [
   {
     title: "Dashboard",
     enlace: "index.html",
-    icon: "layers",
+    icon: "home",
   },
   {
     title: "Mis Cursos",
