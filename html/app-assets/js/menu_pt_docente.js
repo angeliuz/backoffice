@@ -7,6 +7,11 @@
 // Example menu definititon:
 const menu = [
   {
+    title: "Dashboard",
+    enlace: "index.html",
+    icon: "layers",
+  },
+  {
     title: "Mis Cursos",
     enlace: "index.html",
     icon: "layers",
