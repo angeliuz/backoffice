@@ -162,6 +162,10 @@
 .main-menu ul.navigation-main {
     overflow: unset !important;
 }
+a {
+    color: #5e5873 !important;
+    text-decoration: none;
+}
 
 @media (max-width:1450px) and (min-width:740px){
     #card-demo-example .col-sm-5{
