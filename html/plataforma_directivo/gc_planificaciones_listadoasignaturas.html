@@ -97,14 +97,41 @@
                         <h2 class="brand-text p-0">Gestor curricular</h2>
                     </a>
                 </li>
-                <li class="nav-item nav-toggle"><a class="nav-link modern-nav-toggle pe-0" data-bs-toggle="collapse"><i class="d-block d-xl-none text-primary toggle-icon font-medium-4" data-feather="x"></i><i class="d-none d-xl-block collapse-toggle-icon font-medium-4  text-primary" data-feather="disc" data-ticon="disc"></i></a></li>
+                <li class="nav-item nav-toggle"><a class="nav-link modern-nav-toggle pe-0" data-bs-toggle="collapse"><i
+                            class="d-block d-xl-none text-primary toggle-icon font-medium-4" data-feather="x"></i><i
+                            class="d-none d-xl-block collapse-toggle-icon font-medium-4  text-primary"
+                            data-feather="disc" data-ticon="disc"></i></a></li>
             </ul>
         </div>
+
         <div class="shadow-bottom"></div>
         <div class="main-menu-content">
+
             <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation"></ul>
+            <div class="botones-footer mbp-20">
+                <div class="shadow-bottom"></div>
+                <div class="main-menu-content">
+                    <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
+                        <li class="navigation-header d-flex justify-content-start"><span
+                                data-i18n="Apps &amp; Pages">ACCESO A PLATAFORMAS</span><i
+                                data-feather="more-horizontal"></i>
+                        </li>
+                        <li class="nav-item mbp-5"><a class="rounded-3 bgc-gohan d-flex align-items-center "
+                                href="../plataforma_docente/gc_evaluaciones_misevaluaciones.html"><i
+                                    data-feather="monitor"></i><span class="menu-title text-truncate"
+                                    data-i18n="Email">Administrador</span></a>
+                        </li>
+                        <li class="nav-item mtp-5"><a class="rounded-3 bgc-gohan d-flex align-items-center"
+                                href="gc_planificaciones_listadodocente.html"><i data-feather="file-text"></i><span
+                                    class="menu-title text-truncate" data-i18n="Chat">Directivo</span></a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
         </div>
     </div>
+
     <!-- END: Main Menu-->
     <!-- BEGIN: Content-->
     <div class="app-content content ">
@@ -137,44 +164,78 @@
                     </div>
                 </div>
             </div>
-            <div class="content-body">
+            <div class="content-body ">
                 <!-- Examples -->
                 <section id="card-demo-example">
                     <div class="row match-height">
                         <div class="col-md-6 col-lg-4">
-                            <div class="card ptp-10">
-                                <img class="cb-img" src="../app-assets/images/illustration/ev_01.png" alt="Card image cap" />
-                                <div class="card-body">
-                                    <h4 class="card-title text-center text-primary">Mis Evaluaciones</h4>
-                                    <p class="card-text text-center">
-                                        Sube tus evaluaciones en formato PDF o Word y agrégalas a tus planificaciones.
-                                    </p>
+                            <a href="gc_planificaciones_listadodocente.html">
+                            <div class="card">
+                                <div class="row">
+                                    <div class="col-sm-5">
+                                        <div class="d-flex align-items-center justify-content-center h-100 psp-15">
+                                            <img src="../app-assets/images/illustration/dir_01.png" class="img-fluid"
+                                                alt="Image" width="150" />
+
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-7">
+                                        <div class="card-body text-start ps-sm-0">
+                                            <span class="card-title">Listado de docentes</span>
+                                            <p class="card-text">Encuentra todos tus docentes y has seguimiento de sus
+                                                planificaciones.</p>
+
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4 ">
-                            <div class="card ptp-10 ">
-                                <img class="cb-img" src="../app-assets/images/illustration/ev_03.png" alt="Card image cap" />
-                                <div class="card-body">
-                                    <h4 class="card-title text-center text-primary">Simplifica</h4>
-                                    <p class="card-text text-center">
-                                        Plataforma para crear evaluaciones sumativas desde el banco de preguntas SM.
-                                    </p>
-                                </div>
-                            </div>
+                        </a>
                         </div>
                         <div class="col-md-6 col-lg-4">
-                            <div class="card bgc-gohan border-primary">
-                                <img class="cb-img" src="../app-assets/images/illustration/ev_02.png" alt="Card image cap" />
-                                <div class="card-body">
-                                    <h4 class="card-title text-center text-primary">Evaluaciones formativas</h4>
-                                    <p class="card-text text-center">
-                                        Guías de trabajo práctico y ticket de salida entregados por SM.
-                                    </p>
+                            <a href="gc_planificaciones_listadocursos.html">
+                            <div class="card">
+                                <div class="row">
+                                    <div class="col-sm-5">
+                                        <div class="d-flex align-items-center justify-content-center h-100 psp-15">
+                                            <img src="../app-assets/images/illustration/dir_02.png" class="img-fluid"
+                                                alt="Image" width="150" />
+
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-7">
+                                        <div class="card-body text-start ps-sm-0">
+                                            <span class="card-title">Listado de cursos</span>
+                                            <p class="card-text ">Plataforma para crear evaluaciones sumativas desde el banco de preguntas SM.</p>
+
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
+                        </a>
                         </div>
-                    </div>
+                        <div class="col-md-6 col-lg-4">
+                            <a href="gc_planificaciones_listadoasignaturas.html">
+                            <div class="card bgc-gohan border-primary">
+                                <div class="row">
+                                    <div class="col-sm-5">
+                                        <div class="d-flex align-items-center justify-content-center h-100 psp-15">
+                                            <img src="../app-assets/images/illustration/dir_03.png" class="img-fluid"
+                                                alt="Image" width="150" />
+
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-7">
+                                        <div class="card-body text-start ps-sm-0">
+                                            <span class="card-title text-primary">Listado de asignaturas</span>
+                                            <p class="card-text">Guías de trabajo práctico y ticket de salida entregados por SM. </p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        </div>          
+                    </div>                
                 </section>
             </div>
                 <!-- Examples -->
@@ -188,7 +249,11 @@
                                 <div class="col-12">
                                     <div class="card">
                                         <div class="card-header border-bottom">
-                                            <h4 class="card-title">Mis Evaluaciones</h4>
+                                            <div class="d-flex align-items-center justify-content-center">
+                                                <img src="../app-assets/images/icons/list_asig.png" width="35px" alt="">
+                                                <h4 class="card-title psp-10">Listado de asignaturas</h4>
+                                            </div>
+                                            
                                             <div class="breadcrumb-right">
                                                 <a href="#" target="_self">
                                                     <button type="button" class="btn btn-primary">

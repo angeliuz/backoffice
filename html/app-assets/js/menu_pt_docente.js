@@ -7,6 +7,11 @@
 // Example menu definititon:
 const menu = [
   {
+    title: "Dashboard",
+    enlace: "index.html",
+    icon: "home",
+  },
+  {
     title: "Mis Cursos",
     enlace: "index.html",
     icon: "layers",
@@ -17,8 +22,8 @@ const menu = [
     icon: "archive",
   },
   {
-    title: "Directivo",
-    enlace: "gc_planificaciones_listadodocente.html",
+    title: "Mis evaluaciones",
+    enlace: "gc_evaluaciones_misevaluaciones.html",
     icon: "check-square",
   },
   {
@@ -48,7 +53,7 @@ const menu = [
     enlace: "#",
     icon: "help-circle",
   },
-  
+
 ];
 
 function populateMenu(menu) {

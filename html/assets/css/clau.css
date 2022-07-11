@@ -141,13 +141,33 @@
     margin: 0 auto ;
 }
 .botones-footer{
-position: fixed;
-  bottom: 0;
-  text-align: center;
-  width: 100%;
+    margin-top: auto;
+}
+.feather, [data-feather] {
+    height: 1.5rem !important;
+    width:  1.5rem !important;
+    display: inline-block;
+}
+.bgc-raiden{
+    background-color: #e8f1ff;
+}
+.bgc-itto{
+    background-color: #afdeff;
+}
+.main-menu .main-menu-content {
+    display: flex;
+    flex-direction: column;
 }
 
-@media (max-width:1321px) and (min-width:740px){
+.main-menu ul.navigation-main {
+    overflow: unset !important;
+}
+a {
+    color: #5e5873 !important;
+    text-decoration: none;
+}
+
+@media (max-width:1450px) and (min-width:740px){
     #card-demo-example .col-sm-5{
        width: 100%;
        padding-top: 10px !important;
