@@ -250,3 +250,15 @@
 .modal .modal-header .btn-close{
   transform: none;
 }
+
+/* Clau */
+.clau-modal{
+  height: calc(100vh - 250px);
+}
+.mx-wp-900{
+  max-width: 900px;
+}
+.color-ei{
+  color: #7367f0;
+}
+
