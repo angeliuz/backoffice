@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html class="loading" lang="es" data-textdirection="ltr">
+<!-- BEGIN: Head-->
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0,minimal-ui">
+    <meta name="description"
+        content="Vuexy admin is super flexible, powerful, clean &amp; modern responsive bootstrap 4 admin template with unlimited possibilities.">
+    <meta name="keywords"
+        content="admin template, Vuexy admin template, dashboard template, flat admin template, responsive admin template, web app">
+    <meta name="author" content="PIXINVENT">
+    <title>Gestor curricular</title>
+    <link rel="apple-touch-icon" href="app-assets/images/ico/apple-icon-120.png">
+    <link rel="shortcut icon" type="image/x-icon" href="app-assets/images/ico/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500;1,600"
+        rel="stylesheet">
+    <!-- BEGIN: Vendor CSS-->
+    <link rel="stylesheet" type="text/css" href="../app-assets/vendors/css/vendors.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="../app-assets/vendors/css/tables/datatable/dataTables.bootstrap5.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="../app-assets/vendors/css/tables/datatable/responsive.bootstrap5.min.css">
+    <link rel="stylesheet" type="text/css" href="../app-assets/vendors/css/tables/datatable/buttons.bootstrap5.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="../app-assets/vendors/css/tables/datatable/rowGroup.bootstrap5.min.css">
+    <link rel="stylesheet" type="text/css" href="../app-assets/vendors/css/pickers/flatpickr/flatpickr.min.css">
+    <!-- END: Vendor CSS-->
+    <!-- BEGIN: Theme CSS-->
+    <link rel="stylesheet" type="text/css" href="../app-assets/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../app-assets/css/bootstrap-extended.css">
+    <link rel="stylesheet" type="text/css" href="../app-assets/css/colors.css">
+    <link rel="stylesheet" type="text/css" href="../app-assets/css/components.css">
+    <link rel="stylesheet" type="text/css" href="../app-assets/css/themes/dark-layout.css">
+    <link rel="stylesheet" type="text/css" href="../app-assets/css/themes/bordered-layout.css">
+    <link rel="stylesheet" type="text/css" href="../app-assets/css/themes/semi-dark-layout.css">
+    <!-- BEGIN: Page CSS-->
+    <link rel="stylesheet" type="text/css" href="../app-assets/css/core/menu/menu-types/vertical-menu.css">
+    <!-- END: Page CSS-->
+    <!-- BEGIN: Custom CSS-->
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/helpers.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/custom_colors.css">
+    <!-- END: Custom CSS-->
+</head>
+<!-- END: Head-->
+<!-- BEGIN: Body-->
+
+<body class="vertical-layout vertical-menu-modern  navbar-floating footer-static  " data-open="click"
+    data-menu="vertical-menu-modern" data-col="">
+    <!-- BEGIN: Header-->
+    <nav
+        class="header-navbar navbar navbar-expand-lg align-items-center floating-nav navbar-light navbar-shadow container-xxl">
+        <div class="navbar-container d-flex content">
+            <div class="bookmark-wrapper d-flex align-items-center">
+                <ul class="nav navbar-nav d-xl-none">
+                    <li class="nav-item"><a class="nav-link menu-toggle" href="#"><i class="ficon"
+                                data-feather="menu"></i></a></li>
+                </ul>
+                <ul class="nav navbar-nav ">
+                    <li class="nav-item">
+                        <div class="d-flex align-items-center">
+                            <div>
+                                <div class="avatar-content">
+                                    <span><img src="../assets/images/logo_sm.png" alt="avatar" height="40"></span>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="d-none d-lg-block msp-20 fsp-20">Instituto Nacional | José Miguel Carrera
+                                </div>
+                                <!-- <div class="font-small-2 text-muted">meguc@ruj.io</div> -->
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <ul class="nav navbar-nav align-items-center ms-auto">
+                <li class="nav-item d-none d-lg-block"><a class="nav-link nav-link-style"><i class="ficon" data-feather="moon"></i></a></li>
+
+                <li class="nav-item dropdown dropdown-cart me-25"><a class="nav-link" href="#" data-bs-toggle="dropdown"><i class="ficon" data-feather="clipboard"></i></a>
+                    <ul class="dropdown-menu dropdown-menu-media dropdown-menu-end">
+                        <li class="dropdown-menu-header">
+                            <div class="dropdown-header d-flex">
+                                <h4 class="notification-title mb-0 me-auto">Tips</h4>
+
+                            </div>
+                        </li>
+                        <li class="scrollable-container media-list">
+                            <div class="list-item align-items-center">                         
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#modaltips"
+                                    data-bs-titulo="¿Sabías qué...?"
+                                    data-bs-pagina="secuencia.html"
+                                    class="hover-underline"
+                                    style="font-family: 'Montserrat', sans-serif; mso-line-height-rule: exactly; color: #7367f0; text-decoration: none;">
+                                    secuencia</a>                                                              
+                        </div>
+
+                            <div class="list-item align-items-center">                         
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#modaltips"
+                                        data-bs-titulo="¿Sabías qué...?"
+                                        data-bs-pagina="msj_profe_directivo.html"
+                                        class="hover-underline"
+                                        style="font-family: 'Montserrat', sans-serif; mso-line-height-rule: exactly; color: #7367f0; text-decoration: none;">
+                                        Mensaje profe - directivo</a>                                                              
+                            </div>
+                            <div class="list-item align-items-center">                         
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#modaltips"
+                                    data-bs-titulo="¿Cómo activar licencias?"
+                                    data-bs-pagina="btn_clase.html"
+                                    class="hover-underline"
+                                    style="font-family: 'Montserrat', sans-serif; mso-line-height-rule: exactly; color: #7367f0; text-decoration: none;">
+                                    botón clase</a>                                                              
+                        </div>
+                        <div class="list-item align-items-center">                         
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#modaltips"
+                                data-bs-titulo="¿Cómo activar licencias?"
+                                data-bs-pagina="crear_indicador.html"
+                                class="hover-underline"
+                                style="font-family: 'Montserrat', sans-serif; mso-line-height-rule: exactly; color: #7367f0; text-decoration: none;">
+                                crear indicador</a>                                                        
+                    </div>
+                    <div class="list-item align-items-center">                         
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#modaltips"
+                            data-bs-titulo="¿Cómo activar licencias?"
+                            data-bs-pagina="cargar_recurso.html"
+                            class="hover-underline"
+                            style="font-family: 'Montserrat', sans-serif; mso-line-height-rule: exactly; color: #7367f0; text-decoration: none;">
+                            cargar recursos</a>                                                    
+                </div>
+                <div class="list-item align-items-center">                         
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#modaltips"
+                        data-bs-titulo="¿#?"
+                        data-bs-pagina="marcar_recursos.html"
+                        class="hover-underline"
+                        style="font-family: 'Montserrat', sans-serif; mso-line-height-rule: exactly; color: #7367f0; text-decoration: none;">
+                        marcar recursos</a>                                                 
+            </div>
+            <div class="list-item align-items-center">                              
+                <a href="#" data-bs-toggle="modal" data-bs-target="#modaltips"  data-bs-dismiss="modal" aria-label="Close"
+                    data-bs-titulo="¿#?"
+                    data-bs-pagina="objetivos_sinmarcar.html"
+                    class="hover-underline"
+                    style="font-family: 'Montserrat', sans-serif; mso-line-height-rule: exactly; color: #7367f0; text-decoration: none;">
+                    Objetivos sin usar</a>                                         
+        </div>
+
+
+                        </li>
+
+                    </ul>
+                </li>
+                <li class="nav-item dropdown dropdown-user"><a class="nav-link dropdown-toggle dropdown-user-link" id="dropdown-user" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <div class="user-nav d-sm-flex d-none"><span class="user-name fw-bolder">Lucia Donoso</span><span class="user-status">Docente</span></div><span class="avatar"><img class="round" src="../app-assets/images/portrait/small/avatar-s-10.jpg" alt="avatar" height="40" width="40"><span class="avatar-status-online"></span></span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdown-user"><a class="dropdown-item" href="page-profile.html"><i class="me-50" data-feather="user"></i> Perfil</a>
+                        <div class="dropdown-divider"></div><a class="dropdown-item" href="page-faq.html"><i class="me-50" data-feather="help-circle"></i> FAQ</a><a class="dropdown-item" href="page-auth-login-v2.html"><i class="me-50" data-feather="power"></i> Salir</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- END: Header-->
+    <!-- BEGIN: Main Menu-->
+    <div class="main-menu menu-fixed menu-light menu-accordion menu-shadow" data-scroll-to-active="true">
+        <div class="navbar-header">
+            <ul class="nav navbar-nav flex-row">
+                <li class="nav-item me-auto">
+                    <a class="navbar-brand" href="html/ltr/vertical-menu-template/index.html">
+                        <h2 class="brand-text p-0">Gestor curricular</h2>
+                    </a>
+                </li>
+                <li class="nav-item nav-toggle"><a class="nav-link modern-nav-toggle pe-0" data-bs-toggle="collapse"><i
+                            class="d-block d-xl-none text-primary toggle-icon font-medium-4" data-feather="x"></i><i
+                            class="d-none d-xl-block collapse-toggle-icon font-medium-4  text-primary"
+                            data-feather="disc" data-ticon="disc"></i></a></li>
+            </ul>
+        </div>
+        <div class="shadow-bottom"></div>
+        <div class="main-menu-content">
+            <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation"></ul>
+        </div>
+    </div>
+    <!-- END: Main Menu-->
+    <!-- BEGIN: Content-->
+    <div class="app-content content ">
+        <div class="content-overlay"></div>
+        <div class="header-navbar-shadow"></div>
+        <div class="content-wrapper container-xxl p-0">
+            <div class="content-header row">
+                <div class="content-header-left col-md-7 col-12 mb-2">
+                    <div class="row breadcrumbs-top">
+                        <div class="col-12">
+                            <h2 class="content-header-title float-start mb-0">Ayuda</h2>
+                            <div class="breadcrumb-wrapper">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="index.html">Home</a>
+                                    </li>
+                                    <li class="breadcrumb-item">Ayuda </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content-body">
+                <!-- search header -->
+
+                <!-- /search header -->
+                <!-- frequently asked questions tabs pills -->
+                <section id="faq-tabs">
+                    <!-- vertical tab pill -->
+                    <div class="row">
+                        <div class="col-lg-3 col-md-4 col-sm-12">
+                            <div class="faq-navigation d-flex justify-content-between flex-column mb-2 mb-md-0">
+
+                                <img src="../app-assets/images/ayuda/faq-illu.svg"
+                                    class="img-fluid d-none d-md-block w-70 mx-auto" alt="demand img" />
+                            </div>
+                        </div>
+                        <div class="col-lg-9 col-md-8 col-sm-12">
+                            <!-- pill tabs tab content -->
+                            <div class="tab-content">
+                                <!-- cuenta panel -->
+                                <div role="tabpanel" class="tab-pane active" id="faq-cuenta" aria-labelledby="cuenta"
+                                    aria-expanded="true">
+                                    <!-- icon and header -->
+                                    <div class="d-flex align-items-center">
+                                        <div class="avatar avatar-tag bg-light-primary me-1">
+                                            <i data-feather="info" class="font-medium-4"></i>
+                                        </div>
+                                        <div>
+                                            <h4 class="mb-0">Preguntas frecuentes</h4>
+                                            <span>Datos de usuario</span>
+                                        </div>
+                                    </div>
+                                    <!-- frequent answer and question  collapse  -->
+                                    <div class="accordion accordion-margin mt-2" id="faq-cuenta-qna">
+                                        <div class="card accordion-item">
+                                            <h2 class="accordion-header" id="cuentaOne">
+                                                <button class="accordion-button collapsed" data-bs-toggle="collapse"
+                                                    role="button" data-bs-target="#faq-cuenta-one" aria-expanded="false"
+                                                    aria-controls="faq-cuenta-one"> Cuenta </button>
+                                            </h2>
+                                            <div id="faq-cuenta-one" class="collapse accordion-collapse"
+                                                aria-labelledby="cuentaOne" data-bs-parent="#faq-cuenta-qna">
+                                                <div class="accordion-body ">
+                                                    <a href="#" data-bs-toggle="modal" data-bs-target="#modalayuda"
+                                                        data-bs-titulo="¿Cómo cambiar contraseña?"
+                                                        data-bs-pagina="../plataforma_docente/ayuda/cambiar_contrasena.html"
+                                                        class="hover-underline"
+                                                        style="font-family: 'Montserrat', sans-serif; mso-line-height-rule: exactly; color: #7367f0; text-decoration: none;">
+                                                        ¿Cómo cambiar contraseña?</a>
+                                                </div>
+                                                <div class="accordion-body ">
+                                                    <a href="#" data-bs-toggle="modal" data-bs-target="#modalayuda"
+                                                        data-bs-titulo="¿Cómo cambiar de colegio?"
+                                                        data-bs-pagina="../plataforma_docente/ayuda/cambiar_contrasena.html"
+                                                        class="hover-underline"
+                                                        style="font-family: 'Montserrat', sans-serif; mso-line-height-rule: exactly; color: #7367f0; text-decoration: none;">
+                                                        ¿Cómo cambiar de colegio?</a>
+                                                </div>
+                                                <div class="accordion-body ">
+                                                    <a href="#" data-bs-toggle="modal" data-bs-target="#modalayuda"
+                                                        data-bs-titulo="¿Cómo activar licencias?"
+                                                        data-bs-pagina="../plataforma_docente/ayuda/cambiar_contrasena.html"
+                                                        class="hover-underline"
+                                                        style="font-family: 'Montserrat', sans-serif; mso-line-height-rule: exactly; color: #7367f0; text-decoration: none;">
+                                                        ¿Cómo activar licencias?</a>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                        <div class="card accordion-item">
+                                            <h2 class="accordion-header" id="cuentaTwo">
+                                                <button class="accordion-button" data-bs-toggle="collapse" role="button"
+                                                    data-bs-target="#faq-cuenta-two" aria-expanded="true"
+                                                    aria-controls="faq-cuenta-two"> Planificaciones </button>
+                                            </h2>
+                                            <div id="faq-cuenta-two" class="collapse accordion-collapse"
+                                                aria-labelledby="cuentaTwo" data-bs-parent="#faq-cuenta-qna">
+                                                <div class="accordion-body ">
+                                                    <a href="#" data-bs-toggle="modal" data-bs-target="#modalayuda"
+                                                        data-bs-titulo="¿Cómo crear planificaciones?"
+                                                        data-bs-pagina="../plataforma_docente/ayuda/crear_planificacion.html"
+                                                        class="hover-underline"
+                                                        style="font-family: 'Montserrat', sans-serif; mso-line-height-rule: exactly; color: #7367f0; text-decoration: none;">
+                                                        ¿Cómo crear planificaciones?</a>
+                                                </div>
+                                                <div class="accordion-body ">
+                                                    <a href="#" data-bs-toggle="modal" data-bs-target="#modalayuda"
+                                                        data-bs-titulo="¿Cómo agregar unidades?"
+                                                        data-bs-pagina="../plataforma_docente/ayuda/agregar_unidades.html"
+                                                        class="hover-underline"
+                                                        style="font-family: 'Montserrat', sans-serif; mso-line-height-rule: exactly; color: #7367f0; text-decoration: none;">
+                                                        ¿Cómo agregar unidades?</a>
+                                                </div>
+                                                <div class="accordion-body ">
+                                                    <a href="#" data-bs-toggle="modal" data-bs-target="#modalayuda"
+                                                        data-bs-titulo="¿Cómo calendarizar mis planificaciones?"
+                                                        data-bs-pagina="../plataforma_docente/ayuda/calendarizar_plan.html"
+                                                        class="hover-underline"
+                                                        style="font-family: 'Montserrat', sans-serif; mso-line-height-rule: exactly; color: #7367f0; text-decoration: none;">
+                                                        ¿Cómo calendarizar mis planificaciones?</a>
+                                                </div>
+                                                <div class="accordion-body ">
+                                                    <a href="#" data-bs-toggle="modal" data-bs-target="#modalayuda"
+                                                        data-bs-titulo="¿Cómo crear guías editables?"
+                                                        data-bs-pagina="../plataforma_docente/ayuda/crear_guia.html" class="hover-underline"
+                                                        style="font-family: 'Montserrat', sans-serif; mso-line-height-rule: exactly; color: #7367f0; text-decoration: none;">
+                                                        ¿Cómo crear guías editables?</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card accordion-item">
+                                            <h2 class="accordion-header" id="cuentaThree">
+                                                <button class="accordion-button collapsed" data-bs-toggle="collapse"
+                                                    role="button" data-bs-target="#faq-cuenta-three"
+                                                    aria-expanded="false" aria-controls="faq-cuenta-three"> Evaluaciones
+                                                </button>
+                                            </h2>
+                                            <div id="faq-cuenta-three" class="collapse accordion-collapse"
+                                                aria-labelledby="cuentaThree" data-bs-parent="#faq-cuenta-qna">
+                                                <div class="accordion-body ">
+                                                    <a href="#" data-bs-toggle="modal" data-bs-target="#modalayuda"
+                                                        data-bs-titulo="¿Cómo crear evaluaciones simplifica?"
+                                                        data-bs-pagina="../plataforma_docente/ayuda/crear_evaluacion.html"
+                                                        class="hover-underline"
+                                                        style="font-family: 'Montserrat', sans-serif; mso-line-height-rule: exactly; color: #7367f0; text-decoration: none;">
+                                                        ¿Cómo crear evaluaciones simplifica?</a>
+                                                </div>
+                                                <div class="accordion-body ">
+                                                    <a href="#" data-bs-toggle="modal" data-bs-target="#modalayuda"
+                                                        data-bs-titulo="¿Cómo subir evaluaciones?"
+                                                        data-bs-pagina="../plataforma_docente/ayuda/subir_guia.html" class="hover-underline"
+                                                        style="font-family: 'Montserrat', sans-serif; mso-line-height-rule: exactly; color: #7367f0; text-decoration: none;">
+                                                        ¿Cómo subir evaluaciones?</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card accordion-item">
+                                            <h2 class="accordion-header" id="cuentaFour">
+                                                <button class="accordion-button collapsed" data-bs-toggle="collapse"
+                                                    role="button" data-bs-target="#faq-cuenta-four"
+                                                    aria-expanded="false" aria-controls="faq-cuenta-four"> Mensajes
+                                                </button>
+                                            </h2>
+                                            <div id="faq-cuenta-four" class="collapse accordion-collapse"
+                                                aria-labelledby="cuentaFour" data-bs-parent="#faq-cuenta-qna">
+                                                <div class="accordion-body ">
+                                                    <a href="#" data-bs-toggle="modal" data-bs-target="#modalayuda"
+                                                        data-bs-titulo="¿Cómo comunicarme con otros docentes?"
+                                                        data-bs-pagina="../plataforma_docente/ayuda/mensaje.html" class="hover-underline"
+                                                        style="font-family: 'Montserrat', sans-serif; mso-line-height-rule: exactly; color: #7367f0; text-decoration: none;">
+                                                        ¿Cómo comunicarme con otros docentes?</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card accordion-item">
+                                            <h2 class="accordion-header" id="cuentaFive">
+                                                <button class="accordion-button collapsed" data-bs-toggle="collapse"
+                                                    role="button" data-bs-target="#faq-cuenta-five"
+                                                    aria-expanded="false" aria-controls="faq-cuenta-five">Contacto
+                                                </button>
+                                            </h2>
+                                            <div id="faq-cuenta-five" class="collapse" aria-labelledby="cuentaFive"
+                                                data-bs-parent="#faq-cuenta-qna">
+                                                <div class="accordion-body">
+                                                    <div class="col-12">
+                                                        <div class="card text-center faq-contact-card shadow-none py-1">
+                                                            <div class="accordion-body">
+                                                                <h2 class="text-primary">¿No está tu consulta?</h2>
+                                                                <p class=""> Si necesitas contactarte con nosotros llama al:  </p>
+                                                                <h4>+ (XXX) XXXX XXXX</h4>
+                                                                <span class="text-body">Equipo Prisma ¡siempre feliz de ayudar!</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- cursos panel -->
+
+                                <!-- Evaluaciones  -->
+                                <div class="tab-pane" id="faq-evaluaciones" role="tabpanel"
+                                    aria-labelledby="evaluaciones" aria-expanded="false">
+                                    <!-- icon and header -->
+                                    <div class="d-flex align-items-center">
+                                        <div class="avatar avatar-tag bg-light-primary me-1">
+                                            <i data-feather="check-square" class="font-medium-4"></i>
+                                        </div>
+                                        <div>
+                                            <h4 class="mb-0">Evaluaciones</h4>
+                                            <span>Bajada evaluaciones?</span>
+                                        </div>
+                                    </div>
+                                    <!-- frequent answer and question  collapse  -->
+                                    <div class="accordion accordion-margin mt-2" id="faq-evaluaciones-qna">
+                                        <div class="card accordion-item">
+                                            <h2 class="accordion-header" id="evaluacionesOne">
+                                                <button class="accordion-button collapsed" data-bs-toggle="collapse"
+                                                    role="button" data-bs-target="#faq-evaluaciones-one"
+                                                    aria-expanded="false" aria-controls="faq-evaluaciones-one"> ¿Cómo
+                                                    crear evaluaciones? </button>
+                                            </h2>
+                                            <div id="faq-evaluaciones-one" class="collapse"
+                                                aria-labelledby="evaluacionesOne"
+                                                data-bs-parent="#faq-evaluaciones-qna">
+                                                <div class="accordion-body"> Lorem ipsum Evaluaciones1 astry pudding
+                                                    cookie toffee bonbon jujubes jujubes powder topping. Jelly beans
+                                                    gummi bears sweet roll bonbon muffin liquorice. Wafer lollipop
+                                                    sesame snaps. Brownie macaroon cookie muffin cupcake candy caramels
+                                                    tiramisu. Oat cake chocolate cake sweet jelly-o brownie biscuit
+                                                    marzipan. Jujubes donut marzipan chocolate bar. Jujubes sugar plum
+                                                    jelly beans tiramisu icing cheesecake. </div>
+                                            </div>
+                                        </div>
+                                        <div class="card accordion-item">
+                                            <h2 class="accordion-header" id="evaluacionesTwo">
+                                                <button class="accordion-button collapsed" data-bs-toggle="collapse"
+                                                    role="button" data-bs-target="#faq-evaluaciones-two"
+                                                    aria-expanded="false" aria-controls="faq-evaluaciones-two"> ¿Cómo
+                                                    subir evaluaciones? </button>
+                                            </h2>
+                                            <div id="faq-evaluaciones-two" class="collapse"
+                                                aria-labelledby="evaluacionesTwo"
+                                                data-bs-parent="#faq-evaluaciones-qna">
+                                                <div class="accordion-body"> Lorem ipsum Evaluaciones2 weet pie candy
+                                                    jelly. Sesame snaps biscuit sugar plum. Sweet roll topping
+                                                    fruitcake. Caramels liquorice biscuit ice cream fruitcake cotton
+                                                    candy tart. Donut caramels gingerbread jelly-o gingerbread pudding.
+                                                    Gummi bears pastry marshmallow candy canes pie. Pie apple pie carrot
+                                                    cake. </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- mensajes -->
+                                <div class="tab-pane" id="faq-mensajes" role="tabpanel" aria-labelledby="mensajes"
+                                    aria-expanded="false">
+                                    <!-- icon and header -->
+                                    <div class="d-flex align-items-center">
+                                        <div class="avatar avatar-tag bg-light-primary me-1">
+                                            <i data-feather="mail" class="font-medium-4"></i>
+                                        </div>
+                                        <div>
+                                            <h4 class="mb-0">Mensajes</h4>
+                                            <span>Bajada mensajes?</span>
+                                        </div>
+                                    </div>
+                                    <!-- frequent answer and question  collapse  -->
+                                    <div class="accordion accordion-margin mt-2" id="faq-mensajes-qna">
+                                        <div class="card accordion-item">
+                                            <h2 class="accordion-header" id="myOrderOne">
+                                                <button class="accordion-button collapsed" data-bs-toggle="collapse"
+                                                    role="button" data-bs-target="#faq-mensajes-one"
+                                                    aria-expanded="false" aria-controls="faq-mensajes-one"> ¿Cómo
+                                                    comunicarme con otros docentes? </button>
+                                            </h2>
+                                            <div id="faq-mensajes-one" class="collapse accordion-collapse"
+                                                aria-labelledby="myOrderOne" data-bs-parent="#faq-mensajes-qna">
+                                                <div class="accordion-body"> Pastry pudding cookie toffee bonbon jujubes
+                                                    jujubes powder topping. Jelly beans gummi bears sweet roll bonbon
+                                                    muffin liquorice. Wafer lollipop sesame snaps. Brownie macaroon
+                                                    cookie muffin cupcake candy caramels tiramisu. Oat cake chocolate
+                                                    cake sweet jelly-o brownie biscuit marzipan. Jujubes donut marzipan
+                                                    chocolate bar. Jujubes sugar plum jelly beans tiramisu icing
+                                                    cheesecake. </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- contacto -->
+                                <div class="tab-pane" id="faq-contacto" role="tabpanel" aria-labelledby="contacto"
+                                    aria-expanded="false">
+                                    <!-- icon and header -->
+                                    <div class="d-flex align-items-center">
+                                        <div class="avatar avatar-tag bg-light-primary me-1">
+                                            <i data-feather="life-buoy" class="font-medium-4"></i>
+                                        </div>
+                                        <div>
+                                            <h4 class="mb-0">Contacto</h4>
+                                            <span>Contáctate con nosotros</span>
+                                        </div>
+                                    </div>
+                                    <!-- frequent answer and question  collapse  -->
+                                    <section class="faq-contact">
+                                        <div class="row">
+                                            <!-- <div class="col-12 text-center">
+                                                <h2>¿No está tu consulta?</h2>
+                                                <p class="mb-3">
+                                                    If you cannot find a question in our FAQ, you can always contact us. We will answer to you shortly!
+                                                </p>
+                                            </div> -->
+                                            <div class="col-12">
+                                                <div class="card text-center faq-contact-card shadow-none py-1">
+                                                    <div class="accordion-body">
+                                                        <h2 class="text-primary">¿No está tu consulta?</h2>
+                                                        <p class=""> Si necesitas contactarte con nosotros… Lorem ipsum
+                                                        </p>
+                                                        <div class="avatar avatar-tag bg-light-primary mb-2 mx-auto">
+                                                            <i data-feather="user" class="font-medium-3"></i>
+                                                        </div>
+                                                        <h1 class="fsp-14"><span><b>NAME SURNAME</b></span></h1>
+                                                        <h4>+ (810) 2548 2568</h4>
+                                                        <span class="text-body">We are always happy to help!</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- / frequently asked questions tabs pills -->
+            </div>
+        </div>
+    </div>
+    <!-- Modal tips-->
+    <div class="modal fade text-start" id="modaltips" tabindex="-1" aria-labelledby="myModalLabel1" aria-hidden="true">
+        <div class="modal-dialog mx-wp-900">
+            <div class="modal-content">
+                <div class="modal-header p-0 m-0 align-items-start">
+                    <div class="modal-header-deco w-100 position-absolute hp-5 color-primary bg-primary mt-0"></div>
+                    <div class="p-1">
+                        <h4 class="modal-title " id="myModalLabel1"></h4>
+                    </div>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <iframe src="#" id="iframeModalTips" frameborder="0" class="w-100 clau-modal "></iframe>
+
+
+                    <!--/ Basic table -->
+
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Modal -->
+        <!-- Modal ayuda-->
+        <div class="modal fade text-start" id="modalayuda" tabindex="-1" aria-labelledby="myModalLabel1" aria-hidden="true">
+            <div class="modal-dialog mx-wp-900">
+                <div class="modal-content">
+                    <div class="modal-header p-0 m-0 align-items-start">
+                        <div class="modal-header-deco w-100 position-absolute hp-5 color-primary bg-primary mt-0"></div>
+                        <div class="p-1">
+                            <h4 class="modal-title " id="myModalLabel1"></h4>
+                        </div>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+    
+                        <iframe src="#" id="iframeModalAyuda" frameborder="0" class="w-100 clau-modal "></iframe>
+    
+    
+                        <!--/ Basic table -->
+    
+    
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Modal -->
+    <!-- END: Content-->
+    <div class="sidenav-overlay"></div>
+    <div class="drag-target"></div>
+    <!-- BEGIN: Footer-->
+    <footer class="footer footer-static footer-light">
+        <p class="clearfix mb-0"><span class="float-md-start d-block d-md-inline-block mt-25">COPYRIGHT &copy; 2021<a
+                    class="ms-25" href="https://www.grupo-sm.com/cl/" target="_blank">SM Chile</a><span
+                    class="d-none d-sm-inline-block">, All rights Reserved</span></span></p>
+    </footer>
+    <button class="btn btn-primary btn-icon scroll-top" type="button"><i data-feather="arrow-up"></i></button>
+    <!-- END: Footer-->
+    <!-- Begin Modal Crear Curso -->
+    <!-- End Modal Crear Curso -->
+    <!-- BEGIN MENU -->
+    <script src="../app-assets/js/menu_pt_docente.js"></script>
+    <!-- END MENU -->
+    <!-- Ionic icons -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- / Ionic icons -->
+    <!-- BEGIN: Vendor JS-->
+    <script src="../app-assets/vendors/js/vendors.min.js"></script>
+    <!-- BEGIN Vendor JS-->
+    <!-- BEGIN: Page Vendor JS-->
+    <script src="../app-assets/vendors/js/tables/datatable/jquery.dataTables.min.js"></script>
+    <script src="../app-assets/vendors/js/tables/datatable/dataTables.bootstrap5.min.js"></script>
+    <script src="../app-assets/vendors/js/tables/datatable/dataTables.responsive.min.js"></script>
+    <script src="../app-assets/vendors/js/tables/datatable/responsive.bootstrap5.min.js"></script>
+    <script src="../app-assets/vendors/js/tables/datatable/datatables.checkboxes.min.js"></script>
+    <script src="../app-assets/vendors/js/tables/datatable/datatables.buttons.min.js"></script>
+    <script src="../app-assets/vendors/js/tables/datatable/jszip.min.js"></script>
+    <script src="../app-assets/vendors/js/tables/datatable/pdfmake.min.js"></script>
+    <script src="../app-assets/vendors/js/tables/datatable/vfs_fonts.js"></script>
+    <script src="../app-assets/vendors/js/tables/datatable/buttons.html5.min.js"></script>
+    <script src="../app-assets/vendors/js/tables/datatable/buttons.print.min.js"></script>
+    <script src="../app-assets/vendors/js/tables/datatable/dataTables.rowGroup.min.js"></script>
+    <script src="../app-assets/vendors/js/pickers/flatpickr/flatpickr.min.js"></script>
+    <!-- END: Page Vendor JS-->
+    <!-- BEGIN: Page Vendor JS-->
+    <script src="../app-assets/vendors/js/forms/select/select2.full.min.js"></script>
+    <!-- END: Page Vendor JS-->
+    <!-- BEGIN: Theme JS-->
+    <!-- BEGIN: Page JS-->
+    <script src="../app-assets/js/scripts/components/components-modals.js"></script>
+    <!-- END: Page JS-->
+    <script src="../app-assets/js/core/app-menu.js"></script>
+    <script src="../app-assets/js/core/app.js"></script>
+    <!-- END: Theme JS-->
+    <script src="../app-assets/js/scripts/tables/plataforma_docente/table_cursos.js"></script>
+    <script>
+        populateMenu(menu);
+        $(window).on('load', function () {
+            if (feather) {
+                feather.replace({
+                    width: 14,
+                    height: 14
+                });
+            }
+        })
+
+        var tipsModal = document.getElementById('modaltips')
+        tipsModal.addEventListener('show.bs.modal', function (event) {// Button that triggered the modal
+            var button = event.relatedTarget// Extract info from data-bs-* attributes
+            var param1 = button.getAttribute('data-bs-titulo');
+            var param2 = button.getAttribute('data-bs-pagina');
+            //   modalBodyInput.value = recipient
+            console.log(param1);
+            console.log(param2);
+            var titulo = document.getElementById('myModalLabel1');
+            titulo.textContent = param1;
+            var url = document.getElementById('iframeModalTips');
+            url.setAttribute("src", param2);
+        })
+        var ayudaModal = document.getElementById('modalayuda')
+        ayudaModal.addEventListener('show.bs.modal', function (event) {// Button that triggered the modal
+            var button = event.relatedTarget// Extract info from data-bs-* attributes
+            var param1 = button.getAttribute('data-bs-titulo');
+            var param2 = button.getAttribute('data-bs-pagina');
+            //   modalBodyInput.value = recipient
+            console.log(param1);
+            console.log(param2);
+            var titulo = document.getElementById('myModalLabel1');
+            titulo.textContent = param1;
+            var url = document.getElementById('iframeModalAyuda');
+            url.setAttribute("src", param2);
+        })
+
+
+
+    </script>
+</body>
+<!-- END: Body-->
+
+</html>
