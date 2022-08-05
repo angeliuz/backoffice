@@ -615,7 +615,10 @@
             url.setAttribute("src", param2);
         })
 
-
+        document.getElementById('modalayuda').addEventListener('hidden.bs.modal', function () {
+            var url = document.getElementById('iframeModalAyuda');
+            url.setAttribute("src", '');
+        });
 
     </script>
 </body>
