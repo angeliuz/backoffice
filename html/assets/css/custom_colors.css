@@ -102,3 +102,7 @@
 .color-white{
   color: #fff;
 }
+
+.border-bottom-gris{ 
+  border-bottom-color:#c7c7c7 !important;
+}

@@ -181,3 +181,12 @@ a {
         padding-left: 20px !important;
      }
 }
+
+.hover-cb:hover {
+    color: #fff !important;
+    text-decoration: none !important;
+}
+.color-white{
+    color: #fff !important;
+  }
+  
